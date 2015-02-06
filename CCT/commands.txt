@@ -1,0 +1,10 @@
+//VISIT junit/.../jtopas
+
+javac -cp asm-all-5.0.3.jar Instrumenter.java 
+javac -cp ../../../../src/:junit-3.7.jar:../../../ TestMultithreadTokenizer.java
+cp TestMultithreadTokenizer.class TestMultithreadTokenizer.class.bak
+java -cp .:asm-all-5.0.3.jar Instrumenter TestMultithreadTokenizer.class.bak TestMultithreadTokenizer.class
+java -cp ../../../../src/:junit-3.7.jar:../../../ de.susebox.jtopas.TestltithreadTokenizer >/dev/null 2>../../../../../../CCT/output.txt
+
+//visit CCT folder
+python CCT.py < output.txt | sort | uniq -c 
