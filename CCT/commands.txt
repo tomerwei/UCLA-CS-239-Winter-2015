@@ -1,10 +1,15 @@
-//VISIT junit/.../jtopas
+//compile junit
+junit cchang$ javac -cp .:junit-3.7.jar:de/susebox/java/:de/susebox/java/lang/:de/susebox/jtopas/:../src/ de/susebox/SuseboxTestSuite.java 
+javac -cp .:junit-3.7.jar:de/susebox/java/lang/:de/susebox/java/:junit-4.12.jar de/susebox/java/lang/*.java
+junit cchang$ javac -cp .:junit-3.7.jar:de/susebox/java/lang/:de/susebox/java/:junit-4.12.jar:de/susebox/java/util/:../src/ de/susebox/java/util/*.java
 
-javac -cp asm-all-5.0.3.jar Instrumenter.java 
-javac -cp ../../../../src/:junit-3.7.jar:../../../ TestMultithreadTokenizer.java
-cp TestMultithreadTokenizer.class TestMultithreadTokenizer.class.bak
-java -cp .:asm-all-5.0.3.jar Instrumenter TestMultithreadTokenizer.class.bak TestMultithreadTokenizer.class
-java -cp ../../../../src/:junit-3.7.jar:../../../ de.susebox.jtopas.TestltithreadTokenizer >/dev/null 2>../../../../../../CCT/output.txt
-
-//visit CCT folder
-python CCT.py < output.txt | sort | uniq -c 
+//run junit
+java -cp .:junit-3.7.jar:de/susebox/java/:de/susebox/java/lang/:de/susebox/jtopas/:../src/:de/susebox/java/util/ de.susebox.jtopas.JTopasTestSuite
+//compile src
+javac -cp .:de/susebox/jtopas/:de/susebox/jtopas/asm-all-5.0.3.jar de/susebox/jtopas/*.java 
+//copy class file
+cp de/susebox/jtopas/StandardTokenizer.class de/susebox/jtopas/StandardTokenizer.class.bak
+//instrument
+java -cp .:asm-all-5.0.3.jar Instrumenter StandardTokenizer.class.bak StandardTokenizer.class
+//run junit
+java -cp .:junit-3.7.jar:de/susebox/java/:de/susebox/java/lang/:de/susebox/jtopas/:../src/:de/susebox/java/util/ de.susebox.jtopas.JTopasTestSuite
