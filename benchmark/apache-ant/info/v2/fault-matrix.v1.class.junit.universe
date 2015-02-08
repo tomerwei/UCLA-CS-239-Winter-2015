@@ -1,0 +1,139 @@
+	1 listversions
+	34 listtests
+CLASSPATH=/nfs/spectre/u5/dohy/Galileo/gal:/nfs/spectre/u5/dohy/Galileo/gal/BCEL:/nfs/spectre/u5/dohy/Galileo/gal/galileo/lib/commons-collections.jar:.:/nfs/spectre/u5/dohy/Prior/apache-ant/source:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/build/classes:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/build/testcases:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/lib/crimson.jar:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/lib/jaxp.jar
+-P[-sID 1-5 AntTestSuite]
+-P[-sID 6-8 AntTestSuite]
+-P[-sID 9-9 AntTestSuite]
+-P[-sID 10-15 AntTestSuite]
+-P[-sID 16-33 AntTestSuite]
+-P[-sID 34-39 AntTestSuite]
+-P[-sID 40-45 AntTestSuite]
+-P[-sID 46-48 AntTestSuite]
+-P[-sID 49-50 AntTestSuite]
+-P[-sID 51-53 AntTestSuite]
+-P[-sID 54-55 AntTestSuite]
+-P[-sID 56-63 AntTestSuite]
+-P[-sID 64-69 AntTestSuite]
+-P[-sID 70-72 AntTestSuite]
+-P[-sID 73-76 AntTestSuite]
+-P[-sID 77-84 AntTestSuite]
+-P[-sID 85-89 AntTestSuite]
+-P[-sID 90-94 AntTestSuite]
+-P[-sID 95-97 AntTestSuite]
+-P[-sID 98-104 AntTestSuite]
+-P[-sID 105-105 AntTestSuite]
+-P[-sID 106-107 AntTestSuite]
+-P[-sID 108-109 AntTestSuite]
+-P[-sID 110-111 AntTestSuite]
+-P[-sID 112-118 AntTestSuite]
+-P[-sID 119-120 AntTestSuite]
+-P[-sID 121-126 AntTestSuite]
+-P[-sID 127-128 AntTestSuite]
+-P[-sID 129-132 AntTestSuite]
+-P[-sID 133-136 AntTestSuite]
+-P[-sID 137-139 AntTestSuite]
+-P[-sID 140-141 AntTestSuite]
+-P[-sID 142-145 AntTestSuite]
+-P[-sID 146-150 AntTestSuite]
+unitest0:
+v1:
+	0
+unitest1:
+v1:
+	0
+unitest2:
+v1:
+	0
+unitest3:
+v1:
+	0
+unitest4:
+v1:
+	0
+unitest5:
+v1:
+	0
+unitest6:
+v1:
+	0
+unitest7:
+v1:
+	0
+unitest8:
+v1:
+	0
+unitest9:
+v1:
+	0
+unitest10:
+v1:
+	0
+unitest11:
+v1:
+	0
+unitest12:
+v1:
+	0
+unitest13:
+v1:
+	0
+unitest14:
+v1:
+	0
+unitest15:
+v1:
+	0
+unitest16:
+v1:
+	0
+unitest17:
+v1:
+	0
+unitest18:
+v1:
+	0
+unitest19:
+v1:
+	0
+unitest20:
+v1:
+	1
+unitest21:
+v1:
+	0
+unitest22:
+v1:
+	0
+unitest23:
+v1:
+	0
+unitest24:
+v1:
+	0
+unitest25:
+v1:
+	0
+unitest26:
+v1:
+	0
+unitest27:
+v1:
+	0
+unitest28:
+v1:
+	0
+unitest29:
+v1:
+	0
+unitest30:
+v1:
+	0
+unitest31:
+v1:
+	0
+unitest32:
+v1:
+	0
+unitest33:
+v1:
+	0

@@ -1,0 +1,500 @@
+.........................................
+.........F..........E......................
+................testReplaceRegex: skipped - regex not present /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/filters/tokenfilter.xml:320: No supported regular expression matcher found
+.testFilterReplaceRegex: skipped - regex not present /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/filters/tokenfilter.xml:320: No supported regular expression matcher found
+.testFilterReplaceRegex: skipped - regex not present /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/filters/tokenfilter.xml:320: No supported regular expression matcher found
+....testContainsRegex: skipped - regex not present /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/filters/tokenfilter.xml:320: No supported regular expression matcher found
+.testFilterContainsRegex: skipped - regex not present /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/filters/tokenfilter.xml:320: No supported regular expression matcher found
+.testContainsRegex2: skipped - regex not present /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/filters/tokenfilter.xml:320: No supported regular expression matcher found
+..testScriptFilter: skipped - script not present 
+.testScriptFilter: skipped - script not present 
+..............
+.........................................
+..E.......................................
+.........................................
+.........................................
+................F.........................
+.........................................
+.............................F..F..F.F..F.F.E.suggestion: increase the constant SECURITY_MARGIN to give more time for java to start.
+F..
+.........................................
+.........................................
+.........................................
+.........................................
+.........................................
+...........-- listing properties --
+java.runtime.name=Java(TM) 2 Runtime Environment, Stand...
+sun.boot.library.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.vm.version=1.3.1_02-b02
+ant.java.version=1.3
+ant.file.test=/nfs/spectre/u5/kinneer/subjects/apac...
+java.vm.vendor=Sun Microsystems Inc.
+java.vendor.url=http://java.sun.com/
+path.separator=:
+java.vm.name=Java HotSpot(TM) Client VM
+file.encoding.pkg=sun.io
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/nfs/spectre/u5/kinneer/subjects/apac...
+java.runtime.version=1.3.1_02-b02
+ant.input.properties=/nfs/spectre/u5/kinneer/subjects/apac...
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+basedir=/nfs/spectre/u5/kinneer/subjects/apac...
+os.arch=sparc
+java.io.tmpdir=/var/tmp/
+line.separator=
+
+java.vm.specification.vendor=Sun Microsystems Inc.
+java.awt.fonts=
+os.name=SunOS
+ant.home=bootstrap
+ant.project.name=test
+java.library.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+test.property=isSet
+java.specification.name=Java Platform API Specification
+java.class.version=47.0
+os.version=5.8
+ant.file=/nfs/spectre/u5/kinneer/subjects/apac...
+user.home=/nfs/spectre/u5/kinneer
+b.set=false
+user.timezone=America/Los_Angeles
+java.awt.printerjob=sun.awt.motif.PSPrinterJob
+java.specification.version=1.3
+build.tests=build/testcases
+file.encoding=646
+tests-classpath.value=./lib/xml-apis.jar:./lib/xercesImpl.j...
+java.class.path=./lib/xml-apis.jar:./lib/xercesImpl.j...
+user.name=kinneer
+java.vm.specification.version=1.0
+java.home=/nfs/spectre/a4/solaris8/common/j2sdk...
+user.language=en
+java.specification.vendor=Sun Microsystems Inc.
+java.vm.info=mixed mode
+java.version=1.3.1_02
+java.ext.dirs=/nfs/spectre/a4/solaris8/common/j2sdk...
+sun.boot.class.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.vendor=Sun Microsystems Inc.
+a.set=true
+file.separator=/
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport...
+sun.io.unicode.encoding=UnicodeBig
+sun.cpu.endian=big
+sun.cpu.isalist=sparcv9+vis sparcv9 sparcv8plus+vis s...
+..-- listing properties --
+java.runtime.name=Java(TM) 2 Runtime Environment, Stand...
+sun.boot.library.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.vm.version=1.3.1_02-b02
+ant.java.version=1.3
+ant.file.test=/nfs/spectre/u5/kinneer/subjects/apac...
+java.vm.vendor=Sun Microsystems Inc.
+java.vendor.url=http://java.sun.com/
+path.separator=:
+java.vm.name=Java HotSpot(TM) Client VM
+file.encoding.pkg=sun.io
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/nfs/spectre/u5/kinneer/subjects/apac...
+java.runtime.version=1.3.1_02-b02
+ant.input.properties=/nfs/spectre/u5/kinneer/subjects/apac...
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+basedir=/nfs/spectre/u5/kinneer/subjects/apac...
+os.arch=sparc
+java.io.tmpdir=/var/tmp/
+line.separator=
+
+java.vm.specification.vendor=Sun Microsystems Inc.
+java.awt.fonts=
+os.name=SunOS
+ant.home=bootstrap
+ant.project.name=test
+java.library.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+test.property=isSet
+java.specification.name=Java Platform API Specification
+java.class.version=47.0
+os.version=5.8
+ant.file=/nfs/spectre/u5/kinneer/subjects/apac...
+user.home=/nfs/spectre/u5/kinneer
+b.set=false
+user.timezone=America/Los_Angeles
+java.awt.printerjob=sun.awt.motif.PSPrinterJob
+java.specification.version=1.3
+build.tests=build/testcases
+file.encoding=646
+tests-classpath.value=./lib/xml-apis.jar:./lib/xercesImpl.j...
+java.class.path=./lib/xml-apis.jar:./lib/xercesImpl.j...
+user.name=kinneer
+java.vm.specification.version=1.0
+java.home=/nfs/spectre/a4/solaris8/common/j2sdk...
+user.language=en
+java.specification.vendor=Sun Microsystems Inc.
+java.vm.info=mixed mode
+java.version=1.3.1_02
+java.ext.dirs=/nfs/spectre/a4/solaris8/common/j2sdk...
+sun.boot.class.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.vendor=Sun Microsystems Inc.
+a.set=true
+file.separator=/
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport...
+sun.io.unicode.encoding=UnicodeBig
+sun.cpu.endian=big
+sun.cpu.isalist=sparcv9+vis sparcv9 sparcv8plus+vis s...
+.-- listing properties --
+java.runtime.name=Java(TM) 2 Runtime Environment, Stand...
+sun.boot.library.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.vm.version=1.3.1_02-b02
+ant.java.version=1.3
+ant.file.test=/nfs/spectre/u5/kinneer/subjects/apac...
+java.vm.vendor=Sun Microsystems Inc.
+java.vendor.url=http://java.sun.com/
+path.separator=:
+java.vm.name=Java HotSpot(TM) Client VM
+file.encoding.pkg=sun.io
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/nfs/spectre/u5/kinneer/subjects/apac...
+java.runtime.version=1.3.1_02-b02
+ant.input.properties=/nfs/spectre/u5/kinneer/subjects/apac...
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+basedir=/nfs/spectre/u5/kinneer/subjects/apac...
+os.arch=sparc
+java.io.tmpdir=/var/tmp/
+line.separator=
+
+java.vm.specification.vendor=Sun Microsystems Inc.
+java.awt.fonts=
+os.name=SunOS
+ant.home=bootstrap
+ant.project.name=test
+java.library.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+test.property=isSet
+java.specification.name=Java Platform API Specification
+java.class.version=47.0
+os.version=5.8
+ant.file=/nfs/spectre/u5/kinneer/subjects/apac...
+user.home=/nfs/spectre/u5/kinneer
+b.set=false
+user.timezone=America/Los_Angeles
+java.awt.printerjob=sun.awt.motif.PSPrinterJob
+java.specification.version=1.3
+build.tests=build/testcases
+file.encoding=646
+tests-classpath.value=./lib/xml-apis.jar:./lib/xercesImpl.j...
+java.class.path=./lib/xml-apis.jar:./lib/xercesImpl.j...
+user.name=kinneer
+java.vm.specification.version=1.0
+java.home=/nfs/spectre/a4/solaris8/common/j2sdk...
+user.language=en
+java.specification.vendor=Sun Microsystems Inc.
+java.vm.info=mixed mode
+java.version=1.3.1_02
+java.ext.dirs=/nfs/spectre/a4/solaris8/common/j2sdk...
+sun.boot.class.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.vendor=Sun Microsystems Inc.
+a.set=true
+file.separator=/
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport...
+sun.io.unicode.encoding=UnicodeBig
+sun.cpu.endian=big
+sun.cpu.isalist=sparcv9+vis sparcv9 sparcv8plus+vis s...
+..................E.E.E.E.F.F.E.E.E.
+............E.E.E.E..............F.F.F.E.E.E..F.F.E...
+.....................Inifinite loop in tokens. Currently known tokens : [test, test1, test2]
+Problem token : @test@ called from @test2@
+....................
+........If this is the last line on standard out the testExit f.a.i.l.e.d
+testExit successfull.
+.................................
+.................E.E.E......................
+.........................................
+................
+Time: 1,473.425
+There were 21 errors:
+1) testTaskdef(org.apache.tools.ant.TaskContainerTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/core/taskcontainer.xml:20: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:109)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:976)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:799)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.TaskContainerTest.testTaskdef(TaskContainerTest.java:80)
+2) test24(org.apache.tools.ant.taskdefs.AvailableTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/available.xml:137: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:109)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:976)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:799)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.taskdefs.AvailableTest.test24(AvailableTest.java:222)
+3) testRunSuccessWithFailOnError(org.apache.tools.ant.taskdefs.JavaTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/java.xml:155: Could not find org.apache.tools.ant.taskdefs.JavaTest$EntryPoint. Make sure you have it in your classpath
+	at org.apache.tools.ant.taskdefs.ExecuteJava.execute(ExecuteJava.java:199)
+	at org.apache.tools.ant.taskdefs.Java.run(Java.java:699)
+	at org.apache.tools.ant.taskdefs.Java.executeJava(Java.java:206)
+	at org.apache.tools.ant.taskdefs.Java.execute(Java.java:115)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.taskdefs.JavaTest.testRunSuccessWithFailOnError(JavaTest.java:206)
+4) testDirect(org.apache.tools.ant.taskdefs.optional.depend.DependTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:53: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:109)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:976)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:799)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testDirect(DependTest.java:97)
+5) testClosure(org.apache.tools.ant.taskdefs.optional.depend.DependTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:53: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:109)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:976)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:799)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testClosure(DependTest.java:112)
+6) testInner(org.apache.tools.ant.taskdefs.optional.depend.DependTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:53: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:109)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:976)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:799)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testInner(DependTest.java:125)
+7) testInnerInner(org.apache.tools.ant.taskdefs.optional.depend.DependTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:53: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:109)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:976)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:799)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testInnerInner(DependTest.java:136)
+8) testInnerClosure(org.apache.tools.ant.taskdefs.optional.depend.DependTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:139: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:109)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:976)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:799)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testInnerClosure(DependTest.java:181)
+9) testCache(org.apache.tools.ant.taskdefs.optional.depend.DependTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:53: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:109)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:976)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:799)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testCache(DependTest.java:190)
+10) testNonPublic(org.apache.tools.ant.taskdefs.optional.depend.DependTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:53: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:109)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:976)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:799)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testNonPublic(DependTest.java:197)
+11) testRecreate(org.apache.tools.ant.taskdefs.optional.unix.SymlinkTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/unix/symlink.xml:274: Unable to delete directory /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/unix/test-working
+	at org.apache.tools.ant.taskdefs.Delete.removeDir(Delete.java:625)
+	at org.apache.tools.ant.taskdefs.Delete.removeDir(Delete.java:605)
+	at org.apache.tools.ant.taskdefs.Delete.removeDir(Delete.java:605)
+	at org.apache.tools.ant.taskdefs.Delete.execute(Delete.java:530)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.taskdefs.optional.unix.SymlinkTest.tearDown(SymlinkTest.java:220)
+12) testSingle(org.apache.tools.ant.taskdefs.optional.unix.SymlinkTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/unix/symlink.xml:36: Unable to delete directory /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/unix/test-working
+	at org.apache.tools.ant.taskdefs.Delete.removeDir(Delete.java:625)
+	at org.apache.tools.ant.taskdefs.Delete.removeDir(Delete.java:605)
+	at org.apache.tools.ant.taskdefs.Delete.removeDir(Delete.java:605)
+	at org.apache.tools.ant.taskdefs.Delete.execute(Delete.java:530)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.taskdefs.optional.unix.SymlinkTest.setUp(SymlinkTest.java:97)
+13) testDelete(org.apache.tools.ant.taskdefs.optional.unix.SymlinkTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/unix/symlink.xml:36: Unable to delete directory /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/unix/test-working
+	at org.apache.tools.ant.taskdefs.Delete.removeDir(Delete.java:625)
+	at org.apache.tools.ant.taskdefs.Delete.removeDir(Delete.java:605)
+	at org.apache.tools.ant.taskdefs.Delete.removeDir(Delete.java:605)
+	at org.apache.tools.ant.taskdefs.Delete.execute(Delete.java:530)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.taskdefs.optional.unix.SymlinkTest.setUp(SymlinkTest.java:97)
+14) testRecord(org.apache.tools.ant.taskdefs.optional.unix.SymlinkTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/unix/symlink.xml:36: Unable to delete directory /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/taskdefs/optional/unix/test-working
+	at org.apache.tools.ant.taskdefs.Delete.removeDir(Delete.java:625)
+	at org.apache.tools.ant.taskdefs.Delete.removeDir(Delete.java:605)
+	at org.apache.tools.ant.taskdefs.Delete.removeDir(Delete.java:605)
+	at org.apache.tools.ant.taskdefs.Delete.execute(Delete.java:530)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.taskdefs.optional.unix.SymlinkTest.setUp(SymlinkTest.java:97)
+15) testEmptyAssertions(org.apache.tools.ant.types.AssertionsTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/types/assertions.xml:20: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:109)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:976)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:799)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.types.AssertionsTest.testEmptyAssertions(AssertionsTest.java:94)
+16) testDisable(org.apache.tools.ant.types.AssertionsTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/types/assertions.xml:20: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:109)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:976)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:799)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.types.AssertionsTest.testDisable(AssertionsTest.java:98)
+17) testOverride2(org.apache.tools.ant.types.AssertionsTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/types/assertions.xml:20: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:109)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:976)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:799)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.types.AssertionsTest.testOverride2(AssertionsTest.java:106)
+18) testNofork(org.apache.tools.ant.types.AssertionsTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/types/assertions.xml:20: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:109)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:976)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:799)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.BuildFileTest.expectLogContaining(BuildFileTest.java:128)
+	at org.apache.tools.ant.types.AssertionsTest.testNofork(AssertionsTest.java:125)
+19) testScenarioCoreSelectorDefaults(org.apache.tools.ant.types.selectors.ModifiedSelectorTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/types/selectors.xml:132: /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/types/bootstrap/lib not found.
+	at org.apache.tools.ant.types.AbstractFileSet.getDirectoryScanner(AbstractFileSet.java:387)
+	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:423)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.types.selectors.ModifiedSelectorTest$BFT.doTarget(ModifiedSelectorTest.java:679)
+	at org.apache.tools.ant.types.selectors.ModifiedSelectorTest.doScenarioTest(ModifiedSelectorTest.java:526)
+	at org.apache.tools.ant.types.selectors.ModifiedSelectorTest.testScenarioCoreSelectorDefaults(ModifiedSelectorTest.java:503)
+20) testSceanrioCoreSelectorSettings(org.apache.tools.ant.types.selectors.ModifiedSelectorTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/types/selectors.xml:132: /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/types/bootstrap/lib not found.
+	at org.apache.tools.ant.types.AbstractFileSet.getDirectoryScanner(AbstractFileSet.java:387)
+	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:423)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.types.selectors.ModifiedSelectorTest$BFT.doTarget(ModifiedSelectorTest.java:679)
+	at org.apache.tools.ant.types.selectors.ModifiedSelectorTest.doScenarioTest(ModifiedSelectorTest.java:526)
+	at org.apache.tools.ant.types.selectors.ModifiedSelectorTest.testSceanrioCoreSelectorSettings(ModifiedSelectorTest.java:509)
+21) testScenarioCustomSelectorSettings(org.apache.tools.ant.types.selectors.ModifiedSelectorTest)/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/types/selectors.xml:132: /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v9/ant/src/etc/testcases/types/bootstrap/lib not found.
+	at org.apache.tools.ant.types.AbstractFileSet.getDirectoryScanner(AbstractFileSet.java:387)
+	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:423)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:303)
+	at org.apache.tools.ant.Task.perform(Task.java:401)
+	at org.apache.tools.ant.Target.execute(Target.java:338)
+	at org.apache.tools.ant.Target.performTasks(Target.java:365)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1237)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:273)
+	at org.apache.tools.ant.types.selectors.ModifiedSelectorTest$BFT.doTarget(ModifiedSelectorTest.java:679)
+	at org.apache.tools.ant.types.selectors.ModifiedSelectorTest.doScenarioTest(ModifiedSelectorTest.java:526)
+	at org.apache.tools.ant.types.selectors.ModifiedSelectorTest.testScenarioCustomSelectorSettings(ModifiedSelectorTest.java:514)
+There were 16 failures:
+1) testBadRef(org.apache.tools.ant.LoaderRefTest)junit.framework.AssertionFailedError: Should throw BuildException because 'Should fail due to ref not being a class loader' with message containing 'does not reference a class loader' (actual message 'Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.' instead)
+	at org.apache.tools.ant.BuildFileTest.expectBuildExceptionContaining(BuildFileTest.java:335)
+	at org.apache.tools.ant.LoaderRefTest.testBadRef(LoaderRefTest.java:78)
+2) testNoTimeOut(org.apache.tools.ant.taskdefs.ExecuteWatchdogTest)junit.framework.AssertionFailedError: process should not have been killed
+	at org.apache.tools.ant.taskdefs.ExecuteWatchdogTest.testNoTimeOut(ExecuteWatchdogTest.java:144)
+3) testExcepting(org.apache.tools.ant.taskdefs.JavaTest)junit.framework.AssertionFailedError: expecting log to contain "Exception raised inside called program" log was "Could not find org.apache.tools.ant.taskdefs.JavaTest$ExceptingEntryPoint. Make sure you have it in your classpath"
+	at org.apache.tools.ant.BuildFileTest.assertLogContaining(BuildFileTest.java:118)
+	at org.apache.tools.ant.BuildFileTest.expectLogContaining(BuildFileTest.java:129)
+	at org.apache.tools.ant.taskdefs.JavaTest.testExcepting(JavaTest.java:158)
+4) testExceptingFoe(org.apache.tools.ant.taskdefs.JavaTest)junit.framework.AssertionFailedError: Should throw BuildException because 'passes exception through' with message containing 'Exception raised inside called program' (actual message 'Could not find org.apache.tools.ant.taskdefs.JavaTest$ExceptingEntryPoint. Make sure you have it in your classpath' instead)
+	at org.apache.tools.ant.BuildFileTest.expectBuildExceptionContaining(BuildFileTest.java:335)
+	at org.apache.tools.ant.taskdefs.JavaTest.testExceptingFoe(JavaTest.java:168)
+5) testResultPropertyZero(org.apache.tools.ant.taskdefs.JavaTest)junit.framework.ComparisonFailure: expected:<0> but was:<1>
+	at org.apache.tools.ant.taskdefs.JavaTest.testResultPropertyZero(JavaTest.java:181)
+6) testResultPropertyNonZero(org.apache.tools.ant.taskdefs.JavaTest)junit.framework.ComparisonFailure: expected:<2> but was:<1>
+	at org.apache.tools.ant.taskdefs.JavaTest.testResultPropertyNonZero(JavaTest.java:186)
+7) testResultPropertyNonZeroNoFork(org.apache.tools.ant.taskdefs.JavaTest)junit.framework.ComparisonFailure: expected:<-1> but was:<0>
+	at org.apache.tools.ant.taskdefs.JavaTest.testResultPropertyNonZeroNoFork(JavaTest.java:196)
+8) testRunFailWithFailOnError(org.apache.tools.ant.taskdefs.JavaTest)junit.framework.AssertionFailedError: Should throw BuildException because 'non zero return code' with message containing 'Java returned:' (actual message 'Could not find org.apache.tools.ant.taskdefs.JavaTest$EntryPoint. Make sure you have it in your classpath' instead)
+	at org.apache.tools.ant.BuildFileTest.expectBuildExceptionContaining(BuildFileTest.java:335)
+	at org.apache.tools.ant.taskdefs.JavaTest.testRunFailWithFailOnError(JavaTest.java:200)
+9) testSpawn(org.apache.tools.ant.taskdefs.JavaTest)junit.framework.AssertionFailedError: log file exists
+	at org.apache.tools.ant.taskdefs.JavaTest.testSpawn(JavaTest.java:227)
+10) testNoSource(org.apache.tools.ant.taskdefs.optional.depend.DependTest)junit.framework.AssertionFailedError: Should throw BuildException because 'No source specified' with message containing 'srcdir attribute must be set' (actual message 'Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.' instead)
+	at org.apache.tools.ant.BuildFileTest.expectBuildExceptionContaining(BuildFileTest.java:335)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testNoSource(DependTest.java:145)
+11) testEmptySource(org.apache.tools.ant.taskdefs.optional.depend.DependTest)junit.framework.AssertionFailedError: Should throw BuildException because 'No source specified' with message containing 'srcdir attribute must be non-empty' (actual message 'Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.' instead)
+	at org.apache.tools.ant.BuildFileTest.expectBuildExceptionContaining(BuildFileTest.java:335)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testEmptySource(DependTest.java:153)
+12) testOverride(org.apache.tools.ant.types.AssertionsTest)junit.framework.AssertionFailedError: Should throw BuildException because 'assertion not thrown in test-override' with message containing 'Java returned: 1' (actual message 'Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.' instead)
+	at org.apache.tools.ant.BuildFileTest.expectBuildExceptionContaining(BuildFileTest.java:335)
+	at org.apache.tools.ant.types.AssertionsTest.expectAssertion(AssertionsTest.java:80)
+	at org.apache.tools.ant.types.AssertionsTest.testOverride(AssertionsTest.java:102)
+13) testClassname(org.apache.tools.ant.types.AssertionsTest)junit.framework.AssertionFailedError: Should throw BuildException because 'assertion not thrown in test-classname' with message containing 'Java returned: 1' (actual message 'Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.' instead)
+	at org.apache.tools.ant.BuildFileTest.expectBuildExceptionContaining(BuildFileTest.java:335)
+	at org.apache.tools.ant.types.AssertionsTest.expectAssertion(AssertionsTest.java:80)
+	at org.apache.tools.ant.types.AssertionsTest.testClassname(AssertionsTest.java:86)
+14) testPackage(org.apache.tools.ant.types.AssertionsTest)junit.framework.AssertionFailedError: Should throw BuildException because 'assertion not thrown in test-package' with message containing 'Java returned: 1' (actual message 'Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.' instead)
+	at org.apache.tools.ant.BuildFileTest.expectBuildExceptionContaining(BuildFileTest.java:335)
+	at org.apache.tools.ant.types.AssertionsTest.expectAssertion(AssertionsTest.java:80)
+	at org.apache.tools.ant.types.AssertionsTest.testPackage(AssertionsTest.java:90)
+15) testMultipleAssertions(org.apache.tools.ant.types.AssertionsTest)junit.framework.AssertionFailedError: Should throw BuildException because 'multiple assertions rejected' with message containing 'Only one assertion declaration is allowed' (actual message 'Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.' instead)
+	at org.apache.tools.ant.BuildFileTest.expectBuildExceptionContaining(BuildFileTest.java:335)
+	at org.apache.tools.ant.types.AssertionsTest.testMultipleAssertions(AssertionsTest.java:113)
+16) testReferenceAbuse(org.apache.tools.ant.types.AssertionsTest)junit.framework.AssertionFailedError: Should throw BuildException because 'reference abuse rejected' with message containing 'You must not specify more than one attribute when using refid' (actual message 'Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.' instead)
+	at org.apache.tools.ant.BuildFileTest.expectBuildExceptionContaining(BuildFileTest.java:335)
+	at org.apache.tools.ant.types.AssertionsTest.testReferenceAbuse(AssertionsTest.java:119)
+
+FAILURES!!!
+Tests run: 877,  Failures: 16,  Errors: 21
+

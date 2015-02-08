@@ -1,0 +1,4 @@
+Dummy directory used as install target for earlier versions. Build
+scripts *may* (not positive) check for the existence of this
+directory. In any case, nothing should ever actually end up here.
+

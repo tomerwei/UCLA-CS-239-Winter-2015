@@ -1,0 +1,6 @@
+Placed junit3.8.1.jar in lib directory
+Created directory optional in directory lib
+Copied junit3.8.1.jar to lib/optional as "junit.jar"
+Changed property "test.haltonfailure" to "no" in build.xml
+build.sh jars
+build.sh run-tests

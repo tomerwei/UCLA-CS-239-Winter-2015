@@ -1,0 +1,903 @@
+	2 listversions
+	150 listtests
+CLASSPATH=/nfs/spectre/u5/dohy/Galileo/gal:/nfs/spectre/u5/dohy/Galileo/gal/BCEL:/nfs/spectre/u5/dohy/Galileo/gal/galileo/lib/commons-collections.jar:.:/nfs/spectre/u5/dohy/Prior/apache-ant/source:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/build/classes:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/build/testcases:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/src/testcases:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/src/etc/testcases:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/lib/junit3.8.1.jar:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/lib/xercesImpl.jar:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/lib/xml-apis.jar:/nfs/spectre/a4/solaris8/common/j2sdk1_3_1_02/lib/classes.zip
+-P[-sID 1-6 AntTestSuite]
+-P[-sID 7-10 AntTestSuite]
+-P[-sID 11-11 AntTestSuite]
+-P[-sID 12-37 AntTestSuite]
+-P[-sID 38-63 AntTestSuite]
+-P[-sID 64-69 AntTestSuite]
+-P[-sID 70-75 AntTestSuite]
+-P[-sID 76-78 AntTestSuite]
+-P[-sID 79-80 AntTestSuite]
+-P[-sID 81-83 AntTestSuite]
+-P[-sID 84-90 AntTestSuite]
+-P[-sID 91-99 AntTestSuite]
+-P[-sID 100-105 AntTestSuite]
+-P[-sID 106-108 AntTestSuite]
+-P[-sID 109-112 AntTestSuite]
+-P[-sID 113-121 AntTestSuite]
+-P[-sID 122-132 AntTestSuite]
+-P[-sID 133-142 AntTestSuite]
+-P[-sID 143-154 AntTestSuite]
+-P[-sID 155-166 AntTestSuite]
+-P[-sID 167-169 AntTestSuite]
+-P[-sID 170-172 AntTestSuite]
+-P[-sID 173-174 AntTestSuite]
+-P[-sID 175-176 AntTestSuite]
+-P[-sID 177-190 AntTestSuite]
+-P[-sID 191-193 AntTestSuite]
+-P[-sID 194-199 AntTestSuite]
+-P[-sID 200-205 AntTestSuite]
+-P[-sID 206-209 AntTestSuite]
+-P[-sID 210-218 AntTestSuite]
+-P[-sID 219-221 AntTestSuite]
+-P[-sID 222-225 AntTestSuite]
+-P[-sID 226-229 AntTestSuite]
+-P[-sID 230-241 AntTestSuite]
+-P[-sID 242-246 AntTestSuite]
+-P[-sID 247-257 AntTestSuite]
+-P[-sID 258-262 AntTestSuite]
+-P[-sID 263-267 AntTestSuite]
+-P[-sID 268-284 AntTestSuite]
+-P[-sID 285-307 AntTestSuite]
+-P[-sID 308-326 AntTestSuite]
+-P[-sID 327-332 AntTestSuite]
+-P[-sID 333-336 AntTestSuite]
+-P[-sID 337-338 AntTestSuite]
+-P[-sID 339-344 AntTestSuite]
+-P[-sID 345-354 AntTestSuite]
+-P[-sID 355-375 AntTestSuite]
+-P[-sID 376-378 AntTestSuite]
+-P[-sID 379-380 AntTestSuite]
+-P[-sID 381-382 AntTestSuite]
+-P[-sID 383-386 AntTestSuite]
+-P[-sID 387-390 AntTestSuite]
+-P[-sID 391-391 AntTestSuite]
+-P[-sID 392-393 AntTestSuite]
+-P[-sID 394-402 AntTestSuite]
+-P[-sID 403-415 AntTestSuite]
+-P[-sID 416-419 AntTestSuite]
+-P[-sID 420-430 AntTestSuite]
+-P[-sID 431-439 AntTestSuite]
+-P[-sID 440-440 AntTestSuite]
+-P[-sID 441-442 AntTestSuite]
+-P[-sID 443-449 AntTestSuite]
+-P[-sID 450-469 AntTestSuite]
+-P[-sID 470-507 AntTestSuite]
+-P[-sID 508-512 AntTestSuite]
+-P[-sID 513-513 AntTestSuite]
+-P[-sID 514-515 AntTestSuite]
+-P[-sID 516-516 AntTestSuite]
+-P[-sID 517-521 AntTestSuite]
+-P[-sID 522-526 AntTestSuite]
+-P[-sID 527-536 AntTestSuite]
+-P[-sID 537-537 AntTestSuite]
+-P[-sID 538-557 AntTestSuite]
+-P[-sID 558-562 AntTestSuite]
+-P[-sID 563-566 AntTestSuite]
+-P[-sID 567-568 AntTestSuite]
+-P[-sID 569-572 AntTestSuite]
+-P[-sID 573-579 AntTestSuite]
+-P[-sID 580-587 AntTestSuite]
+-P[-sID 588-588 AntTestSuite]
+-P[-sID 589-601 AntTestSuite]
+-P[-sID 602-604 AntTestSuite]
+-P[-sID 605-607 AntTestSuite]
+-P[-sID 608-610 AntTestSuite]
+-P[-sID 611-613 AntTestSuite]
+-P[-sID 614-616 AntTestSuite]
+-P[-sID 617-619 AntTestSuite]
+-P[-sID 620-622 AntTestSuite]
+-P[-sID 623-625 AntTestSuite]
+-P[-sID 626-626 AntTestSuite]
+-P[-sID 627-635 AntTestSuite]
+-P[-sID 636-637 AntTestSuite]
+-P[-sID 638-638 AntTestSuite]
+-P[-sID 639-640 AntTestSuite]
+-P[-sID 641-646 AntTestSuite]
+-P[-sID 647-649 AntTestSuite]
+-P[-sID 650-650 AntTestSuite]
+-P[-sID 651-653 AntTestSuite]
+-P[-sID 654-654 AntTestSuite]
+-P[-sID 655-661 AntTestSuite]
+-P[-sID 662-663 AntTestSuite]
+-P[-sID 664-664 AntTestSuite]
+-P[-sID 665-670 AntTestSuite]
+-P[-sID 671-671 AntTestSuite]
+-P[-sID 672-674 AntTestSuite]
+-P[-sID 675-677 AntTestSuite]
+-P[-sID 678-679 AntTestSuite]
+-P[-sID 680-682 AntTestSuite]
+-P[-sID 683-685 AntTestSuite]
+-P[-sID 686-686 AntTestSuite]
+-P[-sID 687-692 AntTestSuite]
+-P[-sID 693-696 AntTestSuite]
+-P[-sID 697-702 AntTestSuite]
+-P[-sID 703-705 AntTestSuite]
+-P[-sID 706-710 AntTestSuite]
+-P[-sID 711-713 AntTestSuite]
+-P[-sID 714-715 AntTestSuite]
+-P[-sID 716-721 AntTestSuite]
+-P[-sID 722-725 AntTestSuite]
+-P[-sID 726-728 AntTestSuite]
+-P[-sID 729-741 AntTestSuite]
+-P[-sID 742-743 AntTestSuite]
+-P[-sID 744-744 AntTestSuite]
+-P[-sID 745-748 AntTestSuite]
+-P[-sID 749-762 AntTestSuite]
+-P[-sID 763-772 AntTestSuite]
+-P[-sID 773-778 AntTestSuite]
+-P[-sID 779-782 AntTestSuite]
+-P[-sID 783-785 AntTestSuite]
+-P[-sID 786-807 AntTestSuite]
+-P[-sID 808-810 AntTestSuite]
+-P[-sID 811-814 AntTestSuite]
+-P[-sID 815-815 AntTestSuite]
+-P[-sID 816-816 AntTestSuite]
+-P[-sID 817-817 AntTestSuite]
+-P[-sID 818-818 AntTestSuite]
+-P[-sID 819-825 AntTestSuite]
+-P[-sID 826-826 AntTestSuite]
+-P[-sID 827-827 AntTestSuite]
+-P[-sID 828-829 AntTestSuite]
+-P[-sID 830-830 AntTestSuite]
+-P[-sID 831-833 AntTestSuite]
+-P[-sID 834-841 AntTestSuite]
+-P[-sID 842-842 AntTestSuite]
+-P[-sID 843-843 AntTestSuite]
+-P[-sID 844-854 AntTestSuite]
+-P[-sID 855-855 AntTestSuite]
+-P[-sID 856-856 AntTestSuite]
+-P[-sID 857-857 AntTestSuite]
+-P[-sID 858-878 AntTestSuite]
+unitest0:
+v1:
+	0
+v2:
+	0
+unitest1:
+v1:
+	0
+v2:
+	0
+unitest2:
+v1:
+	0
+v2:
+	0
+unitest3:
+v1:
+	0
+v2:
+	0
+unitest4:
+v1:
+	0
+v2:
+	0
+unitest5:
+v1:
+	0
+v2:
+	0
+unitest6:
+v1:
+	0
+v2:
+	0
+unitest7:
+v1:
+	0
+v2:
+	0
+unitest8:
+v1:
+	0
+v2:
+	0
+unitest9:
+v1:
+	0
+v2:
+	0
+unitest10:
+v1:
+	0
+v2:
+	0
+unitest11:
+v1:
+	0
+v2:
+	0
+unitest12:
+v1:
+	0
+v2:
+	0
+unitest13:
+v1:
+	0
+v2:
+	0
+unitest14:
+v1:
+	0
+v2:
+	0
+unitest15:
+v1:
+	0
+v2:
+	0
+unitest16:
+v1:
+	0
+v2:
+	0
+unitest17:
+v1:
+	0
+v2:
+	0
+unitest18:
+v1:
+	0
+v2:
+	0
+unitest19:
+v1:
+	0
+v2:
+	0
+unitest20:
+v1:
+	0
+v2:
+	0
+unitest21:
+v1:
+	0
+v2:
+	0
+unitest22:
+v1:
+	0
+v2:
+	0
+unitest23:
+v1:
+	0
+v2:
+	0
+unitest24:
+v1:
+	0
+v2:
+	0
+unitest25:
+v1:
+	0
+v2:
+	0
+unitest26:
+v1:
+	0
+v2:
+	0
+unitest27:
+v1:
+	0
+v2:
+	0
+unitest28:
+v1:
+	0
+v2:
+	0
+unitest29:
+v1:
+	0
+v2:
+	0
+unitest30:
+v1:
+	0
+v2:
+	0
+unitest31:
+v1:
+	0
+v2:
+	0
+unitest32:
+v1:
+	0
+v2:
+	0
+unitest33:
+v1:
+	0
+v2:
+	0
+unitest34:
+v1:
+	0
+v2:
+	0
+unitest35:
+v1:
+	0
+v2:
+	0
+unitest36:
+v1:
+	0
+v2:
+	0
+unitest37:
+v1:
+	0
+v2:
+	0
+unitest38:
+v1:
+	0
+v2:
+	0
+unitest39:
+v1:
+	0
+v2:
+	0
+unitest40:
+v1:
+	0
+v2:
+	0
+unitest41:
+v1:
+	0
+v2:
+	0
+unitest42:
+v1:
+	0
+v2:
+	0
+unitest43:
+v1:
+	0
+v2:
+	0
+unitest44:
+v1:
+	0
+v2:
+	0
+unitest45:
+v1:
+	0
+v2:
+	0
+unitest46:
+v1:
+	0
+v2:
+	0
+unitest47:
+v1:
+	0
+v2:
+	0
+unitest48:
+v1:
+	0
+v2:
+	0
+unitest49:
+v1:
+	0
+v2:
+	0
+unitest50:
+v1:
+	0
+v2:
+	0
+unitest51:
+v1:
+	0
+v2:
+	0
+unitest52:
+v1:
+	0
+v2:
+	0
+unitest53:
+v1:
+	0
+v2:
+	0
+unitest54:
+v1:
+	0
+v2:
+	0
+unitest55:
+v1:
+	0
+v2:
+	0
+unitest56:
+v1:
+	0
+v2:
+	0
+unitest57:
+v1:
+	0
+v2:
+	0
+unitest58:
+v1:
+	0
+v2:
+	0
+unitest59:
+v1:
+	0
+v2:
+	0
+unitest60:
+v1:
+	0
+v2:
+	0
+unitest61:
+v1:
+	0
+v2:
+	0
+unitest62:
+v1:
+	0
+v2:
+	0
+unitest63:
+v1:
+	0
+v2:
+	0
+unitest64:
+v1:
+	0
+v2:
+	0
+unitest65:
+v1:
+	0
+v2:
+	0
+unitest66:
+v1:
+	0
+v2:
+	0
+unitest67:
+v1:
+	0
+v2:
+	0
+unitest68:
+v1:
+	0
+v2:
+	0
+unitest69:
+v1:
+	0
+v2:
+	0
+unitest70:
+v1:
+	0
+v2:
+	0
+unitest71:
+v1:
+	0
+v2:
+	0
+unitest72:
+v1:
+	0
+v2:
+	0
+unitest73:
+v1:
+	0
+v2:
+	0
+unitest74:
+v1:
+	0
+v2:
+	0
+unitest75:
+v1:
+	0
+v2:
+	0
+unitest76:
+v1:
+	0
+v2:
+	0
+unitest77:
+v1:
+	0
+v2:
+	0
+unitest78:
+v1:
+	0
+v2:
+	0
+unitest79:
+v1:
+	0
+v2:
+	0
+unitest80:
+v1:
+	0
+v2:
+	0
+unitest81:
+v1:
+	0
+v2:
+	0
+unitest82:
+v1:
+	0
+v2:
+	0
+unitest83:
+v1:
+	0
+v2:
+	0
+unitest84:
+v1:
+	0
+v2:
+	0
+unitest85:
+v1:
+	0
+v2:
+	0
+unitest86:
+v1:
+	0
+v2:
+	0
+unitest87:
+v1:
+	0
+v2:
+	0
+unitest88:
+v1:
+	0
+v2:
+	0
+unitest89:
+v1:
+	0
+v2:
+	0
+unitest90:
+v1:
+	0
+v2:
+	0
+unitest91:
+v1:
+	0
+v2:
+	0
+unitest92:
+v1:
+	0
+v2:
+	0
+unitest93:
+v1:
+	0
+v2:
+	0
+unitest94:
+v1:
+	0
+v2:
+	0
+unitest95:
+v1:
+	0
+v2:
+	0
+unitest96:
+v1:
+	0
+v2:
+	0
+unitest97:
+v1:
+	0
+v2:
+	0
+unitest98:
+v1:
+	0
+v2:
+	0
+unitest99:
+v1:
+	0
+v2:
+	0
+unitest100:
+v1:
+	0
+v2:
+	0
+unitest101:
+v1:
+	0
+v2:
+	0
+unitest102:
+v1:
+	0
+v2:
+	0
+unitest103:
+v1:
+	0
+v2:
+	0
+unitest104:
+v1:
+	0
+v2:
+	0
+unitest105:
+v1:
+	0
+v2:
+	0
+unitest106:
+v1:
+	0
+v2:
+	0
+unitest107:
+v1:
+	0
+v2:
+	0
+unitest108:
+v1:
+	0
+v2:
+	0
+unitest109:
+v1:
+	0
+v2:
+	0
+unitest110:
+v1:
+	0
+v2:
+	0
+unitest111:
+v1:
+	0
+v2:
+	0
+unitest112:
+v1:
+	0
+v2:
+	0
+unitest113:
+v1:
+	0
+v2:
+	0
+unitest114:
+v1:
+	0
+v2:
+	0
+unitest115:
+v1:
+	0
+v2:
+	0
+unitest116:
+v1:
+	0
+v2:
+	0
+unitest117:
+v1:
+	0
+v2:
+	0
+unitest118:
+v1:
+	0
+v2:
+	0
+unitest119:
+v1:
+	0
+v2:
+	0
+unitest120:
+v1:
+	0
+v2:
+	0
+unitest121:
+v1:
+	0
+v2:
+	0
+unitest122:
+v1:
+	0
+v2:
+	0
+unitest123:
+v1:
+	0
+v2:
+	0
+unitest124:
+v1:
+	0
+v2:
+	0
+unitest125:
+v1:
+	0
+v2:
+	0
+unitest126:
+v1:
+	0
+v2:
+	0
+unitest127:
+v1:
+	0
+v2:
+	0
+unitest128:
+v1:
+	0
+v2:
+	1
+unitest129:
+v1:
+	0
+v2:
+	0
+unitest130:
+v1:
+	0
+v2:
+	0
+unitest131:
+v1:
+	0
+v2:
+	0
+unitest132:
+v1:
+	0
+v2:
+	0
+unitest133:
+v1:
+	0
+v2:
+	0
+unitest134:
+v1:
+	0
+v2:
+	0
+unitest135:
+v1:
+	0
+v2:
+	0
+unitest136:
+v1:
+	0
+v2:
+	0
+unitest137:
+v1:
+	0
+v2:
+	0
+unitest138:
+v1:
+	0
+v2:
+	0
+unitest139:
+v1:
+	0
+v2:
+	0
+unitest140:
+v1:
+	0
+v2:
+	0
+unitest141:
+v1:
+	0
+v2:
+	0
+unitest142:
+v1:
+	0
+v2:
+	0
+unitest143:
+v1:
+	0
+v2:
+	0
+unitest144:
+v1:
+	0
+v2:
+	0
+unitest145:
+v1:
+	0
+v2:
+	0
+unitest146:
+v1:
+	0
+v2:
+	0
+unitest147:
+v1:
+	0
+v2:
+	0
+unitest148:
+v1:
+	0
+v2:
+	0
+unitest149:
+v1:
+	0
+v2:
+	0

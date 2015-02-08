@@ -1,0 +1,28 @@
+Original source code for versions of Ant, unpacked and prepared for
+compilation.
+
+The Vn directories found here may include a file named "build.txt". This file
+lists any modifications that were necessary to freeze dependencies and make that
+particular version build successfully. The same changes will need to be made in
+the event that you want to rebuild a version from a source tarball in the
+originals directory.
+
+To build a version, including its tests, execute 'build.sh compile-tests' in
+the base directory (some early versions may require 'build_unix.sh compiletests').
+
+Every version has a JUnit test suite in the base directory that combines all of
+the JUnit tests available in the version. That test suite can be used as the
+argument to a test runner, without requiring the use of the build script.
+
+Also found in the base directory is a script named "runTests.sh", which will run
+the JUnit tests directly though JUnit. It expects as arguments the name of the
+test runner to be used and any arguments to be passed to that test runner. Do
+not include the name of the test suite as an argument. For example, to use the
+regular text output test runner, you would issue the following command:
+    runTests.sh junit.textui.TestRunner
+To get a list of the test case names, you could issue this command:
+    runTests.sh junit.textui.SelectiveTestRunner -names
+
+This script is only intended to demonstrate how to set up the classpath and
+run the test suite, it will likely need to be modified or replaced to support
+automated testing.

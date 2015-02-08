@@ -1,0 +1,315 @@
+Certain test cases which pass when run from the build script fail when
+run directly.  This appears to be due to environment conditions which
+cannot be reproduced outside of the build script. Assuming they are
+invariant between test runs against a single version, they can be
+ignored. Following is a transcript of the outputs (including some
+failures which occur even with the build script).
+
+....E.E.E.E.F.F.E.E.E..........-- listing properties --
+java.runtime.name=Java(TM) 2 Runtime Environment, Stand...
+sun.boot.library.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.vm.version=1.3.1_02-b02
+ant.java.version=1.3
+java.vm.vendor=Sun Microsystems Inc.
+java.vendor.url=http://java.sun.com/
+path.separator=:
+java.vm.name=Java HotSpot(TM) Client VM
+file.encoding.pkg=sun.io
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/nfs/spectre/u5/kinneer/subjects/apac...
+java.runtime.version=1.3.1_02-b02
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+basedir=/nfs/spectre/u5/kinneer/subjects/apac...
+os.arch=sparc
+java.io.tmpdir=/var/tmp/
+line.separator=
+
+java.vm.specification.vendor=Sun Microsystems Inc.
+java.awt.fonts=
+os.name=SunOS
+ant.home=bootstrap
+ant.project.name=test
+java.library.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+test.property=isSet
+java.specification.name=Java Platform API Specification
+java.class.version=47.0
+os.version=5.8
+ant.file=/nfs/spectre/u5/kinneer/subjects/apac...
+user.home=/nfs/spectre/u5/kinneer
+b.set=false
+user.timezone=America/Los_Angeles
+java.awt.printerjob=sun.awt.motif.PSPrinterJob
+file.encoding=646
+build.tests=build/testcases
+java.specification.version=1.3
+tests-classpath.value=./lib/xml-apis.jar:./lib/xercesImpl.j...
+user.name=kinneer
+java.class.path=./lib/xml-apis.jar:./lib/xercesImpl.j...
+java.vm.specification.version=1.0
+java.home=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.specification.vendor=Sun Microsystems Inc.
+user.language=en
+java.vm.info=mixed mode
+java.version=1.3.1_02
+java.ext.dirs=/nfs/spectre/a4/solaris8/common/j2sdk...
+sun.boot.class.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.vendor=Sun Microsystems Inc.
+a.set=true
+file.separator=/
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport...
+sun.cpu.endian=big
+sun.io.unicode.encoding=UnicodeBig
+sun.cpu.isalist=sparcv9+vis sparcv9 sparcv8plus+vis s...
+.-- listing properties --
+java.runtime.name=Java(TM) 2 Runtime Environment, Stand...
+sun.boot.library.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.vm.version=1.3.1_02-b02
+ant.java.version=1.3
+java.vm.vendor=Sun Microsystems Inc.
+java.vendor.url=http://java.sun.com/
+path.separator=:
+java.vm.name=Java HotSpot(TM) Client VM
+file.encoding.pkg=sun.io
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/nfs/spectre/u5/kinneer/subjects/apac...
+java.runtime.version=1.3.1_02-b02
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+basedir=/nfs/spectre/u5/kinneer/subjects/apac...
+os.arch=sparc
+java.io.tmpdir=/var/tmp/
+line.separator=
+
+java.vm.specification.vendor=Sun Microsystems Inc.
+java.awt.fonts=
+os.name=SunOS
+ant.home=bootstrap
+ant.project.name=test
+java.library.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+test.property=isSet
+java.specification.name=Java Platform API Specification
+java.class.version=47.0
+os.version=5.8
+ant.file=/nfs/spectre/u5/kinneer/subjects/apac...
+user.home=/nfs/spectre/u5/kinneer
+b.set=false
+user.timezone=America/Los_Angeles
+java.awt.printerjob=sun.awt.motif.PSPrinterJob
+file.encoding=646
+build.tests=build/testcases
+java.specification.version=1.3
+tests-classpath.value=./lib/xml-apis.jar:./lib/xercesImpl.j...
+user.name=kinneer
+java.class.path=./lib/xml-apis.jar:./lib/xercesImpl.j...
+java.vm.specification.version=1.0
+java.home=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.specification.vendor=Sun Microsystems Inc.
+user.language=en
+java.vm.info=mixed mode
+java.version=1.3.1_02
+java.ext.dirs=/nfs/spectre/a4/solaris8/common/j2sdk...
+sun.boot.class.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.vendor=Sun Microsystems Inc.
+a.set=true
+file.separator=/
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport...
+sun.cpu.endian=big
+sun.io.unicode.encoding=UnicodeBig
+sun.cpu.isalist=sparcv9+vis sparcv9 sparcv8plus+vis s...
+.-- listing properties --
+java.runtime.name=Java(TM) 2 Runtime Environment, Stand...
+sun.boot.library.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.vm.version=1.3.1_02-b02
+ant.java.version=1.3
+java.vm.vendor=Sun Microsystems Inc.
+java.vendor.url=http://java.sun.com/
+path.separator=:
+java.vm.name=Java HotSpot(TM) Client VM
+file.encoding.pkg=sun.io
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/nfs/spectre/u5/kinneer/subjects/apac...
+java.runtime.version=1.3.1_02-b02
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+basedir=/nfs/spectre/u5/kinneer/subjects/apac...
+os.arch=sparc
+java.io.tmpdir=/var/tmp/
+line.separator=
+
+java.vm.specification.vendor=Sun Microsystems Inc.
+java.awt.fonts=
+os.name=SunOS
+ant.home=bootstrap
+ant.project.name=test
+java.library.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+test.property=isSet
+java.specification.name=Java Platform API Specification
+java.class.version=47.0
+os.version=5.8
+ant.file=/nfs/spectre/u5/kinneer/subjects/apac...
+user.home=/nfs/spectre/u5/kinneer
+b.set=false
+user.timezone=America/Los_Angeles
+java.awt.printerjob=sun.awt.motif.PSPrinterJob
+file.encoding=646
+build.tests=build/testcases
+java.specification.version=1.3
+tests-classpath.value=./lib/xml-apis.jar:./lib/xercesImpl.j...
+user.name=kinneer
+java.class.path=./lib/xml-apis.jar:./lib/xercesImpl.j...
+java.vm.specification.version=1.0
+java.home=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.specification.vendor=Sun Microsystems Inc.
+user.language=en
+java.vm.info=mixed mode
+java.version=1.3.1_02
+java.ext.dirs=/nfs/spectre/a4/solaris8/common/j2sdk...
+sun.boot.class.path=/nfs/spectre/a4/solaris8/common/j2sdk...
+java.vendor=Sun Microsystems Inc.
+a.set=true
+file.separator=/
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport...
+sun.cpu.endian=big
+sun.io.unicode.encoding=UnicodeBig
+sun.cpu.isalist=sparcv9+vis sparcv9 sparcv8plus+vis s...
+.................
+....................................E.....
+....F.....................................
+...........................F.F.............
+...................................F.F.F....
+F.........................................
+...F..F....................................
+F.F........................................
+.........................................
+.........................................
+...File size mismatch:src/etc/testcases/types/gold/filterset1.txt(61), src/etc/testcases/types/dest1.txt(59)
+F.File size mismatch:src/etc/testcases/types/gold/filterset2.txt(158), src/etc/testcases/types/dest2.txt(153)
+F.File size mismatch:src/etc/testcases/types/gold/filterset3.txt(166), src/etc/testcases/types/dest3.txt(159)
+F....................................
+.........................................
+.............................
+Time: 598.088
+There were 8 errors:
+1) testDirect(org.apache.tools.ant.taskdefs.optional.depend.DependTest)file:/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v4/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:53: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:110)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:840)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.tools.ant.Task.perform(Task.java:317)
+	at org.apache.tools.ant.Target.execute(Target.java:309)
+	at org.apache.tools.ant.Target.performTasks(Target.java:334)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1306)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:254)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testDirect(DependTest.java:97)
+2) testClosure(org.apache.tools.ant.taskdefs.optional.depend.DependTest)file:/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v4/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:53: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:110)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:840)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.tools.ant.Task.perform(Task.java:317)
+	at org.apache.tools.ant.Target.execute(Target.java:309)
+	at org.apache.tools.ant.Target.performTasks(Target.java:334)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1306)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:254)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testClosure(DependTest.java:112)
+3) testInner(org.apache.tools.ant.taskdefs.optional.depend.DependTest)file:/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v4/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:53: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:110)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:840)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.tools.ant.Task.perform(Task.java:317)
+	at org.apache.tools.ant.Target.execute(Target.java:309)
+	at org.apache.tools.ant.Target.performTasks(Target.java:334)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1306)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:254)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testInner(DependTest.java:125)
+4) testInnerInner(org.apache.tools.ant.taskdefs.optional.depend.DependTest)file:/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v4/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:53: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:110)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:840)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.tools.ant.Task.perform(Task.java:317)
+	at org.apache.tools.ant.Target.execute(Target.java:309)
+	at org.apache.tools.ant.Target.performTasks(Target.java:334)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1306)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:254)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testInnerInner(DependTest.java:136)
+5) testInnerClosure(org.apache.tools.ant.taskdefs.optional.depend.DependTest)file:/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v4/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:131: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:110)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:840)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.tools.ant.Task.perform(Task.java:317)
+	at org.apache.tools.ant.Target.execute(Target.java:309)
+	at org.apache.tools.ant.Target.performTasks(Target.java:334)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1306)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:254)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testInnerClosure(DependTest.java:181)
+6) testCache(org.apache.tools.ant.taskdefs.optional.depend.DependTest)file:/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v4/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:53: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:110)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:840)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.tools.ant.Task.perform(Task.java:317)
+	at org.apache.tools.ant.Target.execute(Target.java:309)
+	at org.apache.tools.ant.Target.performTasks(Target.java:334)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1306)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:254)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testCache(DependTest.java:190)
+7) testNonPublic(org.apache.tools.ant.taskdefs.optional.depend.DependTest)file:/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v4/ant/src/etc/testcases/taskdefs/optional/depend/depend.xml:53: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:110)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:840)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.tools.ant.Task.perform(Task.java:317)
+	at org.apache.tools.ant.Target.execute(Target.java:309)
+	at org.apache.tools.ant.Target.performTasks(Target.java:334)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1306)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:254)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testNonPublic(DependTest.java:197)
+8) test24(org.apache.tools.ant.taskdefs.AvailableTest)file:/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v4/ant/src/etc/testcases/taskdefs/available.xml:137: Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.
+	at org.apache.tools.ant.taskdefs.compilers.Javac12.execute(Javac12.java:110)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:840)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:682)
+	at org.apache.tools.ant.Task.perform(Task.java:317)
+	at org.apache.tools.ant.Target.execute(Target.java:309)
+	at org.apache.tools.ant.Target.performTasks(Target.java:334)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1306)
+	at org.apache.tools.ant.BuildFileTest.executeTarget(BuildFileTest.java:254)
+	at org.apache.tools.ant.taskdefs.AvailableTest.test24(AvailableTest.java:222)
+There were 16 failures:
+1) testNoSource(org.apache.tools.ant.taskdefs.optional.depend.DependTest)junit.framework.AssertionFailedError: Should throw BuildException because 'No source specified' with message containing 'srcdir attribute must be set' (actual message 'Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.' instead)
+	at org.apache.tools.ant.BuildFileTest.expectBuildExceptionContaining(BuildFileTest.java:317)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testNoSource(DependTest.java:145)
+2) testEmptySource(org.apache.tools.ant.taskdefs.optional.depend.DependTest)junit.framework.AssertionFailedError: Should throw BuildException because 'No source specified' with message containing 'srcdir attribute must be non-empty' (actual message 'Cannot use classic compiler, as it is not available.  A common solution is to set the environment variable JAVA_HOME to your jdk directory.' instead)
+	at org.apache.tools.ant.BuildFileTest.expectBuildExceptionContaining(BuildFileTest.java:317)
+	at org.apache.tools.ant.taskdefs.optional.depend.DependTest.testEmptySource(DependTest.java:153)
+3) testRealTest(org.apache.tools.ant.taskdefs.BZip2Test)junit.framework.AssertionFailedError
+	at org.apache.tools.ant.taskdefs.BZip2Test.testRealTest(BZip2Test.java:83)
+4) testFilterSet(org.apache.tools.ant.taskdefs.CopyTest)junit.framework.AssertionFailedError
+	at org.apache.tools.ant.taskdefs.CopyTest.testFilterSet(CopyTest.java:135)
+5) testFilterChain(org.apache.tools.ant.taskdefs.CopyTest)junit.framework.AssertionFailedError
+	at org.apache.tools.ant.taskdefs.CopyTest.testFilterChain(CopyTest.java:144)
+6) test3(org.apache.tools.ant.taskdefs.FixCrLfTest)junit.framework.AssertionFailedError: expected:<13> but was:<10>
+	at org.apache.tools.ant.taskdefs.FixCrLfTest.assertEqualContent(FixCrLfTest.java:201)
+	at org.apache.tools.ant.taskdefs.FixCrLfTest.test3(FixCrLfTest.java:96)
+7) test4(org.apache.tools.ant.taskdefs.FixCrLfTest)junit.framework.AssertionFailedError: expected:<13> but was:<10>
+	at org.apache.tools.ant.taskdefs.FixCrLfTest.assertEqualContent(FixCrLfTest.java:201)
+	at org.apache.tools.ant.taskdefs.FixCrLfTest.test4(FixCrLfTest.java:102)
+8) test5(org.apache.tools.ant.taskdefs.FixCrLfTest)junit.framework.AssertionFailedError: expected:<13> but was:<10>
+	at org.apache.tools.ant.taskdefs.FixCrLfTest.assertEqualContent(FixCrLfTest.java:201)
+	at org.apache.tools.ant.taskdefs.FixCrLfTest.test5(FixCrLfTest.java:108)
+9) test9(org.apache.tools.ant.taskdefs.FixCrLfTest)junit.framework.AssertionFailedError: expected:<13> but was:<10>
+	at org.apache.tools.ant.taskdefs.FixCrLfTest.assertEqualContent(FixCrLfTest.java:201)
+	at org.apache.tools.ant.taskdefs.FixCrLfTest.test9(FixCrLfTest.java:132)
+10) testExcepting(org.apache.tools.ant.taskdefs.JavaTest)junit.framework.AssertionFailedError: expecting log to contain "Exception raised inside called program" log was "Could not find org.apache.tools.ant.taskdefs.JavaTest$ExceptingEntryPoint. Make sure you have it in your classpath"
+	at org.apache.tools.ant.BuildFileTest.expectLogContaining(BuildFileTest.java:118)
+	at org.apache.tools.ant.taskdefs.JavaTest.testExcepting(JavaTest.java:147)
+11) testExceptingFoe(org.apache.tools.ant.taskdefs.JavaTest)junit.framework.AssertionFailedError: Should throw BuildException because 'passes exception through' with message containing 'Exception raised inside called program' (actual message 'Could not find org.apache.tools.ant.taskdefs.JavaTest$ExceptingEntryPoint. Make sure you have it in your classpath' instead)
+	at org.apache.tools.ant.BuildFileTest.expectBuildExceptionContaining(BuildFileTest.java:317)
+	at org.apache.tools.ant.taskdefs.JavaTest.testExceptingFoe(JavaTest.java:157)
+12) testFilterSet(org.apache.tools.ant.taskdefs.MoveTest)junit.framework.AssertionFailedError
+	at org.apache.tools.ant.taskdefs.MoveTest.testFilterSet(MoveTest.java:88)
+13) testFilterChain(org.apache.tools.ant.taskdefs.MoveTest)junit.framework.AssertionFailedError
+	at org.apache.tools.ant.taskdefs.MoveTest.testFilterChain(MoveTest.java:97)
+14) test1(org.apache.tools.ant.types.FilterSetTest)junit.framework.AssertionFailedError: Filterset 1 failed
+	at org.apache.tools.ant.types.FilterSetTest.test1(FilterSetTest.java:89)
+15) test2(org.apache.tools.ant.types.FilterSetTest)junit.framework.AssertionFailedError: Filterset 2 failed
+	at org.apache.tools.ant.types.FilterSetTest.test2(FilterSetTest.java:95)
+16) test3(org.apache.tools.ant.types.FilterSetTest)junit.framework.AssertionFailedError: Filterset 3 failed
+	at org.apache.tools.ant.types.FilterSetTest.test3(FilterSetTest.java:101)
+
+FAILURES!!!
+Tests run: 521,  Failures: 16,  Errors: 8
+

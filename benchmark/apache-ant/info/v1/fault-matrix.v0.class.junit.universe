@@ -1,0 +1,115 @@
+	1 listversions
+	28 listtests
+CLASSPATH=/nfs/spectre/u5/dohy/Galileo/gal:/nfs/spectre/u5/dohy/Galileo/gal/BCEL:/nfs/spectre/u5/dohy/Galileo/gal/galileo/lib/commons-collections.jar:.:/nfs/spectre/u5/dohy/Prior/apache-ant/source:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/build/classes:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/build/testcases:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/lib/jaxp.jar:/nfs/spectre/u5/dohy/Prior/apache-ant/source/ant/lib/parser.jar
+-P[-sID 1-5 AntTestSuite]
+-P[-sID 6-8 AntTestSuite]
+-P[-sID 9-9 AntTestSuite]
+-P[-sID 10-15 AntTestSuite]
+-P[-sID 16-29 AntTestSuite]
+-P[-sID 30-35 AntTestSuite]
+-P[-sID 36-40 AntTestSuite]
+-P[-sID 41-43 AntTestSuite]
+-P[-sID 44-45 AntTestSuite]
+-P[-sID 46-48 AntTestSuite]
+-P[-sID 49-50 AntTestSuite]
+-P[-sID 51-58 AntTestSuite]
+-P[-sID 59-64 AntTestSuite]
+-P[-sID 65-67 AntTestSuite]
+-P[-sID 68-71 AntTestSuite]
+-P[-sID 72-79 AntTestSuite]
+-P[-sID 80-83 AntTestSuite]
+-P[-sID 84-88 AntTestSuite]
+-P[-sID 89-91 AntTestSuite]
+-P[-sID 92-95 AntTestSuite]
+-P[-sID 96-96 AntTestSuite]
+-P[-sID 97-98 AntTestSuite]
+-P[-sID 99-100 AntTestSuite]
+-P[-sID 101-102 AntTestSuite]
+-P[-sID 103-109 AntTestSuite]
+-P[-sID 110-111 AntTestSuite]
+-P[-sID 112-117 AntTestSuite]
+-P[-sID 118-118 AntTestSuite]
+unitest0:
+v1:
+	0
+unitest1:
+v1:
+	0
+unitest2:
+v1:
+	0
+unitest3:
+v1:
+	0
+unitest4:
+v1:
+	0
+unitest5:
+v1:
+	0
+unitest6:
+v1:
+	0
+unitest7:
+v1:
+	0
+unitest8:
+v1:
+	0
+unitest9:
+v1:
+	0
+unitest10:
+v1:
+	0
+unitest11:
+v1:
+	0
+unitest12:
+v1:
+	0
+unitest13:
+v1:
+	0
+unitest14:
+v1:
+	0
+unitest15:
+v1:
+	0
+unitest16:
+v1:
+	0
+unitest17:
+v1:
+	0
+unitest18:
+v1:
+	0
+unitest19:
+v1:
+	0
+unitest20:
+v1:
+	1
+unitest21:
+v1:
+	0
+unitest22:
+v1:
+	0
+unitest23:
+v1:
+	0
+unitest24:
+v1:
+	0
+unitest25:
+v1:
+	0
+unitest26:
+v1:
+	0
+unitest27:
+v1:
+	0

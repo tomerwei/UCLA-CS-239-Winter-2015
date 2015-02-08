@@ -1,0 +1,636 @@
+	org.apache.tools.ant.AntClassLoader
+	org.apache.tools.ant.AntClassLoader$ResourceEnumeration
+	org.apache.tools.ant.AntClassLoaderTest
+	org.apache.tools.ant.BuildEvent
+	org.apache.tools.ant.BuildException
+	org.apache.tools.ant.BuildFileTest
+	org.apache.tools.ant.BuildFileTest$1
+	org.apache.tools.ant.BuildFileTest$AntOutputStream
+	org.apache.tools.ant.BuildFileTest$AntTestListener
+	org.apache.tools.ant.BuildListener
+	org.apache.tools.ant.DemuxOutputStream
+	org.apache.tools.ant.DemuxOutputStream$1
+	org.apache.tools.ant.DemuxOutputStream$BufferInfo
+	org.apache.tools.ant.DirectoryScanner
+	org.apache.tools.ant.DirectoryScannerTest
+	org.apache.tools.ant.DynamicConfigurator
+	org.apache.tools.ant.FileScanner
+	org.apache.tools.ant.ImmutableTest
+	org.apache.tools.ant.IncludeTest
+	org.apache.tools.ant.IntrospectionHelper
+	org.apache.tools.ant.IntrospectionHelper$1
+	org.apache.tools.ant.IntrospectionHelper$10
+	org.apache.tools.ant.IntrospectionHelper$11
+	org.apache.tools.ant.IntrospectionHelper$12
+	org.apache.tools.ant.IntrospectionHelper$2
+	org.apache.tools.ant.IntrospectionHelper$3
+	org.apache.tools.ant.IntrospectionHelper$4
+	org.apache.tools.ant.IntrospectionHelper$5
+	org.apache.tools.ant.IntrospectionHelper$6
+	org.apache.tools.ant.IntrospectionHelper$7
+	org.apache.tools.ant.IntrospectionHelper$8
+	org.apache.tools.ant.IntrospectionHelper$9
+	org.apache.tools.ant.IntrospectionHelper$AttributeSetter
+	org.apache.tools.ant.IntrospectionHelper$NestedCreator
+	org.apache.tools.ant.IntrospectionHelper$NestedStorer
+	org.apache.tools.ant.IntrospectionHelperTest
+	org.apache.tools.ant.Location
+	org.apache.tools.ant.MockBuildListener
+	org.apache.tools.ant.PathTokenizer
+	org.apache.tools.ant.Project
+	org.apache.tools.ant.ProjectComponent
+	org.apache.tools.ant.ProjectHelper
+	org.apache.tools.ant.ProjectTest
+	org.apache.tools.ant.ProjectTest$DummyTaskPrivate
+	org.apache.tools.ant.ProjectTest$DummyTaskProtected
+	org.apache.tools.ant.PropertyExpansionTest
+	org.apache.tools.ant.RuntimeConfigurable
+	org.apache.tools.ant.Target
+	org.apache.tools.ant.Task
+	org.apache.tools.ant.TaskAdapter
+	org.apache.tools.ant.TaskContainer
+	org.apache.tools.ant.UnknownElement
+	org.apache.tools.ant.filters.BaseFilterReader
+	org.apache.tools.ant.filters.ChainableReader
+	org.apache.tools.ant.filters.LineContainsTest
+	org.apache.tools.ant.filters.util.ChainReaderHelper
+	org.apache.tools.ant.helper.ProjectHelperImpl
+	org.apache.tools.ant.helper.ProjectHelperImpl$AbstractHandler
+	org.apache.tools.ant.helper.ProjectHelperImpl$DataTypeHandler
+	org.apache.tools.ant.helper.ProjectHelperImpl$NestedElementHandler
+	org.apache.tools.ant.helper.ProjectHelperImpl$ProjectHandler
+	org.apache.tools.ant.helper.ProjectHelperImpl$RootHandler
+	org.apache.tools.ant.helper.ProjectHelperImpl$TargetHandler
+	org.apache.tools.ant.helper.ProjectHelperImpl$TaskHandler
+	org.apache.tools.ant.input.DefaultInputHandler
+	org.apache.tools.ant.input.InputHandler
+	org.apache.tools.ant.input.InputRequest
+	org.apache.tools.ant.input.MultipleChoiceInputRequest
+	org.apache.tools.ant.input.PropertyFileInputHandler
+	org.apache.tools.ant.taskdefs.AntStructureTest
+	org.apache.tools.ant.taskdefs.AntTest
+	org.apache.tools.ant.taskdefs.AntTest$BasedirChecker
+	org.apache.tools.ant.taskdefs.AntTest$InputHandlerChecker
+	org.apache.tools.ant.taskdefs.AntTest$PropertyChecker
+	org.apache.tools.ant.taskdefs.AntTest$ReferenceChecker
+	org.apache.tools.ant.taskdefs.AvailableTest
+	org.apache.tools.ant.taskdefs.BUnzip2Test
+	org.apache.tools.ant.taskdefs.BZip2Test
+	org.apache.tools.ant.taskdefs.BasenameTest
+	org.apache.tools.ant.taskdefs.CVSPassTest
+	org.apache.tools.ant.taskdefs.ChecksumTest
+	org.apache.tools.ant.taskdefs.ConcatTest
+	org.apache.tools.ant.taskdefs.ConditionTest
+	org.apache.tools.ant.taskdefs.CopyTest
+	org.apache.tools.ant.taskdefs.CopydirTest
+	org.apache.tools.ant.taskdefs.CopyfileTest
+	org.apache.tools.ant.taskdefs.DeleteTest
+	org.apache.tools.ant.taskdefs.DeltreeTest
+	org.apache.tools.ant.taskdefs.DependSetTest
+	org.apache.tools.ant.taskdefs.DirnameTest
+	org.apache.tools.ant.taskdefs.DynamicTest
+	org.apache.tools.ant.taskdefs.EchoTest
+	org.apache.tools.ant.taskdefs.Execute
+	org.apache.tools.ant.taskdefs.Execute$1
+	org.apache.tools.ant.taskdefs.Execute$CommandLauncher
+	org.apache.tools.ant.taskdefs.Execute$CommandLauncherProxy
+	org.apache.tools.ant.taskdefs.Execute$Java11CommandLauncher
+	org.apache.tools.ant.taskdefs.Execute$Java13CommandLauncher
+	org.apache.tools.ant.taskdefs.Execute$MacCommandLauncher
+	org.apache.tools.ant.taskdefs.Execute$OS2CommandLauncher
+	org.apache.tools.ant.taskdefs.Execute$PerlScriptCommandLauncher
+	org.apache.tools.ant.taskdefs.Execute$ScriptCommandLauncher
+	org.apache.tools.ant.taskdefs.Execute$WinNTCommandLauncher
+	org.apache.tools.ant.taskdefs.ExecuteJava
+	org.apache.tools.ant.taskdefs.ExecuteJavaTest
+	org.apache.tools.ant.taskdefs.ExecuteStreamHandler
+	org.apache.tools.ant.taskdefs.ExecuteWatchdog
+	org.apache.tools.ant.taskdefs.ExecuteWatchdogTest
+	org.apache.tools.ant.taskdefs.ExecuteWatchdogTest$1
+	org.apache.tools.ant.taskdefs.FailTest
+	org.apache.tools.ant.taskdefs.FilterTest
+	org.apache.tools.ant.taskdefs.FixCrLfTest
+	org.apache.tools.ant.taskdefs.GUnzipTest
+	org.apache.tools.ant.taskdefs.GetTest
+	org.apache.tools.ant.taskdefs.GzipTest
+	org.apache.tools.ant.taskdefs.InitializeClassTest
+	org.apache.tools.ant.taskdefs.InputTest
+	org.apache.tools.ant.taskdefs.JarTest
+	org.apache.tools.ant.taskdefs.JavaTest
+	org.apache.tools.ant.taskdefs.JavaTest$EntryPoint
+	org.apache.tools.ant.taskdefs.JavaTest$ExceptingEntryPoint
+	org.apache.tools.ant.taskdefs.Javac
+	org.apache.tools.ant.taskdefs.Javac$ImplementationSpecificArgument
+	org.apache.tools.ant.taskdefs.JavacTest
+	org.apache.tools.ant.taskdefs.LoadFileTest
+	org.apache.tools.ant.taskdefs.LoadPropertiesTest
+	org.apache.tools.ant.taskdefs.LogOutputStream
+	org.apache.tools.ant.taskdefs.LogStreamHandler
+	org.apache.tools.ant.taskdefs.Manifest
+	org.apache.tools.ant.taskdefs.Manifest$Attribute
+	org.apache.tools.ant.taskdefs.Manifest$Section
+	org.apache.tools.ant.taskdefs.ManifestException
+	org.apache.tools.ant.taskdefs.ManifestTest
+	org.apache.tools.ant.taskdefs.MatchingTask
+	org.apache.tools.ant.taskdefs.MkdirTest
+	org.apache.tools.ant.taskdefs.MoveTest
+	org.apache.tools.ant.taskdefs.ParallelTest
+	org.apache.tools.ant.taskdefs.ProcessDestroyer
+	org.apache.tools.ant.taskdefs.PropertyTest
+	org.apache.tools.ant.taskdefs.PumpStreamHandler
+	org.apache.tools.ant.taskdefs.RenameTest
+	org.apache.tools.ant.taskdefs.ReplaceTest
+	org.apache.tools.ant.taskdefs.Rmic
+	org.apache.tools.ant.taskdefs.Rmic$ImplementationSpecificArgument
+	org.apache.tools.ant.taskdefs.RmicTest
+	org.apache.tools.ant.taskdefs.SleepTest
+	org.apache.tools.ant.taskdefs.SleepTest$Timer
+	org.apache.tools.ant.taskdefs.StreamPumper
+	org.apache.tools.ant.taskdefs.TStampTest
+	org.apache.tools.ant.taskdefs.TarTest
+	org.apache.tools.ant.taskdefs.TaskdefTest
+	org.apache.tools.ant.taskdefs.Tstamp
+	org.apache.tools.ant.taskdefs.Tstamp$CustomFormat
+	org.apache.tools.ant.taskdefs.Tstamp$Unit
+	org.apache.tools.ant.taskdefs.TypedefTest
+	org.apache.tools.ant.taskdefs.UntarTest
+	org.apache.tools.ant.taskdefs.UnzipTest
+	org.apache.tools.ant.taskdefs.WarTest
+	org.apache.tools.ant.taskdefs.XmlPropertyTest
+	org.apache.tools.ant.taskdefs.ZipTest
+	org.apache.tools.ant.taskdefs.compilers.CompilerAdapter
+	org.apache.tools.ant.taskdefs.compilers.CompilerAdapterFactory
+	org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter
+	org.apache.tools.ant.taskdefs.compilers.Gcj
+	org.apache.tools.ant.taskdefs.compilers.Javac12
+	org.apache.tools.ant.taskdefs.compilers.Javac13
+	org.apache.tools.ant.taskdefs.compilers.JavacExternal
+	org.apache.tools.ant.taskdefs.compilers.Jikes
+	org.apache.tools.ant.taskdefs.compilers.Jvc
+	org.apache.tools.ant.taskdefs.compilers.Kjc
+	org.apache.tools.ant.taskdefs.compilers.Sj
+	org.apache.tools.ant.taskdefs.condition.Condition
+	org.apache.tools.ant.taskdefs.condition.Contains
+	org.apache.tools.ant.taskdefs.condition.ContainsTest
+	org.apache.tools.ant.taskdefs.condition.Equals
+	org.apache.tools.ant.taskdefs.condition.EqualsTest
+	org.apache.tools.ant.taskdefs.condition.Os
+	org.apache.tools.ant.taskdefs.optional.EchoPropertiesTest
+	org.apache.tools.ant.taskdefs.optional.PropertyFileTest
+	org.apache.tools.ant.taskdefs.optional.XmlValidateTest
+	org.apache.tools.ant.taskdefs.optional.depend.DependTest
+	org.apache.tools.ant.taskdefs.optional.junit.BaseTest
+	org.apache.tools.ant.taskdefs.optional.junit.FormatterElement
+	org.apache.tools.ant.taskdefs.optional.junit.FormatterElement$TypeAttribute
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitResultFormatter
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitTest
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner$1
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner$TeeOutputStream
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$1
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$InvalidSuiteTestCase
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$InvalidTestCase
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$NoSuiteTestCase
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$NoTestCase
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$ResultFormatter
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$SuiteTestCase
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$TestRunner
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelper
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelperTest
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelperTest$Foo
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelperTest$Foo1
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelperTest$Foo2
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelperTest$Foo3
+	org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelperTest$Foo4
+	org.apache.tools.ant.taskdefs.rmic.DefaultRmicAdapter
+	org.apache.tools.ant.taskdefs.rmic.DefaultRmicAdapter$RmicFileNameMapper
+	org.apache.tools.ant.taskdefs.rmic.KaffeRmic
+	org.apache.tools.ant.taskdefs.rmic.RmicAdapter
+	org.apache.tools.ant.taskdefs.rmic.RmicAdapterFactory
+	org.apache.tools.ant.taskdefs.rmic.SunRmic
+	org.apache.tools.ant.taskdefs.rmic.WLRmic
+	org.apache.tools.ant.types.AbstractFileSet
+	org.apache.tools.ant.types.AbstractFileSetTest
+	org.apache.tools.ant.types.AntFilterReader
+	org.apache.tools.ant.types.Commandline
+	org.apache.tools.ant.types.Commandline$Argument
+	org.apache.tools.ant.types.Commandline$Marker
+	org.apache.tools.ant.types.CommandlineJava
+	org.apache.tools.ant.types.CommandlineJava$SysProperties
+	org.apache.tools.ant.types.CommandlineJavaTest
+	org.apache.tools.ant.types.CommandlineTest
+	org.apache.tools.ant.types.DTDLocation
+	org.apache.tools.ant.types.DataType
+	org.apache.tools.ant.types.DescriptionTest
+	org.apache.tools.ant.types.DirSet
+	org.apache.tools.ant.types.DirSetTest
+	org.apache.tools.ant.types.EnumeratedAttribute
+	org.apache.tools.ant.types.EnumeratedAttributeTest
+	org.apache.tools.ant.types.EnumeratedAttributeTest$TestNormal
+	org.apache.tools.ant.types.EnumeratedAttributeTest$TestNull
+	org.apache.tools.ant.types.Environment
+	org.apache.tools.ant.types.Environment$Variable
+	org.apache.tools.ant.types.FileList
+	org.apache.tools.ant.types.FileListTest
+	org.apache.tools.ant.types.FileSet
+	org.apache.tools.ant.types.FileSetTest
+	org.apache.tools.ant.types.FilterChain
+	org.apache.tools.ant.types.FilterSet
+	org.apache.tools.ant.types.FilterSet$Filter
+	org.apache.tools.ant.types.FilterSet$FiltersFile
+	org.apache.tools.ant.types.FilterSetCollection
+	org.apache.tools.ant.types.FilterSetTest
+	org.apache.tools.ant.types.FlexInteger
+	org.apache.tools.ant.types.FlexIntegerTest
+	org.apache.tools.ant.types.Mapper
+	org.apache.tools.ant.types.Mapper$MapperType
+	org.apache.tools.ant.types.MapperTest
+	org.apache.tools.ant.types.MapperTest$TaskdefForCopyTest
+	org.apache.tools.ant.types.Parameter
+	org.apache.tools.ant.types.Parameterizable
+	org.apache.tools.ant.types.Path
+	org.apache.tools.ant.types.Path$PathElement
+	org.apache.tools.ant.types.PathTest
+	org.apache.tools.ant.types.PatternSet
+	org.apache.tools.ant.types.PatternSet$NameEntry
+	org.apache.tools.ant.types.PatternSetTest
+	org.apache.tools.ant.types.Reference
+	org.apache.tools.ant.types.Resource
+	org.apache.tools.ant.types.ResourceFactory
+	org.apache.tools.ant.types.XMLCatalog
+	org.apache.tools.ant.types.XMLCatalogTest
+	org.apache.tools.ant.types.selectors.BaseExtendSelector
+	org.apache.tools.ant.types.selectors.BaseSelector
+	org.apache.tools.ant.types.selectors.BaseSelectorTest
+	org.apache.tools.ant.types.selectors.BaseSelectorTest$TaskdefForMakingBed
+	org.apache.tools.ant.types.selectors.ContainsSelector
+	org.apache.tools.ant.types.selectors.ContainsSelectorTest
+	org.apache.tools.ant.types.selectors.DateSelector
+	org.apache.tools.ant.types.selectors.DateSelector$TimeComparisons
+	org.apache.tools.ant.types.selectors.DateSelectorTest
+	org.apache.tools.ant.types.selectors.DependSelector
+	org.apache.tools.ant.types.selectors.DependSelectorTest
+	org.apache.tools.ant.types.selectors.DepthSelector
+	org.apache.tools.ant.types.selectors.DepthSelectorTest
+	org.apache.tools.ant.types.selectors.ExtendFileSelector
+	org.apache.tools.ant.types.selectors.FileSelector
+	org.apache.tools.ant.types.selectors.FilenameSelector
+	org.apache.tools.ant.types.selectors.FilenameSelectorTest
+	org.apache.tools.ant.types.selectors.PresentSelector
+	org.apache.tools.ant.types.selectors.PresentSelector$FilePresence
+	org.apache.tools.ant.types.selectors.PresentSelectorTest
+	org.apache.tools.ant.types.selectors.SelectorContainer
+	org.apache.tools.ant.types.selectors.SelectorScanner
+	org.apache.tools.ant.types.selectors.SelectorUtils
+	org.apache.tools.ant.types.selectors.SizeSelector
+	org.apache.tools.ant.types.selectors.SizeSelector$ByteUnits
+	org.apache.tools.ant.types.selectors.SizeSelector$SizeComparisons
+	org.apache.tools.ant.types.selectors.SizeSelectorTest
+	org.apache.tools.ant.util.CollectionUtils
+	org.apache.tools.ant.util.CollectionUtilsTest
+	org.apache.tools.ant.util.DOMElementWriter
+	org.apache.tools.ant.util.DOMElementWriterTest
+	org.apache.tools.ant.util.DateUtils
+	org.apache.tools.ant.util.DateUtilsTest
+	org.apache.tools.ant.util.FileNameMapper
+	org.apache.tools.ant.util.FileUtils
+	org.apache.tools.ant.util.FileUtilsTest
+	org.apache.tools.ant.util.GlobPatternMapper
+	org.apache.tools.ant.util.GlobPatternMapperTest
+	org.apache.tools.ant.util.IdentityMapper
+	org.apache.tools.ant.util.JAXPUtils
+	org.apache.tools.ant.util.JAXPUtilsTest
+	org.apache.tools.ant.util.JavaEnvUtils
+	org.apache.tools.ant.util.JavaEnvUtilsTest
+	org.apache.tools.ant.util.LoaderUtils
+	org.apache.tools.ant.util.PackageNameMapper
+	org.apache.tools.ant.util.PackageNameMapperTest
+	org.apache.tools.ant.util.ResourceUtils
+	org.apache.tools.ant.util.SourceFileScanner
+	org.apache.tools.ant.util.StringUtils
+	org.apache.tools.ant.util.StringUtilsTest
+	org.apache.tools.ant.util.TimeoutObserver
+	org.apache.tools.ant.util.Watchdog
+	org.apache.tools.ant.util.facade.FacadeTaskHelper
+	org.apache.tools.ant.util.facade.FacadeTaskHelperTest
+	org.apache.tools.ant.util.facade.ImplementationSpecificArgument
+	org.apache.tools.ant.util.facade.ImplementationSpecificArgumentTest
+org.apache.tools.ant.AntClassLoader
+org.apache.tools.ant.AntClassLoader$ResourceEnumeration
+org.apache.tools.ant.AntClassLoaderTest
+org.apache.tools.ant.BuildEvent
+org.apache.tools.ant.BuildException
+org.apache.tools.ant.BuildFileTest
+org.apache.tools.ant.BuildFileTest$1
+org.apache.tools.ant.BuildFileTest$AntOutputStream
+org.apache.tools.ant.BuildFileTest$AntTestListener
+org.apache.tools.ant.BuildListener
+org.apache.tools.ant.DemuxOutputStream
+org.apache.tools.ant.DemuxOutputStream$1
+org.apache.tools.ant.DemuxOutputStream$BufferInfo
+org.apache.tools.ant.DirectoryScanner
+org.apache.tools.ant.DirectoryScannerTest
+org.apache.tools.ant.DynamicConfigurator
+org.apache.tools.ant.FileScanner
+org.apache.tools.ant.ImmutableTest
+org.apache.tools.ant.IncludeTest
+org.apache.tools.ant.IntrospectionHelper
+org.apache.tools.ant.IntrospectionHelper$1
+org.apache.tools.ant.IntrospectionHelper$10
+org.apache.tools.ant.IntrospectionHelper$11
+org.apache.tools.ant.IntrospectionHelper$12
+org.apache.tools.ant.IntrospectionHelper$2
+org.apache.tools.ant.IntrospectionHelper$3
+org.apache.tools.ant.IntrospectionHelper$4
+org.apache.tools.ant.IntrospectionHelper$5
+org.apache.tools.ant.IntrospectionHelper$6
+org.apache.tools.ant.IntrospectionHelper$7
+org.apache.tools.ant.IntrospectionHelper$8
+org.apache.tools.ant.IntrospectionHelper$9
+org.apache.tools.ant.IntrospectionHelper$AttributeSetter
+org.apache.tools.ant.IntrospectionHelper$NestedCreator
+org.apache.tools.ant.IntrospectionHelper$NestedStorer
+org.apache.tools.ant.IntrospectionHelperTest
+org.apache.tools.ant.Location
+org.apache.tools.ant.MockBuildListener
+org.apache.tools.ant.PathTokenizer
+org.apache.tools.ant.Project
+org.apache.tools.ant.ProjectComponent
+org.apache.tools.ant.ProjectHelper
+org.apache.tools.ant.ProjectTest
+org.apache.tools.ant.ProjectTest$DummyTaskPrivate
+org.apache.tools.ant.ProjectTest$DummyTaskProtected
+org.apache.tools.ant.PropertyExpansionTest
+org.apache.tools.ant.RuntimeConfigurable
+org.apache.tools.ant.Target
+org.apache.tools.ant.Task
+org.apache.tools.ant.TaskAdapter
+org.apache.tools.ant.TaskContainer
+org.apache.tools.ant.UnknownElement
+org.apache.tools.ant.filters.BaseFilterReader
+org.apache.tools.ant.filters.ChainableReader
+org.apache.tools.ant.filters.LineContainsTest
+org.apache.tools.ant.filters.util.ChainReaderHelper
+org.apache.tools.ant.helper.ProjectHelperImpl
+org.apache.tools.ant.helper.ProjectHelperImpl$AbstractHandler
+org.apache.tools.ant.helper.ProjectHelperImpl$DataTypeHandler
+org.apache.tools.ant.helper.ProjectHelperImpl$NestedElementHandler
+org.apache.tools.ant.helper.ProjectHelperImpl$ProjectHandler
+org.apache.tools.ant.helper.ProjectHelperImpl$RootHandler
+org.apache.tools.ant.helper.ProjectHelperImpl$TargetHandler
+org.apache.tools.ant.helper.ProjectHelperImpl$TaskHandler
+org.apache.tools.ant.input.DefaultInputHandler
+org.apache.tools.ant.input.InputHandler
+org.apache.tools.ant.input.InputRequest
+org.apache.tools.ant.input.MultipleChoiceInputRequest
+org.apache.tools.ant.input.PropertyFileInputHandler
+org.apache.tools.ant.taskdefs.AntStructureTest
+org.apache.tools.ant.taskdefs.AntTest
+org.apache.tools.ant.taskdefs.AntTest$BasedirChecker
+org.apache.tools.ant.taskdefs.AntTest$InputHandlerChecker
+org.apache.tools.ant.taskdefs.AntTest$PropertyChecker
+org.apache.tools.ant.taskdefs.AntTest$ReferenceChecker
+org.apache.tools.ant.taskdefs.AvailableTest
+org.apache.tools.ant.taskdefs.BUnzip2Test
+org.apache.tools.ant.taskdefs.BZip2Test
+org.apache.tools.ant.taskdefs.BasenameTest
+org.apache.tools.ant.taskdefs.CVSPassTest
+org.apache.tools.ant.taskdefs.ChecksumTest
+org.apache.tools.ant.taskdefs.ConcatTest
+org.apache.tools.ant.taskdefs.ConditionTest
+org.apache.tools.ant.taskdefs.CopyTest
+org.apache.tools.ant.taskdefs.CopydirTest
+org.apache.tools.ant.taskdefs.CopyfileTest
+org.apache.tools.ant.taskdefs.DeleteTest
+org.apache.tools.ant.taskdefs.DeltreeTest
+org.apache.tools.ant.taskdefs.DependSetTest
+org.apache.tools.ant.taskdefs.DirnameTest
+org.apache.tools.ant.taskdefs.DynamicTest
+org.apache.tools.ant.taskdefs.EchoTest
+org.apache.tools.ant.taskdefs.Execute
+org.apache.tools.ant.taskdefs.Execute$1
+org.apache.tools.ant.taskdefs.Execute$CommandLauncher
+org.apache.tools.ant.taskdefs.Execute$CommandLauncherProxy
+org.apache.tools.ant.taskdefs.Execute$Java11CommandLauncher
+org.apache.tools.ant.taskdefs.Execute$Java13CommandLauncher
+org.apache.tools.ant.taskdefs.Execute$MacCommandLauncher
+org.apache.tools.ant.taskdefs.Execute$OS2CommandLauncher
+org.apache.tools.ant.taskdefs.Execute$PerlScriptCommandLauncher
+org.apache.tools.ant.taskdefs.Execute$ScriptCommandLauncher
+org.apache.tools.ant.taskdefs.Execute$WinNTCommandLauncher
+org.apache.tools.ant.taskdefs.ExecuteJava
+org.apache.tools.ant.taskdefs.ExecuteJavaTest
+org.apache.tools.ant.taskdefs.ExecuteStreamHandler
+org.apache.tools.ant.taskdefs.ExecuteWatchdog
+org.apache.tools.ant.taskdefs.ExecuteWatchdogTest
+org.apache.tools.ant.taskdefs.ExecuteWatchdogTest$1
+org.apache.tools.ant.taskdefs.FailTest
+org.apache.tools.ant.taskdefs.FilterTest
+org.apache.tools.ant.taskdefs.FixCrLfTest
+org.apache.tools.ant.taskdefs.GUnzipTest
+org.apache.tools.ant.taskdefs.GetTest
+org.apache.tools.ant.taskdefs.GzipTest
+org.apache.tools.ant.taskdefs.InitializeClassTest
+org.apache.tools.ant.taskdefs.InputTest
+org.apache.tools.ant.taskdefs.JarTest
+org.apache.tools.ant.taskdefs.JavaTest
+org.apache.tools.ant.taskdefs.JavaTest$EntryPoint
+org.apache.tools.ant.taskdefs.JavaTest$ExceptingEntryPoint
+org.apache.tools.ant.taskdefs.Javac
+org.apache.tools.ant.taskdefs.Javac$ImplementationSpecificArgument
+org.apache.tools.ant.taskdefs.JavacTest
+org.apache.tools.ant.taskdefs.LoadFileTest
+org.apache.tools.ant.taskdefs.LoadPropertiesTest
+org.apache.tools.ant.taskdefs.LogOutputStream
+org.apache.tools.ant.taskdefs.LogStreamHandler
+org.apache.tools.ant.taskdefs.Manifest
+org.apache.tools.ant.taskdefs.Manifest$Attribute
+org.apache.tools.ant.taskdefs.Manifest$Section
+org.apache.tools.ant.taskdefs.ManifestException
+org.apache.tools.ant.taskdefs.ManifestTest
+org.apache.tools.ant.taskdefs.MatchingTask
+org.apache.tools.ant.taskdefs.MkdirTest
+org.apache.tools.ant.taskdefs.MoveTest
+org.apache.tools.ant.taskdefs.ParallelTest
+org.apache.tools.ant.taskdefs.ProcessDestroyer
+org.apache.tools.ant.taskdefs.PropertyTest
+org.apache.tools.ant.taskdefs.PumpStreamHandler
+org.apache.tools.ant.taskdefs.RenameTest
+org.apache.tools.ant.taskdefs.ReplaceTest
+org.apache.tools.ant.taskdefs.Rmic
+org.apache.tools.ant.taskdefs.Rmic$ImplementationSpecificArgument
+org.apache.tools.ant.taskdefs.RmicTest
+org.apache.tools.ant.taskdefs.SleepTest
+org.apache.tools.ant.taskdefs.SleepTest$Timer
+org.apache.tools.ant.taskdefs.StreamPumper
+org.apache.tools.ant.taskdefs.TStampTest
+org.apache.tools.ant.taskdefs.TarTest
+org.apache.tools.ant.taskdefs.TaskdefTest
+org.apache.tools.ant.taskdefs.Tstamp
+org.apache.tools.ant.taskdefs.Tstamp$CustomFormat
+org.apache.tools.ant.taskdefs.Tstamp$Unit
+org.apache.tools.ant.taskdefs.TypedefTest
+org.apache.tools.ant.taskdefs.UntarTest
+org.apache.tools.ant.taskdefs.UnzipTest
+org.apache.tools.ant.taskdefs.WarTest
+org.apache.tools.ant.taskdefs.XmlPropertyTest
+org.apache.tools.ant.taskdefs.ZipTest
+org.apache.tools.ant.taskdefs.compilers.CompilerAdapter
+org.apache.tools.ant.taskdefs.compilers.CompilerAdapterFactory
+org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter
+org.apache.tools.ant.taskdefs.compilers.Gcj
+org.apache.tools.ant.taskdefs.compilers.Javac12
+org.apache.tools.ant.taskdefs.compilers.Javac13
+org.apache.tools.ant.taskdefs.compilers.JavacExternal
+org.apache.tools.ant.taskdefs.compilers.Jikes
+org.apache.tools.ant.taskdefs.compilers.Jvc
+org.apache.tools.ant.taskdefs.compilers.Kjc
+org.apache.tools.ant.taskdefs.compilers.Sj
+org.apache.tools.ant.taskdefs.condition.Condition
+org.apache.tools.ant.taskdefs.condition.Contains
+org.apache.tools.ant.taskdefs.condition.ContainsTest
+org.apache.tools.ant.taskdefs.condition.Equals
+org.apache.tools.ant.taskdefs.condition.EqualsTest
+org.apache.tools.ant.taskdefs.condition.Os
+org.apache.tools.ant.taskdefs.optional.EchoPropertiesTest
+org.apache.tools.ant.taskdefs.optional.PropertyFileTest
+org.apache.tools.ant.taskdefs.optional.XmlValidateTest
+org.apache.tools.ant.taskdefs.optional.depend.DependTest
+org.apache.tools.ant.taskdefs.optional.junit.BaseTest
+org.apache.tools.ant.taskdefs.optional.junit.FormatterElement
+org.apache.tools.ant.taskdefs.optional.junit.FormatterElement$TypeAttribute
+org.apache.tools.ant.taskdefs.optional.junit.JUnitResultFormatter
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTest
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner$1
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner$TeeOutputStream
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$1
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$InvalidSuiteTestCase
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$InvalidTestCase
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$NoSuiteTestCase
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$NoTestCase
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$ResultFormatter
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$SuiteTestCase
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunnerTest$TestRunner
+org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelper
+org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelperTest
+org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelperTest$Foo
+org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelperTest$Foo1
+org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelperTest$Foo2
+org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelperTest$Foo3
+org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelperTest$Foo4
+org.apache.tools.ant.taskdefs.rmic.DefaultRmicAdapter
+org.apache.tools.ant.taskdefs.rmic.DefaultRmicAdapter$RmicFileNameMapper
+org.apache.tools.ant.taskdefs.rmic.KaffeRmic
+org.apache.tools.ant.taskdefs.rmic.RmicAdapter
+org.apache.tools.ant.taskdefs.rmic.RmicAdapterFactory
+org.apache.tools.ant.taskdefs.rmic.SunRmic
+org.apache.tools.ant.taskdefs.rmic.WLRmic
+org.apache.tools.ant.types.AbstractFileSet
+org.apache.tools.ant.types.AbstractFileSetTest
+org.apache.tools.ant.types.AntFilterReader
+org.apache.tools.ant.types.Commandline
+org.apache.tools.ant.types.Commandline$Argument
+org.apache.tools.ant.types.Commandline$Marker
+org.apache.tools.ant.types.CommandlineJava
+org.apache.tools.ant.types.CommandlineJava$SysProperties
+org.apache.tools.ant.types.CommandlineJavaTest
+org.apache.tools.ant.types.CommandlineTest
+org.apache.tools.ant.types.DTDLocation
+org.apache.tools.ant.types.DataType
+org.apache.tools.ant.types.DescriptionTest
+org.apache.tools.ant.types.DirSet
+org.apache.tools.ant.types.DirSetTest
+org.apache.tools.ant.types.EnumeratedAttribute
+org.apache.tools.ant.types.EnumeratedAttributeTest
+org.apache.tools.ant.types.EnumeratedAttributeTest$TestNormal
+org.apache.tools.ant.types.EnumeratedAttributeTest$TestNull
+org.apache.tools.ant.types.Environment
+org.apache.tools.ant.types.Environment$Variable
+org.apache.tools.ant.types.FileList
+org.apache.tools.ant.types.FileListTest
+org.apache.tools.ant.types.FileSet
+org.apache.tools.ant.types.FileSetTest
+org.apache.tools.ant.types.FilterChain
+org.apache.tools.ant.types.FilterSet
+org.apache.tools.ant.types.FilterSet$Filter
+org.apache.tools.ant.types.FilterSet$FiltersFile
+org.apache.tools.ant.types.FilterSetCollection
+org.apache.tools.ant.types.FilterSetTest
+org.apache.tools.ant.types.FlexInteger
+org.apache.tools.ant.types.FlexIntegerTest
+org.apache.tools.ant.types.Mapper
+org.apache.tools.ant.types.Mapper$MapperType
+org.apache.tools.ant.types.MapperTest
+org.apache.tools.ant.types.MapperTest$TaskdefForCopyTest
+org.apache.tools.ant.types.Parameter
+org.apache.tools.ant.types.Parameterizable
+org.apache.tools.ant.types.Path
+org.apache.tools.ant.types.Path$PathElement
+org.apache.tools.ant.types.PathTest
+org.apache.tools.ant.types.PatternSet
+org.apache.tools.ant.types.PatternSet$NameEntry
+org.apache.tools.ant.types.PatternSetTest
+org.apache.tools.ant.types.Reference
+org.apache.tools.ant.types.Resource
+org.apache.tools.ant.types.ResourceFactory
+org.apache.tools.ant.types.XMLCatalog
+org.apache.tools.ant.types.XMLCatalogTest
+org.apache.tools.ant.types.selectors.BaseExtendSelector
+org.apache.tools.ant.types.selectors.BaseSelector
+org.apache.tools.ant.types.selectors.BaseSelectorTest
+org.apache.tools.ant.types.selectors.BaseSelectorTest$TaskdefForMakingBed
+org.apache.tools.ant.types.selectors.ContainsSelector
+org.apache.tools.ant.types.selectors.ContainsSelectorTest
+org.apache.tools.ant.types.selectors.DateSelector
+org.apache.tools.ant.types.selectors.DateSelector$TimeComparisons
+org.apache.tools.ant.types.selectors.DateSelectorTest
+org.apache.tools.ant.types.selectors.DependSelector
+org.apache.tools.ant.types.selectors.DependSelectorTest
+org.apache.tools.ant.types.selectors.DepthSelector
+org.apache.tools.ant.types.selectors.DepthSelectorTest
+org.apache.tools.ant.types.selectors.ExtendFileSelector
+org.apache.tools.ant.types.selectors.FileSelector
+org.apache.tools.ant.types.selectors.FilenameSelector
+org.apache.tools.ant.types.selectors.FilenameSelectorTest
+org.apache.tools.ant.types.selectors.PresentSelector
+org.apache.tools.ant.types.selectors.PresentSelector$FilePresence
+org.apache.tools.ant.types.selectors.PresentSelectorTest
+org.apache.tools.ant.types.selectors.SelectorContainer
+org.apache.tools.ant.types.selectors.SelectorScanner
+org.apache.tools.ant.types.selectors.SelectorUtils
+org.apache.tools.ant.types.selectors.SizeSelector
+org.apache.tools.ant.types.selectors.SizeSelector$ByteUnits
+org.apache.tools.ant.types.selectors.SizeSelector$SizeComparisons
+org.apache.tools.ant.types.selectors.SizeSelectorTest
+org.apache.tools.ant.util.CollectionUtils
+org.apache.tools.ant.util.CollectionUtilsTest
+org.apache.tools.ant.util.DOMElementWriter
+org.apache.tools.ant.util.DOMElementWriterTest
+org.apache.tools.ant.util.DateUtils
+org.apache.tools.ant.util.DateUtilsTest
+org.apache.tools.ant.util.FileNameMapper
+org.apache.tools.ant.util.FileUtils
+org.apache.tools.ant.util.FileUtilsTest
+org.apache.tools.ant.util.GlobPatternMapper
+org.apache.tools.ant.util.GlobPatternMapperTest
+org.apache.tools.ant.util.IdentityMapper
+org.apache.tools.ant.util.JAXPUtils
+org.apache.tools.ant.util.JAXPUtilsTest
+org.apache.tools.ant.util.JavaEnvUtils
+org.apache.tools.ant.util.JavaEnvUtilsTest
+org.apache.tools.ant.util.LoaderUtils
+org.apache.tools.ant.util.PackageNameMapper
+org.apache.tools.ant.util.PackageNameMapperTest
+org.apache.tools.ant.util.ResourceUtils
+org.apache.tools.ant.util.SourceFileScanner
+org.apache.tools.ant.util.StringUtils
+org.apache.tools.ant.util.StringUtilsTest
+org.apache.tools.ant.util.TimeoutObserver
+org.apache.tools.ant.util.Watchdog
+org.apache.tools.ant.util.facade.FacadeTaskHelper
+org.apache.tools.ant.util.facade.FacadeTaskHelperTest
+org.apache.tools.ant.util.facade.ImplementationSpecificArgument
+org.apache.tools.ant.util.facade.ImplementationSpecificArgumentTest

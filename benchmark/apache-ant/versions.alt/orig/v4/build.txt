@@ -1,0 +1,9 @@
+chmod -R 744 *
+Placed junit3.8.1.jar in lib directory
+Created directory optional in directory lib
+Copied junit3.8.1.jar to lib/optional as "junit.jar"
+Set classpath to ".:<path_to_subjectdir>/build/lib/optional.jar" in build.sh
+Added ":lib/junit3.8.1.jar" to LOCALCLASSPATH in build.sh
+Changed attribute "haltonfailure" to "no" for "run-tests" target in build.xml
+build.sh jars
+build.sh run-tests
