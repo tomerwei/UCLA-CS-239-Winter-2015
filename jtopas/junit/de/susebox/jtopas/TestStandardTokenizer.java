@@ -101,8 +101,22 @@ public class TestStandardTokenizer extends TestCase {
   /**
    * Property for the test {@link #testLineCounting}.
    */
-  public static final String PROP_COUNTLINES_PATH = "CountLinesPath";
+  public static final String PROP_COUNTLINES_PATH = "CountLinesPath.txt";
   
+  
+    public void MyAssertTrue( String str, boolean b  ) throws Throwable {
+  
+  	System.out.println( "Testing Begin Standard Tokenizer: " + str );
+  	assertTrue(str, b );
+  	System.out.println("Testing End");
+  }
+  
+      public void MyAssertTrue( boolean b  ) throws Throwable {
+  
+  	System.out.println( "Testing Begin Standard Tokenizer: ");
+  	assertTrue( b );
+  	System.out.println("Testing End");
+  }
   
   //---------------------------------------------------------------------------
   // main method
@@ -226,8 +240,8 @@ public class TestStandardTokenizer extends TestCase {
         if (token.getType() == Token.KEYWORD) {
           tokenizer.nextToken();               // should be the '=' character
           System.out.println("  " + tokenizer.nextImage());
-          assertTrue(tokenizer.currentImage() != null);
-          assertTrue(tokenizer.currentToken().getType() == Token.STRING);
+          MyAssertTrue(tokenizer.currentImage() != null);
+          MyAssertTrue(tokenizer.currentToken().getType() == Token.STRING);
         }
       }
     } finally {
@@ -263,9 +277,9 @@ public class TestStandardTokenizer extends TestCase {
         tokenizer.nextToken();
         if (tokenizer.currentToken().getType() != Token.EOF) {
           System.out.println(tokenizer.currentImage());
-          assertTrue("Method currentImage() returned null.", tokenizer.currentImage() != null);
+          MyAssertTrue("Method currentImage() returned null.", tokenizer.currentImage() != null);
         }
-        assertTrue("Found token type " + tokenizer.currentToken().getType() 
+        MyAssertTrue("Found token type " + tokenizer.currentToken().getType() 
                + ", expected NORMAL (" + Token.NORMAL + ") or EOF (" + Token.EOF + ").",
                tokenizer.currentToken().getType() == Token.NORMAL 
                || tokenizer.currentToken().getType() == Token.EOF);
@@ -310,15 +324,15 @@ public class TestStandardTokenizer extends TestCase {
         case Token.NORMAL:
           image = tokenizer.currentImage();
           line  = Integer.parseInt(image);
-          assertTrue("Missing separator \"/\".", tokenizer.nextToken().getType() == Token.SEPARATOR && tokenizer.currentImage().equals("/"));
-          assertTrue("Missing column number", tokenizer.nextToken().getType() == Token.NORMAL);
+          MyAssertTrue("Missing separator \"/\".", tokenizer.nextToken().getType() == Token.SEPARATOR && tokenizer.currentImage().equals("/"));
+          MyAssertTrue("Missing column number", tokenizer.nextToken().getType() == Token.NORMAL);
           image = tokenizer.currentImage();
           col   = Integer.parseInt(image);
-          assertTrue("Found line number " + token.getStartLine() + " does not match expected line number " + line, 
+          MyAssertTrue("Found line number " + token.getStartLine() + " does not match expected line number " + line, 
                     line == token.getStartLine());
-          assertTrue("Found column number " + token.getStartColumn() + " does not match expected column number " + col, 
+          MyAssertTrue("Found column number " + token.getStartColumn() + " does not match expected column number " + col, 
                     col == token.getStartColumn());
-          assertTrue("Found token length " + tokenizer.currentToken().getLength() + " does not match expected length " + image.length(), 
+          MyAssertTrue("Found token length " + tokenizer.currentToken().getLength() + " does not match expected length " + image.length(), 
                     image.length() == tokenizer.currentToken().getLength());
           break;
         }
@@ -393,7 +407,7 @@ public class TestStandardTokenizer extends TestCase {
         switch (token.getType()) {
         case Token.NORMAL:
           image = tokenizer.currentImage();
-          assertTrue("Found HTML tag in normal token: " + image, image.indexOf('<') < 0);
+          MyAssertTrue("Found HTML tag in normal token: " + image, image.indexOf('<') < 0);
           System.out.print(image);
           if (inPRE <= 0) {
             len += token.getLength();
@@ -403,7 +417,7 @@ public class TestStandardTokenizer extends TestCase {
 
         case Token.SPECIAL_SEQUENCE:
           image = tokenizer.currentImage();
-          assertTrue("Couldn't find special sequence in properties: " + image, props.specialSequenceExists(image));
+          MyAssertTrue("Couldn't find special sequence in properties: " + image, props.specialSequenceExists(image));
           if (token.getCompanion() == startPRE) {
             System.out.println();
             len   = 0;
@@ -442,9 +456,9 @@ public class TestStandardTokenizer extends TestCase {
       }
 
       // Where should have been something of each categorie
-      assertTrue("Not one simple context part was found in file " + _path + ".", normalCount > 0);
-      assertTrue("No HTML tag found " + _path + ".", commentCount > 0);
-      assertTrue("No whitespaces found " + _path + ".", wsCount > 0);
+      MyAssertTrue("Not one simple context part was found in file " + _path + ".", normalCount > 0);
+      MyAssertTrue("No HTML tag found " + _path + ".", commentCount > 0);
+      MyAssertTrue("No whitespaces found " + _path + ".", wsCount > 0);
       
     } finally {
       // cleanup

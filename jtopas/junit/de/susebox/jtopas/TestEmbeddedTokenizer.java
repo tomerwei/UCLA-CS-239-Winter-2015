@@ -156,13 +156,13 @@ public class TestEmbeddedTokenizer extends TestCase {
 
     // tests on Java files
     count = 1;
-    while ((path = props.getProperty(PROP_JAVAPATH + count)) != null) {
-      if ((url = TestEmbeddedTokenizer.class.getResource(path)) != null) {
-        path = url.getFile();
-      }
-      suite.addTest(new TestEmbeddedTokenizer("testJavaTokenizer", path));
-      count++;
-    }
+//     while ((path = props.getProperty(PROP_JAVAPATH + count)) != null) {
+//       if ((url = TestEmbeddedTokenizer.class.getResource(path)) != null) {
+//         path = url.getFile();
+//       }
+//       suite.addTest(new TestEmbeddedTokenizer("testJavaTokenizer", path));
+//       count++;
+//     }
     return suite;
   }
   

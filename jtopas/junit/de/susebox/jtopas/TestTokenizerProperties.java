@@ -107,10 +107,10 @@ public class TestTokenizerProperties
   public static Test suite() {
     TestSuite   suite = new TestSuite(TestTokenizerProperties.class.getName());
     
-    suite.addTest(new TestTokenizerProperties("testAddingSequences"));
-    suite.addTest(new TestTokenizerProperties("testAddingKeywords"));
+//     suite.addTest(new TestTokenizerProperties("testAddingSequences"));
+//     suite.addTest(new TestTokenizerProperties("testAddingKeywords"));
     suite.addTest(new TestTokenizerProperties("testGenericProperties"));
-    suite.addTest(new TestTokenizerProperties("testDataHandlers"));
+//     suite.addTest(new TestTokenizerProperties("testDataHandlers"));
     return suite;
   }
   
@@ -248,6 +248,12 @@ public class TestTokenizerProperties
     }
   }
   
+  
+//   public void MyassertTrue( String str, boolean b  ) throws Throwable {
+//   
+//   	System.out.println( "Testing: " + str );
+//   	assertTrue(str, b );
+//   }
   
   /**
    * Adding and removing of line and block comments and special sequences.

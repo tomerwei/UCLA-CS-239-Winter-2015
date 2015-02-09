@@ -92,17 +92,17 @@ public class JTopasTestSuite extends TestCase {
    */
   public static Test suite() {
     TestSuite   suite = new TestSuite(JTopasTestSuite.class.getName());
-    
+
     suite.addTest(TestTokenizerProperties.suite());
-    suite.addTest(TestMultithreadTokenizerProperties.suite());
-    suite.addTest(TestDifficultSituations.suite());
-    suite.addTest(TestStandardTokenizer.suite());
-    suite.addTest(TestPatternMatching.suite());
+//     suite.addTest(TestMultithreadTokenizerProperties.suite());
+//     suite.addTest(TestDifficultSituations.suite());
+//     suite.addTest(TestStandardTokenizer.suite());
+//     suite.addTest(TestPatternMatching.suite());
     suite.addTest(TestEmbeddedTokenizer.suite());
-    suite.addTest(TestLargeSource.suite());
-    suite.addTest(TestTextAccess.suite());
+//     suite.addTest(TestLargeSource.suite());
+//     suite.addTest(TestTextAccess.suite());
     suite.addTest(TestMultithreadTokenizer.suite());
-    suite.addTest(TestTokenizerCleanup.suite());
+//     suite.addTest(TestTokenizerCleanup.suite());
     return suite;
   }
 
