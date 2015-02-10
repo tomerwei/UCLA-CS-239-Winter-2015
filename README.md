@@ -17,7 +17,7 @@ Part A Project (Due 2/9, 11:59PM): Automated Debugging of Program Stack Traces
 
 
 Running the code:
-https://github.com/tomerwei/UCLA-CS-239-Winter-2015/ blob/master/CCT/commands.txt
+https://github.com/tomerwei/UCLA-CS-239-Winter-2015/blob/master/CCT/commands.txt
 
 Presentation:
 https://docs.google.com/presentation/d/1XLIKuhIlhoivAo4EmdO_z2jHn5VODnE20ktReUKNgNc/edit?usp=sharing
