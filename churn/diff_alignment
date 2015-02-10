@@ -1,0 +1,301 @@
+Files added: 10
+  + jtopas-0.8/junit/de/susebox/jtopas/TestTokenizerFlags.java ; Java
+  + jtopas-0.8/src/de/susebox/jtopas/Flags.java ; Java
+  + jtopas-0.8/src/de/susebox/jtopas/impl/NoCaseSequenceStore.java ; Java
+  + jtopas-0.8/junit/de/susebox/jtopas/TestTokenizerSource.java ; Java
+  + jtopas-0.8/src/de/susebox/jtopas/CharSequenceTokenizerSource.java ; Java
+  + jtopas-0.8/src/de/susebox/jtopas/CharArraySource.java ; Java
+  + jtopas-0.8/src/de/susebox/jtopas/StringSource.java ; Java
+  + jtopas-0.8/src/de/susebox/jtopas/AbstractTokenizerProperties.java ; Java
+  + jtopas-0.8/src/de/susebox/jtopas/AbstractTokenizer.java ; Java
+
+Files removed: 225
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/TestEmbeddedTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/ExtRuntimeException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/Environment.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/TestEmbeddedTokenizer.html ; HTML
+  - jtopas-0.7/junit/de/susebox/java/util/TestTextAccess.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/TestInputStreamTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/io/package-tree.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/SequenceHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/package-frame.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/LangTestSuite.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/class-use/DefaultEnvironment.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/Token.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-9.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/DataProvider.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/UtilTestSuite.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/StandardSequenceHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/class-use/ExtNoSuchMethodException.html ; HTML
+  - jtopas-0.7/junit/de/susebox/java/util/TestInputStreamTokenizer.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/package-tree.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/Token.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/ExtUnsupportedOperationException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TestPluginTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/overview-frame.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TestTokenizerProperties.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/AbstractTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/ExtIllegalArgumentException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/class-use/SequenceHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/WhitespaceHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/ExtNullPointerException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TokenizerProperties.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/Token.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-2.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/class-use/ExtNullPointerException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/AbstractTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-13.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/StandardSeparatorHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/TestTokenProperties.html ; HTML
+  - jtopas-0.7/junit/de/susebox/java/util/TestTokenProperties.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/class-use/ExtRuntimeException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TestTokenizerProperties.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/StandardWhitespaceHandler.html ; HTML
+  - jtopas-0.7/src/de/susebox/jtopas/Plugin.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/package-summary.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/Token.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/class-use/DataMapper.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-17.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TestMultithreadTokenizerProperties.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TokenizerPropertyEvent.html ; HTML
+  - jtopas-0.7/src/de/susebox/java/util/InputStreamTokenizer.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/PatternHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/InputStreamSource.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/stylesheet.css ; CSS
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/io/package-use.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/InputStreamTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/class-use/ExtUnsupportedOperationException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/TestTextAccess.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TokenizerPropertyListener.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/ReaderSource.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TestMultithreadTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TokenizerProperty.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/TokenizerProperty.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-12.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-18.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/WhitespaceHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/package-use.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/EnvironmentProvider.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/ExtNoSuchElementException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TestPatternMatching.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/class-use/ThrowableList.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/impl/class-use/SequenceStore.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-4.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TestEmbeddedTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/KeywordHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/impl/PatternMatcher.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-19.html ; HTML
+  - jtopas-0.7/src/de/susebox/java/util/TokenizerException.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/package-tree.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/StandardTokenizerProperties.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/TestDifficultSituations.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TestLargeSource.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/io/package-summary.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-10.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/impl/package-tree.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/class-use/EnvironmentProvider.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-5.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/packages.html ; HTML
+  - jtopas-0.7/junit/de/susebox/java/util/TestTokenizerProperties.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/Tokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TestTextAccess.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-11.html ; HTML
+  - jtopas-0.7/src/de/susebox/jtopas/SequenceHandler.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/class-use/ExtIndexOutOfBoundsException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/TestTextAccess.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-8.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/SeparatorHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TokenizerException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/Plugin.html ; HTML
+  - jtopas-0.7/src/de/susebox/jtopas/SeparatorHandler.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/class-use/LangTestSuite.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/StandardTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/SeparatorHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/ReaderSource.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-7.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-22.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/WhitespaceHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/package-use.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/ExtNoSuchMethodException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TestTextAccess.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/Tokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/class-use/StandardSequenceHandler.html ; HTML
+  - jtopas-0.7/src/de/susebox/java/util/TokenizerProperty.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/ExtNoSuchElementException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TestLargeSource.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/class-use/SeparatorHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TokenizerPropertyEvent.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/io/package-frame.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/help-doc.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/io/class-use/ExtIOException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/Tokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/class-use/Environment.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/TestThrowableList.html ; HTML
+  - jtopas-0.7/junit/de/susebox/java/util/TestEmbeddedTokenizer.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/class-use/ExtIllegalArgumentException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-21.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/class-use/PatternHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-1.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TestStandardTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/package-use.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/constant-values.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/PluginTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/package-use.html ; HTML
+  - jtopas-0.7/src/de/susebox/java/util/AbstractTokenizer.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TestTokenizerCleanup.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/KeywordHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-6.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/io/ExtIOException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/allclasses-frame.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/overview-summary.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/class-use/TestThrowableList.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/class-use/StandardSeparatorHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/ThrowableList.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/serialized-form.html ; HTML
+  - jtopas-0.7/src/de/susebox/java/util/Token.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TokenizerSource.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/StandardTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/ExtIndexOutOfBoundsException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/PluginTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/InputStreamTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TestEmbeddedTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/package-summary.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-16.html ; HTML
+  - jtopas-0.7/src/de/susebox/jtopas/InputStreamSource.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/TokenizerException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TokenizerProperty.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TokenizerProperties.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-3.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/package-frame.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/ThrowableMessageFormatter.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/StandardKeywordHandler.html ; HTML
+  - jtopas-0.7/src/de/susebox/jtopas/WhitespaceHandler.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/UtilTestSuite.html ; HTML
+  - jtopas-0.7/src/de/susebox/java/util/Tokenizer.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/TestTokenizerProperties.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/package-frame.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TokenizerException.html ; HTML
+  - jtopas-0.7/src/de/susebox/jtopas/KeywordHandler.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TestPluginTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/deprecated-list.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-20.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/TestInputStreamTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TokenizerPropertyListener.html ; HTML
+  - jtopas-0.7/junit/de/susebox/jtopas/TestPluginTokenizer.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/package-tree.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/package-summary.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/impl/package-summary.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/TestTokenizerProperties.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TestTokenizerCleanup.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/SequenceHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/TokenizerException.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-14.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/Tokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TestPatternMatching.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/impl/class-use/PatternMatcher.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TestDifficultSituations.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/impl/package-use.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/class-use/WhitespaceHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/class-use/ThrowableMessageFormatter.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/InputStreamSource.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/JTopasTestSuite.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TestStandardTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/allclasses-noframe.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/TokenizerProperty.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TokenizerSource.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/impl/package-frame.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/KeywordHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-15.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/index-files/index-23.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/StandardTokenizerProperties.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/TestDifficultSituations.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/package-summary.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/impl/SequenceStore.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/TestTokenProperties.html ; HTML
+  - jtopas-0.7/junit/de/susebox/java/util/TestDifficultSituations.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/SequenceHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/SeparatorHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/DataMapper.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/class-use/StandardWhitespaceHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TestMultithreadTokenizer.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/class-use/DataProvider.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/class-use/StandardKeywordHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/TestMultithreadTokenizerProperties.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/overview-tree.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/class-use/JTopasTestSuite.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/Plugin.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/package-tree.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/package-frame.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/jtopas/spi/class-use/KeywordHandler.html ; HTML
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/lang/DefaultEnvironment.html ; HTML
+  - jtopas-0.7/src/de/susebox/jtopas/PluginTokenizer.java ; Java
+  - jtopas-0.7/build/doc/javadoc/de/susebox/java/util/class-use/TestDifficultSituations.html ; HTML
+
+File pairs compared: 66
+  != jtopas-0.7/junit/de/susebox/jtopas/TestDifficultSituations.java | jtopas-0.8/junit/de/susebox/jtopas/TestDifficultSituations.java ; Java
+  != jtopas-0.7/www/jtopas/news.html | jtopas-0.8/www/jtopas/news.html ; HTML
+  == jtopas-0.7/www/jtopas/index_top.html | jtopas-0.8/www/jtopas/index_top.html ; HTML
+  == jtopas-0.7/src/de/susebox/java/lang/ThrowableList.java | jtopas-0.8/src/de/susebox/java/lang/ThrowableList.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/spi/StandardSeparatorHandler.java | jtopas-0.8/src/de/susebox/jtopas/spi/StandardSeparatorHandler.java ; Java
+  == jtopas-0.7/src/de/susebox/java/lang/ExtNullPointerException.java | jtopas-0.8/src/de/susebox/java/lang/ExtNullPointerException.java ; Java
+  == jtopas-0.7/src/de/susebox/java/lang/Environment.java | jtopas-0.8/src/de/susebox/java/lang/Environment.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/TokenizerProperties.java | jtopas-0.8/src/de/susebox/jtopas/TokenizerProperties.java ; Java
+  == jtopas-0.7/www/css/basics.css | jtopas-0.8/www/css/basics.css ; CSS
+  == jtopas-0.7/src/de/susebox/java/io/ExtIOException.java | jtopas-0.8/src/de/susebox/java/io/ExtIOException.java ; Java
+  != jtopas-0.7/junit/de/susebox/java/lang/TestThrowableList.java | jtopas-0.8/junit/de/susebox/java/lang/TestThrowableList.java ; Java
+  == jtopas-0.7/junit/de/susebox/SuseboxTestSuite.java | jtopas-0.8/junit/de/susebox/SuseboxTestSuite.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/StandardTokenizerProperties.java | jtopas-0.8/src/de/susebox/jtopas/StandardTokenizerProperties.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/spi/WhitespaceHandler.java | jtopas-0.8/src/de/susebox/jtopas/spi/WhitespaceHandler.java ; Java
+  == jtopas-0.7/src/de/susebox/jtopas/spi/DataMapper.java | jtopas-0.8/src/de/susebox/jtopas/spi/DataMapper.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/spi/StandardKeywordHandler.java | jtopas-0.8/src/de/susebox/jtopas/spi/StandardKeywordHandler.java ; Java
+  != jtopas-0.7/junit/de/susebox/TestExceptions.java | jtopas-0.8/junit/de/susebox/TestExceptions.java ; Java
+  != jtopas-0.7/junit/de/susebox/jtopas/TestStandardTokenizer.java | jtopas-0.8/junit/de/susebox/jtopas/TestStandardTokenizer.java ; Java
+  != jtopas-0.7/www/jtopas/index_left.html | jtopas-0.8/www/jtopas/index_left.html ; HTML
+  != jtopas-0.7/build.xml | jtopas-0.8/build.xml ; Ant
+  == jtopas-0.7/src/de/susebox/jtopas/spi/SeparatorHandler.java | jtopas-0.8/src/de/susebox/jtopas/spi/SeparatorHandler.java ; Java
+  == jtopas-0.7/www/jtopas/index.html | jtopas-0.8/www/jtopas/index.html ; HTML
+  != jtopas-0.7/junit/de/susebox/jtopas/TestMultithreadTokenizer.java | jtopas-0.8/junit/de/susebox/jtopas/TestMultithreadTokenizer.java ; Java
+  != jtopas-0.7/src/de/susebox/java/lang/ThrowableMessageFormatter.java | jtopas-0.8/src/de/susebox/java/lang/ThrowableMessageFormatter.java ; Java
+  == jtopas-0.7/junit/de/susebox/TestUtilities.java | jtopas-0.8/junit/de/susebox/TestUtilities.java ; Java
+  == jtopas-0.7/src/de/susebox/java/lang/DefaultEnvironment.java | jtopas-0.8/src/de/susebox/java/lang/DefaultEnvironment.java ; Java
+  != jtopas-0.7/junit/de/susebox/jtopas/JTopasTestSuite.java | jtopas-0.8/junit/de/susebox/jtopas/JTopasTestSuite.java ; Java
+  == jtopas-0.7/src/de/susebox/jtopas/TokenizerPropertyListener.java | jtopas-0.8/src/de/susebox/jtopas/TokenizerPropertyListener.java ; Java
+  == jtopas-0.7/src/de/susebox/java/util/ExtNoSuchElementException.java | jtopas-0.8/src/de/susebox/java/util/ExtNoSuchElementException.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/impl/PatternMatcher.java | jtopas-0.8/src/de/susebox/jtopas/impl/PatternMatcher.java ; Java
+  != jtopas-0.7/junit/de/susebox/jtopas/TestTokenizerProperties.java | jtopas-0.8/junit/de/susebox/jtopas/TestTokenizerProperties.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/TokenizerProperty.java | jtopas-0.8/src/de/susebox/jtopas/TokenizerProperty.java ; Java
+  != jtopas-0.7/junit/de/susebox/java/util/UtilTestSuite.java | jtopas-0.8/junit/de/susebox/java/util/UtilTestSuite.java ; Java
+  == jtopas-0.7/src/de/susebox/jtopas/TokenizerException.java | jtopas-0.8/src/de/susebox/jtopas/TokenizerException.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/StandardTokenizer.java | jtopas-0.8/src/de/susebox/jtopas/StandardTokenizer.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/impl/SequenceStore.java | jtopas-0.8/src/de/susebox/jtopas/impl/SequenceStore.java ; Java
+  != jtopas-0.7/www/index.html | jtopas-0.8/www/index.html ; HTML
+  == jtopas-0.7/src/de/susebox/jtopas/spi/StandardSequenceHandler.java | jtopas-0.8/src/de/susebox/jtopas/spi/StandardSequenceHandler.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/Tokenizer.java | jtopas-0.8/src/de/susebox/jtopas/Tokenizer.java ; Java
+  == jtopas-0.7/src/de/susebox/jtopas/spi/KeywordHandler.java | jtopas-0.8/src/de/susebox/jtopas/spi/KeywordHandler.java ; Java
+  == jtopas-0.7/src/de/susebox/java/lang/ExtIndexOutOfBoundsException.java | jtopas-0.8/src/de/susebox/java/lang/ExtIndexOutOfBoundsException.java ; Java
+  == jtopas-0.7/junit/de/susebox/java/JavaTestSuite.java | jtopas-0.8/junit/de/susebox/java/JavaTestSuite.java ; Java
+  == jtopas-0.7/src/de/susebox/java/lang/ExtRuntimeException.java | jtopas-0.8/src/de/susebox/java/lang/ExtRuntimeException.java ; Java
+  != jtopas-0.7/www/jtopas/index_right.html | jtopas-0.8/www/jtopas/index_right.html ; HTML
+  == jtopas-0.7/src/de/susebox/java/lang/EnvironmentProvider.java | jtopas-0.8/src/de/susebox/java/lang/EnvironmentProvider.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/spi/DataProvider.java | jtopas-0.8/src/de/susebox/jtopas/spi/DataProvider.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/TokenizerSource.java | jtopas-0.8/src/de/susebox/jtopas/TokenizerSource.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/spi/StandardWhitespaceHandler.java | jtopas-0.8/src/de/susebox/jtopas/spi/StandardWhitespaceHandler.java ; Java
+  != jtopas-0.7/junit/de/susebox/jtopas/TestTextAccess.java | jtopas-0.8/junit/de/susebox/jtopas/TestTextAccess.java ; Java
+  == jtopas-0.7/src/de/susebox/java/lang/ExtIllegalArgumentException.java | jtopas-0.8/src/de/susebox/java/lang/ExtIllegalArgumentException.java ; Java
+  == jtopas-0.7/junit/de/susebox/java/lang/LangTestSuite.java | jtopas-0.8/junit/de/susebox/java/lang/LangTestSuite.java ; Java
+  != jtopas-0.7/junit/de/susebox/jtopas/TestMultithreadTokenizerProperties.java | jtopas-0.8/junit/de/susebox/jtopas/TestMultithreadTokenizerProperties.java ; Java
+  != jtopas-0.7/junit/de/susebox/jtopas/TestLargeSource.java | jtopas-0.8/junit/de/susebox/jtopas/TestLargeSource.java ; Java
+  == jtopas-0.7/src/de/susebox/java/lang/ExtNoSuchMethodException.java | jtopas-0.8/src/de/susebox/java/lang/ExtNoSuchMethodException.java ; Java
+  == jtopas-0.7/www/jtopas/deprecated/index_right.html | jtopas-0.8/www/jtopas/deprecated/index_right.html ; HTML
+  != jtopas-0.7/src/de/susebox/jtopas/ReaderSource.java | jtopas-0.8/src/de/susebox/jtopas/ReaderSource.java ; Java
+  != jtopas-0.7/junit/de/susebox/jtopas/TestEmbeddedTokenizer.java | jtopas-0.8/junit/de/susebox/jtopas/TestEmbeddedTokenizer.java ; Java
+  == jtopas-0.7/www/jtopas/mailing_lists.html | jtopas-0.8/www/jtopas/mailing_lists.html ; HTML
+  == jtopas-0.7/src/de/susebox/jtopas/spi/SequenceHandler.java | jtopas-0.8/src/de/susebox/jtopas/spi/SequenceHandler.java ; Java
+  == jtopas-0.7/src/de/susebox/java/lang/ExtUnsupportedOperationException.java | jtopas-0.8/src/de/susebox/java/lang/ExtUnsupportedOperationException.java ; Java
+  == jtopas-0.7/src/de/susebox/jtopas/TokenizerPropertyEvent.java | jtopas-0.8/src/de/susebox/jtopas/TokenizerPropertyEvent.java ; Java
+  != jtopas-0.7/src/de/susebox/jtopas/Token.java | jtopas-0.8/src/de/susebox/jtopas/Token.java ; Java
+  != jtopas-0.7/README.html | jtopas-0.8/README.html ; HTML
+  != jtopas-0.7/src/de/susebox/jtopas/spi/PatternHandler.java | jtopas-0.8/src/de/susebox/jtopas/spi/PatternHandler.java ; Java
+  != jtopas-0.7/junit/de/susebox/jtopas/TestTokenizerCleanup.java | jtopas-0.8/junit/de/susebox/jtopas/TestTokenizerCleanup.java ; Java
+  != jtopas-0.7/junit/de/susebox/jtopas/TestPatternMatching.java | jtopas-0.8/junit/de/susebox/jtopas/TestPatternMatching.java ; Java
