@@ -1,2 +1,0 @@
-VERSION=1.6beta
-DATE=December 12 2003

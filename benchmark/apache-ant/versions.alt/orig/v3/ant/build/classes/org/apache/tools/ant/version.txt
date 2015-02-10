@@ -1,2 +1,0 @@
-VERSION=1.4.1
-DATE=December 12 2003

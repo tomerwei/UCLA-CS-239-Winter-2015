@@ -1,5 +1,0 @@
-#Symlinks from /nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v10/ant/src/etc/testcases/taskdefs/optional/unix/test-working/symtest1
-#Mon Dec 01 10:39:58 PST 2003
-dirlink=/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v10/ant/src/etc/testcases/taskdefs/optional/unix/test-working/symtest1/symtest3
-link2=/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v10/ant/src/etc/testcases/taskdefs/optional/unix/test-working/symtest1/symtest2/file2
-link1=/nfs/spectre/u5/kinneer/subjects/apache-ant/versions.alt/orig/v10/ant/src/etc/testcases/taskdefs/optional/unix/test-working/symtest1/file1

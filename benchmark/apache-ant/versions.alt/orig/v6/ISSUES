@@ -1,6 +1,0 @@
-Certain test cases which pass when run from the build script fail when
-run directly.  This appears to be due to environment conditions which
-cannot be reproduced outside of the build script. Assuming they are
-invariant between test runs against a single version, they can be
-ignored.
-
