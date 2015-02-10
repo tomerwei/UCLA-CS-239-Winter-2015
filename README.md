@@ -9,6 +9,7 @@ Part A Project (Due 2/9, 11:59PM): Automated Debugging of Program Stack Traces
 5. Measure correlation between the metrics and the suspiciousness scores.
 6. Use linear regression to see how each suspicious score is related to metrics.
 
+
 Running the code:
 https://github.com/tomerwei/UCLA-CS-239-Winter-2015/ blob/master/CCT/commands.txt
 
