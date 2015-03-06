@@ -1,0 +1,18 @@
+//compile junit
+junit cchang$ javac -cp .:junit-3.7.jar:de/susebox/java/:de/susebox/java/lang/:de/susebox/jtopas/:../src/ de/susebox/SuseboxTestSuite.java 
+javac -cp .:junit-3.7.jar:de/susebox/java/lang/:de/susebox/java/:junit-4.12.jar de/susebox/java/lang/*.java
+junit cchang$ javac -cp .:junit-3.7.jar:de/susebox/java/lang/:de/susebox/java/:junit-4.12.jar:de/susebox/java/util/:../src/ de/susebox/java/util/*.java
+
+//run junit
+java -cp .:junit-3.7.jar:de/susebox/java/:de/susebox/java/lang/:de/susebox/jtopas/:../src/:de/susebox/java/util/ de.susebox.jtopas.JTopasTestSuite
+//compile src
+javac -cp .:de/susebox/jtopas/:de/susebox/jtopas/asm-all-5.0.3.jar de/susebox/jtopas/*.java 
+//copy class file
+cp de/susebox/jtopas/StandardTokenizer.class de/susebox/jtopas/StandardTokenizer.class.bak
+//instrument
+java -cp .:asm-all-5.0.3.jar Instrumenter StandardTokenizer.class.bak StandardTokenizer.class
+//either run junit
+java -cp .:junit-3.7.jar:de/susebox/java/:de/susebox/java/lang/:de/susebox/jtopas/:../src/:de/susebox/java/util/ de.susebox.jtopas.JTopasTestSuite
+//or run junit with gui
+//change tests to run fail cases and pass cases, change call accordingly
+java -cp .:junit-3.7.jar:../src/:de/susebox/:hamcrest-core-1.3.jar:de/susebox/jtopas/:de/susebox/java/:de/susebox/java/lang/:de/susebox/java/util/ junit.swingui.TestRunner de.susebox.jtopas.JTopasTestSuite > outfailFinal.txt
