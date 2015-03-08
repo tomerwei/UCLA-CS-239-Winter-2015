@@ -334,7 +334,7 @@ public class IntegrationTest extends IntegrationTestCase {
 
   public void testGenerateExportsOn() {
     CompilerOptions options = createCompilerOptions();
-    options.setGenerateExports(true);
+    options.setGenerateExports(false);
     test(options, "/** @export */ function f() {}",
         "/** @export */ function f() {} goog.exportSymbol('f', f);");
   }
@@ -531,7 +531,7 @@ public class IntegrationTest extends IntegrationTestCase {
 
   public void testRemoveClosureAsserts() {
     CompilerOptions options = createCompilerOptions();
-    options.setClosurePass(true);
+    options.setClosurePass(false);
     testSame(
         options,
         "var goog = {};"

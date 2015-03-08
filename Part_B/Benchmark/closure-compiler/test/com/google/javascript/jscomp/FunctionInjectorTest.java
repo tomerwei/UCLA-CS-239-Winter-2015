@@ -37,8 +37,8 @@ import java.util.Set;
 public class FunctionInjectorTest extends TestCase {
   static final InliningMode INLINE_DIRECT = InliningMode.DIRECT;
   static final InliningMode INLINE_BLOCK = InliningMode.BLOCK;
-  private boolean assumeStrictThis = false;
-  private boolean assumeMinimumCapture = false;
+  private boolean assumeStrictThis = true;
+  private boolean assumeMinimumCapture = true;
 
   @Override
   protected void setUp() throws Exception {
@@ -551,7 +551,7 @@ public class FunctionInjectorTest extends TestCase {
     helperCanInlineReferenceToFunction(CanInlineResult.AFTER_PREPARATION,
         "function foo(a){return true;}; " +
         "function x() {var b = 1 + foo(1)}",
-        "foo", INLINE_BLOCK, true);
+        "foo", INLINE_BLOCK, false);
   }
 
   public void testCanInlineReferenceToFunctionInExpression10() {
@@ -758,7 +758,7 @@ public class FunctionInjectorTest extends TestCase {
         CanInlineResult.YES,
         "function foo(){return a;}; " +
         "while(1) { foo(); }",
-        "foo", INLINE_BLOCK, true);
+        "foo", INLINE_BLOCK, false);
   }
 
   public void testCanInlineReferenceToFunctionInLoop2() {

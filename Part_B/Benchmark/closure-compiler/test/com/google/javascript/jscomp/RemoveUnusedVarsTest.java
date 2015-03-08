@@ -31,9 +31,9 @@ public class RemoveUnusedVarsTest extends CompilerTestCase {
   @Override
   public void setUp() {
     removeGlobal = true;
-    preserveFunctionExpressionNames = false;
-    modifyCallSites = false;
-    compareJsDoc = false;
+    preserveFunctionExpressionNames = true;
+    modifyCallSites = true;
+    compareJsDoc = true;
   }
 
   @Override
@@ -594,7 +594,7 @@ public class RemoveUnusedVarsTest extends CompilerTestCase {
   }
 
   public void testDoNotOptimizeJSCompiler_renameProperty() {
-    this.modifyCallSites = true;
+    this.modifyCallSites = false;
 
     // Only the function definition can be modified, none of the call sites.
     test("function JSCompiler_renameProperty(a) {};" +
@@ -745,7 +745,7 @@ public class RemoveUnusedVarsTest extends CompilerTestCase {
   }
 
   public void testIssue618_1() {
-    this.removeGlobal = false;
+    this.removeGlobal = true;
     testSame(
         "function f() {\n" +
         "  var a = [], b;\n" +

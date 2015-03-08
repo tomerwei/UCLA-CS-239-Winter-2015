@@ -1,124 +1,228 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="cs-210-206.cs.ucla.edu" name="com.google.javascript.jscomp.CommandLineRunnerTest" skipped="0" tests="1" time="0.0" timestamp="2015-03-08T20:16:53">
+<testsuite errors="0" failures="0" hostname="cs-210-206.cs.ucla.edu" name="com.google.javascript.jscomp.CommandLineRunnerTest" skipped="0" tests="124" time="2.318" timestamp="2015-03-08T21:49:06">
   <properties>
-    <property name="java.vendor" value="Apple Inc." />
+    <property name="java.vendor" value="Oracle Corporation" />
     <property name="lib.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib" />
     <property name="refasterjs-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs.jar" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
-    <property name="jikes.class.path" value=":/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-rt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-string.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/ui.jar" />
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
     <property name="os.name" value="Mac OS X" />
-    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes" />
     <property name="maven-repository-id" value="sonatype-nexus-staging" />
-    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
     <property name="ant.home" value="//Users/linmanna/ant" />
-    <property name="java.runtime.version" value="1.6.0_65-b14-462-11M4609" />
+    <property name="java.runtime.version" value="1.7.0_75-b13" />
     <property name="gen.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/gen" />
     <property name="user.name" value="linmanna" />
-    <property name="awt.nativeDoubleBuffering" value="true" />
     <property name="ant.file.compiler" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml" />
     <property name="build.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build" />
     <property name="ant.build.javac.target" value="1.7" />
     <property name="user.language" value="zh" />
     <property name="test.method" value="" />
-    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib" />
     <property name="ant.project.default-target" value="jar" />
     <property name="ant.project.name" value="compiler" />
-    <property name="java.version" value="1.6.0_65" />
+    <property name="java.version" value="1.7.0_75" />
     <property name="user.timezone" value="" />
     <property name="sun.arch.data.model" value="64" />
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
-    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed" />
     <property name="sun.cpu.isalist" value="" />
-    <property name="sun.jnu.encoding" value="EUC_CN" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
     <property name="file.encoding.pkg" value="sun.io" />
     <property name="file.separator" value="/" />
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="protoc.executable" value="protoc" />
     <property name="classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes" />
-    <property name="java.class.version" value="50.0" />
+    <property name="java.class.version" value="51.0" />
     <property name="testClasses.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test" />
     <property name="user.country" value="CN" />
-    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre" />
     <property name="java.vm.info" value="mixed mode" />
     <property name="externs.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/externs" />
     <property name="ant.file" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml" />
     <property name="os.version" value="10.9.5" />
     <property name="javac.debug" value="on" />
     <property name="path.separator" value=":" />
-    <property name="java.vm.version" value="20.65-b04-462" />
+    <property name="java.vm.version" value="24.75-b04" />
     <property name="ant.library.dir" value="//Users/linmanna/ant/lib" />
-    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
     <property name="webservice-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice.jar" />
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
     <property name="test.fork" value="true" />
     <property name="webservice.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/jscomp/webservice" />
-    <property name="awt.toolkit" value="apple.awt.CToolkit" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
     <property name="buildlib.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/lib" />
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="ant.build.javac.source" value="1.7" />
     <property name="refasterjs.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/refactoring" />
     <property name="user.home" value="/Users/linmanna" />
-    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="test.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/test" />
-    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
-    <property name="java.vendor.url" value="http://www.apple.com/" />
-    <property name="java.vm.vendor" value="Apple Inc." />
+    <property name="java.library.path" value="/Users/linmanna/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="gopherProxySet" value="false" />
-    <property name="build.relVersion" value="8677ddc" />
+    <property name="build.relVersion" value="5107abc" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junittestcases7674886292200671966.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junitvmwatcher4924272015494099669.properties propsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junit1414686868153125525.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junittestcases5949901879760027472.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junitvmwatcher5896012663290099626.properties propsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junit3382148267101857145.properties" />
     <property name="java.class.path" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant-launcher.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/args4j.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/gson.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/guava.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/jsr305.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/junit.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/protobuf-java.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/truth.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test:/Users/linmanna/ant/lib/ant-launcher.jar:/Users/linmanna/ant/lib/ant.jar:/Users/linmanna/ant/lib/ant-junit.jar:/Users/linmanna/ant/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
     <property name="test.class" value="*Test" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="ant.file.type" value="file" />
-    <property name="java.vm.specification.version" value="1.0" />
+    <property name="java.vm.specification.version" value="1.7" />
     <property name="sun.cpu.endian" value="little" />
     <property name="sun.os.patch.level" value="unknown" />
     <property name="java.io.tmpdir" value="/var/folders/_p/3swdt4h96dn79vyt21dtny9h0000gn/T/" />
-    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/" />
-    <property name="mrj.build" value="11M4609" />
-    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
-    <property name="os.arch" value="x86_64" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
     <property name="maven-repository-url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/" />
+    <property name="os.arch" value="x86_64" />
     <property name="webservice-classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice-classes" />
-    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
-    <property name="mrj.version" value="1070.1.6.0_65-462" />
+    <property name="java.ext.dirs" value="/Users/linmanna/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
     <property name="user.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler" />
     <property name="ant.file.type.compiler" value="file" />
     <property name="line.separator" value="&#xa;" />
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
     <property name="refasterjs-classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs-classes" />
     <property name="basedir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler" />
-    <property name="ant.java.version" value="1.6" />
+    <property name="ant.java.version" value="1.7" />
     <property name="ant.core.lib" value="/Users/linmanna/ant/lib/ant.jar" />
-    <property name="file.encoding" value="EUC_CN" />
+    <property name="file.encoding" value="UTF-8" />
     <property name="closure.build.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build" />
     <property name="compiler-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/compiler.jar" />
-    <property name="java.specification.version" value="1.6" />
+    <property name="java.specification.version" value="1.7" />
     <property name="src.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src" />
+    <property name="ant.project.invoked-targets" value="clean,compile,compile-tests,test" />
     <property name="javadoc.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/javadoc" />
-    <property name="ant.project.invoked-targets" value="test" />
     <property name="tools.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/tools" />
   </properties>
-  <error message="com/google/javascript/jscomp/CommandLineRunnerTest : Unsupported major.minor version 51.0" type="java.lang.UnsupportedClassVersionError">java.lang.UnsupportedClassVersionError: com/google/javascript/jscomp/CommandLineRunnerTest : Unsupported major.minor version 51.0
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClassCond(ClassLoader.java:637)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:621)
-	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:141)
-	at java.net.URLClassLoader.defineClass(URLClassLoader.java:283)
-	at java.net.URLClassLoader.access$000(URLClassLoader.java:58)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:197)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:171)
-</error>
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testIssue601" time="0.053" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testUnknownAnnotation" time="0.117" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testWarningGuardOrdering1" time="0.034" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testWarningGuardOrdering2" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testWarningGuardOrdering3" time="0.033" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testWarningGuardOrdering4" time="0.026" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSimpleModeLeavesUnusedParams" time="0.041" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testAdvancedModeRemovesUnusedParams" time="0.094" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCheckGlobalThisOffByDefault" time="0.039" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCheckGlobalThisOnWithAdvancedMode" time="0.033" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCheckGlobalThisOnWithAdvanced" time="0.032" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCheckGlobalThisOnWithErrorFlag" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCheckGlobalThisOff" time="0.037" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testTypeCheckingOffByDefault" time="0.032" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testReflectedMethods" time="0.055" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testInlineVariables" time="0.082" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testTypedAdvanced" time="0.086" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testTypeCheckingOnWithVerbose" time="0.03" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testTypeCheckingOnWithWVerbose" time="0.027" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testTypeParsingOffByDefault" time="0.031" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testTypeParsingOnWithVerbose" time="0.046" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testTypeCheckOverride1" time="0.028" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testTypeCheckOverride2" time="0.047" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCheckSymbolsOffForDefault" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCheckSymbolsOnForVerbose" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCheckSymbolsOverrideForVerbose" time="0.019" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCheckSymbolsOverrideForQuiet" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCheckUndefinedProperties1" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCheckUndefinedProperties2" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCheckUndefinedProperties3" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testDuplicateParams" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testDefineFlag" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testDefineFlag2" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testDefineFlag3" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testScriptStrictModeNoWarning" time="0.021" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testFunctionStrictModeNoWarning" time="0.022" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testQuietMode" time="0.017" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testProcessClosurePrimitives" time="0.026" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testGetMsgWiring" time="0.03" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testGetMsgWiringNoWarnings" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCssNameWiring" time="0.017" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testIssue70a" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testIssue70b" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testIssue81" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testIssue115" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testIssue297" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testHiddenSideEffect" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testIssue504" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testIssue601b" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testIssue601c" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testIssue846" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSideEffectIntegration" time="0.026" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testDebugFlag1" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testDebugFlag2" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testDebugFlag3" time="0.017" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testDebugFlag4" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testBooleanFlag1" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testBooleanFlag2" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testHelpFlag" time="0.021" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testHoistedFunction1" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testHoistedFunction2" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testExternsLifting1" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testExternsLifting2" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceSortingOff" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceSortingOn" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceSortingOn2" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceSortingOn3" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceSortingCircularDeps1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceSortingCircularDeps2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourcePruningOn1" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourcePruningOn2" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourcePruningOn3" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourcePruningOn4" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourcePruningOn5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourcePruningOn6" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourcePruningOn7" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourcePruningOn8" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testModuleEntryPoint" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testNoCompile" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testDependencySortingWhitespaceMode" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testForwardDeclareDroppedTypes" time="0.024" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testOnlyClosureDependenciesEmptyEntryPoints" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testOnlyClosureDependenciesOneEntryPoint" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceMapExpansion1" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceMapExpansion2" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceMapExpansion3" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceMapFormat1" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceMapFormat2" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceMapLocationsTranslations1" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceMapLocationsTranslations2" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceMapLocationsTranslations3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSourceMapInputs" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testModuleWrapperBaseNameExpansion" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testCharSetExpansion" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testChainModuleManifest" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testStarModuleManifest" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testOutputModuleGraphJson" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testVersionFlag" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testVersionFlag2" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testPrintAstFlag" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testSyntheticExterns" time="0.033" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testGoogAssertStripping" time="0.031" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testMissingReturnCheckOnWithVerbose" time="0.017" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testGenerateExports" time="0.024" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testDepreciationWithVerbose" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testTwoParseErrors" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testES3ByDefault" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testES5ChecksByDefault" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testES5ChecksInVerbose" time="0.027" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testES5" time="0.047" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testES5Strict" time="0.02" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testES5StrictUseStrict" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testES5StrictUseStrictMultipleInputs" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testWithKeywordWithEs5ChecksOff" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testNoSrCFilesWithManifest" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testTransformAMD" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testProcessCJS" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testProcessCJSWithModuleOutput" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testProcessCJSWithClosureRequires" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testFormattingSingleQuote" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testTransformAMDAndProcessCJS" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testModuleJSON" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testOutputSameAsInput" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.CommandLineRunnerTest" name="testOutputWrapperFlag" time="0.002" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

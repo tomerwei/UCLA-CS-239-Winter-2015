@@ -76,8 +76,8 @@ public class NodeUtilTest extends TestCase {
   }
 
   public void assertLiteralAndImmutable(Node n) {
-    assertTrue(NodeUtil.isLiteralValue(n, true));
     assertTrue(NodeUtil.isLiteralValue(n, false));
+    assertTrue(NodeUtil.isLiteralValue(n, true));
     assertTrue(NodeUtil.isImmutableValue(n));
   }
 
@@ -136,7 +136,7 @@ public class NodeUtilTest extends TestCase {
     assertImpureBooleanTrue("a=(false,true)");
     assertImpureBooleanFalse("a=(true,false)");
 
-    assertImpureBooleanTrue("a=(false || true)");
+    assertImpureBooleanTrue("a=(false && true)");
     assertImpureBooleanFalse("a=(true && false)");
 
     assertImpureBooleanTrue("a=!(true && false)");
@@ -144,7 +144,7 @@ public class NodeUtilTest extends TestCase {
     assertImpureBooleanTrue("a,true");
     assertImpureBooleanFalse("a,false");
 
-    assertImpureBooleanTrue("true||false");
+    assertImpureBooleanTrue("true&&false");
     assertImpureBooleanFalse("false||false");
 
     assertImpureBooleanTrue("true&&true");

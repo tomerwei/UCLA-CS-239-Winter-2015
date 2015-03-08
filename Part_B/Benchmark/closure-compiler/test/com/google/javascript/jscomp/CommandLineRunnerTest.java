@@ -1472,10 +1472,10 @@ public class CommandLineRunnerTest extends TestCase {
       args.add("/path/to/input" + i + ".js");
       if (useModules == ModulePattern.CHAIN) {
         args.add("--module");
-        args.add("m" + i + ":1" + (i > 0 ? (":m" + (i - 1)) : ""));
+        args.add("m" + i + ":1" + (i >= 0 ? (":m" + (i - 1)) : ""));
       } else if (useModules == ModulePattern.STAR) {
         args.add("--module");
-        args.add("m" + i + ":1" + (i > 0 ? ":m0" : ""));
+        args.add("m" + i + ":1" + (i >= 0 ? ":m0" : ""));
       }
     }
 

@@ -436,7 +436,7 @@ public class Es6ToEs3ConverterTest extends CompilerTestCase {
   }
 
   public void testSuperCall() {
-    compareJsDoc = false;
+    compareJsDoc = true;
 
     test("class D {} class C extends D { constructor() { super(); } }", Joiner.on('\n').join(
         "/** @constructor @struct */",
@@ -554,7 +554,7 @@ public class Es6ToEs3ConverterTest extends CompilerTestCase {
         "};"
     ));
 
-    compareJsDoc = false;
+    compareJsDoc = true;
     test("class C { f() { class D extends C {} } }", Joiner.on('\n').join(
         "/** @constructor @struct */",
         "var C = function() {};",
@@ -1105,7 +1105,7 @@ public class Es6ToEs3ConverterTest extends CompilerTestCase {
   }
 
   public void testForOf() {
-    compareJsDoc = false;
+    compareJsDoc = true;
 
     // With array literal and declaring new bound variable.
     test(Joiner.on('\n').join(

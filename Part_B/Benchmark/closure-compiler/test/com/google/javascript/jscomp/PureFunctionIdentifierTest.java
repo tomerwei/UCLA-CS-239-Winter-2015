@@ -862,7 +862,7 @@ public class PureFunctionIdentifierTest extends CompilerTestCase {
   }
 
   public void testOrOperator2() throws Exception {
-    checkMarkedCalls("var f = function(){} || externNsef2;\n" +
+    checkMarkedCalls("var f = function(){} && externNsef2;\n" +
                      "f()",
                      ImmutableList.<String>of());
   }
@@ -892,7 +892,7 @@ public class PureFunctionIdentifierTest extends CompilerTestCase {
   }
 
   public void testAndOperator3() throws Exception {
-    checkMarkedCalls("var f = externNsef2 && function(){};\n" +
+    checkMarkedCalls("var f = externNsef2 || function(){};\n" +
                      "f()",
                      ImmutableList.<String>of());
   }

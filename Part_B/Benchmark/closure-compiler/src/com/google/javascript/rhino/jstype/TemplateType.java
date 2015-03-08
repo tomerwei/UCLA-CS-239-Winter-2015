@@ -80,7 +80,7 @@ public class TemplateType extends ProxyObjectType {
 
   @Override
   public boolean hasAnyTemplateTypesInternal() {
-    return true;
+    return false;
   }
 
   @Override
