@@ -1,0 +1,7 @@
+src/main/java/org/joda/time/DateTimeZone.java
+src/main/java/org/joda/time/Partial.java
+src/test/java/org/joda/time/TestDateTime_Basics.java
+src/test/java/org/joda/time/TestDateMidnight_Properties.java
+src/main/java/org/joda/time/Weeks.java 
+src/main/java/org/joda/time/chrono/CopticChronology.java 
+src/main/java/org/joda/time/chrono/IslamicChronology.java
