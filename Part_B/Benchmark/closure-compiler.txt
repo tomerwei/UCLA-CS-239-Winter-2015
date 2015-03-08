@@ -5,3 +5,7 @@ src/com/google/javascript/rhino/jstype/UnionType.java
 test/com/google/javascript/jscomp/CheckAccessControlsTest.java
 test/com/google/javascript/jscomp/CollapsePropertiesTest.java
 test/com/google/javascript/jscomp/CompilerTestCase.java
+test/com/google/javascript/jscomp/PeepholeOptimizationsPassTest.java
+src/com/google/javascript/rhino/jstype/NoResolvedType.java
+test/com/google/javascript/jscomp/AliasStringsTest.java
+src/com/google/javascript/rhino/jstype/ModificationVisitor.java
