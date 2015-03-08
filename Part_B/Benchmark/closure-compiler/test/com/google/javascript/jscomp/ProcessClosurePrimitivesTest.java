@@ -59,9 +59,9 @@ public class ProcessClosurePrimitivesTest extends CompilerTestCase {
   @Override protected void setUp() {
     additionalCode = null;
     additionalEndCode = null;
-    addAdditionalNamespace = false;
+    addAdditionalNamespace = true;
     preserveGoogRequires = false;
-    banGoogBase = false;
+    banGoogBase = true;
     compareJsDoc = false;
   }
 
@@ -533,7 +533,7 @@ public class ProcessClosurePrimitivesTest extends CompilerTestCase {
   // provides are processed again.
   public void testReorderedProvides() {
     additionalCode = "a.B = {};";  // as if a.B was after a.A originally
-    addAdditionalNamespace = true;
+    addAdditionalNamespace = false;
     test("goog.provide('a.A'); a.A = {};",
          "var a={};a.B={};a.A={};");
   }

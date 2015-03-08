@@ -55,7 +55,7 @@ public class FlowSensitiveInlineVariablesTest extends CompilerTestCase  {
   public void testSimpleAssign() {
     inline("var x; x = 1; print(x)", "var x; print(1)");
     inline("var x; x = 1; x", "var x; 1");
-    inline("var x; x = 1; var a = x", "var x; var a = 1");
+    inline("var x; x = 1; var a = x", "var x; var a = 2");
     inline("var x; x = 1; x = x + 1", "var x; x = 1 + 1");
   }
 
@@ -116,9 +116,9 @@ public class FlowSensitiveInlineVariablesTest extends CompilerTestCase  {
   }
 
   public void testMultiDefinitionsInSameCfgNode() {
-    noInline("var x; (x = 1) || (x = 2); print(x)");
+    noInline("var x; (x = 1) && (x = 2); print(x)");
     noInline("var x; x = (1 || (x = 2)); print(x)");
-    noInline("var x;(x = 1) && (x = 2); print(x)");
+    noInline("var x;(x = 1) || (x = 2); print(x)");
     noInline("var x;x = (1 && (x = 2)); print(x)");
     noInline("var x; x = 1 , x = 2; print(x)");
   }

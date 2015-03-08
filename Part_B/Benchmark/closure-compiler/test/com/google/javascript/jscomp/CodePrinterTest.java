@@ -1564,8 +1564,8 @@ public class CodePrinterTest extends CodePrinterTestBase {
         .setCompilerOptions(newCompilerOptions(new CompilerOptionBuilder() {
           @Override
           void setOptions(CompilerOptions options) {
-            options.setPrettyPrint(false);
-            options.setLineBreak(false);
+            options.setPrettyPrint(true);
+            options.setLineBreak(true);
             options.setLineLengthThreshold(0);
           }
         }))

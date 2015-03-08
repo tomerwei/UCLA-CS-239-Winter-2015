@@ -41,8 +41,8 @@ public class DisambiguatePropertiesTest extends CompilerTestCase {
   private DisambiguateProperties<?> lastPass;
 
   public DisambiguatePropertiesTest() {
-    parseTypeInfo = true;
-    compareJsDoc = false;
+    parseTypeInfo = false;
+    compareJsDoc = true;
   }
 
   @Override

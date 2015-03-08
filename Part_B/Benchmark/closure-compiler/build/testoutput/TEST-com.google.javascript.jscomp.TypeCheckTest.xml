@@ -1,124 +1,1556 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="cs-210-206.cs.ucla.edu" name="com.google.javascript.jscomp.TypeCheckTest" skipped="0" tests="1" time="0.0" timestamp="2015-03-08T20:16:54">
+<testsuite errors="0" failures="27" hostname="cs-210-206.cs.ucla.edu" name="com.google.javascript.jscomp.TypeCheckTest" skipped="0" tests="1256" time="5.976" timestamp="2015-03-08T21:49:35">
   <properties>
-    <property name="java.vendor" value="Apple Inc." />
+    <property name="java.vendor" value="Oracle Corporation" />
     <property name="lib.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib" />
     <property name="refasterjs-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs.jar" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
-    <property name="jikes.class.path" value=":/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-rt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-string.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/ui.jar" />
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
     <property name="os.name" value="Mac OS X" />
-    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes" />
     <property name="maven-repository-id" value="sonatype-nexus-staging" />
-    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
     <property name="ant.home" value="//Users/linmanna/ant" />
-    <property name="java.runtime.version" value="1.6.0_65-b14-462-11M4609" />
+    <property name="java.runtime.version" value="1.7.0_75-b13" />
     <property name="gen.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/gen" />
     <property name="user.name" value="linmanna" />
-    <property name="awt.nativeDoubleBuffering" value="true" />
     <property name="ant.file.compiler" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml" />
     <property name="build.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build" />
     <property name="ant.build.javac.target" value="1.7" />
     <property name="user.language" value="zh" />
     <property name="test.method" value="" />
-    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib" />
     <property name="ant.project.default-target" value="jar" />
     <property name="ant.project.name" value="compiler" />
-    <property name="java.version" value="1.6.0_65" />
+    <property name="java.version" value="1.7.0_75" />
     <property name="user.timezone" value="" />
     <property name="sun.arch.data.model" value="64" />
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
-    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed" />
     <property name="sun.cpu.isalist" value="" />
-    <property name="sun.jnu.encoding" value="EUC_CN" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
     <property name="file.encoding.pkg" value="sun.io" />
     <property name="file.separator" value="/" />
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="protoc.executable" value="protoc" />
     <property name="classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes" />
-    <property name="java.class.version" value="50.0" />
+    <property name="java.class.version" value="51.0" />
     <property name="testClasses.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test" />
     <property name="user.country" value="CN" />
-    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre" />
     <property name="java.vm.info" value="mixed mode" />
     <property name="externs.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/externs" />
     <property name="ant.file" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml" />
     <property name="os.version" value="10.9.5" />
     <property name="javac.debug" value="on" />
     <property name="path.separator" value=":" />
-    <property name="java.vm.version" value="20.65-b04-462" />
+    <property name="java.vm.version" value="24.75-b04" />
     <property name="ant.library.dir" value="//Users/linmanna/ant/lib" />
-    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
     <property name="webservice-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice.jar" />
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
     <property name="test.fork" value="true" />
     <property name="webservice.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/jscomp/webservice" />
-    <property name="awt.toolkit" value="apple.awt.CToolkit" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
     <property name="buildlib.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/lib" />
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="ant.build.javac.source" value="1.7" />
     <property name="refasterjs.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/refactoring" />
     <property name="user.home" value="/Users/linmanna" />
-    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="test.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/test" />
-    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
-    <property name="java.vendor.url" value="http://www.apple.com/" />
-    <property name="java.vm.vendor" value="Apple Inc." />
+    <property name="java.library.path" value="/Users/linmanna/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="gopherProxySet" value="false" />
-    <property name="build.relVersion" value="8677ddc" />
+    <property name="build.relVersion" value="5107abc" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junittestcases7674886292200671966.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junitvmwatcher4924272015494099669.properties propsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junit1414686868153125525.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junittestcases5949901879760027472.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junitvmwatcher5896012663290099626.properties propsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junit3382148267101857145.properties" />
     <property name="java.class.path" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant-launcher.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/args4j.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/gson.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/guava.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/jsr305.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/junit.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/protobuf-java.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/truth.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test:/Users/linmanna/ant/lib/ant-launcher.jar:/Users/linmanna/ant/lib/ant.jar:/Users/linmanna/ant/lib/ant-junit.jar:/Users/linmanna/ant/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
     <property name="test.class" value="*Test" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="ant.file.type" value="file" />
-    <property name="java.vm.specification.version" value="1.0" />
+    <property name="java.vm.specification.version" value="1.7" />
     <property name="sun.cpu.endian" value="little" />
     <property name="sun.os.patch.level" value="unknown" />
     <property name="java.io.tmpdir" value="/var/folders/_p/3swdt4h96dn79vyt21dtny9h0000gn/T/" />
-    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/" />
-    <property name="mrj.build" value="11M4609" />
-    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
-    <property name="os.arch" value="x86_64" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
     <property name="maven-repository-url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/" />
+    <property name="os.arch" value="x86_64" />
     <property name="webservice-classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice-classes" />
-    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
-    <property name="mrj.version" value="1070.1.6.0_65-462" />
+    <property name="java.ext.dirs" value="/Users/linmanna/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
     <property name="user.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler" />
     <property name="ant.file.type.compiler" value="file" />
     <property name="line.separator" value="&#xa;" />
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
     <property name="refasterjs-classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs-classes" />
     <property name="basedir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler" />
-    <property name="ant.java.version" value="1.6" />
+    <property name="ant.java.version" value="1.7" />
     <property name="ant.core.lib" value="/Users/linmanna/ant/lib/ant.jar" />
-    <property name="file.encoding" value="EUC_CN" />
+    <property name="file.encoding" value="UTF-8" />
     <property name="closure.build.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build" />
     <property name="compiler-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/compiler.jar" />
-    <property name="java.specification.version" value="1.6" />
+    <property name="java.specification.version" value="1.7" />
     <property name="src.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src" />
+    <property name="ant.project.invoked-targets" value="clean,compile,compile-tests,test" />
     <property name="javadoc.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/javadoc" />
-    <property name="ant.project.invoked-targets" value="test" />
     <property name="tools.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/tools" />
   </properties>
-  <error message="com/google/javascript/jscomp/TypeCheckTest : Unsupported major.minor version 51.0" type="java.lang.UnsupportedClassVersionError">java.lang.UnsupportedClassVersionError: com/google/javascript/jscomp/TypeCheckTest : Unsupported major.minor version 51.0
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClassCond(ClassLoader.java:637)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:621)
-	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:141)
-	at java.net.URLClassLoader.defineClass(URLClassLoader.java:283)
-	at java.net.URLClassLoader.access$000(URLClassLoader.java:58)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:197)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:171)
-</error>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGlobalThis1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGlobalThis2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGlobalThis3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGlobalThis4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGlobalThis5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGlobalThis6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGlobalThis7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInnerFunction1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInnerFunction2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInnerFunction3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInnerFunction4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjectLiteral" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testHook" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison3" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCall1" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCall2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeof" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceNonEmptyFunction" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForIn2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForIn1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeof2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeof3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInitialTypingScope" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPrivateType" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck9" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck10" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck11" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck12" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck13" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck14" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck15" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck16" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck17" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck18" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck19" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck20" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheckBasicDowncast" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheckNoDowncastToNumber" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck21" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck22" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck23" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck24" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck25" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck26" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck27" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheck28" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheckInlineReturns" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheckDefaultExterns" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheckCustomExterns" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheckCustomExterns2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatizedArray1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatizedArray2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatizedArray3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatizedArray4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatizedArray5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatizedArray6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatizedArray7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatizedObject1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatizedObject2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatizedObject3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatizedObject4" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatizedObject5" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnionOfFunctionAndType" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOptionalParameterComparedToUndefined" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOptionalAllType" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOptionalUnknownNamedType" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOptionalArgFunctionParam" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOptionalArgFunctionParam2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOptionalArgFunctionParam3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOptionalArgFunctionParam4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOptionalArgFunctionParamError" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOptionalNullableArgFunctionParam" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOptionalNullableArgFunctionParam2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOptionalNullableArgFunctionParam3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOptionalArgFunctionReturn" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOptionalArgFunctionReturn2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanType" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanReduction1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanReduction2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanReduction3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanReduction4" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanReduction5" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanReduction6" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanReduction7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNullAnd" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNullOr" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanPreservation1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanPreservation2" time="0.017" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanPreservation3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanPreservation4" time="0.003">
+    <failure message="unexpected warnings(s):&#xa;JSC_DETERMINISTIC_TEST. condition always evaluates to false&#xa;left : (Function|boolean)&#xa;right: string at [testcode] line 2 : 49" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: unexpected warnings(s):
+JSC_DETERMINISTIC_TEST. condition always evaluates to false
+left : (Function|boolean)
+right: string at [testcode] line 2 : 49
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testBooleanPreservation4(TypeCheckTest.java:587)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction8" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction10" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction11" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction12" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction13" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction14" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction15" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeOfReduction16" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameReduction1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameReduction2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameReduction3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameReduction4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameReduction5a" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameReduction5b" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameReduction5c" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameReduction6" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameReduction7" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameReduction7a" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameReduction8" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameReduction9" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameReduction10" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjLitDef1a" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjLitDef1b" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjLitDef2a" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjLitDef2b" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjLitDef3a" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjLitDef3b" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjLitDef4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjLitDef5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjLitDef6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjLitDef7" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInstanceOfReduction1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInstanceOfReduction2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUndeclaredGlobalProperty1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUndeclaredGlobalProperty2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testLocallyInferredGlobalProperty1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyInferredPropagation" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyInference1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyInference2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyInference3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyInference4" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyInference5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyInference6" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyInference7" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyInference8" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyInference9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyInference10" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNoPersistentTypeInferenceForObjectProperties" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNoPersistentTypeInferenceForFunctionProperties" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjectPropertyTypeInferredInLocalScope1" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjectPropertyTypeInferredInLocalScope2" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjectPropertyTypeInferredInLocalScope3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMismatchingOverridingInferredPropertyBeforeDeclaredProperty1" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMismatchingOverridingInferredPropertyBeforeDeclaredProperty2" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMismatchingOverridingInferredPropertyBeforeDeclaredProperty3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMismatchingOverridingInferredPropertyBeforeDeclaredProperty4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyUsedBeforeDefinition1" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyUsedBeforeDefinition2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd6" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd7" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd9" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd10" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd11" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd12" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd13" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd14" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd15" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd16" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd17" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd18" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd19" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd20" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAdd21" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNumericComparison1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNumericComparison2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNumericComparison3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNumericComparison4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNumericComparison5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNumericComparison6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStringComparison1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStringComparison2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStringComparison3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStringComparison4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStringComparison5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStringComparison6" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testValueOfComparison1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testValueOfComparison2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testValueOfComparison3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGenericRelationalExpression" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInstanceof1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInstanceof2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInstanceof3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInstanceof4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInstanceof5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInstanceof6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInstanceOfReduction3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScoping1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScoping2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScoping3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScoping4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScoping5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScoping6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScoping7" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScoping8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScoping9" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScoping10" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScoping11" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScoping12" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments10" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments11" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments12" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments13" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments14" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments15" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments16" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments17" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionArguments18" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPrintFunctionName1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPrintFunctionName2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference4" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference5" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference7" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference9" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference10" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference11" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference12" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference13" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference14" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference15" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference16" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference17" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference18" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference19" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference20" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference21" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference22" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionInference23" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInnerFunction5" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInnerFunction6" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInnerFunction7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInnerFunction8" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInnerFunction9" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInnerFunction10" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInnerFunction11" time="0.017" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAbstractMethodHandling1" time="0.017" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAbstractMethodHandling2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAbstractMethodHandling3" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAbstractMethodHandling4" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAbstractMethodHandling5" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAbstractMethodHandling6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMethodInference1" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMethodInference2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMethodInference3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMethodInference4" time="0.017" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMethodInference5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMethodInference6" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMethodInference7" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMethodInference8" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMethodInference9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStaticMethodDeclaration1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStaticMethodDeclaration2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStaticMethodDeclaration3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticMethodDecl1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticMethodDecl2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticMethodDecl3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticMethodDecl4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticMethodDecl5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticMethodDecl6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticPropertyDecl1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticPropertyDecl2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticPropertyDecl3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticPropertyDecl4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticPropertyDecl5" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticPropertyDecl6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticPropertyDecl7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticPropertyDecl8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticPropertyDecl9" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateStaticPropertyDec20" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateLocalVarDecl" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateInstanceMethod1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateInstanceMethod2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateInstanceMethod3" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateInstanceMethod4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateInstanceMethod5" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateInstanceMethod6" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStubFunctionDeclaration1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStubFunctionDeclaration2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStubFunctionDeclaration3" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStubFunctionDeclaration4" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStubFunctionDeclaration5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStubFunctionDeclaration6" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStubFunctionDeclaration7" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStubFunctionDeclaration8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStubFunctionDeclaration9" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStubFunctionDeclaration10" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNestedFunctionInference1" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeRedefinition" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIn1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIn2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIn3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIn4" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIn5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIn6" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIn7" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForIn3" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForIn4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForIn5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison9" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison10" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison11" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison12" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison13" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison14" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComparison15" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnumStaticMethod1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnumStaticMethod2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum6" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum7" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum9" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum10" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum11" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum12" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum13" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum14" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum15" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum16" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum17" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum18" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum19" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum20" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum21" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum22" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum23" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum24" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum25" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum26" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum27" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum28" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum29" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum30" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum31" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum32" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum34" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum35" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum36" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum37" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum38" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum39" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum40" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum41" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnum42" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAliasedEnum1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAliasedEnum2" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAliasedEnum3" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAliasedEnum4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAliasedEnum5" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsEnumUse1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsEnumUse2" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsEnumUse3" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsEnumUse4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsEnumUse5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsTypedefUse2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsTypedefUse4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsTypedefUse6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsTypedefUse7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsTypedefUse8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsTypedefUse9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsTypedefUse10" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsConstructor1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsConstructor2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMinimalConstructorAnnotation" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends6" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends7" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends8" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends10" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends11" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends12" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends13" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends14" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends15" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends16" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends17" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends18" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends19" time="0.008">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testGoodExtends19(TypeCheckTest.java:3567)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends20" time="0.021" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodExtends21" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadExtends1" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadExtends2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadExtends3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadExtends4" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadExtends5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadExtends6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testLateExtends" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSuperclassMatch" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSuperclassMatchWithMixin" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSuperclassMismatch1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSuperclassMismatch2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSuperClassDefinedAfterSubClass1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSuperClassDefinedAfterSubClass2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDirectPrototypeAssignment1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDirectPrototypeAssignment2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDirectPrototypeAssignment3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodImplements1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodImplements2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodImplements3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodImplements4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodImplements5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodImplements6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodImplements7" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoodImplements8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadImplements1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadImplements2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadImplements3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadImplements4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadImplements5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadImplements6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadImplements7" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadImplements8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testProtoDoesNotRequireOverrideFromInterface" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorClassTemplate" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceExtends" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadInterfaceExtends1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadInterfaceExtendsNonExistentInterfaces" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadInterfaceExtends2" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadInterfaceExtends3" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadInterfaceExtends4" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadInterfaceExtends5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadImplementsAConstructor" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadImplementsNonInterfaceType" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadImplementsNonObjectType" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadImplementsDuplicateInterface1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadImplementsDuplicateInterface2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceAssignment1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceAssignment2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceAssignment3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceAssignment4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceAssignment5" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceAssignment6" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceAssignment7" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceAssignment8" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceAssignment9" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceAssignment10" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceAssignment11" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceAssignment12" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceAssignment13" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetprop1" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetprop2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetprop3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetprop4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop5" time="0.003">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testSetprop5(TypeCheckTest.java:4314)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop6" time="0.002">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testSetprop6(TypeCheckTest.java:4326)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop7" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop9" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop10" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop11" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop12" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop13" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop14" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSetprop15" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetpropDict1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetpropDict2" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetpropDict3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetpropDict4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetpropDict5" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetpropDict6" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetpropDict7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetelemStruct1" time="0.004">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testGetelemStruct1(TypeCheckTest.java:4567)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetelemStruct2" time="0.004">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testGetelemStruct2(TypeCheckTest.java:4581)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetelemStruct3" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetelemStruct4" time="0.005">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testGetelemStruct4(TypeCheckTest.java:4612)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetelemStruct5" time="0.004">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testGetelemStruct5(TypeCheckTest.java:4625)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetelemStruct6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetelemStruct7" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInOnStruct" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForinOnStruct" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testArrayAccess1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testArrayAccess2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testArrayAccess3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testArrayAccess4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testArrayAccess6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testArrayAccess7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testArrayAccess8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testArrayAccess9" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropAccess" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropAccess2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropAccess3" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropAccess4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSwitchCase1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSwitchCase2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar6" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar9" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar10" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar11" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar12" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar13" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar14" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testVar15" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAssignInference" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOr1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOr2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOr3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOr4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOr5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnd1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnd2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnd3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnd4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnd5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnd6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnd7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnd8" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnd9" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnd10" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testHookRestrictsType1" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testHookRestrictsType2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testHookRestrictsType3" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testHookRestrictsType4" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testHookRestrictsType5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testHookRestrictsType6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testHookRestrictsType7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testWhileRestrictsType1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testWhileRestrictsType2" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testHigherOrderFunctions1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testHigherOrderFunctions2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testHigherOrderFunctions3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testHigherOrderFunctions4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testHigherOrderFunctions5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorAlias1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorAlias2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorAlias3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorAlias4" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorAlias5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorAlias6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorAlias7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorAlias8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorAlias9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorAlias10" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorAlias11" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testClosure1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testClosure2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testClosure3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testClosure4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testClosure5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testClosure6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testClosure7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testReturn1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testReturn2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testReturn3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testReturn4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testReturn5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testReturn6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testReturn7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testReturn8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredReturn1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredReturn2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredReturn3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredReturn4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredReturn5" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredReturn6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredReturn7" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredReturn8" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredParam1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredParam2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredParam3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredParam4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredParam5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredParam6" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInferredParam7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenParams1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenParams2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenParams3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenParams4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenParams5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenParams6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenParams7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenReturn1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenReturn2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenReturn3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenReturn4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenProperty1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenProperty2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenProperty3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenProperty4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenProperty5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testOverriddenProperty6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis6" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis7" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis10" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis11" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis12" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis13" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThis14" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThisTypeOfFunction1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThisTypeOfFunction2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThisTypeOfFunction3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testThisTypeOfFunction4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGlobalThis2b" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGlobalThis8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGlobalThis9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testControlFlowRestrictsType1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testControlFlowRestrictsType2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testControlFlowRestrictsType3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testControlFlowRestrictsType4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testControlFlowRestrictsType5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testControlFlowRestrictsType6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testControlFlowRestrictsType7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testControlFlowRestrictsType8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testControlFlowRestrictsType9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testControlFlowRestrictsType10" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testControlFlowRestrictsType11" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSwitchCase3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSwitchCase4" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSwitchCase5" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSwitchCase6" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSwitchCase7" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSwitchCase8" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testImplicitCast" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testImplicitCastSubclassAccess" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testImplicitCastNotInExterns" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNumberNode" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStringNode" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanNodeTrue" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanNodeFalse" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUndefinedNode" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNumberAutoboxing" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNumberUnboxing" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStringAutoboxing" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStringUnboxing" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanAutoboxing" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBooleanUnboxing" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIIFE1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIIFE2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIIFE3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIIFE4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIIFE5" time="0.004">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testIIFE5(TypeCheckTest.java:6508)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNotIIFE1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNamespaceType1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNamespaceType2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue61" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue61b" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue86" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue124" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue124b" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue259" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue301" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue368" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue380" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue483" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue537a" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue537b" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue537c" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue537d" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue586" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue635" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue635b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue669" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue688" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue700" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue725" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue726" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue765" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue783" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue791" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue810" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue1002" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue1023" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue1047" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue1056" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue1072" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue1123" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue1201" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue1201b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue1201c" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue926a" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue926b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testEnums" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug592170" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug901455" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug908701" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug908625" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug911118" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug909000" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug930117" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug1484445" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug1859535" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug1940591" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAssign1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAssign2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAssign3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAssign4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug1942972" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug1943776" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDeleteOperator1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDeleteOperator2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug1987544" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug1940769" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug2335992" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug2341812" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug7701884" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug8017789" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug12441160" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug13641083a" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug13641083b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypedefBeforeUse" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScopedConstructors1" time="0.004">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testScopedConstructors1(TypeCheckTest.java:7416)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testScopedConstructors2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameInference1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameInference2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameInference3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameInference4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameInference5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameInference6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameInference7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameInference8" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testSheqRefinedScope" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameInference9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameInference10" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameInference11" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameInference12" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testQualifiedNameInference13" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAssignToUntypedVariable" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAssignToUntypedProperty" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew7" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew10" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew11" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew12" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew13" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew14" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew15" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew16" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew17" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNew18" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testName1" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testName2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testName3" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testName4" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testName5" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBitOperation1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBitOperation2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBitOperation3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBitOperation4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBitOperation5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBitOperation6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBitOperation7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBitOperation8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBitOperation9" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCall3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCall4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCall5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCall6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCall7" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCall8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCall9" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCall10" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCall11" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionCall1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionCall2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionCall3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionCall4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionCall5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionCall6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionCall7" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionCall8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionCall9" time="0.002">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testFunctionCall9(TypeCheckTest.java:8017)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionBind1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionBind2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionBind3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionBind4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionBind5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionBind6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionBind7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionBind8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionBind9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoogBind1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGoogBind2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast3a" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast4Types" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast5a" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast7" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast9" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast10" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast11" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast12" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast13" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast14" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast15" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast16" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast17a" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast17b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast19" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast20" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast21" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast22" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast23" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast24" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast25" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast26" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast27" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast27a" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast28" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast28a" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast29a" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast29b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast29c" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast30" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast31" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast32" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast33" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast34a" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCast34b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnnecessaryCastToSuperType" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnnecessaryCastToSameType" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnnecessaryCastToUnknown" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnnecessaryCastFromUnknown" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnnecessaryCastToAndFromUnknown" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnnecessaryCastToNonNullType" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnnecessaryCastToStar" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNoUnnecessaryCastNoResolvedType" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNestedCasts" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNativeCast1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNativeCast2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNativeCast3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNativeCast4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadConstructorCall" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstDecl1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstDecl2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorType1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorType2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorType3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorType4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorType5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorType6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorType7" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorType8" time="0.005">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testConstructorType8(TypeCheckTest.java:8821)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorType9" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorType10" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorType11" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConstructorType12" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadStruct" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadDict" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnonymousPrototype1" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnonymousPrototype2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnonymousType1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnonymousType2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnonymousType3" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBang1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBang2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBang3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBang4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBang5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBang6" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBang7" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDefinePropertyOnNullableObject1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDefinePropertyOnNullableObject2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnknownConstructorInstanceType1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnknownConstructorInstanceType2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnknownConstructorInstanceType3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnknownPrototypeChain" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNamespacedConstructor" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testComplexNamespace" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAddingMethodsUsingPrototypeIdiomSimpleNamespace" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAddingMethodsUsingPrototypeIdiomComplexNamespace1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAddingMethodsUsingPrototypeIdiomComplexNamespace2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAddingMethodsPrototypeIdiomAndObjectLiteralSimpleNamespace" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDontAddMethodsIfNoConstructor" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionAssignement" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAddMethodsPrototypeTwoWays" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPrototypePropertyTypes" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testValueTypeBuiltInPrototypePropertyType" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDeclareBuiltInConstructor" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendBuiltInType1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendBuiltInType2" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendFunction1" time="0.028" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendFunction2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck1" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck4" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck7" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck8" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck9_1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck9_2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck9_3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck10_1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck10_2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck10_3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck11" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck12" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck13" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck14" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck15" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck16" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInheritanceCheck17" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfacePropertyOverride1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfacePropertyOverride2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck4" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck7" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck8" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck10" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck12" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck13" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck14" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck15" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInheritanceCheck16" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfacePropertyNotImplemented" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfacePropertyNotImplemented2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfacePropertyNotImplemented3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStubConstructorImplementingInterface" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjectLiteralDeclaration1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjectLiteralDeclaration2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjectLiteralDeclaration3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjectLiteralDeclaration4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjectLiteralDeclaration5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjectLiteralDeclaration6" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testObjectLiteralDeclaration7" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCallDateConstructorAsFunction" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCallErrorConstructorAsFunction" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCallArrayConstructorAsFunction" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyTypeOfUnionType" time="0.009">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testPropertyTypeOfUnionType(TypeCheckTest.java:9882)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnnotatedPropertyOnInterface1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnnotatedPropertyOnInterface2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnnotatedPropertyOnInterface3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAnnotatedPropertyOnInterface4" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testWarnUnannotatedPropertyOnInterface5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testWarnUnannotatedPropertyOnInterface6" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDataPropertyOnInterface1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDataPropertyOnInterface2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDataPropertyOnInterface3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDataPropertyOnInterface4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testWarnDataPropertyOnInterface3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testWarnDataPropertyOnInterface4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testErrorMismatchingPropertyOnInterface4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testErrorMismatchingPropertyOnInterface5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testErrorMismatchingPropertyOnInterface6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDoubleNestedInterface" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testStaticDataPropertyOnNestedInterface" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceInstantiation" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPrototypeLoop" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testImplementsLoop" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testImplementsExtendsLoop" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceExtendsLoop" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testConversionFromInterfaceToRecursiveConstructor" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDirectPrototypeAssign" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testResolutionViaRegistry1" time="0.005">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testResolutionViaRegistry1(TypeCheckTest.java:10190)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testResolutionViaRegistry2" time="0.004">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testResolutionViaRegistry2(TypeCheckTest.java:10203)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testResolutionViaRegistry3" time="0.004">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testResolutionViaRegistry3(TypeCheckTest.java:10217)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testResolutionViaRegistry4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testResolutionViaRegistry5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGatherProperyWithoutAnnotation1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGatherProperyWithoutAnnotation2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionMasksVariableBug" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDfa1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDfa2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDfa3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDfa4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDfa5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDfa6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDfa7" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDfa8" time="1.384" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDfa9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDfa10" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDfa11" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDfa12" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDfa13" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeInferenceWithCast1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeInferenceWithCast2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeInferenceWithCast3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeInferenceWithCast4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeInferenceWithCast5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeInferenceWithClosure1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeInferenceWithClosure2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeInferenceWithNoEntry1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeInferenceWithNoEntry2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForwardPropertyReference" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNoForwardTypeDeclaration" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNoForwardTypeDeclarationAndNoBraces" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForwardTypeDeclaration1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForwardTypeDeclaration2" time="0.002">
+    <failure message="expected:&lt;[actual parameter 1 of f does not match formal parameter&#xa;found   : number&#xa;required: (MyType|null)]&gt; but was:&lt;[actual parameter 1 of f does not match formal parameter&#xa;found   : number&#xa;required: (null)]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[actual parameter 1 of f does not match formal parameter
+found   : number
+required: (MyType|null)]&gt; but was:&lt;[actual parameter 1 of f does not match formal parameter
+found   : number
+required: (null)]&gt;
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13225)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)
+	at com.google.javascript.jscomp.TypeCheckTest.testForwardTypeDeclaration2(TypeCheckTest.java:10540)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForwardTypeDeclaration3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForwardTypeDeclaration4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForwardTypeDeclaration5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForwardTypeDeclaration6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForwardTypeDeclaration7" time="0.002">
+    <failure message="unexpected warning(s) : JSC_DETERMINISTIC_TEST. condition always evaluates to true&#xa;left : (null|undefined)&#xa;right: undefined at [testcode] line 1 : 93 expected:&lt;0&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: unexpected warning(s) : JSC_DETERMINISTIC_TEST. condition always evaluates to true
+left : (null|undefined)
+right: undefined at [testcode] line 1 : 93 expected:&lt;0&gt; but was:&lt;1&gt;
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13212)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)
+	at com.google.javascript.jscomp.TypeCheckTest.testForwardTypeDeclaration7(TypeCheckTest.java:10591)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForwardTypeDeclaration8" time="0.002">
+    <failure message="unexpected warning(s) : JSC_TYPE_MISMATCH. No properties on this expression&#xa;found   : (null)&#xa;required: Object at [testcode] line 1 : 92 expected:&lt;0&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: unexpected warning(s) : JSC_TYPE_MISMATCH. No properties on this expression
+found   : (null)
+required: Object at [testcode] line 1 : 92 expected:&lt;0&gt; but was:&lt;1&gt;
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13212)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)
+	at com.google.javascript.jscomp.TypeCheckTest.testForwardTypeDeclaration8(TypeCheckTest.java:10598)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForwardTypeDeclaration9" time="0.002">
+    <failure message="unexpected warning(s) : JSC_TYPE_MISMATCH. No properties on this expression&#xa;found   : (null)&#xa;required: Object at [testcode] line 1 : 85 expected:&lt;0&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: unexpected warning(s) : JSC_TYPE_MISMATCH. No properties on this expression
+found   : (null)
+required: Object at [testcode] line 1 : 85 expected:&lt;0&gt; but was:&lt;1&gt;
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13212)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)
+	at com.google.javascript.jscomp.TypeCheckTest.testForwardTypeDeclaration9(TypeCheckTest.java:10605)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForwardTypeDeclaration10" time="0.002">
+    <failure message="expected:&lt;[actual parameter 1 of f does not match formal parameter&#xa;found   : string&#xa;required: (MyType|null|number)]&gt; but was:&lt;[actual parameter 1 of f does not match formal parameter&#xa;found   : string&#xa;required: (null|number)]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[actual parameter 1 of f does not match formal parameter
+found   : string
+required: (MyType|null|number)]&gt; but was:&lt;[actual parameter 1 of f does not match formal parameter
+found   : string
+required: (null|number)]&gt;
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13225)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)
+	at com.google.javascript.jscomp.TypeCheckTest.testForwardTypeDeclaration10(TypeCheckTest.java:10616)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForwardTypeDeclaration12" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testForwardTypeDeclaration13" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateTypeDef" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeDef1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeDef2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeDef3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeDef4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeDef5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCircularTypeDef" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetTypedPercent1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetTypedPercent2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetTypedPercent3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetTypedPercent4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetTypedPercent5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGetTypedPercent6" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPrototypePropertyReference" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testResolvingNamedTypes" time="0.002">
+    <failure message="expected:&lt;100.0&gt; but was:&lt;90.9090909090909&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;100.0&gt; but was:&lt;90.9090909090909&gt;
+	at com.google.javascript.jscomp.TypeCheckTest.testResolvingNamedTypes(TypeCheckTest.java:10811)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty5" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty6" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty7" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty9" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty10" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty11" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty12" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty13" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty14" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty15" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty16" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty17" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty18" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty19" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty20" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty21" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty22" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty23" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty24" time="0.001">
+    <failure message="unexpected warning(s) : JSC_TYPE_MISMATCH. No properties on this expression&#xa;found   : (null)&#xa;required: Object at [testcode] line 1 : 95 expected:&lt;0&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: unexpected warning(s) : JSC_TYPE_MISMATCH. No properties on this expression
+found   : (null)
+required: Object at [testcode] line 1 : 95 expected:&lt;0&gt; but was:&lt;1&gt;
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13212)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)
+	at com.google.javascript.jscomp.TypeCheckTest.testMissingProperty24(TypeCheckTest.java:10970)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty25" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty26" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty27" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty28" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty29" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty30" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty31" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty32" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty33" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty34" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty35" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty36" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty37" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty38" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty39" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty40" time="0.001">
+    <failure message="unexpected warning(s) : JSC_INEXISTENT_PROPERTY. Property impossible never defined on Array at [testcode] line 1 : 105 expected:&lt;0&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: unexpected warning(s) : JSC_INEXISTENT_PROPERTY. Property impossible never defined on Array at [testcode] line 1 : 105 expected:&lt;0&gt; but was:&lt;1&gt;
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13212)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)
+	at com.google.javascript.jscomp.TypeCheckTest.testMissingProperty40(TypeCheckTest.java:11127)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty41" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty42" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMissingProperty43" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testReflectObject1" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testReflectObject2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testLends1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testLends2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testLends3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testLends4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testLends5" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testLends6" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testLends7" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testLends8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testLends9" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testLends10" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testLends11" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDeclaredNativeTypeEquality" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUndefinedVar" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFlowScopeBug1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFlowScopeBug2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testAddSingletonGetter" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTypeCheckStandaloneAST" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUpdateParameterTypeOnClosure" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatedThisType1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatedThisType2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType1" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType4" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType5" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType7" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType9" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType10" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType11" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType12" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType13" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType14" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType15" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType16" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType17" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType18" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType19" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType20" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType21" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType22" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateType23" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateTypeWithUnresolvedType" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateTypeWithTypeDef1a" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateTypeWithTypeDef1b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateTypeWithTypeDef2a" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateTypeWithTypeDef2b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateTypeWithTypeDef2c" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateTypeWithTypeDef2d" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatedFunctionInUnion1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateTypeRecursion1" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateTypeRecursion2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplateTypeRecursion3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionLiteralDefinedThisArgument" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionLiteralDefinedThisArgument2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFunctionLiteralUnreadNullThisArgument" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnionTemplateThisType" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testActiveXObject" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testRecordType1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testRecordType2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testRecordType3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testRecordType4" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testRecordType5" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testRecordType6" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testRecordType7" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testRecordType8" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateRecordFields1" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDuplicateRecordFields2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMultipleExtendsInterface1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMultipleExtendsInterface2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMultipleExtendsInterface3" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMultipleExtendsInterface4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMultipleExtendsInterface5" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMultipleExtendsInterface6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMultipleExtendsInterfaceAssignment" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testMultipleExtendsInterfaceParamPass" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBadMultipleExtendsClass" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testInterfaceExtendsResolution" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testPropertyCanBeDefinedInObject" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendedInterfacePropertiesCompatibility1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendedInterfacePropertiesCompatibility2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendedInterfacePropertiesCompatibility3" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendedInterfacePropertiesCompatibility4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendedInterfacePropertiesCompatibility5" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendedInterfacePropertiesCompatibility6" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendedInterfacePropertiesCompatibility7" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendedInterfacePropertiesCompatibility8" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendedInterfacePropertiesCompatibility9" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testExtendedInterfacePropertiesCompatibilityNoError" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testGenerics1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFilter0" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFilter1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFilter2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testFilter3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsInferenceGoogArrayFilter1" time="0.003">
+    <failure message="unexpected warning(s) :  expected:&lt;1&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: unexpected warning(s) :  expected:&lt;1&gt; but was:&lt;0&gt;
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13217)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)
+	at com.google.javascript.jscomp.TypeCheckTest.testBackwardsInferenceGoogArrayFilter1(TypeCheckTest.java:12683)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsInferenceGoogArrayFilter2" time="0.002">
+    <failure message="unexpected warning(s) :  expected:&lt;1&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: unexpected warning(s) :  expected:&lt;1&gt; but was:&lt;0&gt;
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13217)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)
+	at com.google.javascript.jscomp.TypeCheckTest.testBackwardsInferenceGoogArrayFilter2(TypeCheckTest.java:12697)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsInferenceGoogArrayFilter3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBackwardsInferenceGoogArrayFilter4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCatchExpression1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testCatchExpression2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatized1" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatized2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatized3" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatized4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatized5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatized6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatized7" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatized9" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatized10" time="0.002">
+    <failure message="expected a warning" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected a warning
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)
+	at com.google.javascript.jscomp.TypeCheckTest.testTemplatized10(TypeCheckTest.java:12925)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatized11" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue1058" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testDeterminacyIssue" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnknownTypeReport" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnknownForIn" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testUnknownTypeDisabledByDefault" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testTemplatizedTypeSubtypes2" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNonexistentPropertyAccessOnStruct" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNonexistentPropertyAccessOnStructOrObject" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNonexistentPropertyAccessOnExternStruct" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNonexistentPropertyAccessStructSubtype" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testNonexistentPropertyAccessStructSubtype2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testIssue1024" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testBug12722936" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.TypeCheckTest" name="testModuleReferenceNotAllowed" time="0.002" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

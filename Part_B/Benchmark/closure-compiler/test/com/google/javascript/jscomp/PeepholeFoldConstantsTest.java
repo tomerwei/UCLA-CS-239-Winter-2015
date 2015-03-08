@@ -354,7 +354,7 @@ public class PeepholeFoldConstantsTest extends CompilerTestCase {
     fold("x = [foo()] && x", "x = ([foo()],x)");
 
     fold("x = false && x", "x = false");
-    fold("x = true || x", "x = true");
+    fold("x = true && x", "x = true");
     fold("x = false || x", "x = x");
     fold("x = 0 && x", "x = 0");
     fold("x = 3 || x", "x = 3");
@@ -364,7 +364,7 @@ public class PeepholeFoldConstantsTest extends CompilerTestCase {
     fold("a = x && true", "a=x&&true");
     fold("a = x && false", "a=x&&false");
     fold("a = x || 3", "a=x||3");
-    fold("a = x || false", "a=x||false");
+    fold("a = x && false", "a=x||false");
     fold("a = b ? c : x || false", "a=b?c:x||false");
     fold("a = b ? x || false : c", "a=b?x||false:c");
     fold("a = b ? c : x && true", "a=b?c:x&&true");

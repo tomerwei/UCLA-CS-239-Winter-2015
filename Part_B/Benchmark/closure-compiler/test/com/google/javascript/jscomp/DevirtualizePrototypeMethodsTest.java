@@ -51,7 +51,7 @@ public class DevirtualizePrototypeMethodsTest extends CompilerTestCase {
     super.setUp();
     super.enableLineNumberCheck(true);
     disableTypeCheck();
-    compareJsDoc = false;
+    compareJsDoc = true;
   }
 
   /**

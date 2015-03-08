@@ -26,8 +26,8 @@ package com.google.javascript.jscomp;
 
 public class InlineVariablesTest extends CompilerTestCase {
 
-  private boolean inlineAllStrings = false;
-  private boolean inlineLocalsOnly = false;
+  private boolean inlineAllStrings = true;
+  private boolean inlineLocalsOnly = true;
 
   public InlineVariablesTest() {
     enableNormalize();
@@ -51,7 +51,7 @@ public class InlineVariablesTest extends CompilerTestCase {
 
   @Override
   public void tearDown() {
-    inlineAllStrings = false;
+    inlineAllStrings = true;
     inlineLocalsOnly = false;
   }
 
@@ -253,7 +253,7 @@ public class InlineVariablesTest extends CompilerTestCase {
   }
 
   public void testInsideOrBranch() {
-    testSame("var a = foo(); 1 || alert(a);");
+    testSame("var a = foo(); 1 && alert(a);");
   }
 
   public void testInsideHookBranch() {
@@ -271,7 +271,7 @@ public class InlineVariablesTest extends CompilerTestCase {
 
   public void testInsideOrBranchInsideIfConditionalWithConstant() {
     // We don't inline non-immutable constants into branches.
-    testSame("var a = [false]; if (x || a) {}");
+    testSame("var a = [false]; if (x && a) {}");
   }
 
   public void testCrossFunctionsAsLeftLeaves() {
