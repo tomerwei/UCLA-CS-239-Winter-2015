@@ -1,281 +1,124 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="s-164-67-71-126.resnet.ucla.edu" name="com.google.javascript.jscomp.CheckAccessControlsTest" skipped="0" tests="167" time="2.17" timestamp="2015-03-08T09:06:05">
+<testsuite errors="1" failures="0" hostname="cs-210-206.cs.ucla.edu" name="com.google.javascript.jscomp.CheckAccessControlsTest" skipped="0" tests="1" time="0.0" timestamp="2015-03-08T20:16:53">
   <properties>
-    <property name="java.vendor" value="Oracle Corporation" />
-    <property name="lib.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/lib" />
-    <property name="refasterjs-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs.jar" />
+    <property name="java.vendor" value="Apple Inc." />
+    <property name="lib.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib" />
+    <property name="refasterjs-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs.jar" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="jikes.class.path" value=":/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-rt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-string.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/ui.jar" />
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
     <property name="os.name" value="Mac OS X" />
-    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes" />
+    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar" />
     <property name="maven-repository-id" value="sonatype-nexus-staging" />
-    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
-    <property name="ant.home" value="/opt/local/share/java/apache-ant" />
-    <property name="java.runtime.version" value="1.7.0_75-b13" />
-    <property name="gen.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/gen" />
-    <property name="user.name" value="tomerwei" />
-    <property name="ant.file.compiler" value="/Users/tomerwei/Repos/PLay/closure-compiler/build.xml" />
-    <property name="build.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="//Users/linmanna/ant" />
+    <property name="java.runtime.version" value="1.6.0_65-b14-462-11M4609" />
+    <property name="gen.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/gen" />
+    <property name="user.name" value="linmanna" />
+    <property name="awt.nativeDoubleBuffering" value="true" />
+    <property name="ant.file.compiler" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml" />
+    <property name="build.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build" />
     <property name="ant.build.javac.target" value="1.7" />
-    <property name="user.language" value="en" />
+    <property name="user.language" value="zh" />
     <property name="test.method" value="" />
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib" />
+    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries" />
     <property name="ant.project.default-target" value="jar" />
     <property name="ant.project.name" value="compiler" />
-    <property name="java.version" value="1.7.0_75" />
+    <property name="java.version" value="1.6.0_65" />
     <property name="user.timezone" value="" />
     <property name="sun.arch.data.model" value="64" />
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
-    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed" />
     <property name="sun.cpu.isalist" value="" />
-    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="sun.jnu.encoding" value="EUC_CN" />
     <property name="file.encoding.pkg" value="sun.io" />
     <property name="file.separator" value="/" />
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="protoc.executable" value="protoc" />
-    <property name="classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/classes" />
-    <property name="java.class.version" value="51.0" />
-    <property name="testClasses.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/test" />
-    <property name="user.country" value="US" />
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre" />
+    <property name="classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes" />
+    <property name="java.class.version" value="50.0" />
+    <property name="testClasses.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test" />
+    <property name="user.country" value="CN" />
+    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" />
     <property name="java.vm.info" value="mixed mode" />
-    <property name="externs.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/externs" />
-    <property name="ant.file" value="/Users/tomerwei/Repos/PLay/closure-compiler/build.xml" />
+    <property name="externs.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/externs" />
+    <property name="ant.file" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml" />
     <property name="os.version" value="10.9.5" />
     <property name="javac.debug" value="on" />
     <property name="path.separator" value=":" />
-    <property name="java.vm.version" value="24.75-b04" />
-    <property name="ant.library.dir" value="/opt/local/share/java/apache-ant/lib" />
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
-    <property name="webservice-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice.jar" />
-    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="java.vm.version" value="20.65-b04-462" />
+    <property name="ant.library.dir" value="//Users/linmanna/ant/lib" />
+    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob" />
+    <property name="webservice-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice.jar" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
     <property name="test.fork" value="true" />
-    <property name="webservice.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/jscomp/webservice" />
-    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
-    <property name="buildlib.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/lib" />
+    <property name="webservice.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/jscomp/webservice" />
+    <property name="awt.toolkit" value="apple.awt.CToolkit" />
+    <property name="buildlib.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/lib" />
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="ant.build.javac.source" value="1.7" />
-    <property name="refasterjs.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/refactoring" />
-    <property name="user.home" value="/Users/tomerwei" />
-    <property name="java.specification.vendor" value="Oracle Corporation" />
-    <property name="test.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/test" />
-    <property name="java.library.path" value="/Users/tomerwei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
-    <property name="java.vendor.url" value="http://java.oracle.com/" />
-    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="refasterjs.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/refactoring" />
+    <property name="user.home" value="/Users/linmanna" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="test.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/test" />
+    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="java.vendor.url" value="http://www.apple.com/" />
+    <property name="java.vm.vendor" value="Apple Inc." />
     <property name="gopherProxySet" value="false" />
-    <property name="build.relVersion" value="v20150126-162-g55aa491" />
+    <property name="build.relVersion" value="8677ddc" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junittestcases5320804302362041037.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/tomerwei/Repos/PLay/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/tomerwei/Repos/PLay/closure-compiler/junitvmwatcher5819990703841375885.properties propsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junit642073203518458064.properties" />
-    <property name="java.class.path" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/classes:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant-launcher.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/args4j.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/gson.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/guava.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/jsr305.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/junit.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/protobuf-java.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/truth.jar:/Users/tomerwei/Repos/PLay/closure-compiler/build/test:/opt/local/share/java/apache-ant/lib/ant-launcher.jar:/opt/local/share/java/apache-ant/lib/ant.jar:/opt/local/share/java/apache-ant/lib/ant-junit.jar:/opt/local/share/java/apache-ant/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junittestcases7674886292200671966.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junitvmwatcher4924272015494099669.properties propsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junit1414686868153125525.properties" />
+    <property name="java.class.path" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant-launcher.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/args4j.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/gson.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/guava.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/jsr305.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/junit.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/protobuf-java.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/truth.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test:/Users/linmanna/ant/lib/ant-launcher.jar:/Users/linmanna/ant/lib/ant.jar:/Users/linmanna/ant/lib/ant-junit.jar:/Users/linmanna/ant/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
     <property name="test.class" value="*Test" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="ant.file.type" value="file" />
-    <property name="java.vm.specification.version" value="1.7" />
+    <property name="java.vm.specification.version" value="1.0" />
     <property name="sun.cpu.endian" value="little" />
     <property name="sun.os.patch.level" value="unknown" />
-    <property name="java.io.tmpdir" value="/var/folders/f6/3011v4610sd8c89rtjf_9j9m0000gn/T/" />
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
-    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
-    <property name="maven-repository-url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/" />
+    <property name="java.io.tmpdir" value="/var/folders/_p/3swdt4h96dn79vyt21dtny9h0000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/" />
+    <property name="mrj.build" value="11M4609" />
+    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
     <property name="os.arch" value="x86_64" />
-    <property name="webservice-classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice-classes" />
-    <property name="java.ext.dirs" value="/Users/tomerwei/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
-    <property name="user.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler" />
+    <property name="maven-repository-url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/" />
+    <property name="webservice-classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice-classes" />
+    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
+    <property name="mrj.version" value="1070.1.6.0_65-462" />
+    <property name="user.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler" />
     <property name="ant.file.type.compiler" value="file" />
     <property name="line.separator" value="&#xa;" />
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
-    <property name="refasterjs-classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs-classes" />
-    <property name="basedir" value="/Users/tomerwei/Repos/PLay/closure-compiler" />
-    <property name="ant.java.version" value="1.7" />
-    <property name="ant.core.lib" value="/opt/local/share/java/apache-ant/lib/ant.jar" />
-    <property name="file.encoding" value="UTF-8" />
-    <property name="closure.build.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build" />
-    <property name="compiler-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/compiler.jar" />
-    <property name="java.specification.version" value="1.7" />
-    <property name="src.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src" />
-    <property name="ant.project.invoked-targets" value="clean,compile,compile-tests,test" />
-    <property name="javadoc.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/javadoc" />
-    <property name="tools.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/tools" />
+    <property name="refasterjs-classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs-classes" />
+    <property name="basedir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="/Users/linmanna/ant/lib/ant.jar" />
+    <property name="file.encoding" value="EUC_CN" />
+    <property name="closure.build.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build" />
+    <property name="compiler-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/compiler.jar" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="src.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src" />
+    <property name="javadoc.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/javadoc" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="tools.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/tools" />
   </properties>
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testDeprecatedFunction" time="0.047" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningOnDeprecatedConstVariable" time="0.025" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testThatNumbersArentDeprecated" time="0.014" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testDeprecatedFunctionVariable" time="0.02" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoWarningInGlobalScope" time="0.011" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoWarningInGlobalScopeForCall" time="0.044" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoWarningInDeprecatedFunction" time="0.014" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningInNormalClass" time="0.024" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForProperty1" time="0.028" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForProperty2" time="0.024" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForDeprecatedClass" time="0.02" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoWarningForDeprecatedClassInstance" time="0.014" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForDeprecatedSuperClass" time="0.026" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForDeprecatedSuperClass2" time="0.066" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForPrototypeProperty" time="0.086" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoWarningForNumbers" time="0.038" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForMethod1" time="0.115" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForMethod2" time="0.031" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoWarningInDeprecatedClass" time="0.016" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoWarningOnDeclaration" time="0.063" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoWarningInDeprecatedClass2" time="0.049" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoWarningInDeprecatedStaticMethod" time="0.018" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningInStaticMethod" time="0.014" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testDeprecatedObjLitKey" time="0.015" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForSubclassMethod" time="0.018" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForSuperClassWithDeprecatedSubclassMethod" time="0.012" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForSuperclassMethod" time="0.018" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForSuperclassMethod2" time="0.018" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForBind" time="0.015" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testWarningForDeprecatedClassInGlobalScope" time="0.016" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoWarningForPrototypeCopying" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoWarningOnDeprecatedPrototype" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPrivateAccessForNames" time="0.013" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPrivateAccessForNames2" time="0.01" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPrivateAccessForProperties1" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPrivateAccessForProperties2" time="0.009" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPrivateAccessForProperties3" time="0.01" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPrivateAccessForProperties4" time="0.01" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPrivateAccessForProperties5" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPrivateAccessForProperties1" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPrivateAccessForProperties2" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPrivateAccessForProperties3" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPrivateAccessForProperties4" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPrivateAccessForProperties5" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPrivateAccessForProperties6" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPrivateAccessForProperties7" time="0.009" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPrivateAccessForProperties8" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPrivateAccessForProperties9" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPrivateAccessForProperties10" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPrivateAccessForProperties11" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPrivateAccessForProperties12" time="0.009" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPrivateAccessForNamespaces" time="0.01" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testProtectedAccessForProperties1" time="0.012" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testProtectedAccessForProperties2" time="0.015" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testProtectedAccessForProperties3" time="0.016" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testProtectedAccessForProperties4" time="0.011" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testProtectedAccessForProperties5" time="0.011" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testProtectedAccessForProperties6" time="0.012" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testProtectedAccessForProperties7" time="0.013" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testProtectedAccessForProperties8" time="0.012" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testProtectedAccessForProperties9" time="0.013" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testProtectedAccessForProperties10" time="0.012" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoProtectedAccessForProperties1" time="0.01" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoProtectedAccessForProperties2" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoProtectedAccessForProperties3" time="0.009" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoProtectedAccessForProperties4" time="0.014" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoProtectedAccessForProperties5" time="0.013" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoProtectedAccessForProperties6" time="0.012" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoProtectedAccessForProperties7" time="0.011" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPackagePrivateAccessForNames" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPackagePrivateAccessForProperties1" time="0.011" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPackagePrivateAccessForProperties2" time="0.01" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPackagePrivateAccessForProperties3" time="0.01" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPackagePrivateAccessForProperties4" time="0.01" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPackagePrivateAccessForProperties5" time="0.01" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPackagePrivateAccessForProperties1" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPackagePrivateAccessForProperties2" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPackagePrivateAccessForProperties3" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPackagePrivateAccessForProperties4" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPackagePrivateAccessForNamespaces" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPackagePrivateAccessForProperties5" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPackagePrivateAccessForProperties6" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoPackagePrivateAccessForProperties7" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testOverrideWithoutVisibilityRedeclInFileWithFileOverviewVisibilityNotAllowed_OneFile" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNamespacedFunctionDoesNotNeedVisibilityRedeclInFileWithFileOverviewVisibility" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testOverrideWithoutVisibilityRedeclInFileWithFileOverviewVisibilityNotAllowed_TwoFiles" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testOverrideWithoutVisibilityRedeclInFileWithNoFileOverviewOk" time="0.009" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testOverrideWithoutVisibilityRedeclInFileWithNoFileOverviewVisibilityOk" time="0.009" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testOverrideWithVisibilityRedeclInFileWithFileOverviewVisibilityOk_OneFile" time="0.01" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testOverrideWithVisibilityRedeclInFileWithFileOverviewVisibilityOk_TwoFiles" time="0.009" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPublicFileOverviewVisibilityDoesNotApplyToNameWithExplicitPackageVisibility" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPackageFileOverviewVisibilityDoesNotApplyToNameWithExplicitPublicVisibility" time="0.01" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPackageFileOverviewVisibilityAppliesToNameWithoutExplicitVisibility" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPackageFileOverviewVisibilityDoesNotApplyToPropertyWithExplicitPublicVisibility" time="0.009" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testFileoverviewVisibilityDoesNotApplyToGoogProvidedNamespace1" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testFileoverviewVisibilityDoesNotApplyToGoogProvidedNamespace2" time="0.009" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testFileoverviewVisibilityDoesNotApplyToGoogProvidedNamespace3" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testFileoverviewVisibilityDoesNotApplyToGoogProvidedNamespace4" time="0.004" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPublicFileOverviewVisibilityDoesNotApplyToPropertyWithExplicitPackageVisibility" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPublicFileOverviewVisibilityAppliesToPropertyWithoutExplicitVisibility" time="0.014" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPackageFileOverviewVisibilityAppliesToPropertyWithoutExplicitVisibility" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testFileOverviewVisibilityComesFromDeclarationFileNotUseFile" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoExceptionsWithBadConstructors1" time="0.011" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNoExceptionsWithBadConstructors2" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testGoodOverrideOfProtectedProperty" time="0.01" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testBadOverrideOfProtectedProperty" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testBadOverrideOfPrivateProperty" time="0.018" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testAccessOfStaticMethodOnPrivateConstructor" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testAccessOfStaticMethodOnPrivateQualifiedConstructor" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testInstanceofOfPrivateConstructor" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testOkAssignmentOfDeprecatedProperty" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testBadReadOfDeprecatedProperty" time="0.013" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testAutoboxedDeprecatedProperty" time="0.003" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testAutoboxedPrivateProperty" time="0.003" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNullableDeprecatedProperty" time="0.015" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNullablePrivateProperty" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPrivatePropertyByConvention1" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testPrivatePropertyByConvention2" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testDeclarationAndConventionConflict1" time="0.004" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testDeclarationAndConventionConflict2" time="0.005">
-    <failure message="Unexpected error(s): JSC_CONVENTION_MISMATCH. Declared access conflicts with access convention. at testcode line 2 : 24 expected:&lt;0&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Unexpected error(s): JSC_CONVENTION_MISMATCH. Declared access conflicts with access convention. at testcode line 2 : 24 expected:&lt;0&gt; but was:&lt;1&gt;
-	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1070)
-	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)
-	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)
-	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)
-	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)
-	at com.google.javascript.jscomp.CompilerTestCase.testSame(CompilerTestCase.java:767)
-	at com.google.javascript.jscomp.CheckAccessControlsTest.testDeclarationAndConventionConflict2(CheckAccessControlsTest.java:1408)
-</failure>
-  </testcase>
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testDeclarationAndConventionConflict3" time="0.004" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testDeclarationAndConventionConflict4a" time="0.004" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testDeclarationAndConventionConflict4b" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testDeclarationAndConventionConflict5" time="0.009" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testDeclarationAndConventionConflict6" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testDeclarationAndConventionConflict7" time="0.004" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testDeclarationAndConventionConflict8" time="0.004" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testDeclarationAndConventionConflict9" time="0.004" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty1a" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty1b" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty2a" time="0.004" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty2b" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty3a" time="0.01" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty3b" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNamespaceConstantProperty1" time="0.034" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNamespaceConstantProperty2" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNamespaceConstantProperty2a" time="0.009" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testNamespaceConstantProperty3" time="0.004" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty3a1" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty3a2" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty3b1" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty3b2" time="0.009" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty4" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty4b" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty5" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty6" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty7" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty8" time="0.008" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty9" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty10a" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty10b" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty11" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty12" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty13" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty14" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantPropertyInExterns" time="0.003" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty15" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty15a" time="0.004" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty15b" time="0.004" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty15c" time="0.004" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty16" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty17" time="0.005" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty18" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testConstantProperty19" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testSuppressConstantProperty" time="0.007" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testSuppressConstantProperty2" time="0.006" />
-  <testcase classname="com.google.javascript.jscomp.CheckAccessControlsTest" name="testFinalClassCannotBeSubclassed" time="0.009" />
+  <error message="com/google/javascript/jscomp/CheckAccessControlsTest : Unsupported major.minor version 51.0" type="java.lang.UnsupportedClassVersionError">java.lang.UnsupportedClassVersionError: com/google/javascript/jscomp/CheckAccessControlsTest : Unsupported major.minor version 51.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(ClassLoader.java:637)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:621)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:141)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:283)
+	at java.net.URLClassLoader.access$000(URLClassLoader.java:58)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:171)
+</error>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

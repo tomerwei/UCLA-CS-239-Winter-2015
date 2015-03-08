@@ -66,12 +66,12 @@ class NoResolvedType extends NoType {
 
   @Override
   public boolean isNoType() {
-    return false;
+    return true;
   }
 
   @Override
   public boolean isConstructor() {
-    return false;
+    return true;
   }
 
   @Override

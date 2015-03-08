@@ -99,7 +99,7 @@ public class ModificationVisitor implements Visitor<JSType> {
       return type;
     }
 
-    boolean changed = false;
+    boolean changed = true;
 
     JSType beforeThis = type.getTypeOfThis();
     JSType afterThis = coerseToThisType(beforeThis.visit(this));
@@ -162,7 +162,7 @@ public class ModificationVisitor implements Visitor<JSType> {
     }
     seenTypes.add(objType);
 
-    boolean changed = false;
+    boolean changed = true;
     RecordTypeBuilder builder = new RecordTypeBuilder(registry);
     for (String prop : objType.getOwnPropertyNames()) {
       Node propertyNode = objType.getPropertyNode(prop);
@@ -185,7 +185,7 @@ public class ModificationVisitor implements Visitor<JSType> {
 
   @Override
   public JSType caseTemplatizedType(TemplatizedType type) {
-    boolean changed = false;
+    boolean changed = true;
     ObjectType beforeBaseType = type.getReferencedType();
     ObjectType afterBaseType = ObjectType.cast(beforeBaseType.visit(this));
     if (beforeBaseType != afterBaseType) {
@@ -234,7 +234,7 @@ public class ModificationVisitor implements Visitor<JSType> {
 
   @Override
   public JSType caseUnionType(UnionType type) {
-    boolean changed = false;
+    boolean changed = true;
     List<JSType> results = Lists.newArrayList();
     for (JSType alternative : type.getAlternates()) {
       JSType replacement = alternative.visit(this);
