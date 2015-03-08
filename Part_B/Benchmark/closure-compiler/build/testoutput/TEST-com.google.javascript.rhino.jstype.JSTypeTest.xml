@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="3" hostname="s-164-67-71-126.resnet.ucla.edu" name="com.google.javascript.rhino.jstype.JSTypeTest" skipped="0" tests="144" time="0.477" timestamp="2015-03-08T09:06:42">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="lib.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/lib" />
+    <property name="refasterjs-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs.jar" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes" />
+    <property name="maven-repository-id" value="sonatype-nexus-staging" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/opt/local/share/java/apache-ant" />
+    <property name="java.runtime.version" value="1.7.0_75-b13" />
+    <property name="gen.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/gen" />
+    <property name="user.name" value="tomerwei" />
+    <property name="ant.file.compiler" value="/Users/tomerwei/Repos/PLay/closure-compiler/build.xml" />
+    <property name="build.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build" />
+    <property name="ant.build.javac.target" value="1.7" />
+    <property name="user.language" value="en" />
+    <property name="test.method" value="" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="jar" />
+    <property name="ant.project.name" value="compiler" />
+    <property name="java.version" value="1.7.0_75" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="protoc.executable" value="protoc" />
+    <property name="classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/classes" />
+    <property name="java.class.version" value="51.0" />
+    <property name="testClasses.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/test" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="externs.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/externs" />
+    <property name="ant.file" value="/Users/tomerwei/Repos/PLay/closure-compiler/build.xml" />
+    <property name="os.version" value="10.9.5" />
+    <property name="javac.debug" value="on" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="24.75-b04" />
+    <property name="ant.library.dir" value="/opt/local/share/java/apache-ant/lib" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="webservice-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice.jar" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="test.fork" value="true" />
+    <property name="webservice.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/jscomp/webservice" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="buildlib.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/lib" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ant.build.javac.source" value="1.7" />
+    <property name="refasterjs.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/refactoring" />
+    <property name="user.home" value="/Users/tomerwei" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/test" />
+    <property name="java.library.path" value="/Users/tomerwei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="gopherProxySet" value="false" />
+    <property name="build.relVersion" value="v20150126-162-g55aa491" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junittestcases5320804302362041037.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/tomerwei/Repos/PLay/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/tomerwei/Repos/PLay/closure-compiler/junitvmwatcher5819990703841375885.properties propsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junit642073203518458064.properties" />
+    <property name="java.class.path" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/classes:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant-launcher.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/args4j.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/gson.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/guava.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/jsr305.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/junit.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/protobuf-java.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/truth.jar:/Users/tomerwei/Repos/PLay/closure-compiler/build/test:/opt/local/share/java/apache-ant/lib/ant-launcher.jar:/opt/local/share/java/apache-ant/lib/ant.jar:/opt/local/share/java/apache-ant/lib/ant-junit.jar:/opt/local/share/java/apache-ant/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
+    <property name="test.class" value="*Test" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/var/folders/f6/3011v4610sd8c89rtjf_9j9m0000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="maven-repository-url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/" />
+    <property name="os.arch" value="x86_64" />
+    <property name="webservice-classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice-classes" />
+    <property name="java.ext.dirs" value="/Users/tomerwei/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler" />
+    <property name="ant.file.type.compiler" value="file" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="refasterjs-classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs-classes" />
+    <property name="basedir" value="/Users/tomerwei/Repos/PLay/closure-compiler" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="/opt/local/share/java/apache-ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="closure.build.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build" />
+    <property name="compiler-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/compiler.jar" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="src.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src" />
+    <property name="ant.project.invoked-targets" value="clean,compile,compile-tests,test" />
+    <property name="javadoc.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/javadoc" />
+    <property name="tools.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/tools" />
+  </properties>
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testFunctionType" time="0.003" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testArrayType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordType" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testNullType" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testObjectType" time="0.007" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testUnknownType" time="0.009" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testCreateRecordType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testUniversalConstructorType" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testNoObjectType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testNoType" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testNoResolvedType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testCheckedUnknownType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testAllType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testTheObjectType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testNumberObjectType" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testNumberValueType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testDateType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRegExpType" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testStringObjectType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testStringValueType" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testFunctionInstanceType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeSubtyping" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeSubtypingWithInferredProperties" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeLeastSuperType1" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeLeastSuperType2" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeLeastSuperType3" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeLeastSuperType4" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeGreatestSubType1" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeGreatestSubType2" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeGreatestSubType3" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeGreatestSubType4" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeGreatestSubType5" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeGreatestSubType6" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeGreatestSubType7" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordTypeGreatestSubType8" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testApplyOfDateMethod" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testCallOfDateMethod" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testFunctionTypeRepresentation" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testFunctionTypeRelationships" time="0.004" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testProxiedFunctionTypeRelationships" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testFunctionSubTypeRelationships" time="0.003" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testFunctionPrototypeAndImplicitPrototype1" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testFunctionPrototypeAndImplicitPrototype2" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testJSDocOnPrototypeProperty" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testIsVoidable" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testVoidType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testBooleanValueType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testBooleanObjectType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testEnumType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testEnumElementType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testStringEnumType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testStringObjectEnumType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGoogBar" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testObjectTypePropertiesCount" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testDefineProperties" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testObjectTypePropertiesCountWithShadowing" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testNamedGoogBar" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testPrototypeChaining" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testInstanceFunctionChaining" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testCanTestForEqualityWithCornerCases" time="0.001">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at com.google.javascript.rhino.jstype.JSTypeTest.assertCanTestForEqualityWith(JSTypeTest.java:4143)
+	at com.google.javascript.rhino.jstype.JSTypeTest.testCanTestForEqualityWithCornerCases(JSTypeTest.java:4065)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testTestForEquality" time="0.001">
+    <failure message="expected:&lt;unknown&gt; but was:&lt;false&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;unknown&gt; but was:&lt;false&gt;
+	at com.google.javascript.rhino.jstype.JSTypeTest.compare(JSTypeTest.java:4138)
+	at com.google.javascript.rhino.jstype.JSTypeTest.testTestForEquality(JSTypeTest.java:4088)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSubtypingSimpleTypes" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSubtypingObjectTopOfObjects" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSubtypingFunctionPrototypeType" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSubtypingFunctionFixedArgs" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSubtypingFunctionMultipleFixedArgs" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSubtypingFunctionFixedArgsNotMatching" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSubtypingFunctionVariableArgsOneOnly" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSubtypingFunctionVariableArgsBoth" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSubtypingMostGeneralFunction" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSymmetryOfTestForEquality" time="0.002">
+    <failure message="testForEquality not symmetrical:&#xa;typeA: null&#xa;typeB: (not.resolved.named.type|null)&#xa;a.testForEquality(b): unknown&#xa;b.testForEquality(a): true&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: testForEquality not symmetrical:
+typeA: null
+typeB: (not.resolved.named.type|null)
+a.testForEquality(b): unknown
+b.testForEquality(a): true
+
+	at com.google.javascript.rhino.jstype.JSTypeTest.testSymmetryOfTestForEquality(JSTypeTest.java:4638)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSymmetryOfLeastSupertype" time="0.049" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testWeirdBug" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSymmetryOfGreatestSubtype" time="0.036" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testReflexivityOfLeastSupertype" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testReflexivityOfGreatestSubtype" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testLeastSupertypeUnresolvedNamedType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testLeastSupertypeUnresolvedNamedType2" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testLeastSupertypeUnresolvedNamedType3" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSubclassOfUnresolvedNamedType" time="0.0" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSupertypeOfProxiedFunctionTypes" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testTypeOfThisIsProxied" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testNamedTypeEquals" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testNamedTypeEquals2" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testForwardDeclaredNamedTypeEquals" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testForwardDeclaredNamedType" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGreatestSubtypeSimpleTypes" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testSubtypingDerivedExtendsNamedBaseType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testNamedSubtypeChain" time="0.005" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordSubtypeChain" time="0.026" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordAndObjectChain2" time="0.004" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRecordAndObjectChain3" time="0.004" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testNullableNamedTypeChain" time="0.037" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testEnumTypeChain" time="0.005" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testFunctionSubtypeChain" time="0.017" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testFunctionUnionSubtypeChain" time="0.025" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testConstructorSubtypeChain" time="0.013" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGoogBarSubtypeChain" time="0.006" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testConstructorWithArgSubtypeChain" time="0.003" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testInterfaceInstanceSubtypeChain" time="0.013" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testInterfaceInheritanceSubtypeChain" time="0.009" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testAnonymousObjectChain" time="0.006" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testAnonymousEnumElementChain" time="0.006" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testTemplatizedArrayChain" time="0.004" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testTemplatizedArrayChain2" time="0.006" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testTemplatizedObjectChain" time="0.006" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testMixedTemplatizedTypeChain" time="0.009" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testTemplatizedTypeSubtypes" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testTemplatizedTypeRelations" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRestrictedTypeGivenToBoolean" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRegisterProperty" time="0.005" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testRegisterPropertyMemoization" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGreatestSubtypeWithProperty" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGoodSetPrototypeBasedOn" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testLateSetPrototypeBasedOn" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetTypeUnderEquality1" time="0.004" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetTypesUnderEquality2" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetTypesUnderEquality3" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetTypesUnderEquality4" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetTypesUnderEquality5" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetTypesUnderEquality6" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetTypesUnderInequality1" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetTypesUnderInequality2" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetTypesUnderInequality3" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetTypesUnderInequality4" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testCreateOptionalType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testCreateAnonymousObjectType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testCreateAnonymousObjectType2" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testCreateObjectType" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testBug903110" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testBug904123" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testHasOwnProperty" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testNamedTypeHasOwnProperty" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testInterfaceHasOwnProperty" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetPropertyNames" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetAndSetJSDocInfoWithNamedType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetAndSetJSDocInfoWithObjectTypes" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testGetAndSetJSDocInfoWithNoType" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testObjectGetSubTypes" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testImplementingType" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testIsTemplatedType" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testTemplatizedType" time="0.002" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testPartiallyTemplatizedType" time="0.001" />
+  <testcase classname="com.google.javascript.rhino.jstype.JSTypeTest" name="testCanCastTo" time="0.002" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

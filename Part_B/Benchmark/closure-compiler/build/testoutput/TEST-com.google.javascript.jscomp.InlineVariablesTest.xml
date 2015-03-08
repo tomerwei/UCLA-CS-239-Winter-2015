@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="s-164-67-71-126.resnet.ucla.edu" name="com.google.javascript.jscomp.InlineVariablesTest" skipped="0" tests="142" time="0.449" timestamp="2015-03-08T09:06:22">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="lib.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/lib" />
+    <property name="refasterjs-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs.jar" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes" />
+    <property name="maven-repository-id" value="sonatype-nexus-staging" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/opt/local/share/java/apache-ant" />
+    <property name="java.runtime.version" value="1.7.0_75-b13" />
+    <property name="gen.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/gen" />
+    <property name="user.name" value="tomerwei" />
+    <property name="ant.file.compiler" value="/Users/tomerwei/Repos/PLay/closure-compiler/build.xml" />
+    <property name="build.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build" />
+    <property name="ant.build.javac.target" value="1.7" />
+    <property name="user.language" value="en" />
+    <property name="test.method" value="" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="jar" />
+    <property name="ant.project.name" value="compiler" />
+    <property name="java.version" value="1.7.0_75" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="protoc.executable" value="protoc" />
+    <property name="classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/classes" />
+    <property name="java.class.version" value="51.0" />
+    <property name="testClasses.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/test" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="externs.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/externs" />
+    <property name="ant.file" value="/Users/tomerwei/Repos/PLay/closure-compiler/build.xml" />
+    <property name="os.version" value="10.9.5" />
+    <property name="javac.debug" value="on" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="24.75-b04" />
+    <property name="ant.library.dir" value="/opt/local/share/java/apache-ant/lib" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="webservice-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice.jar" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="test.fork" value="true" />
+    <property name="webservice.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/jscomp/webservice" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="buildlib.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/lib" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ant.build.javac.source" value="1.7" />
+    <property name="refasterjs.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/refactoring" />
+    <property name="user.home" value="/Users/tomerwei" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/test" />
+    <property name="java.library.path" value="/Users/tomerwei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="gopherProxySet" value="false" />
+    <property name="build.relVersion" value="v20150126-162-g55aa491" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junittestcases5320804302362041037.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/tomerwei/Repos/PLay/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/tomerwei/Repos/PLay/closure-compiler/junitvmwatcher5819990703841375885.properties propsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junit642073203518458064.properties" />
+    <property name="java.class.path" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/classes:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant-launcher.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/args4j.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/gson.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/guava.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/jsr305.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/junit.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/protobuf-java.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/truth.jar:/Users/tomerwei/Repos/PLay/closure-compiler/build/test:/opt/local/share/java/apache-ant/lib/ant-launcher.jar:/opt/local/share/java/apache-ant/lib/ant.jar:/opt/local/share/java/apache-ant/lib/ant-junit.jar:/opt/local/share/java/apache-ant/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
+    <property name="test.class" value="*Test" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/var/folders/f6/3011v4610sd8c89rtjf_9j9m0000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="maven-repository-url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/" />
+    <property name="os.arch" value="x86_64" />
+    <property name="webservice-classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice-classes" />
+    <property name="java.ext.dirs" value="/Users/tomerwei/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler" />
+    <property name="ant.file.type.compiler" value="file" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="refasterjs-classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs-classes" />
+    <property name="basedir" value="/Users/tomerwei/Repos/PLay/closure-compiler" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="/opt/local/share/java/apache-ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="closure.build.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build" />
+    <property name="compiler-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/compiler.jar" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="src.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src" />
+    <property name="ant.project.invoked-targets" value="clean,compile,compile-tests,test" />
+    <property name="javadoc.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/javadoc" />
+    <property name="tools.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/tools" />
+  </properties>
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testForIn" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testHoistedFunction1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testHoistedFunction2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineGetpropIntoCall" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotInlineIncrement" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotInlineIntoLhsOfAssign" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotExitLoop" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineGlobal" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineExportedName" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineExportedName2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotInlineDecrement" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineIntoRhsOfAssign" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineInFunction" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineInFunction2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineInFunction3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineInFunction4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineInFunction5" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineAcrossModules" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotExitConditional1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotExitConditional2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotExitConditional3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotExitForLoop" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotEnterSubscope" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotExitTry" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotEnterCatch" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotEnterFinally" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInsideIfConditional" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testOnlyReadAtInitialization" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testImmutableWithSingleReferenceAfterInitialzation" time="0.019" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testSingleReferenceAfterInitialzation" time="0.02" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInsideIfBranch" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInsideAndConditional" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInsideAndBranch" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInsideOrBranch" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInsideHookBranch" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInsideHookConditional" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInsideOrBranchInsideIfConditional" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInsideOrBranchInsideIfConditionalWithConstant" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testCrossFunctionsAsLeftLeaves" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoCrossFunction" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotCrossReferencingFunction" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testChainedAssignment" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoCrossNewVariables" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotCrossFunctionCalls" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotCrossAssignment" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotCrossDelete" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotCrossAssignmentPlus" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotCrossIncrement" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoNotCrossConstructor" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testDoCrossVar" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testOverlappingInlines" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testOverlappingInlineFunctions" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineIntoLoops" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineIntoFunction" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineIntoNamedFunction" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineIntoNestedNonHoistedNamedFunctions" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineIntoNestedNamedFunctions" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineMutatedVariable" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineImmutableMultipleTimes" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineStringMultipleTimesIfNotWorthwhile" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineStringMultipleTimesWhenAliasingAllStrings" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineBackwards" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineOutOfBranch" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInterferingInlines" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineIntoTryCatch" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineConstants" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineStringWhenWorthwhile" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineConstantAlias" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineConstantAliasWithAnnotation" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineConstantAliasWithNonConstant" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testCascadingInlines" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineFunctionDeclaration" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="test2388531" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testRecursiveFunction1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testRecursiveFunction2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testUnreferencedBleedingFunction" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testReferencedBleedingFunction" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineAliases1" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineAliases1b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineAliases1c" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineAliases1d" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineAliases2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineAliases2b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineAliases2c" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineAliases2d" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineAliasesInLoop" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliasesInLoop" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases1b" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases2b" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases3" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases3b" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases4b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases5" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases5b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases6b" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases7" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases7b" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineAliases8b" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testSideEffectOrder" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineParameterAlias1" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineParameterAlias2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineFunctionAlias1a" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineFunctionAlias1b" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineFunctionAlias2a" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineFunctionAlias2b" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineCatchAlias1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineCatchAlias2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testLocalsOnly1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testLocalsOnly2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineUndefined1" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineUndefined2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineUndefined3" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineUndefined4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineUndefined5" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testIssue90" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testThisAlias" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testThisEscapedAlias" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testInlineNamedFunction" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testIssue378ModifiedArguments1" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testIssue378ModifiedArguments2" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testIssue378EscapedArguments1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testIssue378EscapedArguments2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testIssue378EscapedArguments3" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testIssue378EscapedArguments4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testIssue378ArgumentsRead1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testIssue378ArgumentsRead2" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testArgumentsModifiedInOuterFunction" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testArgumentsModifiedInInnerFunction" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testNoInlineRedeclaredExterns" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testBug6598844" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testExternalIssue1053" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testHoistedFunction3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testHoistedFunction4" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testHoistedFunction5" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testHoistedFunction6" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testIssue354" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineVariablesTest" name="testRenamePropertyFunction" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,1047 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest'] = new Array();
+    
+        cur['ant.build.javac.source'] = '1.7';
+    
+        cur['ant.build.javac.target'] = '1.7';
+    
+        cur['ant.core.lib'] = '/opt/local/share/java/apache-ant/lib/ant.jar';
+    
+        cur['ant.file'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build.xml';
+    
+        cur['ant.file.compiler'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build.xml';
+    
+        cur['ant.file.type'] = 'file';
+    
+        cur['ant.file.type.compiler'] = 'file';
+    
+        cur['ant.home'] = '/opt/local/share/java/apache-ant';
+    
+        cur['ant.java.version'] = '1.7';
+    
+        cur['ant.library.dir'] = '/opt/local/share/java/apache-ant/lib';
+    
+        cur['ant.project.default-target'] = 'jar';
+    
+        cur['ant.project.invoked-targets'] = 'clean,compile,compile-tests,test';
+    
+        cur['ant.project.name'] = 'compiler';
+    
+        cur['ant.version'] = 'Apache Ant(TM) version 1.9.4 compiled on April 29 2014';
+    
+        cur['awt.toolkit'] = 'sun.lwawt.macosx.LWCToolkit';
+    
+        cur['basedir'] = '/Users/tomerwei/Repos/PLay/closure-compiler';
+    
+        cur['build.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build';
+    
+        cur['build.relVersion'] = 'v20150126-162-g55aa491';
+    
+        cur['buildlib.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/lib';
+    
+        cur['classes.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/classes';
+    
+        cur['closure.build.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build';
+    
+        cur['compiler-jarfile'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/compiler.jar';
+    
+        cur['externs.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/externs';
+    
+        cur['file.encoding'] = 'UTF-8';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '/';
+    
+        cur['ftp.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['gen.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/gen';
+    
+        cur['gopherProxySet'] = 'false';
+    
+        cur['http.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.CGraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.lwawt.macosx.CPrinterJob';
+    
+        cur['java.class.path'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/classes:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant-launcher.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/args4j.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/gson.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/guava.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/jsr305.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/junit.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/protobuf-java.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/truth.jar:/Users/tomerwei/Repos/PLay/closure-compiler/build/test:/opt/local/share/java/apache-ant/lib/ant-launcher.jar:/opt/local/share/java/apache-ant/lib/ant.jar:/opt/local/share/java/apache-ant/lib/ant-junit.jar:/opt/local/share/java/apache-ant/lib/ant-junit4.jar';
+    
+        cur['java.class.version'] = '51.0';
+    
+        cur['java.endorsed.dirs'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed';
+    
+        cur['java.ext.dirs'] = '/Users/tomerwei/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java';
+    
+        cur['java.home'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre';
+    
+        cur['java.io.tmpdir'] = '/var/folders/f6/3011v4610sd8c89rtjf_9j9m0000gn/T/';
+    
+        cur['java.library.path'] = '/Users/tomerwei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.7.0_75-b13';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '1.7';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'http://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://bugreport.sun.com/bugreport/';
+    
+        cur['java.version'] = '1.7.0_75';
+    
+        cur['java.vm.info'] = 'mixed mode';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '1.7';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '24.75-b04';
+    
+        cur['javac.debug'] = 'on';
+    
+        cur['javadoc.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/javadoc';
+    
+        cur['lib.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/lib';
+    
+        cur['line.separator'] = '\n';
+    
+        cur['maven-repository-id'] = 'sonatype-nexus-staging';
+    
+        cur['maven-repository-url'] = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/';
+    
+        cur['os.arch'] = 'x86_64';
+    
+        cur['os.name'] = 'Mac OS X';
+    
+        cur['os.version'] = '10.9.5';
+    
+        cur['path.separator'] = ':';
+    
+        cur['protoc.executable'] = 'protoc';
+    
+        cur['refasterjs.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/refactoring';
+    
+        cur['refasterjs-classes.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs-classes';
+    
+        cur['refasterjs-jarfile'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs.jar';
+    
+        cur['socksNonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['src.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/src';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.class.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes';
+    
+        cur['sun.boot.library.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = '';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeBig';
+    
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junittestcases5320804302362041037.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/tomerwei/Repos/PLay/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/tomerwei/Repos/PLay/closure-compiler/junitvmwatcher5819990703841375885.properties propsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junit642073203518458064.properties';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'UTF-8';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = 'unknown';
+    
+        cur['test.class'] = '*Test';
+    
+        cur['test.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/test';
+    
+        cur['test.fork'] = 'true';
+    
+        cur['test.method'] = '';
+    
+        cur['testClasses.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/test';
+    
+        cur['tools.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/tools';
+    
+        cur['user.country'] = 'US';
+    
+        cur['user.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler';
+    
+        cur['user.home'] = '/Users/tomerwei';
+    
+        cur['user.language'] = 'en';
+    
+        cur['user.name'] = 'tomerwei';
+    
+        cur['user.timezone'] = '';
+    
+        cur['webservice.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/jscomp/webservice';
+    
+        cur['webservice-classes.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice-classes';
+    
+        cur['webservice-jarfile'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice.jar';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Pass">
+<td><a title="Display all tests" href="134_NewTypeInferenceES5OrLowerTest.html">NewTypeInferenceES5OrLowerTest</a></td><td><a title="Display all tests" href="134_NewTypeInferenceES5OrLowerTest.html">261</a></td><td>0</td><td>0</td><td>0</td><td>4.324</td><td>2015-03-08T09:06:26</td><td>s-164-67-71-126.resnet.ucla.edu</td>
+</tr>
+</table>
+<h2>Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testForIn"></a>testForIn</td><td>Success</td><td></td><td>0.070</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTryCatch"></a>testTryCatch</td><td>Success</td><td></td><td>0.025</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAndOr"></a>testAndOr</td><td>Success</td><td></td><td>0.024</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionBind"></a>testFunctionBind</td><td>Success</td><td></td><td>0.090</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testVarDefinitionsInExterns"></a>testVarDefinitionsInExterns</td><td>Success</td><td></td><td>0.045</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testThisInAtTypeFunction"></a>testThisInAtTypeFunction</td><td>Success</td><td></td><td>0.061</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testThisInFunctionJsdoc"></a>testThisInFunctionJsdoc</td><td>Success</td><td></td><td>0.019</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDontCallMethodAsFunction"></a>testDontCallMethodAsFunction</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNewInFunctionJsdoc"></a>testNewInFunctionJsdoc</td><td>Success</td><td></td><td>0.023</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInvalidThisReference"></a>testInvalidThisReference</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSuperClassWithUndeclaredProps"></a>testSuperClassWithUndeclaredProps</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInheritMethodFromParent"></a>testInheritMethodFromParent</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSubClassWithUndeclaredProps"></a>testSubClassWithUndeclaredProps</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUseBeforeDeclaration"></a>testUseBeforeDeclaration</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDeclaredVariables"></a>testDeclaredVariables</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEmptyBlockPropagation"></a>testEmptyBlockPropagation</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testForLoopInference"></a>testForLoopInference</td><td>Success</td><td></td><td>0.025</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConditionalSpecialization"></a>testConditionalSpecialization</td><td>Success</td><td></td><td>0.022</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnspecializedStrictComparisons"></a>testUnspecializedStrictComparisons</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAndOrConditionalSpecialization"></a>testAndOrConditionalSpecialization</td><td>Success</td><td></td><td>0.049</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testLoopConditionSpecialization"></a>testLoopConditionSpecialization</td><td>Success</td><td></td><td>0.021</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testVarDecls"></a>testVarDecls</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBadInitialization"></a>testBadInitialization</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBadAssignment"></a>testBadAssignment</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBadArithmetic"></a>testBadArithmetic</td><td>Success</td><td></td><td>0.038</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeAfterIF"></a>testTypeAfterIF</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSimpleBwdPropagation"></a>testSimpleBwdPropagation</td><td>Success</td><td></td><td>0.025</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSimpleReturn"></a>testSimpleReturn</td><td>Success</td><td></td><td>0.031</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testComparisons"></a>testComparisons</td><td>Success</td><td></td><td>0.031</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionJsdoc"></a>testFunctionJsdoc</td><td>Success</td><td></td><td>0.080</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionSubtyping"></a>testFunctionSubtyping</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionJoin"></a>testFunctionJoin</td><td>Success</td><td></td><td>0.014</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionMeet"></a>testFunctionMeet</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRecordWithoutTypesJsdoc"></a>testRecordWithoutTypesJsdoc</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBackwardForwardPathologicalCase"></a>testBackwardForwardPathologicalCase</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTopInitialization"></a>testTopInitialization</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSimpleCalls"></a>testSimpleCalls</td><td>Success</td><td></td><td>0.027</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testObjectType"></a>testObjectType</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCallsWithComplexOperator"></a>testCallsWithComplexOperator</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDeferredChecks"></a>testDeferredChecks</td><td>Success</td><td></td><td>0.037</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionsInsideFunctions"></a>testFunctionsInsideFunctions</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCrossScopeWarnings"></a>testCrossScopeWarnings</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTrickyUnknownBehavior"></a>testTrickyUnknownBehavior</td><td>Success</td><td></td><td>0.016</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDeclaredFunctionTypesInFormals"></a>testDeclaredFunctionTypesInFormals</td><td>Success</td><td></td><td>0.026</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSpecializedFunctions"></a>testSpecializedFunctions</td><td>Success</td><td></td><td>0.015</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDifficultObjectSpecialization"></a>testDifficultObjectSpecialization</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testLooseConstructors"></a>testLooseConstructors</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testLooseFunctions"></a>testLooseFunctions</td><td>Success</td><td></td><td>0.047</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBackwardForwardPathologicalCase2"></a>testBackwardForwardPathologicalCase2</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNotCallable"></a>testNotCallable</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSimpleLocallyDefinedFunction"></a>testSimpleLocallyDefinedFunction</td><td>Success</td><td></td><td>0.024</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIdentityFunction"></a>testIdentityFunction</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testReturnTypeInferred"></a>testReturnTypeInferred</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetpropOnNonObjects"></a>testGetpropOnNonObjects</td><td>Success</td><td></td><td>0.058</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNonexistentProperty"></a>testNonexistentProperty</td><td>Success</td><td></td><td>0.020</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNullableDereference"></a>testNullableDereference</td><td>Success</td><td></td><td>0.039</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAsserts"></a>testAsserts</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDontInferBottom"></a>testDontInferBottom</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignToInvalidObject"></a>testAssignToInvalidObject</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignmentDoesntFlowWrongInit"></a>testAssignmentDoesntFlowWrongInit</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPossiblyNonexistentProperties"></a>testPossiblyNonexistentProperties</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDeclaredRecordTypes"></a>testDeclaredRecordTypes</td><td>Success</td><td></td><td>0.044</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSimpleObjectLiterals"></a>testSimpleObjectLiterals</td><td>Success</td><td></td><td>0.033</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInferPreciseTypeWithDeclaredUnknown"></a>testInferPreciseTypeWithDeclaredUnknown</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSimpleLooseObjects"></a>testSimpleLooseObjects</td><td>Success</td><td></td><td>0.022</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNestedLooseObjects"></a>testNestedLooseObjects</td><td>Success</td><td></td><td>0.032</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testLooseObjectSubtyping"></a>testLooseObjectSubtyping</td><td>Success</td><td></td><td>0.032</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnionOfRecords"></a>testUnionOfRecords</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnionOfFunctionAndNumber"></a>testUnionOfFunctionAndNumber</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAnonymousNominalType"></a>testAnonymousNominalType</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFoo"></a>testFoo</td><td>Success</td><td></td><td>0.023</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testComma"></a>testComma</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeof"></a>testTypeof</td><td>Success</td><td></td><td>0.072</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithOp"></a>testAssignWithOp</td><td>Success</td><td></td><td>0.021</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testClassConstructor"></a>testClassConstructor</td><td>Success</td><td></td><td>0.029</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPropertyDeclarations"></a>testPropertyDeclarations</td><td>Success</td><td></td><td>0.022</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPrototypePropertyAssignments"></a>testPrototypePropertyAssignments</td><td>Success</td><td></td><td>0.034</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignmentsToPrototype"></a>testAssignmentsToPrototype</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConflictingPropertyDefinitions"></a>testConflictingPropertyDefinitions</td><td>Success</td><td></td><td>0.022</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPrototypeAliasing"></a>testPrototypeAliasing</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInstanceof"></a>testInstanceof</td><td>Success</td><td></td><td>0.054</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionsExtendFunction"></a>testFunctionsExtendFunction</td><td>Success</td><td></td><td>0.040</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testObjectsAreNotClassy"></a>testObjectsAreNotClassy</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionWithProps"></a>testFunctionWithProps</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstructorProperties"></a>testConstructorProperties</td><td>Success</td><td></td><td>0.032</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTighteningHeuristic"></a>testTypeTighteningHeuristic</td><td>Success</td><td></td><td>0.016</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDeclaredPropertyIndirectly"></a>testDeclaredPropertyIndirectly</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNonRequiredArguments"></a>testNonRequiredArguments</td><td>Success</td><td></td><td>0.087</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInferredOptionalFormals"></a>testInferredOptionalFormals</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSimpleClassInheritance"></a>testSimpleClassInheritance</td><td>Success</td><td></td><td>0.031</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInheritanceSubtyping"></a>testInheritanceSubtyping</td><td>Success</td><td></td><td>0.032</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInheritanceImplicitObjectSubtyping"></a>testInheritanceImplicitObjectSubtyping</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRecordtypeSubtyping"></a>testRecordtypeSubtyping</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testWarnAboutOverridesNotVisibleDuringGlobalTypeInfo"></a>testWarnAboutOverridesNotVisibleDuringGlobalTypeInfo</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInvalidMethodPropertyOverride"></a>testInvalidMethodPropertyOverride</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMultipleObjects"></a>testMultipleObjects</td><td>Success</td><td></td><td>0.027</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMultipleFunctionsInUnion"></a>testMultipleFunctionsInUnion</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPrototypeOnNonCtorFunction"></a>testPrototypeOnNonCtorFunction</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInvalidTypeReference"></a>testInvalidTypeReference</td><td>Success</td><td></td><td>0.015</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCircularDependencies"></a>testCircularDependencies</td><td>Success</td><td></td><td>0.018</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfaceNonEmptyFunction"></a>testInterfaceNonEmptyFunction</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfaceMistypedProp"></a>testInterfaceMistypedProp</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfaceSingleInheritance"></a>testInterfaceSingleInheritance</td><td>Success</td><td></td><td>0.059</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfaceMultipleInheritanceNoCrash"></a>testInterfaceMultipleInheritanceNoCrash</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfaceArgument"></a>testInterfaceArgument</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExtendedInterfacePropertiesCompatibility"></a>testExtendedInterfacePropertiesCompatibility</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTwoLevelExtendedInterface"></a>testTwoLevelExtendedInterface</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstructorExtensions"></a>testConstructorExtensions</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInterfaceAndConstructorInvalidConstructions"></a>testInterfaceAndConstructorInvalidConstructions</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNot"></a>testNot</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNullability"></a>testNullability</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetElem"></a>testGetElem</td><td>Success</td><td></td><td>0.016</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNamespaces"></a>testNamespaces</td><td>Success</td><td></td><td>0.037</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNestedNamespaces"></a>testNestedNamespaces</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNonnamespaceLooksLikeANamespace"></a>testNonnamespaceLooksLikeANamespace</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNamespacedObjectsDontCrash"></a>testNamespacedObjectsDontCrash</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRedeclaredNamespaces"></a>testRedeclaredNamespaces</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testReferenceToNonexistentNamespace"></a>testReferenceToNonexistentNamespace</td><td>Success</td><td></td><td>0.016</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testQnameInJsdoc"></a>testQnameInJsdoc</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIncrementDecrements"></a>testIncrementDecrements</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNonStringComparisons"></a>testNonStringComparisons</td><td>Success</td><td></td><td>0.033</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAnalyzeLoopsBwd"></a>testAnalyzeLoopsBwd</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDontLoosenNominalTypes"></a>testDontLoosenNominalTypes</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionsWithAbnormalExit"></a>testFunctionsWithAbnormalExit</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignAdd"></a>testAssignAdd</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeCoercions"></a>testTypeCoercions</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSwitch"></a>testSwitch</td><td>Success</td><td></td><td>0.030</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIn"></a>testIn</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDelprop"></a>testDelprop</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testArrayLit"></a>testArrayLit</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testArrayAccesses"></a>testArrayAccesses</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRegExpLit"></a>testRegExpLit</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDifficultLvalues"></a>testDifficultLvalues</td><td>Success</td><td></td><td>0.014</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testQuestionableUnionJsDoc"></a>testQuestionableUnionJsDoc</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGenericsJsdocParsing"></a>testGenericsJsdocParsing</td><td>Success</td><td></td><td>0.019</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPolymorphicFunctionInstantiation"></a>testPolymorphicFunctionInstantiation</td><td>Success</td><td></td><td>0.044</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGenericReturnType"></a>testGenericReturnType</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnification"></a>testUnification</td><td>Success</td><td></td><td>0.032</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnifyObjects"></a>testUnifyObjects</td><td>Success</td><td></td><td>0.017</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionTypeUnifyUnknowns"></a>testFunctionTypeUnifyUnknowns</td><td>Success</td><td></td><td>0.016</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInstantiationInsideObjectTypes"></a>testInstantiationInsideObjectTypes</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInstantiateInsideFunctionTypes"></a>testInstantiateInsideFunctionTypes</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPolymorphicFuncallsFromDifferentScope"></a>testPolymorphicFuncallsFromDifferentScope</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testOpacityOfTypeParameters"></a>testOpacityOfTypeParameters</td><td>Success</td><td></td><td>0.023</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGenericClassInstantiation"></a>testGenericClassInstantiation</td><td>Success</td><td></td><td>0.027</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testLooserCheckingForInferredProperties"></a>testLooserCheckingForInferredProperties</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInheritanceWithGenerics"></a>testInheritanceWithGenerics</td><td>Success</td><td></td><td>0.036</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGenericsSubtyping"></a>testGenericsSubtyping</td><td>Success</td><td></td><td>0.055</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGenericsVariance"></a>testGenericsVariance</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInferredArrayGenerics"></a>testInferredArrayGenerics</td><td>Success</td><td></td><td>0.029</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSpecializedInstanceofCantGoToBottom"></a>testSpecializedInstanceofCantGoToBottom</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDeclaredGenericArrayTypes"></a>testDeclaredGenericArrayTypes</td><td>Success</td><td></td><td>0.040</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInferConstTypeFromGoogGetMsg"></a>testInferConstTypeFromGoogGetMsg</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInferConstTypeFromGenerics"></a>testInferConstTypeFromGenerics</td><td>Success</td><td></td><td>0.018</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDifficultClassGenericsInstantiation"></a>testDifficultClassGenericsInstantiation</td><td>Success</td><td></td><td>0.027</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNominalTypeUnification"></a>testNominalTypeUnification</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCasts"></a>testCasts</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testOverride"></a>testOverride</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testOverrideNoInitializer"></a>testOverrideNoInitializer</td><td>Success</td><td></td><td>0.018</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionConstructor"></a>testFunctionConstructor</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConditionalExBranch"></a>testConditionalExBranch</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGenericInterfaceDoesntCrash"></a>testGenericInterfaceDoesntCrash</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetpropOnTopDoesntCrash"></a>testGetpropOnTopDoesntCrash</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testImplementsGenericInterfaceDoesntCrash"></a>testImplementsGenericInterfaceDoesntCrash</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDeadCodeDoesntCrash"></a>testDeadCodeDoesntCrash</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSpecializeFunctionToNominalDoesntCrash"></a>testSpecializeFunctionToNominalDoesntCrash</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPrototypeMethodOnUndeclaredDoesntCrash"></a>testPrototypeMethodOnUndeclaredDoesntCrash</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionGetpropDoesntCrash"></a>testFunctionGetpropDoesntCrash</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnannotatedBracketAccessDoesntCrash"></a>testUnannotatedBracketAccessDoesntCrash</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnknownTypeReferenceDoesntCrash"></a>testUnknownTypeReferenceDoesntCrash</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBottomPropAccessDoesntCrash"></a>testBottomPropAccessDoesntCrash</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnannotatedFunctionSummaryDoesntCrash"></a>testUnannotatedFunctionSummaryDoesntCrash</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSpecializeLooseNullDoesntCrash"></a>testSpecializeLooseNullDoesntCrash</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testOuterVarDefinitionJoinDoesntCrash"></a>testOuterVarDefinitionJoinDoesntCrash</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnparameterizedArrayDefinitionDoesntCrash"></a>testUnparameterizedArrayDefinitionDoesntCrash</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInstanceofGenericTypeDoesntCrash"></a>testInstanceofGenericTypeDoesntCrash</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRedeclarationOfFunctionAsNamespaceDoesntCrash"></a>testRedeclarationOfFunctionAsNamespaceDoesntCrash</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInvalidEnumDoesntCrash"></a>testInvalidEnumDoesntCrash</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveNonexistentPropDoesntCrash"></a>testRemoveNonexistentPropDoesntCrash</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDoublyAssignedPrototypeMethodDoesntCrash"></a>testDoublyAssignedPrototypeMethodDoesntCrash</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTopFunctionAsArgumentDoesntCrash"></a>testTopFunctionAsArgumentDoesntCrash</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetpropDoesntCrash"></a>testGetpropDoesntCrash</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testLooseFunctionSubtypeDoesntCrash"></a>testLooseFunctionSubtypeDoesntCrash</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMeetOfLooseObjAndNamedDoesntCrash"></a>testMeetOfLooseObjAndNamedDoesntCrash</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUninhabitableObjectTypeDoesntCrash"></a>testUninhabitableObjectTypeDoesntCrash</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMockedOutConstructorDoesntCrash"></a>testMockedOutConstructorDoesntCrash</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNamespacePropWithNoTypeDoesntCrash"></a>testNamespacePropWithNoTypeDoesntCrash</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testArrayLiteralUsedGenericallyDoesntCrash"></a>testArrayLiteralUsedGenericallyDoesntCrash</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSpecializeLooseFunctionDoesntCrash"></a>testSpecializeLooseFunctionDoesntCrash</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetpropOnPossiblyInexistentPropertyDoesntCrash"></a>testGetpropOnPossiblyInexistentPropertyDoesntCrash</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCtorManipulationDoesntCrash"></a>testCtorManipulationDoesntCrash</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAbstractMethodOverrides"></a>testAbstractMethodOverrides</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testThisReferenceUsedGenerically"></a>testThisReferenceUsedGenerically</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGrandparentTemplatizedDoesntCrash"></a>testGrandparentTemplatizedDoesntCrash</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDebuggerStatementDoesntCrash"></a>testDebuggerStatementDoesntCrash</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDeclaredMethodWithoutScope"></a>testDeclaredMethodWithoutScope</td><td>Success</td><td></td><td>0.019</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDontOverrideNestedPropWithWorseType"></a>testDontOverrideNestedPropWithWorseType</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPropNamesWithDot"></a>testPropNamesWithDot</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testObjLitDeclaredProps"></a>testObjLitDeclaredProps</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCallArgumentsChecked"></a>testCallArgumentsChecked</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRecursiveFunctions"></a>testRecursiveFunctions</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testStructPropAccess"></a>testStructPropAccess</td><td>Success</td><td></td><td>0.041</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDictPropAccess"></a>testDictPropAccess</td><td>Success</td><td></td><td>0.026</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testStructWithIn"></a>testStructWithIn</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testStructDictSubtyping"></a>testStructDictSubtyping</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInferStructDictFormal"></a>testInferStructDictFormal</td><td>Success</td><td></td><td>0.017</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testStructDictInheritance"></a>testStructDictInheritance</td><td>Success</td><td></td><td>0.022</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testStructPropCreation"></a>testStructPropCreation</td><td>Success</td><td></td><td>0.040</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMisplacedStructDictAnnotation"></a>testMisplacedStructDictAnnotation</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetters"></a>testGetters</td><td>Success</td><td></td><td>0.031</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetters"></a>testSetters</td><td>Success</td><td></td><td>0.039</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstMissingInitializer"></a>testConstMissingInitializer</td><td>Success</td><td></td><td>0.019</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMisplacedConstPropertyAnnotation"></a>testMisplacedConstPropertyAnnotation</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstVarsDontReassign"></a>testConstVarsDontReassign</td><td>Success</td><td></td><td>0.017</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstPropertiesDontReassign"></a>testConstPropertiesDontReassign</td><td>Success</td><td></td><td>0.040</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstantByConvention"></a>testConstantByConvention</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDontOverrideFinalMethods"></a>testDontOverrideFinalMethods</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInferenceOfConstType"></a>testInferenceOfConstType</td><td>Success</td><td></td><td>0.091</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSuppressions"></a>testSuppressions</td><td>Success</td><td></td><td>0.015</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypedefs"></a>testTypedefs</td><td>Success</td><td></td><td>0.037</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testLends"></a>testLends</td><td>Success</td><td></td><td>0.043</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumBasicTyping"></a>testEnumBasicTyping</td><td>Success</td><td></td><td>0.021</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumsWithNonScalarDeclaredType"></a>testEnumsWithNonScalarDeclaredType</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumBadInitializer"></a>testEnumBadInitializer</td><td>Success</td><td></td><td>0.014</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumPropertiesConstant"></a>testEnumPropertiesConstant</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumIllegalRecursion"></a>testEnumIllegalRecursion</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumBadDeclaredType"></a>testEnumBadDeclaredType</td><td>Success</td><td></td><td>0.025</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumsWithGenerics"></a>testEnumsWithGenerics</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumJoinSpecializeMeet"></a>testEnumJoinSpecializeMeet</td><td>Success</td><td></td><td>0.036</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumAliasing"></a>testEnumAliasing</td><td>Success</td><td></td><td>0.041</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoDoubleWarnings"></a>testNoDoubleWarnings</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRecordSpecializeNominalPreservesRequired"></a>testRecordSpecializeNominalPreservesRequired</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGoogIsPredicatesNoSpecializedContext"></a>testGoogIsPredicatesNoSpecializedContext</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGoogIsPredicatesTrue"></a>testGoogIsPredicatesTrue</td><td>Success</td><td></td><td>0.036</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGoogIsPredicatesFalse"></a>testGoogIsPredicatesFalse</td><td>Success</td><td></td><td>0.033</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGoogTypeof"></a>testGoogTypeof</td><td>Success</td><td></td><td>0.018</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSuperClassCtorProperty"></a>testSuperClassCtorProperty</td><td>Success</td><td></td><td>0.028</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAcrossScopeNamespaces"></a>testAcrossScopeNamespaces</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testQualifiedNamedTypes"></a>testQualifiedNamedTypes</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumsAsNamespaces"></a>testEnumsAsNamespaces</td><td>Success</td><td></td><td>0.016</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testStringMethods"></a>testStringMethods</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testOutOfOrderDeclarations"></a>testOutOfOrderDeclarations</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAbstractMethodsAreTypedCorrectly"></a>testAbstractMethodsAreTypedCorrectly</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUseJsdocOfCalleeForUnannotatedFunctionsInArgumentPosition"></a>testUseJsdocOfCalleeForUnannotatedFunctionsInArgumentPosition</td><td>Success</td><td></td><td>0.030</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNamespacesWithNonEmptyObjectLiteral"></a>testNamespacesWithNonEmptyObjectLiteral</td><td>Success</td><td></td><td>0.021</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAllTestsShouldHaveDupPropWarnings"></a>testAllTestsShouldHaveDupPropWarnings</td><td>Success</td><td></td><td>0.016</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNominalTypeAliasing"></a>testNominalTypeAliasing</td><td>Success</td><td></td><td>0.016</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeVariablesVisibleInPrototypeMethods"></a>testTypeVariablesVisibleInPrototypeMethods</td><td>Success</td><td></td><td>0.018</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInferConstTypeFromEnumProps"></a>testInferConstTypeFromEnumProps</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testForwardDeclarations"></a>testForwardDeclarations</td><td>Success</td><td></td><td>0.018</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDontLookupInParentScopeForNamesWithoutDeclaredType"></a>testDontLookupInParentScopeForNamesWithoutDeclaredType</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSpecializationInPropertyAccesses"></a>testSpecializationInPropertyAccesses</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAutoconvertBoxedNumberToNumber"></a>testAutoconvertBoxedNumberToNumber</td><td>Success</td><td></td><td>0.028</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAutoconvertBoxedStringToString"></a>testAutoconvertBoxedStringToString</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAutoconvertBoxedBooleanToBoolean"></a>testAutoconvertBoxedBooleanToBoolean</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAutoconvertScalarsToBoxedScalars"></a>testAutoconvertScalarsToBoxedScalars</td><td>Success</td><td></td><td>0.026</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstructorsCalledWithoutNew"></a>testConstructorsCalledWithoutNew</td><td>Success</td><td></td><td>0.014</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testClosureStyleFunctionBind"></a>testClosureStyleFunctionBind</td><td>Success</td><td></td><td>0.025</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPlusBackwardInference"></a>testPlusBackwardInference</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExterns"></a>testExterns</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testThrow"></a>testThrow</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest');">
+                    Properties &raquo;
+                </a>
+</div>
+</body>
+</html>

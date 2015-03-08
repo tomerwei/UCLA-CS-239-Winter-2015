@@ -1,0 +1,636 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: com.google.javascript.jscomp.CommandLineRunnerTest</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['com.google.javascript.jscomp.CommandLineRunnerTest'] = new Array();
+    
+        cur['ant.build.javac.source'] = '1.7';
+    
+        cur['ant.build.javac.target'] = '1.7';
+    
+        cur['ant.core.lib'] = '/opt/local/share/java/apache-ant/lib/ant.jar';
+    
+        cur['ant.file'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build.xml';
+    
+        cur['ant.file.compiler'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build.xml';
+    
+        cur['ant.file.type'] = 'file';
+    
+        cur['ant.file.type.compiler'] = 'file';
+    
+        cur['ant.home'] = '/opt/local/share/java/apache-ant';
+    
+        cur['ant.java.version'] = '1.7';
+    
+        cur['ant.library.dir'] = '/opt/local/share/java/apache-ant/lib';
+    
+        cur['ant.project.default-target'] = 'jar';
+    
+        cur['ant.project.invoked-targets'] = 'clean,compile,compile-tests,test';
+    
+        cur['ant.project.name'] = 'compiler';
+    
+        cur['ant.version'] = 'Apache Ant(TM) version 1.9.4 compiled on April 29 2014';
+    
+        cur['awt.toolkit'] = 'sun.lwawt.macosx.LWCToolkit';
+    
+        cur['basedir'] = '/Users/tomerwei/Repos/PLay/closure-compiler';
+    
+        cur['build.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build';
+    
+        cur['build.relVersion'] = 'v20150126-162-g55aa491';
+    
+        cur['buildlib.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/lib';
+    
+        cur['classes.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/classes';
+    
+        cur['closure.build.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build';
+    
+        cur['compiler-jarfile'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/compiler.jar';
+    
+        cur['externs.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/externs';
+    
+        cur['file.encoding'] = 'UTF-8';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '/';
+    
+        cur['ftp.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['gen.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/gen';
+    
+        cur['gopherProxySet'] = 'false';
+    
+        cur['http.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.CGraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.lwawt.macosx.CPrinterJob';
+    
+        cur['java.class.path'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/classes:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant-launcher.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/args4j.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/gson.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/guava.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/jsr305.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/junit.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/protobuf-java.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/truth.jar:/Users/tomerwei/Repos/PLay/closure-compiler/build/test:/opt/local/share/java/apache-ant/lib/ant-launcher.jar:/opt/local/share/java/apache-ant/lib/ant.jar:/opt/local/share/java/apache-ant/lib/ant-junit.jar:/opt/local/share/java/apache-ant/lib/ant-junit4.jar';
+    
+        cur['java.class.version'] = '51.0';
+    
+        cur['java.endorsed.dirs'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed';
+    
+        cur['java.ext.dirs'] = '/Users/tomerwei/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java';
+    
+        cur['java.home'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre';
+    
+        cur['java.io.tmpdir'] = '/var/folders/f6/3011v4610sd8c89rtjf_9j9m0000gn/T/';
+    
+        cur['java.library.path'] = '/Users/tomerwei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.7.0_75-b13';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '1.7';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'http://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://bugreport.sun.com/bugreport/';
+    
+        cur['java.version'] = '1.7.0_75';
+    
+        cur['java.vm.info'] = 'mixed mode';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '1.7';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '24.75-b04';
+    
+        cur['javac.debug'] = 'on';
+    
+        cur['javadoc.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/javadoc';
+    
+        cur['lib.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/lib';
+    
+        cur['line.separator'] = '\n';
+    
+        cur['maven-repository-id'] = 'sonatype-nexus-staging';
+    
+        cur['maven-repository-url'] = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/';
+    
+        cur['os.arch'] = 'x86_64';
+    
+        cur['os.name'] = 'Mac OS X';
+    
+        cur['os.version'] = '10.9.5';
+    
+        cur['path.separator'] = ':';
+    
+        cur['protoc.executable'] = 'protoc';
+    
+        cur['refasterjs.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/refactoring';
+    
+        cur['refasterjs-classes.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs-classes';
+    
+        cur['refasterjs-jarfile'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs.jar';
+    
+        cur['socksNonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['src.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/src';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.class.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes';
+    
+        cur['sun.boot.library.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = '';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeBig';
+    
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junittestcases5320804302362041037.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/tomerwei/Repos/PLay/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/tomerwei/Repos/PLay/closure-compiler/junitvmwatcher5819990703841375885.properties propsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junit642073203518458064.properties';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'UTF-8';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = 'unknown';
+    
+        cur['test.class'] = '*Test';
+    
+        cur['test.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/test';
+    
+        cur['test.fork'] = 'true';
+    
+        cur['test.method'] = '';
+    
+        cur['testClasses.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/test';
+    
+        cur['tools.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/tools';
+    
+        cur['user.country'] = 'US';
+    
+        cur['user.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler';
+    
+        cur['user.home'] = '/Users/tomerwei';
+    
+        cur['user.language'] = 'en';
+    
+        cur['user.name'] = 'tomerwei';
+    
+        cur['user.timezone'] = '';
+    
+        cur['webservice.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/jscomp/webservice';
+    
+        cur['webservice-classes.dir'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice-classes';
+    
+        cur['webservice-jarfile'] = '/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice.jar';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class com.google.javascript.jscomp.CommandLineRunnerTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Pass">
+<td><a title="Display all tests" href="42_CommandLineRunnerTest.html">CommandLineRunnerTest</a></td><td><a title="Display all tests" href="42_CommandLineRunnerTest.html">124</a></td><td>0</td><td>0</td><td>0</td><td>1.996</td><td>2015-03-08T09:06:12</td><td>s-164-67-71-126.resnet.ucla.edu</td>
+</tr>
+</table>
+<h2>Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnknownAnnotation"></a>testUnknownAnnotation</td><td>Success</td><td></td><td>0.150</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testWarningGuardOrdering1"></a>testWarningGuardOrdering1</td><td>Success</td><td></td><td>0.029</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testWarningGuardOrdering2"></a>testWarningGuardOrdering2</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testWarningGuardOrdering3"></a>testWarningGuardOrdering3</td><td>Success</td><td></td><td>0.028</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testWarningGuardOrdering4"></a>testWarningGuardOrdering4</td><td>Success</td><td></td><td>0.019</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSimpleModeLeavesUnusedParams"></a>testSimpleModeLeavesUnusedParams</td><td>Success</td><td></td><td>0.029</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAdvancedModeRemovesUnusedParams"></a>testAdvancedModeRemovesUnusedParams</td><td>Success</td><td></td><td>0.069</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCheckGlobalThisOffByDefault"></a>testCheckGlobalThisOffByDefault</td><td>Success</td><td></td><td>0.034</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCheckGlobalThisOnWithAdvancedMode"></a>testCheckGlobalThisOnWithAdvancedMode</td><td>Success</td><td></td><td>0.031</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCheckGlobalThisOnWithAdvanced"></a>testCheckGlobalThisOnWithAdvanced</td><td>Success</td><td></td><td>0.022</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCheckGlobalThisOnWithErrorFlag"></a>testCheckGlobalThisOnWithErrorFlag</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCheckGlobalThisOff"></a>testCheckGlobalThisOff</td><td>Success</td><td></td><td>0.033</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeCheckingOffByDefault"></a>testTypeCheckingOffByDefault</td><td>Success</td><td></td><td>0.024</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testReflectedMethods"></a>testReflectedMethods</td><td>Success</td><td></td><td>0.034</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInlineVariables"></a>testInlineVariables</td><td>Success</td><td></td><td>0.041</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypedAdvanced"></a>testTypedAdvanced</td><td>Success</td><td></td><td>0.052</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeCheckingOnWithVerbose"></a>testTypeCheckingOnWithVerbose</td><td>Success</td><td></td><td>0.017</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeCheckingOnWithWVerbose"></a>testTypeCheckingOnWithWVerbose</td><td>Success</td><td></td><td>0.014</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeParsingOffByDefault"></a>testTypeParsingOffByDefault</td><td>Success</td><td></td><td>0.018</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeParsingOnWithVerbose"></a>testTypeParsingOnWithVerbose</td><td>Success</td><td></td><td>0.031</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeCheckOverride1"></a>testTypeCheckOverride1</td><td>Success</td><td></td><td>0.017</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeCheckOverride2"></a>testTypeCheckOverride2</td><td>Success</td><td></td><td>0.026</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCheckSymbolsOffForDefault"></a>testCheckSymbolsOffForDefault</td><td>Success</td><td></td><td>0.017</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCheckSymbolsOnForVerbose"></a>testCheckSymbolsOnForVerbose</td><td>Success</td><td></td><td>0.014</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCheckSymbolsOverrideForVerbose"></a>testCheckSymbolsOverrideForVerbose</td><td>Success</td><td></td><td>0.024</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCheckSymbolsOverrideForQuiet"></a>testCheckSymbolsOverrideForQuiet</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCheckUndefinedProperties1"></a>testCheckUndefinedProperties1</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCheckUndefinedProperties2"></a>testCheckUndefinedProperties2</td><td>Success</td><td></td><td>0.014</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCheckUndefinedProperties3"></a>testCheckUndefinedProperties3</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDuplicateParams"></a>testDuplicateParams</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDefineFlag"></a>testDefineFlag</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDefineFlag2"></a>testDefineFlag2</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDefineFlag3"></a>testDefineFlag3</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testScriptStrictModeNoWarning"></a>testScriptStrictModeNoWarning</td><td>Success</td><td></td><td>0.017</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionStrictModeNoWarning"></a>testFunctionStrictModeNoWarning</td><td>Success</td><td></td><td>0.022</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testQuietMode"></a>testQuietMode</td><td>Success</td><td></td><td>0.021</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testProcessClosurePrimitives"></a>testProcessClosurePrimitives</td><td>Success</td><td></td><td>0.025</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetMsgWiring"></a>testGetMsgWiring</td><td>Success</td><td></td><td>0.027</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetMsgWiringNoWarnings"></a>testGetMsgWiringNoWarnings</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCssNameWiring"></a>testCssNameWiring</td><td>Success</td><td></td><td>0.019</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue70a"></a>testIssue70a</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue70b"></a>testIssue70b</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue81"></a>testIssue81</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue115"></a>testIssue115</td><td>Success</td><td></td><td>0.016</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue297"></a>testIssue297</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testHiddenSideEffect"></a>testHiddenSideEffect</td><td>Success</td><td></td><td>0.017</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue504"></a>testIssue504</td><td>Success</td><td></td><td>0.020</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue601b"></a>testIssue601b</td><td>Success</td><td></td><td>0.016</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue601c"></a>testIssue601c</td><td>Success</td><td></td><td>0.018</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue846"></a>testIssue846</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSideEffectIntegration"></a>testSideEffectIntegration</td><td>Success</td><td></td><td>0.019</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDebugFlag1"></a>testDebugFlag1</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDebugFlag2"></a>testDebugFlag2</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDebugFlag3"></a>testDebugFlag3</td><td>Success</td><td></td><td>0.016</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDebugFlag4"></a>testDebugFlag4</td><td>Success</td><td></td><td>0.020</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBooleanFlag1"></a>testBooleanFlag1</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBooleanFlag2"></a>testBooleanFlag2</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testHelpFlag"></a>testHelpFlag</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testHoistedFunction1"></a>testHoistedFunction1</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testHoistedFunction2"></a>testHoistedFunction2</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExternsLifting1"></a>testExternsLifting1</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExternsLifting2"></a>testExternsLifting2</td><td>Success</td><td></td><td>0.015</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceSortingOff"></a>testSourceSortingOff</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceSortingOn"></a>testSourceSortingOn</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceSortingOn2"></a>testSourceSortingOn2</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceSortingOn3"></a>testSourceSortingOn3</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceSortingCircularDeps1"></a>testSourceSortingCircularDeps1</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceSortingCircularDeps2"></a>testSourceSortingCircularDeps2</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourcePruningOn1"></a>testSourcePruningOn1</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourcePruningOn2"></a>testSourcePruningOn2</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourcePruningOn3"></a>testSourcePruningOn3</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourcePruningOn4"></a>testSourcePruningOn4</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourcePruningOn5"></a>testSourcePruningOn5</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourcePruningOn6"></a>testSourcePruningOn6</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourcePruningOn7"></a>testSourcePruningOn7</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourcePruningOn8"></a>testSourcePruningOn8</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testModuleEntryPoint"></a>testModuleEntryPoint</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoCompile"></a>testNoCompile</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDependencySortingWhitespaceMode"></a>testDependencySortingWhitespaceMode</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testForwardDeclareDroppedTypes"></a>testForwardDeclareDroppedTypes</td><td>Success</td><td></td><td>0.030</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testOnlyClosureDependenciesEmptyEntryPoints"></a>testOnlyClosureDependenciesEmptyEntryPoints</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testOnlyClosureDependenciesOneEntryPoint"></a>testOnlyClosureDependenciesOneEntryPoint</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceMapExpansion1"></a>testSourceMapExpansion1</td><td>Success</td><td></td><td>0.014</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceMapExpansion2"></a>testSourceMapExpansion2</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceMapExpansion3"></a>testSourceMapExpansion3</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceMapFormat1"></a>testSourceMapFormat1</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceMapFormat2"></a>testSourceMapFormat2</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceMapLocationsTranslations1"></a>testSourceMapLocationsTranslations1</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceMapLocationsTranslations2"></a>testSourceMapLocationsTranslations2</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceMapLocationsTranslations3"></a>testSourceMapLocationsTranslations3</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSourceMapInputs"></a>testSourceMapInputs</td><td>Success</td><td></td><td>0.020</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testModuleWrapperBaseNameExpansion"></a>testModuleWrapperBaseNameExpansion</td><td>Success</td><td></td><td>0.014</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCharSetExpansion"></a>testCharSetExpansion</td><td>Success</td><td></td><td>0.031</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testChainModuleManifest"></a>testChainModuleManifest</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testStarModuleManifest"></a>testStarModuleManifest</td><td>Success</td><td></td><td>0.014</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testOutputModuleGraphJson"></a>testOutputModuleGraphJson</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testVersionFlag"></a>testVersionFlag</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testVersionFlag2"></a>testVersionFlag2</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPrintAstFlag"></a>testPrintAstFlag</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSyntheticExterns"></a>testSyntheticExterns</td><td>Success</td><td></td><td>0.014</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGoogAssertStripping"></a>testGoogAssertStripping</td><td>Success</td><td></td><td>0.028</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMissingReturnCheckOnWithVerbose"></a>testMissingReturnCheckOnWithVerbose</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGenerateExports"></a>testGenerateExports</td><td>Success</td><td></td><td>0.013</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDepreciationWithVerbose"></a>testDepreciationWithVerbose</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTwoParseErrors"></a>testTwoParseErrors</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testES3ByDefault"></a>testES3ByDefault</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testES5ChecksByDefault"></a>testES5ChecksByDefault</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testES5ChecksInVerbose"></a>testES5ChecksInVerbose</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testES5"></a>testES5</td><td>Success</td><td></td><td>0.015</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testES5Strict"></a>testES5Strict</td><td>Success</td><td></td><td>0.017</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testES5StrictUseStrict"></a>testES5StrictUseStrict</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testES5StrictUseStrictMultipleInputs"></a>testES5StrictUseStrictMultipleInputs</td><td>Success</td><td></td><td>0.009</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testWithKeywordWithEs5ChecksOff"></a>testWithKeywordWithEs5ChecksOff</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSrCFilesWithManifest"></a>testNoSrCFilesWithManifest</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTransformAMD"></a>testTransformAMD</td><td>Success</td><td></td><td>0.012</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testProcessCJS"></a>testProcessCJS</td><td>Success</td><td></td><td>0.011</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testProcessCJSWithModuleOutput"></a>testProcessCJSWithModuleOutput</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testProcessCJSWithClosureRequires"></a>testProcessCJSWithClosureRequires</td><td>Success</td><td></td><td>0.023</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFormattingSingleQuote"></a>testFormattingSingleQuote</td><td>Success</td><td></td><td>0.017</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTransformAMDAndProcessCJS"></a>testTransformAMDAndProcessCJS</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testModuleJSON"></a>testModuleJSON</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testOutputSameAsInput"></a>testOutputSameAsInput</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testOutputWrapperFlag"></a>testOutputWrapperFlag</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue601"></a>testIssue601</td><td>Success</td><td></td><td>0.007</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('com.google.javascript.jscomp.CommandLineRunnerTest');">
+                    Properties &raquo;
+                </a>
+</div>
+</body>
+</html>

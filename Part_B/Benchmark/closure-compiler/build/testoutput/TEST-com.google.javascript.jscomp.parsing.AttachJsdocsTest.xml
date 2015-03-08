@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="s-164-67-71-126.resnet.ucla.edu" name="com.google.javascript.jscomp.parsing.AttachJsdocsTest" skipped="0" tests="79" time="0.027" timestamp="2015-03-08T09:06:41">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="lib.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/lib" />
+    <property name="refasterjs-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs.jar" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes" />
+    <property name="maven-repository-id" value="sonatype-nexus-staging" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/opt/local/share/java/apache-ant" />
+    <property name="java.runtime.version" value="1.7.0_75-b13" />
+    <property name="gen.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/gen" />
+    <property name="user.name" value="tomerwei" />
+    <property name="ant.file.compiler" value="/Users/tomerwei/Repos/PLay/closure-compiler/build.xml" />
+    <property name="build.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build" />
+    <property name="ant.build.javac.target" value="1.7" />
+    <property name="user.language" value="en" />
+    <property name="test.method" value="" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="jar" />
+    <property name="ant.project.name" value="compiler" />
+    <property name="java.version" value="1.7.0_75" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="protoc.executable" value="protoc" />
+    <property name="classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/classes" />
+    <property name="java.class.version" value="51.0" />
+    <property name="testClasses.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/test" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="externs.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/externs" />
+    <property name="ant.file" value="/Users/tomerwei/Repos/PLay/closure-compiler/build.xml" />
+    <property name="os.version" value="10.9.5" />
+    <property name="javac.debug" value="on" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="24.75-b04" />
+    <property name="ant.library.dir" value="/opt/local/share/java/apache-ant/lib" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="webservice-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice.jar" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="test.fork" value="true" />
+    <property name="webservice.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/jscomp/webservice" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="buildlib.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/lib" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ant.build.javac.source" value="1.7" />
+    <property name="refasterjs.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/refactoring" />
+    <property name="user.home" value="/Users/tomerwei" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/test" />
+    <property name="java.library.path" value="/Users/tomerwei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="gopherProxySet" value="false" />
+    <property name="build.relVersion" value="v20150126-162-g55aa491" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junittestcases5320804302362041037.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/tomerwei/Repos/PLay/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/tomerwei/Repos/PLay/closure-compiler/junitvmwatcher5819990703841375885.properties propsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junit642073203518458064.properties" />
+    <property name="java.class.path" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/classes:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant-launcher.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/args4j.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/gson.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/guava.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/jsr305.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/junit.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/protobuf-java.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/truth.jar:/Users/tomerwei/Repos/PLay/closure-compiler/build/test:/opt/local/share/java/apache-ant/lib/ant-launcher.jar:/opt/local/share/java/apache-ant/lib/ant.jar:/opt/local/share/java/apache-ant/lib/ant-junit.jar:/opt/local/share/java/apache-ant/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
+    <property name="test.class" value="*Test" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/var/folders/f6/3011v4610sd8c89rtjf_9j9m0000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="maven-repository-url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/" />
+    <property name="os.arch" value="x86_64" />
+    <property name="webservice-classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice-classes" />
+    <property name="java.ext.dirs" value="/Users/tomerwei/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler" />
+    <property name="ant.file.type.compiler" value="file" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="refasterjs-classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs-classes" />
+    <property name="basedir" value="/Users/tomerwei/Repos/PLay/closure-compiler" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="/opt/local/share/java/apache-ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="closure.build.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build" />
+    <property name="compiler-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/compiler.jar" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="src.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src" />
+    <property name="ant.project.invoked-targets" value="clean,compile,compile-tests,test" />
+    <property name="javadoc.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/javadoc" />
+    <property name="tools.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/tools" />
+  </properties>
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocAdd" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocArrayLit" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocAssign1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocAssign2" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocAssign3" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocBlock1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocBlock2" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocBreak" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocCall2" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocCall3" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocCall4" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocCall5" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocCall6" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocCall7" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocCall8" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocComma3" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocContinue" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocDot" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocDot2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocForInLoop2" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocForInLoop3" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocForLoop2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocForLoop4" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocForLoop7" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocForLoop8" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocForLoop11" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocFun1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocFun2" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocFun3" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocFun4" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocFun5" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocFun6" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocFun7" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocGetElem1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocGetElem3" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocGetProp1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocGetProp2" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocGetProp3" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocGetter1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocGetter2" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocGetter3" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testJsdocHook1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocHook3" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocHook5" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocIf1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocNew1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocNew2" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocObjLit2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocObjLit3" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocPostfix1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocPostfix2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocReturn1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocReturn3" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocSetter" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocScript1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocScript2" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocScript3" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocSwitch1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocSwitch3" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocSwitch4" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocSwitch5" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocSwitch6" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocSwitch7" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocThrow" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocTryCatch1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocTryCatch3" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocTryFinally" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocUnary" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocVar1" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocVar2" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocVar3" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocVar4" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocVar5" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocWhile2" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocWith1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocWith4" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocManyComments1" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocManyComments2" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.parsing.AttachJsdocsTest" name="testOldJsdocManyCommentsOnOneNode" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

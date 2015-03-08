@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="s-164-67-71-126.resnet.ucla.edu" name="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" skipped="0" tests="261" time="4.324" timestamp="2015-03-08T09:06:26">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="lib.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/lib" />
+    <property name="refasterjs-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs.jar" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes" />
+    <property name="maven-repository-id" value="sonatype-nexus-staging" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/opt/local/share/java/apache-ant" />
+    <property name="java.runtime.version" value="1.7.0_75-b13" />
+    <property name="gen.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/gen" />
+    <property name="user.name" value="tomerwei" />
+    <property name="ant.file.compiler" value="/Users/tomerwei/Repos/PLay/closure-compiler/build.xml" />
+    <property name="build.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build" />
+    <property name="ant.build.javac.target" value="1.7" />
+    <property name="user.language" value="en" />
+    <property name="test.method" value="" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="jar" />
+    <property name="ant.project.name" value="compiler" />
+    <property name="java.version" value="1.7.0_75" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="protoc.executable" value="protoc" />
+    <property name="classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/classes" />
+    <property name="java.class.version" value="51.0" />
+    <property name="testClasses.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/test" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="externs.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/externs" />
+    <property name="ant.file" value="/Users/tomerwei/Repos/PLay/closure-compiler/build.xml" />
+    <property name="os.version" value="10.9.5" />
+    <property name="javac.debug" value="on" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="24.75-b04" />
+    <property name="ant.library.dir" value="/opt/local/share/java/apache-ant/lib" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="webservice-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice.jar" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="test.fork" value="true" />
+    <property name="webservice.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/jscomp/webservice" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="buildlib.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/lib" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ant.build.javac.source" value="1.7" />
+    <property name="refasterjs.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src/com/google/javascript/refactoring" />
+    <property name="user.home" value="/Users/tomerwei" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/test" />
+    <property name="java.library.path" value="/Users/tomerwei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="gopherProxySet" value="false" />
+    <property name="build.relVersion" value="v20150126-162-g55aa491" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junittestcases5320804302362041037.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/tomerwei/Repos/PLay/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/tomerwei/Repos/PLay/closure-compiler/junitvmwatcher5819990703841375885.properties propsfile=/Users/tomerwei/Repos/PLay/closure-compiler/junit642073203518458064.properties" />
+    <property name="java.class.path" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/classes:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant-launcher.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/ant.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/args4j.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/gson.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/guava.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/jsr305.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/junit.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/protobuf-java.jar:/Users/tomerwei/Repos/PLay/closure-compiler/lib/truth.jar:/Users/tomerwei/Repos/PLay/closure-compiler/build/test:/opt/local/share/java/apache-ant/lib/ant-launcher.jar:/opt/local/share/java/apache-ant/lib/ant.jar:/opt/local/share/java/apache-ant/lib/ant-junit.jar:/opt/local/share/java/apache-ant/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
+    <property name="test.class" value="*Test" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/var/folders/f6/3011v4610sd8c89rtjf_9j9m0000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="maven-repository-url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/" />
+    <property name="os.arch" value="x86_64" />
+    <property name="webservice-classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/webservice-classes" />
+    <property name="java.ext.dirs" value="/Users/tomerwei/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler" />
+    <property name="ant.file.type.compiler" value="file" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="refasterjs-classes.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/refasterjs-classes" />
+    <property name="basedir" value="/Users/tomerwei/Repos/PLay/closure-compiler" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="/opt/local/share/java/apache-ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="closure.build.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build" />
+    <property name="compiler-jarfile" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/compiler.jar" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="src.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/src" />
+    <property name="ant.project.invoked-targets" value="clean,compile,compile-tests,test" />
+    <property name="javadoc.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/build/javadoc" />
+    <property name="tools.dir" value="/Users/tomerwei/Repos/PLay/closure-compiler/tools" />
+  </properties>
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testForIn" time="0.07" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testTryCatch" time="0.025" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAndOr" time="0.024" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testFunctionBind" time="0.09" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testVarDefinitionsInExterns" time="0.045" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testThisInAtTypeFunction" time="0.061" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testThisInFunctionJsdoc" time="0.019" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDontCallMethodAsFunction" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNewInFunctionJsdoc" time="0.023" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInvalidThisReference" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSuperClassWithUndeclaredProps" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInheritMethodFromParent" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSubClassWithUndeclaredProps" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testUseBeforeDeclaration" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDeclaredVariables" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testEmptyBlockPropagation" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testForLoopInference" time="0.025" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testConditionalSpecialization" time="0.022" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testUnspecializedStrictComparisons" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAndOrConditionalSpecialization" time="0.049" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testLoopConditionSpecialization" time="0.021" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testVarDecls" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testBadInitialization" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testBadAssignment" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testBadArithmetic" time="0.038" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testTypeAfterIF" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSimpleBwdPropagation" time="0.025" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSimpleReturn" time="0.031" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testComparisons" time="0.031" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testFunctionJsdoc" time="0.08" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testFunctionSubtyping" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testFunctionJoin" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testFunctionMeet" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testRecordWithoutTypesJsdoc" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testBackwardForwardPathologicalCase" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testTopInitialization" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSimpleCalls" time="0.027" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testObjectType" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testCallsWithComplexOperator" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDeferredChecks" time="0.037" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testFunctionsInsideFunctions" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testCrossScopeWarnings" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testTrickyUnknownBehavior" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDeclaredFunctionTypesInFormals" time="0.026" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSpecializedFunctions" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDifficultObjectSpecialization" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testLooseConstructors" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testLooseFunctions" time="0.047" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testBackwardForwardPathologicalCase2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNotCallable" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSimpleLocallyDefinedFunction" time="0.024" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testIdentityFunction" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testReturnTypeInferred" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGetpropOnNonObjects" time="0.058" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNonexistentProperty" time="0.02" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNullableDereference" time="0.039" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAsserts" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDontInferBottom" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAssignToInvalidObject" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAssignmentDoesntFlowWrongInit" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testPossiblyNonexistentProperties" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDeclaredRecordTypes" time="0.044" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSimpleObjectLiterals" time="0.033" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInferPreciseTypeWithDeclaredUnknown" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSimpleLooseObjects" time="0.022" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNestedLooseObjects" time="0.032" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testLooseObjectSubtyping" time="0.032" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testUnionOfRecords" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testUnionOfFunctionAndNumber" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAnonymousNominalType" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testFoo" time="0.023" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testComma" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testTypeof" time="0.072" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAssignWithOp" time="0.021" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testClassConstructor" time="0.029" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testPropertyDeclarations" time="0.022" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testPrototypePropertyAssignments" time="0.034" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAssignmentsToPrototype" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testConflictingPropertyDefinitions" time="0.022" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testPrototypeAliasing" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInstanceof" time="0.054" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testFunctionsExtendFunction" time="0.04" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testObjectsAreNotClassy" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testFunctionWithProps" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testConstructorProperties" time="0.032" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testTypeTighteningHeuristic" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDeclaredPropertyIndirectly" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNonRequiredArguments" time="0.087" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInferredOptionalFormals" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSimpleClassInheritance" time="0.031" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInheritanceSubtyping" time="0.032" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInheritanceImplicitObjectSubtyping" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testRecordtypeSubtyping" time="0.0" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testWarnAboutOverridesNotVisibleDuringGlobalTypeInfo" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInvalidMethodPropertyOverride" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testMultipleObjects" time="0.027" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testMultipleFunctionsInUnion" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testPrototypeOnNonCtorFunction" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInvalidTypeReference" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testCircularDependencies" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInterfaceNonEmptyFunction" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInterfaceMistypedProp" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInterfaceSingleInheritance" time="0.059" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInterfaceMultipleInheritanceNoCrash" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInterfaceArgument" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testExtendedInterfacePropertiesCompatibility" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testTwoLevelExtendedInterface" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testConstructorExtensions" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInterfaceAndConstructorInvalidConstructions" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNot" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNullability" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGetElem" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNamespaces" time="0.037" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNestedNamespaces" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNonnamespaceLooksLikeANamespace" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNamespacedObjectsDontCrash" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testRedeclaredNamespaces" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testReferenceToNonexistentNamespace" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testQnameInJsdoc" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testIncrementDecrements" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNonStringComparisons" time="0.033" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAnalyzeLoopsBwd" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDontLoosenNominalTypes" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testFunctionsWithAbnormalExit" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAssignAdd" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testTypeCoercions" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSwitch" time="0.03" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testIn" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDelprop" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testArrayLit" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testArrayAccesses" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testRegExpLit" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDifficultLvalues" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testQuestionableUnionJsDoc" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGenericsJsdocParsing" time="0.019" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testPolymorphicFunctionInstantiation" time="0.044" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGenericReturnType" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testUnification" time="0.032" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testUnifyObjects" time="0.017" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testFunctionTypeUnifyUnknowns" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInstantiationInsideObjectTypes" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInstantiateInsideFunctionTypes" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testPolymorphicFuncallsFromDifferentScope" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testOpacityOfTypeParameters" time="0.023" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGenericClassInstantiation" time="0.027" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testLooserCheckingForInferredProperties" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInheritanceWithGenerics" time="0.036" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGenericsSubtyping" time="0.055" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGenericsVariance" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInferredArrayGenerics" time="0.029" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSpecializedInstanceofCantGoToBottom" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDeclaredGenericArrayTypes" time="0.04" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInferConstTypeFromGoogGetMsg" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInferConstTypeFromGenerics" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDifficultClassGenericsInstantiation" time="0.027" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNominalTypeUnification" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testCasts" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testOverride" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testOverrideNoInitializer" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testFunctionConstructor" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testConditionalExBranch" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGenericInterfaceDoesntCrash" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGetpropOnTopDoesntCrash" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testImplementsGenericInterfaceDoesntCrash" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDeadCodeDoesntCrash" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSpecializeFunctionToNominalDoesntCrash" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testPrototypeMethodOnUndeclaredDoesntCrash" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testFunctionGetpropDoesntCrash" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testUnannotatedBracketAccessDoesntCrash" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testUnknownTypeReferenceDoesntCrash" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testBottomPropAccessDoesntCrash" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testUnannotatedFunctionSummaryDoesntCrash" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSpecializeLooseNullDoesntCrash" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testOuterVarDefinitionJoinDoesntCrash" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testUnparameterizedArrayDefinitionDoesntCrash" time="0.001" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInstanceofGenericTypeDoesntCrash" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testRedeclarationOfFunctionAsNamespaceDoesntCrash" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInvalidEnumDoesntCrash" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testRemoveNonexistentPropDoesntCrash" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDoublyAssignedPrototypeMethodDoesntCrash" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testTopFunctionAsArgumentDoesntCrash" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGetpropDoesntCrash" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testLooseFunctionSubtypeDoesntCrash" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testMeetOfLooseObjAndNamedDoesntCrash" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testUninhabitableObjectTypeDoesntCrash" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testMockedOutConstructorDoesntCrash" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNamespacePropWithNoTypeDoesntCrash" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testArrayLiteralUsedGenericallyDoesntCrash" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSpecializeLooseFunctionDoesntCrash" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGetpropOnPossiblyInexistentPropertyDoesntCrash" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testCtorManipulationDoesntCrash" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAbstractMethodOverrides" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testThisReferenceUsedGenerically" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGrandparentTemplatizedDoesntCrash" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDebuggerStatementDoesntCrash" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDeclaredMethodWithoutScope" time="0.019" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDontOverrideNestedPropWithWorseType" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testPropNamesWithDot" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testObjLitDeclaredProps" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testCallArgumentsChecked" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testRecursiveFunctions" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testStructPropAccess" time="0.041" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDictPropAccess" time="0.026" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testStructWithIn" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testStructDictSubtyping" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInferStructDictFormal" time="0.017" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testStructDictInheritance" time="0.022" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testStructPropCreation" time="0.04" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testMisplacedStructDictAnnotation" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGetters" time="0.031" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSetters" time="0.039" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testConstMissingInitializer" time="0.019" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testMisplacedConstPropertyAnnotation" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testConstVarsDontReassign" time="0.017" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testConstPropertiesDontReassign" time="0.04" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testConstantByConvention" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDontOverrideFinalMethods" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInferenceOfConstType" time="0.091" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSuppressions" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testTypedefs" time="0.037" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testLends" time="0.043" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testEnumBasicTyping" time="0.021" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testEnumsWithNonScalarDeclaredType" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testEnumBadInitializer" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testEnumPropertiesConstant" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testEnumIllegalRecursion" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testEnumBadDeclaredType" time="0.025" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testEnumsWithGenerics" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testEnumJoinSpecializeMeet" time="0.036" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testEnumAliasing" time="0.041" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNoDoubleWarnings" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testRecordSpecializeNominalPreservesRequired" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGoogIsPredicatesNoSpecializedContext" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGoogIsPredicatesTrue" time="0.036" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGoogIsPredicatesFalse" time="0.033" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testGoogTypeof" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSuperClassCtorProperty" time="0.028" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAcrossScopeNamespaces" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testQualifiedNamedTypes" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testEnumsAsNamespaces" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testStringMethods" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testOutOfOrderDeclarations" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAbstractMethodsAreTypedCorrectly" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testUseJsdocOfCalleeForUnannotatedFunctionsInArgumentPosition" time="0.03" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNamespacesWithNonEmptyObjectLiteral" time="0.021" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAllTestsShouldHaveDupPropWarnings" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testNominalTypeAliasing" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testTypeVariablesVisibleInPrototypeMethods" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testInferConstTypeFromEnumProps" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testForwardDeclarations" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testDontLookupInParentScopeForNamesWithoutDeclaredType" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testSpecializationInPropertyAccesses" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAutoconvertBoxedNumberToNumber" time="0.028" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAutoconvertBoxedStringToString" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAutoconvertBoxedBooleanToBoolean" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testAutoconvertScalarsToBoxedScalars" time="0.026" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testConstructorsCalledWithoutNew" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testClosureStyleFunctionBind" time="0.025" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testPlusBackwardInference" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testExterns" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest" name="testThrow" time="0.01" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
