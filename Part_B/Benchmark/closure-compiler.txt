@@ -1,0 +1,7 @@
+src/com/google/javascript/jscomp/CallGraph.java
+src/com/google/javascript/jscomp/ReplaceCssNames.java 
+src/com/google/javascript/jscomp/parsing/parser/Scanner.java
+src/com/google/javascript/rhino/jstype/UnionType.java
+test/com/google/javascript/jscomp/CheckAccessControlsTest.java
+test/com/google/javascript/jscomp/CollapsePropertiesTest.java
+test/com/google/javascript/jscomp/CompilerTestCase.java
