@@ -255,6 +255,34 @@
           message="Unit tests failed. See build/testoutput/index.html" />
   </target>
 
+
+  <target name="one-test-file"
+          depends="compile-tests"
+          description="Compile and execute one JUnit test
+                       specified with -Dtest.class and -Dtest.method.">
+    <mkdir dir="build/testoutput"/>
+    <junit printsummary="on" fork="${test.fork}"
+           forkmode="once" showoutput="true"
+           failureproperty="junit.failure">
+      <classpath refid="allclasspath.path" />
+      <classpath>
+        <pathelement location="${build.dir}/test" />
+      </classpath>
+      <test todir="build/testoutput" name="${test.class}" >
+        <formatter type="brief" usefile="false" />
+        <formatter type="xml" />
+      </test>
+    </junit>
+    <junitreport>
+       <fileset dir="build/testoutput" includes="*.xml"/>
+       <report todir="build/testoutput"/>
+    </junitreport>
+    <fail if="junit.failure"
+          message="Unit tests failed. See build/testoutput/index.html" />
+  </target>
+
+
+
   <target name="one-test"
           depends="compile-tests"
           description="Compile and execute one JUnit test
