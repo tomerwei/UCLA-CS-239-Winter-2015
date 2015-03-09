@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="2" hostname="cs-210-206.cs.ucla.edu" name="com.google.javascript.jscomp.Es6ToEs3ConverterTest" skipped="0" tests="68" time="0.758" timestamp="2015-03-09T03:17:19">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="lib.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib" />
+    <property name="refasterjs-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs.jar" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes" />
+    <property name="maven-repository-id" value="sonatype-nexus-staging" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="//Users/linmanna/ant" />
+    <property name="java.runtime.version" value="1.7.0_75-b13" />
+    <property name="gen.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/gen" />
+    <property name="user.name" value="linmanna" />
+    <property name="ant.file.compiler" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml" />
+    <property name="build.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build" />
+    <property name="ant.build.javac.target" value="1.7" />
+    <property name="user.language" value="zh" />
+    <property name="test.method" value="" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="jar" />
+    <property name="ant.project.name" value="compiler" />
+    <property name="java.version" value="1.7.0_75" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="protoc.executable" value="protoc" />
+    <property name="classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes" />
+    <property name="java.class.version" value="51.0" />
+    <property name="testClasses.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test" />
+    <property name="user.country" value="CN" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="externs.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/externs" />
+    <property name="ant.file" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml" />
+    <property name="os.version" value="10.9.5" />
+    <property name="javac.debug" value="on" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="24.75-b04" />
+    <property name="ant.library.dir" value="//Users/linmanna/ant/lib" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="webservice-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice.jar" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="test.fork" value="true" />
+    <property name="webservice.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/jscomp/webservice" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="buildlib.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/lib" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ant.build.javac.source" value="1.7" />
+    <property name="refasterjs.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/refactoring" />
+    <property name="user.home" value="/Users/linmanna" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/test" />
+    <property name="java.library.path" value="/Users/linmanna/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="gopherProxySet" value="false" />
+    <property name="build.relVersion" value="00e3533" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junittestcases4622356093930181862.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junitvmwatcher882389895192408063.properties propsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junit6374663990081372210.properties" />
+    <property name="java.class.path" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant-launcher.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/args4j.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/gson.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/guava.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/jsr305.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/junit.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/protobuf-java.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/truth.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test:/Users/linmanna/ant/lib/ant-launcher.jar:/Users/linmanna/ant/lib/ant.jar:/Users/linmanna/ant/lib/ant-junit.jar:/Users/linmanna/ant/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
+    <property name="test.class" value="*Test" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/var/folders/_p/3swdt4h96dn79vyt21dtny9h0000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="maven-repository-url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/" />
+    <property name="os.arch" value="x86_64" />
+    <property name="webservice-classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice-classes" />
+    <property name="java.ext.dirs" value="/Users/linmanna/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler" />
+    <property name="ant.file.type.compiler" value="file" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="refasterjs-classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs-classes" />
+    <property name="basedir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="/Users/linmanna/ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="closure.build.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build" />
+    <property name="compiler-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/compiler.jar" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="src.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src" />
+    <property name="ant.project.invoked-targets" value="clean,compile,compile-tests,test" />
+    <property name="javadoc.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/javadoc" />
+    <property name="tools.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/tools" />
+  </properties>
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testForOf" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testComputedProperties" time="0.049" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testDefaultParameters" time="0.02" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testArrowFunction" time="0.048" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testExtends" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testExtendsInterface" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testObjectDestructuring" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testObjectDestructuringNested" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testObjectDestructuringWithInitializer" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testObjectLiteralStringKeysWithNoValue" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testClassGenerator" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testClassStatement" time="0.035" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testArrayDestructuring" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testAnonymousSuper" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testClassWithJsDoc" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testInterfaceWithJsDoc" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testCtorWithJsDoc" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testMemberWithJsDoc" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testClassStatementInsideIf" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testClassExpressionInVar" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testClassExpressionInAssignment" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testClassExpression" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testInvalidExtends" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testImplementsInterface" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testSuperCall" time="0.03" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testMultiNameClass" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testClassNested" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testSuperGet" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testSuperNew" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testSuperSpread" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testSuperCallNonConstructor" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testStaticThis" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testStaticMethods" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testStaticInheritance" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testMockingInFunction" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testGithub752" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testArrowInClass" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testInvalidClassUse" time="0.009">
+    <failure message="Unexpected warning(s): JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at testcode line 4 : 0 expected:&lt;0&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Unexpected warning(s): JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at testcode line 4 : 0 expected:&lt;0&gt; but was:&lt;1&gt;
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1094)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:489)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:466)
+	at com.google.javascript.jscomp.Es6ToEs3ConverterTest.testInvalidClassUse(Es6ToEs3ConverterTest.java:811)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testClassGetterSetter" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testEs5GettersAndSetters_es3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testEs5GettersAndSetters_es5" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testMultipleArrowsInSameScope" time="0.019" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testArrowNestedScope" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testArrowception" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testArrowceptionWithThis" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testRestParameter" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testDefaultAndRestParameters" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testDestructuringForOf" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testSpreadArray" time="0.024" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testSpreadCall" time="0.047">
+    <failure message="There should be one warning, repeated 1 time(s). Warnings: [JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at testcode line 7 : 0, JSC_INEXISTENT_PROPERTY. Property m never defined on C at testcode line 7 : 17] expected:&lt;1&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: There should be one warning, repeated 1 time(s). Warnings: [JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at testcode line 7 : 0, JSC_INEXISTENT_PROPERTY. Property m never defined on C at testcode line 7 : 17] expected:&lt;1&gt; but was:&lt;2&gt;
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1098)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:929)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:489)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:466)
+	at com.google.javascript.jscomp.Es6ToEs3ConverterTest.testSpreadCall(Es6ToEs3ConverterTest.java:1252)
+</failure>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testArrowFunctionInObject" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testMethodInObject" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testComputedPropertiesWithMethod" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testComputedPropGetterSetter" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testComputedPropClass" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testComputedPropGeneratorMethods" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testBlockScopedGeneratorFunction" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testComputedPropCannotConvert" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testNoComputedProperties" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testArrayDestructuringDefaultValues" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testArrayDestructuringParam" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testArrayDestructuringRest" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testObjectDestructuringComputedProps" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testObjectDestructuringStrangeProperties" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testObjectDestructuringFunction" time="0.021" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testMixedDestructuring" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testUntaggedTemplateLiteral" time="0.002">
+    <error message="-1" type="java.lang.ArrayIndexOutOfBoundsException">java.lang.ArrayIndexOutOfBoundsException: -1
+	at com.google.javascript.jscomp.parsing.parser.LineNumberTable.offsetOfLine(LineNumberTable.java:93)
+	at com.google.javascript.jscomp.parsing.parser.LineNumberTable.getColumn(LineNumberTable.java:97)
+	at com.google.javascript.jscomp.parsing.parser.LineNumberTable.getSourcePosition(LineNumberTable.java:80)
+	at com.google.javascript.jscomp.parsing.parser.LineNumberTable.getSourceRange(LineNumberTable.java:101)
+	at com.google.javascript.jscomp.parsing.parser.Scanner.getTokenRange(Scanner.java:80)
+	at com.google.javascript.jscomp.parsing.parser.Scanner.nextTemplateLiteralTokenShared(Scanner.java:793)
+	at com.google.javascript.jscomp.parsing.parser.Scanner.scanTemplateLiteral(Scanner.java:777)
+	at com.google.javascript.jscomp.parsing.parser.Scanner.scanToken(Scanner.java:567)
+	at com.google.javascript.jscomp.parsing.parser.Scanner.peekToken(Scanner.java:228)
+	at com.google.javascript.jscomp.parsing.parser.Parser.peekToken(Parser.java:2879)
+	at com.google.javascript.jscomp.parsing.parser.Parser.peekToken(Parser.java:2872)
+	at com.google.javascript.jscomp.parsing.parser.Parser.getTreeStartLocation(Parser.java:2791)
+	at com.google.javascript.jscomp.parsing.parser.Parser.parseProgram(Parser.java:150)
+	at com.google.javascript.jscomp.parsing.ParserRunner.parse(ParserRunner.java:102)
+	at com.google.javascript.jscomp.JsAst.parse(JsAst.java:84)
+	at com.google.javascript.jscomp.JsAst.getAstRoot(JsAst.java:50)
+	at com.google.javascript.jscomp.CompilerInput.getAstRoot(CompilerInput.java:114)
+	at com.google.javascript.jscomp.Compiler.processEs6Modules(Compiler.java:1515)
+	at com.google.javascript.jscomp.Compiler.parseInputs(Compiler.java:1349)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:959)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)
+	at com.google.javascript.jscomp.Es6ToEs3ConverterTest.testUntaggedTemplateLiteral(Es6ToEs3ConverterTest.java:1710)
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.Es6ToEs3ConverterTest" name="testTaggedTemplateLiteral" time="0.029" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

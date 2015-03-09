@@ -1,0 +1,734 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Standard Error from CommandLineRunnerTest</title>
+</head>
+<body>
+<pre>java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:19
+/** @unknownTag */ function f() {}
+  Parent(SCRIPT): input0:1:19
+/** @unknownTag */ function f() {}
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 21 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:0
+function f() { this.a = 3; }
+  Parent(SCRIPT): input0:1:0
+function f() { this.a = 3; }
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 21 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:0
+function f() { this.a = 3; }
+  Parent(SCRIPT): input0:1:0
+function f() { this.a = 3; }
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 21 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): input0:1:11
+window.f = function(a) {};
+  Parent(ASSIGN): input0:1:0
+window.f = function(a) {};
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 23 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:0
+function f() { this.a = 3; }
+  Parent(SCRIPT): input0:1:0
+function f() { this.a = 3; }
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 21 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:0
+function f() { this.a = 3; }
+  Parent(SCRIPT): input0:1:0
+function f() { this.a = 3; }
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 21 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:0
+function f() { this.a = 3; }
+  Parent(SCRIPT): input0:1:0
+function f() { this.a = 3; }
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 21 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): input0:1:59
+/** @constructor */function Foo() {}Foo.prototype.handle = function(x, y) { alert(y); };var x = goog.reflect.object(Foo, {handle: 1});for (var i in x) { x[i].call(x); }window['Foo'] = Foo;
+  Parent(ASSIGN): input0:1:36
+/** @constructor */function Foo() {}Foo.prototype.handle = function(x, y) { alert(y); };var x = goog.reflect.object(Foo, {handle: 1});for (var i in x) { x[i].call(x); }window['Foo'] = Foo;
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 23 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): input0:1:66
+/** @constructor */ function F() { this.a = 0; }F.prototype.inc = function() { this.a++; return 10; };F.prototype.bar = function() {   var c = 3; var val = this.inc(); this.a += val + c;};window['f'] = new F();window['f']['inc'] = window['f'].inc;window['f']['bar'] = window['f'].bar;use(window['f'].a)
+  Parent(ASSIGN): input0:1:48
+/** @constructor */ function F() { this.a = 0; }F.prototype.inc = function() { this.a++; return 10; };F.prototype.bar = function() {   var c = 3; var val = this.inc(); this.a += val + c;};window['f'] = new F();window['f']['inc'] = window['f'].inc;window['f']['bar'] = window['f'].bar;use(window['f'].a)
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 23 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): input0:3:24
+Foo.prototype.handle1 = function(x, y) { alert(y); };
+  Parent(ASSIGN): input0:3:0
+Foo.prototype.handle1 = function(x, y) { alert(y); };
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 23 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:0
+function f(x) { return x; } f();
+  Parent(SCRIPT): input0:1:0
+function f(x) { return x; } f();
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 21 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:0
+function f(x) { return x; } f();
+  Parent(SCRIPT): input0:1:0
+function f(x) { return x; } f();
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 21 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): input0:1:23
+var x = x || {}; x.f = function() {}; x.f(3);
+  Parent(ASSIGN): input0:1:17
+var x = x || {}; x.f = function() {}; x.f(3);
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 23 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:0
+function f() {var x = {}; var y = x.bar;}
+  Parent(SCRIPT): input0:1:0
+function f() {var x = {}; var y = x.bar;}
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 21 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:0
+function f() {   var arguments = Array.prototype.slice.call(arguments, 0);  return arguments[0]; }
+  Parent(SCRIPT): input0:1:0
+function f() {   var arguments = Array.prototype.slice.call(arguments, 0);  return arguments[0]; }
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 21 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): input0:1:5
+void function() { alert('hi'); }();
+  Parent(CALL): input0:1:5
+void function() { alert('hi'); }();
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 25 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:0
+function f() { return '\v' == 'v'; } window['f'] = f;
+  Parent(SCRIPT): input0:1:0
+function f() { return '\v' == 'v'; } window['f'] = f;
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 21 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:0
+function f() { return '\u000B' == 'v'; } window['f'] = f;
+  Parent(SCRIPT): input0:1:0
+function f() { return '\u000B' == 'v'; } window['f'] = f;
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 21 more
+java.lang.IllegalStateException: Missing catch or finally for try statement.. Reference node:
+TRY 1 [source_file: input0]
+    BLOCK 1 [source_file: input0]
+        EXPR_RESULT 1 [source_file: input0]
+            NEW 1 [side_effect_flags: 7] [source_file: input0]
+                NAME Function 1 [source_file: input0]
+                STRING this is an error 1 [source_file: input0]
+    BLOCK 1 [source_file: input0]
+        CATCH 1 [source_file: input0]
+            NAME a 1 [source_file: input0] [is_constant_var: 1]
+            BLOCK 1 [source_file: input0]
+                EXPR_RESULT 1 [source_file: input0]
+                    CALL 1 [side_effect_flags: 8] [free_call: 1] [source_file: input0]
+                        NAME alert 1 [source_file: input0]
+                        STRING x 1 [source_file: input0]
+
+	at com.google.javascript.jscomp.AstValidator$1.handleViolation(AstValidator.java:54)
+	at com.google.javascript.jscomp.AstValidator.violation(AstValidator.java:1167)
+	at com.google.javascript.jscomp.AstValidator.validateTry(AstValidator.java:888)
+	at com.google.javascript.jscomp.AstValidator.validateStatement(AstValidator.java:142)
+	at com.google.javascript.jscomp.AstValidator.validateScript(AstValidator.java:91)
+	at com.google.javascript.jscomp.AstValidator.validateCodeRoot(AstValidator.java:82)
+	at com.google.javascript.jscomp.AstValidator.process(AstValidator.java:66)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.optimize(Compiler.java:1978)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:764)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): input0:1:64
+/** @constructor */var Foo = function() {};Foo.prototype.blah = function() {  Foo.bar_(this)};Foo.bar_ = function(f) {  f.x = 5;};var y = new Foo();Foo.bar_({});y.blah();alert(y);
+  Parent(ASSIGN): input0:1:43
+/** @constructor */var Foo = function() {};Foo.prototype.blah = function() {  Foo.bar_(this)};Foo.bar_ = function(f) {  f.x = 5;};var y = new Foo();Foo.bar_({});y.blah();alert(y);
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 23 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:17
+if (true) { f(); function f() {} }
+  Parent(BLOCK): input0:1:10
+if (true) { f(); function f() {} }
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 23 more
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): input0:1:0
+function f(x) { delete x; }
+  Parent(SCRIPT): input0:1:0
+function f(x) { delete x; }
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 21 more
+</pre>
+</body>
+</html>

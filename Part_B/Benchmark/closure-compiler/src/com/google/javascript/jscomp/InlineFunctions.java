@@ -160,11 +160,11 @@ class InlineFunctions implements CompilerPass {
     // Always inline at the top level,
     // unless maybeAddFunction has marked fs as not inlinable.
     if (containingFunction == null) {
-      return false;
+      return true;
     }
     Node inlinedFun = fs.getFn().getFunctionNode();
     if (isAlwaysInlinable(inlinedFun)) {
-      return false;
+      return true;
     }
     int inlinedFunSize = NodeUtil.countAstSizeUpToLimit(
         NodeUtil.getFunctionBody(inlinedFun), maxSizeAfterInlining);

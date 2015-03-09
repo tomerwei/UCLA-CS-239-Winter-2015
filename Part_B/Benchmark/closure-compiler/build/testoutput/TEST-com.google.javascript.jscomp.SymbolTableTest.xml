@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="23" failures="0" hostname="cs-210-206.cs.ucla.edu" name="com.google.javascript.jscomp.SymbolTableTest" skipped="0" tests="55" time="0.439" timestamp="2015-03-09T03:17:38">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="lib.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib" />
+    <property name="refasterjs-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs.jar" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes" />
+    <property name="maven-repository-id" value="sonatype-nexus-staging" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="//Users/linmanna/ant" />
+    <property name="java.runtime.version" value="1.7.0_75-b13" />
+    <property name="gen.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/gen" />
+    <property name="user.name" value="linmanna" />
+    <property name="ant.file.compiler" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml" />
+    <property name="build.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build" />
+    <property name="ant.build.javac.target" value="1.7" />
+    <property name="user.language" value="zh" />
+    <property name="test.method" value="" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="jar" />
+    <property name="ant.project.name" value="compiler" />
+    <property name="java.version" value="1.7.0_75" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="protoc.executable" value="protoc" />
+    <property name="classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes" />
+    <property name="java.class.version" value="51.0" />
+    <property name="testClasses.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test" />
+    <property name="user.country" value="CN" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="externs.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/externs" />
+    <property name="ant.file" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml" />
+    <property name="os.version" value="10.9.5" />
+    <property name="javac.debug" value="on" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="24.75-b04" />
+    <property name="ant.library.dir" value="//Users/linmanna/ant/lib" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="webservice-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice.jar" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="test.fork" value="true" />
+    <property name="webservice.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/jscomp/webservice" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="buildlib.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/lib" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ant.build.javac.source" value="1.7" />
+    <property name="refasterjs.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/refactoring" />
+    <property name="user.home" value="/Users/linmanna" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/test" />
+    <property name="java.library.path" value="/Users/linmanna/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="gopherProxySet" value="false" />
+    <property name="build.relVersion" value="00e3533" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junittestcases4622356093930181862.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junitvmwatcher882389895192408063.properties propsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junit6374663990081372210.properties" />
+    <property name="java.class.path" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant-launcher.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/args4j.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/gson.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/guava.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/jsr305.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/junit.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/protobuf-java.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/truth.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test:/Users/linmanna/ant/lib/ant-launcher.jar:/Users/linmanna/ant/lib/ant.jar:/Users/linmanna/ant/lib/ant-junit.jar:/Users/linmanna/ant/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
+    <property name="test.class" value="*Test" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/var/folders/_p/3swdt4h96dn79vyt21dtny9h0000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="maven-repository-url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/" />
+    <property name="os.arch" value="x86_64" />
+    <property name="webservice-classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice-classes" />
+    <property name="java.ext.dirs" value="/Users/linmanna/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler" />
+    <property name="ant.file.type.compiler" value="file" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="refasterjs-classes.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs-classes" />
+    <property name="basedir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="/Users/linmanna/ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="closure.build.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build" />
+    <property name="compiler-jarfile" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/compiler.jar" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="src.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src" />
+    <property name="ant.project.invoked-targets" value="clean,compile,compile-tests,test" />
+    <property name="javadoc.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/javadoc" />
+    <property name="tools.dir" value="/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/tools" />
+  </properties>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testGoogRequireReferences" time="0.003">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION ): in1:1:29&#xa;var goog = {};goog.provide = function() {};goog.require = function() {};goog.provide(&apos;goog.dom&apos;);goog.require(&apos;goog.dom&apos;);&#xa;  Parent(ASSIGN): in1:1:14&#xa;var goog = {};goog.provide = function() {};goog.require = function() {};goog.provide(&apos;goog.dom&apos;);goog.require(&apos;goog.dom&apos;);&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): in1:1:29
+var goog = {};goog.provide = function() {};goog.require = function() {};goog.provide(&apos;goog.dom&apos;);goog.require(&apos;goog.dom&apos;);
+  Parent(ASSIGN): in1:1:14
+var goog = {};goog.provide = function() {};goog.require = function() {};goog.provide(&apos;goog.dom&apos;);goog.require(&apos;goog.dom&apos;);
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testGlobalVar" time="0.022" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testLocalVarReferences" time="0.002">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION f): in1:1:0&#xa;function f(x) { return x; }&#xa;  Parent(SCRIPT): in1:1:0&#xa;function f(x) { return x; }&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): in1:1:0
+function f(x) { return x; }
+  Parent(SCRIPT): in1:1:0
+function f(x) { return x; }
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testLocalThisReferences" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testLocalThisReferences2" time="0.001">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION ): in1:1:57&#xa;/** @constructor */ function F() {}F.prototype.baz =     function() { this.foo = 3; this.bar = 5; };&#xa;  Parent(ASSIGN): in1:1:35&#xa;/** @constructor */ function F() {}F.prototype.baz =     function() { this.foo = 3; this.bar = 5; };&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): in1:1:57
+/** @constructor */ function F() {}F.prototype.baz =     function() { this.foo = 3; this.bar = 5; };
+  Parent(ASSIGN): in1:1:35
+/** @constructor */ function F() {}F.prototype.baz =     function() { this.foo = 3; this.bar = 5; };
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testLocalThisReferences3" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testNamespacedReferences" time="0.002">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION ): in1:1:49&#xa;var goog = {};goog.dom = {};goog.dom.DomHelper = function(){};&#xa;  Parent(ASSIGN): in1:1:28&#xa;var goog = {};goog.dom = {};goog.dom.DomHelper = function(){};&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): in1:1:49
+var goog = {};goog.dom = {};goog.dom.DomHelper = function(){};
+  Parent(ASSIGN): in1:1:28
+var goog = {};goog.dom = {};goog.dom.DomHelper = function(){};
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testIncompleteNamespacedReferences" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testGlobalRichObjectReference" time="0.002">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION g): in1:5:0&#xa;function g() {&#xa;  Parent(SCRIPT): in1:2:0&#xa;function A(){};&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION g): in1:5:0
+function g() {
+  Parent(SCRIPT): in1:2:0
+function A(){};
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testRemovalOfNamespacedReferencesOfProperties" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testGoogScopeReferences" time="0.004">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION ): in1:1:27&#xa;var goog = {};goog.scope = function() {};goog.scope(function() {});&#xa;  Parent(ASSIGN): in1:1:14&#xa;var goog = {};goog.scope = function() {};goog.scope(function() {});&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): in1:1:27
+var goog = {};goog.scope = function() {};goog.scope(function() {});
+  Parent(ASSIGN): in1:1:14
+var goog = {};goog.scope = function() {};goog.scope(function() {});
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testGoogRequireReferences2" time="0.001">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION ): in1:1:10&#xa;foo.bar = function(){};  // definition&#xa;  Parent(ASSIGN): in1:1:0&#xa;foo.bar = function(){};  // definition&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): in1:1:10
+foo.bar = function(){};  // definition
+  Parent(ASSIGN): in1:1:0
+foo.bar = function(){};  // definition
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testGlobalVarInExterns" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testLocalVarInExterns" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testSymbolsForType" time="0.002">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION random): in1:1:0&#xa;function random() { return 1; }/** @constructor */ function Foo() {}/** @constructor */ function Bar() {}var x = random() ? new Foo() : new Bar();&#xa;  Parent(SCRIPT): in1:1:0&#xa;function random() { return 1; }/** @constructor */ function Foo() {}/** @constructor */ function Bar() {}var x = random() ? new Foo() : new Bar();&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION random): in1:1:0
+function random() { return 1; }/** @constructor */ function Foo() {}/** @constructor */ function Bar() {}var x = random() ? new Foo() : new Bar();
+  Parent(SCRIPT): in1:1:0
+function random() { return 1; }/** @constructor */ function Foo() {}/** @constructor */ function Bar() {}var x = random() ? new Foo() : new Bar();
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testMethodReferences" time="0.002">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION f): in1:1:106&#xa;/** @constructor */ var DomHelper = function(){};/** method */ DomHelper.prototype.method = function() {};function f() {   (new DomHelper()).method(); (new DomHelper()).method(); };&#xa;  Parent(SCRIPT): in1:1:20&#xa;/** @constructor */ var DomHelper = function(){};/** method */ DomHelper.prototype.method = function() {};function f() {   (new DomHelper()).method(); (new DomHelper()).method(); };&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): in1:1:106
+/** @constructor */ var DomHelper = function(){};/** method */ DomHelper.prototype.method = function() {};function f() {   (new DomHelper()).method(); (new DomHelper()).method(); };
+  Parent(SCRIPT): in1:1:20
+/** @constructor */ var DomHelper = function(){};/** method */ DomHelper.prototype.method = function() {};function f() {   (new DomHelper()).method(); (new DomHelper()).method(); };
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testGlobalThisReferences" time="0.001">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION f): in1:1:14&#xa;var x = this; function f() { return this + this + this; }&#xa;  Parent(SCRIPT): in1:1:0&#xa;var x = this; function f() { return this + this + this; }&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): in1:1:14
+var x = this; function f() { return this + this + this; }
+  Parent(SCRIPT): in1:1:0
+var x = this; function f() { return this + this + this; }
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testGlobalThisReferences2" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testGlobalThisReferences3" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testGlobalThisPropertyReferences" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testGlobalVarReferences" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testStaticMethodReferences" time="0.02">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION f): in1:1:96&#xa;/** @constructor */ var DomHelper = function(){};/** method */ DomHelper.method = function() {};function f() { var x = DomHelper; x.method() + x.method(); }&#xa;  Parent(SCRIPT): in1:1:20&#xa;/** @constructor */ var DomHelper = function(){};/** method */ DomHelper.method = function() {};function f() { var x = DomHelper; x.method() + x.method(); }&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): in1:1:96
+/** @constructor */ var DomHelper = function(){};/** method */ DomHelper.method = function() {};function f() { var x = DomHelper; x.method() + x.method(); }
+  Parent(SCRIPT): in1:1:20
+/** @constructor */ var DomHelper = function(){};/** method */ DomHelper.method = function() {};function f() { var x = DomHelper; x.method() + x.method(); }
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testSuperClassMethodReferences" time="0.006">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION ): in1:1:30&#xa;var goog = {};goog.inherits = function(a, b) {};/** @constructor */ var A = function(){};/** method */ A.prototype.method = function() {};/**&#xa;  Parent(ASSIGN): in1:1:14&#xa;var goog = {};goog.inherits = function(a, b) {};/** @constructor */ var A = function(){};/** method */ A.prototype.method = function() {};/**&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): in1:1:30
+var goog = {};goog.inherits = function(a, b) {};/** @constructor */ var A = function(){};/** method */ A.prototype.method = function() {};/**
+  Parent(ASSIGN): in1:1:14
+var goog = {};goog.inherits = function(a, b) {};/** @constructor */ var A = function(){};/** method */ A.prototype.method = function() {};/**
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testMethodReferencesMissingTypeInfo" time="0.003">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION f): in1:8:0&#xa;function f() {   (new DomHelper()).method();&#xa;  Parent(SCRIPT): in1:4:4&#xa; */ var DomHelper = function(){};&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): in1:8:0
+function f() {   (new DomHelper()).method();
+  Parent(SCRIPT): in1:4:4
+ */ var DomHelper = function(){};
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testFieldReferencesMissingTypeInfo" time="0.004">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION f): in1:6:0&#xa;function f() {&#xa;  Parent(SCRIPT): in1:4:4&#xa; */ var DomHelper = function(){ this.prop = 1; };&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): in1:6:0
+function f() {
+  Parent(SCRIPT): in1:4:4
+ */ var DomHelper = function(){ this.prop = 1; };
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testFieldReferences" time="0.014">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION f): in1:1:88&#xa;/** @constructor */ var DomHelper = function(){  /** @type {number} */ this.field = 3;};function f() {   return (new DomHelper()).field + (new DomHelper()).field; };&#xa;  Parent(SCRIPT): in1:1:20&#xa;/** @constructor */ var DomHelper = function(){  /** @type {number} */ this.field = 3;};function f() {   return (new DomHelper()).field + (new DomHelper()).field; };&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): in1:1:88
+/** @constructor */ var DomHelper = function(){  /** @type {number} */ this.field = 3;};function f() {   return (new DomHelper()).field + (new DomHelper()).field; };
+  Parent(SCRIPT): in1:1:20
+/** @constructor */ var DomHelper = function(){  /** @type {number} */ this.field = 3;};function f() {   return (new DomHelper()).field + (new DomHelper()).field; };
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testUndeclaredFieldReferences" time="0.002">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION ): in1:1:78&#xa;/** @constructor */ var DomHelper = function(){};DomHelper.prototype.method = function() {   this.field = 3;  return x.field;}&#xa;  Parent(ASSIGN): in1:1:49&#xa;/** @constructor */ var DomHelper = function(){};DomHelper.prototype.method = function() {   this.field = 3;  return x.field;}&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): in1:1:78
+/** @constructor */ var DomHelper = function(){};DomHelper.prototype.method = function() {   this.field = 3;  return x.field;}
+  Parent(ASSIGN): in1:1:49
+/** @constructor */ var DomHelper = function(){};DomHelper.prototype.method = function() {   this.field = 3;  return x.field;}
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testPrototypeReferences" time="0.008">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION ): in1:1:72&#xa;/** @constructor */ function DomHelper() {}DomHelper.prototype.method = function() {};&#xa;  Parent(ASSIGN): in1:1:43&#xa;/** @constructor */ function DomHelper() {}DomHelper.prototype.method = function() {};&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): in1:1:72
+/** @constructor */ function DomHelper() {}DomHelper.prototype.method = function() {};
+  Parent(ASSIGN): in1:1:43
+/** @constructor */ function DomHelper() {}DomHelper.prototype.method = function() {};
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testPrototypeReferences2" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testPrototypeReferences3" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testPrototypeReferences4" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testPrototypeReferences5" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testReferencesInJSDocType" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testReferencesInJSDocType2" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testDottedReferencesInJSDocType" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testReferencesInJSDocName" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testLocalQualifiedNamesInLocalScopes" time="0.005">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION f): in1:1:0&#xa;function f() { var x = {}; x.number = 3; }&#xa;  Parent(SCRIPT): in1:1:0&#xa;function f() { var x = {}; x.number = 3; }&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION f): in1:1:0
+function f() { var x = {}; x.number = 3; }
+  Parent(SCRIPT): in1:1:0
+function f() { var x = {}; x.number = 3; }
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testNaturalSymbolOrdering" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testDeclarationDisagreement" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testMultipleExtends" time="0.003">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION ): in1:2:16&#xa;goog.inherits = function(x, y) {};&#xa;  Parent(ASSIGN): in1:2:0&#xa;goog.inherits = function(x, y) {};&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): in1:2:16
+goog.inherits = function(x, y) {};
+  Parent(ASSIGN): in1:2:0
+goog.inherits = function(x, y) {};
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testJSDocAssociationWithBadNamespace" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testMissingConstructorTag" time="0.002">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION F): in1:1:0&#xa;function F() {  this.field1 = 3;}F.prototype.method1 = function() {  this.field1 = 5;};(new F()).method1();&#xa;  Parent(SCRIPT): in1:1:0&#xa;function F() {  this.field1 = 3;}F.prototype.method1 = function() {  this.field1 = 5;};(new F()).method1();&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION F): in1:1:0
+function F() {  this.field1 = 3;}F.prototype.method1 = function() {  this.field1 = 5;};(new F()).method1();
+  Parent(SCRIPT): in1:1:0
+function F() {  this.field1 = 3;}F.prototype.method1 = function() {  this.field1 = 5;};(new F()).method1();
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testTypeCheckingOff" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testSuperClassReference" time="0.005">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION ): in1:4:38&#xa;a.b.BaseClass.prototype.doSomething = function() {&#xa;  Parent(ASSIGN): in1:4:0&#xa;a.b.BaseClass.prototype.doSomething = function() {&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): in1:4:38
+a.b.BaseClass.prototype.doSomething = function() {
+  Parent(ASSIGN): in1:4:0
+a.b.BaseClass.prototype.doSomething = function() {
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testInnerEnum" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testMethodInAnonObject1" time="0.003">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION ): in1:1:30&#xa;var a = {}; a.b = {}; a.b.c = function() {};&#xa;  Parent(ASSIGN): in1:1:22&#xa;var a = {}; a.b = {}; a.b.c = function() {};&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): in1:1:30
+var a = {}; a.b = {}; a.b.c = function() {};
+  Parent(ASSIGN): in1:1:22
+var a = {}; a.b = {}; a.b.c = function() {};
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testMethodInAnonObject2" time="0.015">
+    <error message="INTERNAL COMPILER ERROR.&#xa;Please report this problem.&#xa;&#xa;null&#xa;  Node(FUNCTION ): in1:1:16&#xa;var a = {b: {c: function() {}}};&#xa;  Parent(STRING_KEY c): in1:1:13&#xa;var a = {b: {c: function() {}}};&#xa;" type="java.lang.RuntimeException">java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+
+null
+  Node(FUNCTION ): in1:1:16
+var a = {b: {c: function() {}}};
+  Parent(STRING_KEY c): in1:1:13
+var a = {b: {c: function() {}}};
+
+	at com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(CheckGlobalThis.java:94)
+	at com.google.javascript.jscomp.CombinedCompilerPass$CallbackWrapper.shouldTraverseIfActive(CombinedCompilerPass.java:130)
+	at com.google.javascript.jscomp.CombinedCompilerPass.shouldTraverse(CombinedCompilerPass.java:165)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:557)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:289)
+	at com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:528)
+	at com.google.javascript.jscomp.CombinedCompilerPass.process(CombinedCompilerPass.java:154)
+	at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:285)
+	at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:217)
+	at com.google.javascript.jscomp.Compiler.check(Compiler.java:844)
+	at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:757)
+	at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:95)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:656)
+	at com.google.javascript.jscomp.Compiler$3.call(Compiler.java:653)
+	at com.google.javascript.jscomp.Compiler$4.call(Compiler.java:700)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+</error>
+  </testcase>
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testJSDocOnlySymbol" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testNamespaceDefinitionOrder" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testConstructorAlias" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testSymbolForScopeOfNatives" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testJSDocNameVisibility" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testJSDocNameVisibilityWithFileOverviewVisibility" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testJSDocPropertyVisibility" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.SymbolTableTest" name="testJSDocPropertyVisibilityWithFileOverviewVisibility" time="0.011" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

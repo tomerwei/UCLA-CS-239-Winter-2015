@@ -1,0 +1,774 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: com.google.javascript.jscomp.TypeCheckTest</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['com.google.javascript.jscomp.TypeCheckTest'] = new Array();
+    
+        cur['ant.build.javac.source'] = '1.7';
+    
+        cur['ant.build.javac.target'] = '1.7';
+    
+        cur['ant.core.lib'] = '/Users/linmanna/ant/lib/ant.jar';
+    
+        cur['ant.file'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml';
+    
+        cur['ant.file.compiler'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml';
+    
+        cur['ant.file.type'] = 'file';
+    
+        cur['ant.file.type.compiler'] = 'file';
+    
+        cur['ant.home'] = '//Users/linmanna/ant';
+    
+        cur['ant.java.version'] = '1.7';
+    
+        cur['ant.library.dir'] = '//Users/linmanna/ant/lib';
+    
+        cur['ant.project.default-target'] = 'jar';
+    
+        cur['ant.project.invoked-targets'] = 'clean,compile,compile-tests,test';
+    
+        cur['ant.project.name'] = 'compiler';
+    
+        cur['ant.version'] = 'Apache Ant(TM) version 1.9.4 compiled on April 29 2014';
+    
+        cur['awt.toolkit'] = 'sun.lwawt.macosx.LWCToolkit';
+    
+        cur['basedir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler';
+    
+        cur['build.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build';
+    
+        cur['build.relVersion'] = '00e3533';
+    
+        cur['buildlib.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/lib';
+    
+        cur['classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes';
+    
+        cur['closure.build.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build';
+    
+        cur['compiler-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/compiler.jar';
+    
+        cur['externs.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/externs';
+    
+        cur['file.encoding'] = 'UTF-8';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '/';
+    
+        cur['ftp.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['gen.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/gen';
+    
+        cur['gopherProxySet'] = 'false';
+    
+        cur['http.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.CGraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.lwawt.macosx.CPrinterJob';
+    
+        cur['java.class.path'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant-launcher.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/args4j.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/gson.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/guava.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/jsr305.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/junit.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/protobuf-java.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/truth.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test:/Users/linmanna/ant/lib/ant-launcher.jar:/Users/linmanna/ant/lib/ant.jar:/Users/linmanna/ant/lib/ant-junit.jar:/Users/linmanna/ant/lib/ant-junit4.jar';
+    
+        cur['java.class.version'] = '51.0';
+    
+        cur['java.endorsed.dirs'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed';
+    
+        cur['java.ext.dirs'] = '/Users/linmanna/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java';
+    
+        cur['java.home'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre';
+    
+        cur['java.io.tmpdir'] = '/var/folders/_p/3swdt4h96dn79vyt21dtny9h0000gn/T/';
+    
+        cur['java.library.path'] = '/Users/linmanna/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.7.0_75-b13';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '1.7';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'http://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://bugreport.sun.com/bugreport/';
+    
+        cur['java.version'] = '1.7.0_75';
+    
+        cur['java.vm.info'] = 'mixed mode';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '1.7';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '24.75-b04';
+    
+        cur['javac.debug'] = 'on';
+    
+        cur['javadoc.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/javadoc';
+    
+        cur['lib.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib';
+    
+        cur['line.separator'] = '\n';
+    
+        cur['maven-repository-id'] = 'sonatype-nexus-staging';
+    
+        cur['maven-repository-url'] = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/';
+    
+        cur['os.arch'] = 'x86_64';
+    
+        cur['os.name'] = 'Mac OS X';
+    
+        cur['os.version'] = '10.9.5';
+    
+        cur['path.separator'] = ':';
+    
+        cur['protoc.executable'] = 'protoc';
+    
+        cur['refasterjs.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/refactoring';
+    
+        cur['refasterjs-classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs-classes';
+    
+        cur['refasterjs-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs.jar';
+    
+        cur['socksNonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['src.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.class.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes';
+    
+        cur['sun.boot.library.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = '';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeBig';
+    
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junittestcases4622356093930181862.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junitvmwatcher882389895192408063.properties propsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junit6374663990081372210.properties';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'UTF-8';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = 'unknown';
+    
+        cur['test.class'] = '*Test';
+    
+        cur['test.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/test';
+    
+        cur['test.fork'] = 'true';
+    
+        cur['test.method'] = '';
+    
+        cur['testClasses.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test';
+    
+        cur['tools.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/tools';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler';
+    
+        cur['user.home'] = '/Users/linmanna';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'linmanna';
+    
+        cur['user.timezone'] = '';
+    
+        cur['webservice.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/jscomp/webservice';
+    
+        cur['webservice-classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice-classes';
+    
+        cur['webservice-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice.jar';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class com.google.javascript.jscomp.TypeCheckTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Error">
+<td><a title="Display all tests" href="199_TypeCheckTest.html">TypeCheckTest</a></td><td><a title="Display all tests" href="199_TypeCheckTest.html">1256</a></td><td><a title="Display only errors" href="199_TypeCheckTest-errors.html">1</a></td><td><a title="Display only failures" href="199_TypeCheckTest-fails.html">67</a></td><td>0</td><td>3.992</td><td>2015-03-09T03:17:39</td><td>cs-210-206.cs.ucla.edu</td>
+</tr>
+</table>
+<h2>Failures</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGlobalThis6"></a>testGlobalThis6</td><td>Failure</td><td>unexpected warnings(s):
+JSC_TYPE_MISMATCH. assignment
+found   : string
+required: number at [testcode] line 1 : 66
+JSC_TYPE_MISMATCH. actual parameter 1 of global this.alert does not match formal parameter
+found   : number
+required: string at [testcode] line 1 : 87<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_TYPE_MISMATCH. assignment<br>found   : string<br>required: number at [testcode] line 1 : 66<br>JSC_TYPE_MISMATCH. actual parameter 1 of global this.alert does not match formal parameter<br>found   : number<br>required: string at [testcode] line 1 : 87<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testGlobalThis6(TypeCheckTest.java:6130)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testInnerFunction2"></a>testInnerFunction2</td><td>Failure</td><td>expected:&lt;[inconsistent return type
+found   : (null|number)
+required: number]&gt; but was:&lt;[assignment
+found   : number
+required: null]&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: expected:&lt;[inconsistent return type<br>found   : (null|number)<br>required: number]&gt; but was:&lt;[assignment<br>found   : number<br>required: null]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13253)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testInnerFunction2(TypeCheckTest.java:1936)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testInnerFunction3"></a>testInnerFunction3</td><td>Failure</td><td>expected:&lt;[inconsistent return type
+found   : boolean
+required: number]&gt; but was:&lt;[assignment
+found   : number
+required: null]&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: expected:&lt;[inconsistent return type<br>found   : boolean<br>required: number]&gt; but was:&lt;[assignment<br>found   : number<br>required: null]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13253)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testInnerFunction3(TypeCheckTest.java:1950)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testInnerFunction4"></a>testInnerFunction4</td><td>Failure</td><td>expected:&lt;[inconsistent return type
+found   : string
+required: number]&gt; but was:&lt;[assignment
+found   : string
+required: null]&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: expected:&lt;[inconsistent return type<br>found   : string<br>required: number]&gt; but was:&lt;[assignment<br>found   : string<br>required: null]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13253)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testInnerFunction4(TypeCheckTest.java:1965)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testBooleanPreservation4"></a>testBooleanPreservation4</td><td>Failure</td><td>unexpected warnings(s):
+JSC_DETERMINISTIC_TEST. condition always evaluates to false
+left : (Function|boolean)
+right: string at [testcode] line 2 : 49<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_DETERMINISTIC_TEST. condition always evaluates to false<br>left : (Function|boolean)<br>right: string at [testcode] line 2 : 49<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testBooleanPreservation4(TypeCheckTest.java:587)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testInnerFunction5"></a>testInnerFunction5</td><td>Failure</td><td>expected:&lt;[inconsistent return type]
+found   : boolean
+r...&gt; but was:&lt;[assignment]
+found   : boolean
+r...&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: expected:&lt;[inconsistent return type]<br>found   : boolean<br>r...&gt; but was:&lt;[assignment]<br>found   : boolean<br>r...&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13253)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testInnerFunction5(TypeCheckTest.java:1980)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testInnerFunction9"></a>testInnerFunction9</td><td>Failure</td><td>unexpected warnings(s):
+JSC_TYPE_MISMATCH. assignment
+found   : null
+required: number at [testcode] line 2 : 16<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_TYPE_MISMATCH. assignment<br>found   : null<br>required: number at [testcode] line 2 : 16<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testInnerFunction9(TypeCheckTest.java:2034)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testAbstractMethodHandling5"></a>testAbstractMethodHandling5</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testAbstractMethodHandling5(TypeCheckTest.java:2113)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testDuplicateLocalVarDecl"></a>testDuplicateLocalVarDecl</td><td>Failure</td><td>unexpected warning(s) : JSC_DUP_VAR_DECLARATION_TYPE_MISMATCH. variable x redefined with type string, original definition at [testcode]:2 with type number at [testcode] line 2 : 42 expected:&lt;2&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warning(s) : JSC_DUP_VAR_DECLARATION_TYPE_MISMATCH. variable x redefined with type string, original definition at [testcode]:2 with type number at [testcode] line 2 : 42 expected:&lt;2&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13217)<br>	at com.google.javascript.jscomp.TypeCheckTest.testDuplicateLocalVarDecl(TypeCheckTest.java:2422)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testComparison15"></a>testComparison15</td><td>Failure</td><td>unexpected warning(s) : JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 16 : 0, JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 23 : 0 expected:&lt;0&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warning(s) : JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 16 : 0, JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 23 : 0 expected:&lt;0&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13212)<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)<br>	at com.google.javascript.jscomp.TypeCheckTest.testComparison15(TypeCheckTest.java:2858)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testEnum8"></a>testEnum8</td><td>Failure</td><td>unexpected warning(s) : JSC_ENUM_INITIALIZER_NOT_ENUM. enum initializer must be an object literal or an enum at [testcode] line 1 : 16 expected:&lt;2&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warning(s) : JSC_ENUM_INITIALIZER_NOT_ENUM. enum initializer must be an object literal or an enum at [testcode] line 1 : 16 expected:&lt;2&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13217)<br>	at com.google.javascript.jscomp.TypeCheckTest.testEnum8(TypeCheckTest.java:2966)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGoodExtends6"></a>testGoodExtends6</td><td>Failure</td><td>expected:&lt;[initializing variable
+found   : function (this:base): number
+required: number]&gt; but was:&lt;[Object literal expected as second argument]&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: expected:&lt;[initializing variable<br>found   : function (this:base): number<br>required: number]&gt; but was:&lt;[Object literal expected as second argument]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13253)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testFunctionType(TypeCheckTest.java:2598)<br>	at com.google.javascript.jscomp.TypeCheckTest.testGoodExtends6(TypeCheckTest.java:3421)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGoodExtends14"></a>testGoodExtends14</td><td>Failure</td><td>unexpected warnings(s):
+JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 10 : 236<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 10 : 236<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testGoodExtends14(TypeCheckTest.java:3505)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGoodExtends15"></a>testGoodExtends15</td><td>Failure</td><td>expected:&lt;[Property foo never defined on OldType.prototype]&gt; but was:&lt;[Object literal expected as second argument]&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: expected:&lt;[Property foo never defined on OldType.prototype]&gt; but was:&lt;[Object literal expected as second argument]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13253)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testGoodExtends15(TypeCheckTest.java:3515)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGoodExtends16"></a>testGoodExtends16</td><td>Failure</td><td>unexpected warnings(s):
+JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 10 : 236<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 10 : 236<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testGoodExtends16(TypeCheckTest.java:3533)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGoodExtends18"></a>testGoodExtends18</td><td>Failure</td><td>unexpected warnings(s):
+JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 16 : 0<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 16 : 0<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testGoodExtends18(TypeCheckTest.java:3554)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGoodExtends19"></a>testGoodExtends19</td><td>Failure</td><td>expected:&lt;[actual parameter 1 of E.prototype.method does not match formal parameter
+found   : number
+required: string]&gt; but was:&lt;[Object literal expected as second argument]&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: expected:&lt;[actual parameter 1 of E.prototype.method does not match formal parameter<br>found   : number<br>required: string]&gt; but was:&lt;[Object literal expected as second argument]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13253)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testGoodExtends19(TypeCheckTest.java:3567)<br>
+</code></td><td>0.006</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testLateExtends"></a>testLateExtends</td><td>Failure</td><td>expected:&lt;[Missing @extends tag on type Foo]&gt; but was:&lt;[Object literal expected as second argument]&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: expected:&lt;[Missing @extends tag on type Foo]&gt; but was:&lt;[Object literal expected as second argument]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13253)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testLateExtends(TypeCheckTest.java:3715)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testSetprop5"></a>testSetprop5</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testSetprop5(TypeCheckTest.java:4314)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testSetprop6"></a>testSetprop6</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testSetprop6(TypeCheckTest.java:4326)<br>
+</code></td><td>0.007</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGetelemStruct1"></a>testGetelemStruct1</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testGetelemStruct1(TypeCheckTest.java:4567)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGetelemStruct2"></a>testGetelemStruct2</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testGetelemStruct2(TypeCheckTest.java:4581)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGetelemStruct4"></a>testGetelemStruct4</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testGetelemStruct4(TypeCheckTest.java:4612)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGetelemStruct5"></a>testGetelemStruct5</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testGetelemStruct5(TypeCheckTest.java:4625)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testAnd5"></a>testAnd5</td><td>Failure</td><td>unexpected warnings(s):
+JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 4 : 14<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 4 : 14<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testAnd5(TypeCheckTest.java:5006)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testInferredReturn5"></a>testInferredReturn5</td><td>Failure</td><td>expected:&lt;[inconsistent return type
+found   : number
+required: string]&gt; but was:&lt;[assignment
+found   : function (): number
+required: function (): undefined]&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: expected:&lt;[inconsistent return type<br>found   : number<br>required: string]&gt; but was:&lt;[assignment<br>found   : function (): number<br>required: function (): undefined]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13253)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testInferredReturn5(TypeCheckTest.java:5469)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testInferredReturn6"></a>testInferredReturn6</td><td>Failure</td><td>expected:&lt;[inconsistent return type
+found   : (number|undefined)
+required: string]&gt; but was:&lt;[assignment
+found   : function (): number
+required: function (): undefined]&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: expected:&lt;[inconsistent return type<br>found   : (number|undefined)<br>required: string]&gt; but was:&lt;[assignment<br>found   : function (): number<br>required: function (): undefined]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13253)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testInferredReturn6(TypeCheckTest.java:5482)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testControlFlowRestrictsType10"></a>testControlFlowRestrictsType10</td><td>Failure</td><td>unexpected warnings(s):
+JSC_TYPE_MISMATCH. assignment
+found   : {}
+required: null at [testcode] line 2 : 18<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_TYPE_MISMATCH. assignment<br>found   : {}<br>required: null at [testcode] line 2 : 18<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testControlFlowRestrictsType10(TypeCheckTest.java:6250)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testIIFE5"></a>testIIFE5</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testIIFE5(TypeCheckTest.java:6508)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testIssue124"></a>testIssue124</td><td>Failure</td><td>unexpected warnings(s):
+JSC_DETERMINISTIC_TEST. condition always evaluates to false
+left : null
+right: null at [testcode] line 1 : 36
+JSC_TYPE_MISMATCH. assignment
+found   : number
+required: null at [testcode] line 1 : 62<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_DETERMINISTIC_TEST. condition always evaluates to false<br>left : null<br>right: null at [testcode] line 1 : 36<br>JSC_TYPE_MISMATCH. assignment<br>found   : number<br>required: null at [testcode] line 1 : 62<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testIssue124(TypeCheckTest.java:6586)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testIssue124b"></a>testIssue124b</td><td>Failure</td><td>expected:&lt;...tes to false
+left : [(null|undefined)]
+right: null&gt; but was:&lt;...tes to false
+left : [null]
+right: null&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: expected:&lt;...tes to false<br>left : [(null|undefined)]<br>right: null&gt; but was:&lt;...tes to false<br>left : [null]<br>right: null&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13253)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testIssue124b(TypeCheckTest.java:6595)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testBug1859535"></a>testBug1859535</td><td>Failure</td><td>unexpected warnings(s):
+JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 7 : 176<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 7 : 176<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testBug1859535(TypeCheckTest.java:7227)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testBug7701884"></a>testBug7701884</td><td>Failure</td><td>unexpected warnings(s):
+JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 8 : 95<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 8 : 95<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testBug7701884(TypeCheckTest.java:7335)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testScopedConstructors1"></a>testScopedConstructors1</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testScopedConstructors1(TypeCheckTest.java:7416)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testFunctionCall5"></a>testFunctionCall5</td><td>Failure</td><td>unexpected warnings(s):
+JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 2 : 49<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 2 : 49<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testFunctionCall5(TypeCheckTest.java:7989)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testFunctionCall6"></a>testFunctionCall6</td><td>Failure</td><td>unexpected warnings(s):
+JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 2 : 49<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 2 : 49<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testFunctionCall6(TypeCheckTest.java:7995)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testFunctionCall7"></a>testFunctionCall7</td><td>Failure</td><td>unexpected warnings(s):
+JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 2 : 79<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 2 : 79<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testFunctionCall7(TypeCheckTest.java:8001)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testFunctionCall8"></a>testFunctionCall8</td><td>Failure</td><td>unexpected warnings(s):
+JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 2 : 79<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 2 : 79<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testFunctionCall8(TypeCheckTest.java:8009)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testFunctionCall9"></a>testFunctionCall9</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testFunctionCall9(TypeCheckTest.java:8017)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testConstructorType8"></a>testConstructorType8</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testConstructorType8(TypeCheckTest.java:8821)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testObjectLiteralDeclaration6"></a>testObjectLiteralDeclaration6</td><td>Failure</td><td>unexpected warnings(s):
+JSC_TYPE_MISMATCH. assignment
+found   : {abc: function (boolean): undefined}
+required: {abc: function (boolean): undefined} at [testcode] line 4 : 27<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_TYPE_MISMATCH. assignment<br>found   : {abc: function (boolean): undefined}<br>required: {abc: function (boolean): undefined} at [testcode] line 4 : 27<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testObjectLiteralDeclaration6(TypeCheckTest.java:9829)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testObjectLiteralDeclaration7"></a>testObjectLiteralDeclaration7</td><td>Failure</td><td>unexpected warnings(s):
+JSC_TYPE_MISMATCH. assignment
+found   : {abc: function (boolean): undefined}
+required: {abc: function (boolean): undefined} at [testcode] line 3 : 27<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_TYPE_MISMATCH. assignment<br>found   : {abc: function (boolean): undefined}<br>required: {abc: function (boolean): undefined} at [testcode] line 3 : 27<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testObjectLiteralDeclaration7(TypeCheckTest.java:9845)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testPropertyTypeOfUnionType"></a>testPropertyTypeOfUnionType</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testPropertyTypeOfUnionType(TypeCheckTest.java:9882)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testResolutionViaRegistry1"></a>testResolutionViaRegistry1</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testResolutionViaRegistry1(TypeCheckTest.java:10190)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testResolutionViaRegistry2"></a>testResolutionViaRegistry2</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testResolutionViaRegistry2(TypeCheckTest.java:10203)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testResolutionViaRegistry3"></a>testResolutionViaRegistry3</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testResolutionViaRegistry3(TypeCheckTest.java:10217)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testDfa1"></a>testDfa1</td><td>Failure</td><td>unexpected warnings(s):
+JSC_TYPE_MISMATCH. assignment
+found   : number
+required: null at [testcode] line 2 : 1<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_TYPE_MISMATCH. assignment<br>found   : number<br>required: null at [testcode] line 2 : 1<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testDfa1(TypeCheckTest.java:10284)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testDfa2"></a>testDfa2</td><td>Failure</td><td>unexpected warnings(s):
+JSC_TYPE_MISMATCH. assignment
+found   : number
+required: string at [testcode] line 4 : 11
+JSC_TYPE_MISMATCH. assignment
+found   : number
+required: string at [testcode] line 4 : 27<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_TYPE_MISMATCH. assignment<br>found   : number<br>required: string at [testcode] line 4 : 11<br>JSC_TYPE_MISMATCH. assignment<br>found   : number<br>required: string at [testcode] line 4 : 27<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testDfa2(TypeCheckTest.java:10288)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testDfa13"></a>testDfa13</td><td>Failure</td><td>unexpected warnings(s):
+JSC_TYPE_MISMATCH. assignment
+found   : number
+required: string at [testcode] line 5 : 60<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_TYPE_MISMATCH. assignment<br>found   : number<br>required: string at [testcode] line 5 : 60<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testDfa13(TypeCheckTest.java:10372)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testForwardTypeDeclaration2"></a>testForwardTypeDeclaration2</td><td>Failure</td><td>expected:&lt;[actual parameter 1 of f does not match formal parameter
+found   : number
+required: (MyType|null)]&gt; but was:&lt;[actual parameter 1 of f does not match formal parameter
+found   : number
+required: (null)]&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected:&lt;[actual parameter 1 of f does not match formal parameter<br>found   : number<br>required: (MyType|null)]&gt; but was:&lt;[actual parameter 1 of f does not match formal parameter<br>found   : number<br>required: (null)]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13225)<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)<br>	at com.google.javascript.jscomp.TypeCheckTest.testForwardTypeDeclaration2(TypeCheckTest.java:10540)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testForwardTypeDeclaration7"></a>testForwardTypeDeclaration7</td><td>Failure</td><td>unexpected warning(s) : JSC_DETERMINISTIC_TEST. condition always evaluates to true
+left : (null|undefined)
+right: undefined at [testcode] line 1 : 93 expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warning(s) : JSC_DETERMINISTIC_TEST. condition always evaluates to true<br>left : (null|undefined)<br>right: undefined at [testcode] line 1 : 93 expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13212)<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)<br>	at com.google.javascript.jscomp.TypeCheckTest.testForwardTypeDeclaration7(TypeCheckTest.java:10591)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testForwardTypeDeclaration8"></a>testForwardTypeDeclaration8</td><td>Failure</td><td>unexpected warning(s) : JSC_TYPE_MISMATCH. No properties on this expression
+found   : (null)
+required: Object at [testcode] line 1 : 92 expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warning(s) : JSC_TYPE_MISMATCH. No properties on this expression<br>found   : (null)<br>required: Object at [testcode] line 1 : 92 expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13212)<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)<br>	at com.google.javascript.jscomp.TypeCheckTest.testForwardTypeDeclaration8(TypeCheckTest.java:10598)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testForwardTypeDeclaration9"></a>testForwardTypeDeclaration9</td><td>Failure</td><td>unexpected warning(s) : JSC_TYPE_MISMATCH. No properties on this expression
+found   : (null)
+required: Object at [testcode] line 1 : 85 expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warning(s) : JSC_TYPE_MISMATCH. No properties on this expression<br>found   : (null)<br>required: Object at [testcode] line 1 : 85 expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13212)<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)<br>	at com.google.javascript.jscomp.TypeCheckTest.testForwardTypeDeclaration9(TypeCheckTest.java:10605)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testForwardTypeDeclaration10"></a>testForwardTypeDeclaration10</td><td>Failure</td><td>expected:&lt;[actual parameter 1 of f does not match formal parameter
+found   : string
+required: (MyType|null|number)]&gt; but was:&lt;[actual parameter 1 of f does not match formal parameter
+found   : string
+required: (null|number)]&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected:&lt;[actual parameter 1 of f does not match formal parameter<br>found   : string<br>required: (MyType|null|number)]&gt; but was:&lt;[actual parameter 1 of f does not match formal parameter<br>found   : string<br>required: (null|number)]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13225)<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)<br>	at com.google.javascript.jscomp.TypeCheckTest.testForwardTypeDeclaration10(TypeCheckTest.java:10616)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testPrototypePropertyReference"></a>testPrototypePropertyReference</td><td>Failure</td><td>expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testPrototypePropertyReference(TypeCheckTest.java:10788)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testResolvingNamedTypes"></a>testResolvingNamedTypes</td><td>Failure</td><td>expected:&lt;100.0&gt; but was:&lt;90.9090909090909&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected:&lt;100.0&gt; but was:&lt;90.9090909090909&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testResolvingNamedTypes(TypeCheckTest.java:10811)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testMissingProperty24"></a>testMissingProperty24</td><td>Failure</td><td>unexpected warning(s) : JSC_TYPE_MISMATCH. No properties on this expression
+found   : (null)
+required: Object at [testcode] line 1 : 95 expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warning(s) : JSC_TYPE_MISMATCH. No properties on this expression<br>found   : (null)<br>required: Object at [testcode] line 1 : 95 expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13212)<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)<br>	at com.google.javascript.jscomp.TypeCheckTest.testMissingProperty24(TypeCheckTest.java:10970)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testMissingProperty40"></a>testMissingProperty40</td><td>Failure</td><td>unexpected warning(s) : JSC_INEXISTENT_PROPERTY. Property impossible never defined on Array at [testcode] line 1 : 105 expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warning(s) : JSC_INEXISTENT_PROPERTY. Property impossible never defined on Array at [testcode] line 1 : 105 expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13212)<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)<br>	at com.google.javascript.jscomp.TypeCheckTest.testMissingProperty40(TypeCheckTest.java:11127)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testLends4"></a>testLends4</td><td>Failure</td><td>unexpected warnings(s):
+JSC_INEXISTENT_PROPERTY. Property bar never defined on Foo at [testcode] line 1 : 115<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_INEXISTENT_PROPERTY. Property bar never defined on Foo at [testcode] line 1 : 115<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testLends4(TypeCheckTest.java:11203)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testLends6"></a>testLends6</td><td>Failure</td><td>unexpected warnings(s):
+JSC_INEXISTENT_PROPERTY. Property bar never defined on Foo at [testcode] line 1 : 133<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_INEXISTENT_PROPERTY. Property bar never defined on Foo at [testcode] line 1 : 133<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13166)<br>	at com.google.javascript.jscomp.TypeCheckTest.testLends6(TypeCheckTest.java:11220)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testLends8"></a>testLends8</td><td>Failure</td><td>expected:&lt;[May only lend properties to object types. Foo has type number.]&gt; but was:&lt;[Constructor expected as first argument]&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: expected:&lt;[May only lend properties to object types. Foo has type number.]&gt; but was:&lt;[Constructor expected as first argument]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13253)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testLends8(TypeCheckTest.java:11236)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testTemplateType5"></a>testTemplateType5</td><td>Failure</td><td>unexpected warnings(s):
+JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 8 : 6<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warnings(s):<br>JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 8 : 6<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13258)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTemplateType5(TypeCheckTest.java:11492)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testBackwardsInferenceGoogArrayFilter1"></a>testBackwardsInferenceGoogArrayFilter1</td><td>Failure</td><td>expected:&lt;[initializing variable
+found   : Array&lt;string&gt;
+required: Array&lt;number&gt;]&gt; but was:&lt;[Object literal expected as second argument]&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected:&lt;[initializing variable<br>found   : Array&lt;string&gt;<br>required: Array&lt;number&gt;]&gt; but was:&lt;[Object literal expected as second argument]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13225)<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)<br>	at com.google.javascript.jscomp.TypeCheckTest.testBackwardsInferenceGoogArrayFilter1(TypeCheckTest.java:12683)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testBackwardsInferenceGoogArrayFilter2"></a>testBackwardsInferenceGoogArrayFilter2</td><td>Failure</td><td>expected:&lt;[assignment
+found   : string
+required: number]&gt; but was:&lt;[Object literal expected as second argument]&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected:&lt;[assignment<br>found   : string<br>required: number]&gt; but was:&lt;[Object literal expected as second argument]&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13225)<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)<br>	at com.google.javascript.jscomp.TypeCheckTest.testBackwardsInferenceGoogArrayFilter2(TypeCheckTest.java:12697)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testBackwardsInferenceGoogArrayFilter3"></a>testBackwardsInferenceGoogArrayFilter3</td><td>Failure</td><td>unexpected warning(s) : JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 11 : 13, JSC_TYPE_MISMATCH. assignment
+found   : number
+required: string at [testcode] line 11 : 67 expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warning(s) : JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 11 : 13, JSC_TYPE_MISMATCH. assignment<br>found   : number<br>required: string at [testcode] line 11 : 67 expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13217)<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)<br>	at com.google.javascript.jscomp.TypeCheckTest.testBackwardsInferenceGoogArrayFilter3(TypeCheckTest.java:12712)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testBackwardsInferenceGoogArrayFilter4"></a>testBackwardsInferenceGoogArrayFilter4</td><td>Failure</td><td>unexpected warning(s) : JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 11 : 11, JSC_TYPE_MISMATCH. assignment
+found   : (null|{length: number})
+required: string at [testcode] line 11 : 68 expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: unexpected warning(s) : JSC_REFLECT_OBJECTLIT_EXPECTED. Object literal expected as second argument at [testcode] line 11 : 11, JSC_TYPE_MISMATCH. assignment<br>found   : (null|{length: number})<br>required: string at [testcode] line 11 : 68 expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:13217)<br>	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:13179)<br>	at com.google.javascript.jscomp.TypeCheckTest.testBackwardsInferenceGoogArrayFilter4(TypeCheckTest.java:12726)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testTemplatized10"></a>testTemplatized10</td><td>Failure</td><td>expected a warning<br>
+<br>
+<code>junit.framework.AssertionFailedError: expected a warning<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13252)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13232)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTypes(TypeCheckTest.java:13170)<br>	at com.google.javascript.jscomp.TypeCheckTest.testTemplatized10(TypeCheckTest.java:12925)<br>
+</code></td><td>0.001</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('com.google.javascript.jscomp.TypeCheckTest');">
+                    Properties &raquo;
+                </a>
+</div>
+</body>
+</html>

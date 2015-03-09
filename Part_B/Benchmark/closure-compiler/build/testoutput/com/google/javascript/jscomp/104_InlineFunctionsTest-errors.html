@@ -1,0 +1,878 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: com.google.javascript.jscomp.InlineFunctionsTest</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['com.google.javascript.jscomp.InlineFunctionsTest'] = new Array();
+    
+        cur['ant.build.javac.source'] = '1.7';
+    
+        cur['ant.build.javac.target'] = '1.7';
+    
+        cur['ant.core.lib'] = '/Users/linmanna/ant/lib/ant.jar';
+    
+        cur['ant.file'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml';
+    
+        cur['ant.file.compiler'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml';
+    
+        cur['ant.file.type'] = 'file';
+    
+        cur['ant.file.type.compiler'] = 'file';
+    
+        cur['ant.home'] = '//Users/linmanna/ant';
+    
+        cur['ant.java.version'] = '1.7';
+    
+        cur['ant.library.dir'] = '//Users/linmanna/ant/lib';
+    
+        cur['ant.project.default-target'] = 'jar';
+    
+        cur['ant.project.invoked-targets'] = 'clean,compile,compile-tests,test';
+    
+        cur['ant.project.name'] = 'compiler';
+    
+        cur['ant.version'] = 'Apache Ant(TM) version 1.9.4 compiled on April 29 2014';
+    
+        cur['awt.toolkit'] = 'sun.lwawt.macosx.LWCToolkit';
+    
+        cur['basedir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler';
+    
+        cur['build.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build';
+    
+        cur['build.relVersion'] = '00e3533';
+    
+        cur['buildlib.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/lib';
+    
+        cur['classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes';
+    
+        cur['closure.build.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build';
+    
+        cur['compiler-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/compiler.jar';
+    
+        cur['externs.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/externs';
+    
+        cur['file.encoding'] = 'UTF-8';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '/';
+    
+        cur['ftp.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['gen.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/gen';
+    
+        cur['gopherProxySet'] = 'false';
+    
+        cur['http.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.CGraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.lwawt.macosx.CPrinterJob';
+    
+        cur['java.class.path'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant-launcher.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/args4j.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/gson.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/guava.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/jsr305.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/junit.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/protobuf-java.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/truth.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test:/Users/linmanna/ant/lib/ant-launcher.jar:/Users/linmanna/ant/lib/ant.jar:/Users/linmanna/ant/lib/ant-junit.jar:/Users/linmanna/ant/lib/ant-junit4.jar';
+    
+        cur['java.class.version'] = '51.0';
+    
+        cur['java.endorsed.dirs'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed';
+    
+        cur['java.ext.dirs'] = '/Users/linmanna/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java';
+    
+        cur['java.home'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre';
+    
+        cur['java.io.tmpdir'] = '/var/folders/_p/3swdt4h96dn79vyt21dtny9h0000gn/T/';
+    
+        cur['java.library.path'] = '/Users/linmanna/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.7.0_75-b13';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '1.7';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'http://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://bugreport.sun.com/bugreport/';
+    
+        cur['java.version'] = '1.7.0_75';
+    
+        cur['java.vm.info'] = 'mixed mode';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '1.7';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '24.75-b04';
+    
+        cur['javac.debug'] = 'on';
+    
+        cur['javadoc.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/javadoc';
+    
+        cur['lib.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib';
+    
+        cur['line.separator'] = '\n';
+    
+        cur['maven-repository-id'] = 'sonatype-nexus-staging';
+    
+        cur['maven-repository-url'] = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/';
+    
+        cur['os.arch'] = 'x86_64';
+    
+        cur['os.name'] = 'Mac OS X';
+    
+        cur['os.version'] = '10.9.5';
+    
+        cur['path.separator'] = ':';
+    
+        cur['protoc.executable'] = 'protoc';
+    
+        cur['refasterjs.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/refactoring';
+    
+        cur['refasterjs-classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs-classes';
+    
+        cur['refasterjs-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs.jar';
+    
+        cur['socksNonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['src.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.class.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes';
+    
+        cur['sun.boot.library.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = '';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeBig';
+    
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junittestcases4622356093930181862.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junitvmwatcher882389895192408063.properties propsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junit6374663990081372210.properties';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'UTF-8';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = 'unknown';
+    
+        cur['test.class'] = '*Test';
+    
+        cur['test.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/test';
+    
+        cur['test.fork'] = 'true';
+    
+        cur['test.method'] = '';
+    
+        cur['testClasses.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test';
+    
+        cur['tools.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/tools';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler';
+    
+        cur['user.home'] = '/Users/linmanna';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'linmanna';
+    
+        cur['user.timezone'] = '';
+    
+        cur['webservice.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/jscomp/webservice';
+    
+        cur['webservice-classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice-classes';
+    
+        cur['webservice-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice.jar';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class com.google.javascript.jscomp.InlineFunctionsTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Error">
+<td><a title="Display all tests" href="104_InlineFunctionsTest.html">InlineFunctionsTest</a></td><td><a title="Display all tests" href="104_InlineFunctionsTest.html">235</a></td><td><a title="Display only errors" href="104_InlineFunctionsTest-errors.html">54</a></td><td><a title="Display only failures" href="104_InlineFunctionsTest-fails.html">22</a></td><td>0</td><td>0.982</td><td>2015-03-09T03:17:24</td><td>cs-210-206.cs.ucla.edu</td>
+</tr>
+</table>
+<h2>Errors</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineFunctions9"></a>testInlineFunctions9</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_1 is not consistently annotated as constant.
+  Node(NAME x$$inline_1): testcode:1:23
+function INC(x){return x++}var y=INC(i)
+  Parent(INC): testcode:1:23
+function INC(x){return x++}var y=INC(i)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_1 is not consistently annotated as constant.<br>  Node(NAME x$$inline_1): testcode:1:23<br>function INC(x){return x++}var y=INC(i)<br>  Parent(INC): testcode:1:23<br>function INC(x){return x++}var y=INC(i)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineFunctions9(InlineFunctionsTest.java:185)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_1 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineFunctions10"></a>testInlineFunctions10</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineFunctions10(InlineFunctionsTest.java:192)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineFunctions13"></a>testInlineFunctions13</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_1 is not consistently annotated as constant.
+  Node(NAME x$$inline_1): testcode:1:21
+function f(x){return x}var y=f(i++)
+  Parent(ASSIGN): testcode:1:14
+function f(x){return x}var y=f(i++)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_1 is not consistently annotated as constant.<br>  Node(NAME x$$inline_1): testcode:1:21<br>function f(x){return x}var y=f(i++)<br>  Parent(ASSIGN): testcode:1:14<br>function f(x){return x}var y=f(i++)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineFunctions13(InlineFunctionsTest.java:219)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_1 is not consistently annotated as constant.<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineFunctions15b"></a>testInlineFunctions15b</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineFunctions15b(InlineFunctionsTest.java:255)<br>
+</code></td><td>0.008</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineFunctions15d"></a>testInlineFunctions15d</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineFunctions15d(InlineFunctionsTest.java:301)<br>
+</code></td><td>0.006</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineFunctions16a"></a>testInlineFunctions16a</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name b$$inline_1 is not consistently annotated as constant.
+  Node(NAME b$$inline_1): testcode:1:47
+function foo(b){return window.bar(function(){c(b)})}var d=foo(e)
+  Parent(CALL): testcode:1:45
+function foo(b){return window.bar(function(){c(b)})}var d=foo(e)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name b$$inline_1 is not consistently annotated as constant.<br>  Node(NAME b$$inline_1): testcode:1:47<br>function foo(b){return window.bar(function(){c(b)})}var d=foo(e)<br>  Parent(CALL): testcode:1:45<br>function foo(b){return window.bar(function(){c(b)})}var d=foo(e)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseFunction(NodeTraversal.java:610)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:562)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineFunctions16a(InlineFunctionsTest.java:324)<br>Caused by: java.lang.IllegalStateException: The name b$$inline_1 is not consistently annotated as constant.<br>
+</code></td><td>0.005</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineFunctions27"></a>testInlineFunctions27</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineFunctions27(InlineFunctionsTest.java:421)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineFunctions28"></a>testInlineFunctions28</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineFunctions28(InlineFunctionsTest.java:433)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineFunctions29"></a>testInlineFunctions29</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineFunctions29(InlineFunctionsTest.java:448)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testNoInlineIfParametersModified1"></a>testNoInlineIfParametersModified1</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_0 is not consistently annotated as constant.
+  Node(NAME x$$inline_0): testcode:1:21
+function f(x){return x=1}f(undefined)
+  Parent(ASSIGN): testcode:1:21
+function f(x){return x=1}f(undefined)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_0 is not consistently annotated as constant.<br>  Node(NAME x$$inline_0): testcode:1:21<br>function f(x){return x=1}f(undefined)<br>  Parent(ASSIGN): testcode:1:21<br>function f(x){return x=1}f(undefined)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testNoInlineIfParametersModified1(InlineFunctionsTest.java:553)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testNoInlineIfParametersModified2"></a>testNoInlineIfParametersModified2</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_0 is not consistently annotated as constant.
+  Node(NAME x$$inline_0): testcode:1:22
+function f(x){return (x)=1;}f(2)
+  Parent(ASSIGN): testcode:1:21
+function f(x){return (x)=1;}f(2)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_0 is not consistently annotated as constant.<br>  Node(NAME x$$inline_0): testcode:1:22<br>function f(x){return (x)=1;}f(2)<br>  Parent(ASSIGN): testcode:1:21<br>function f(x){return (x)=1;}f(2)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testNoInlineIfParametersModified2(InlineFunctionsTest.java:559)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testNoInlineIfParametersModified3"></a>testNoInlineIfParametersModified3</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_0 is not consistently annotated as constant.
+  Node(NAME x$$inline_0): testcode:1:21
+function f(x){return x*=2}f(2)
+  Parent(ASSIGN_MUL): testcode:1:21
+function f(x){return x*=2}f(2)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_0 is not consistently annotated as constant.<br>  Node(NAME x$$inline_0): testcode:1:21<br>function f(x){return x*=2}f(2)<br>  Parent(ASSIGN_MUL): testcode:1:21<br>function f(x){return x*=2}f(2)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testNoInlineIfParametersModified3(InlineFunctionsTest.java:566)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testNoInlineIfParametersModified4"></a>testNoInlineIfParametersModified4</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_0 is not consistently annotated as constant.
+  Node(NAME x$$inline_0): testcode:1:21
+function f(x){return x?(x=2):0}f(2)
+  Parent(HOOK): testcode:1:21
+function f(x){return x?(x=2):0}f(2)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_0 is not consistently annotated as constant.<br>  Node(NAME x$$inline_0): testcode:1:21<br>function f(x){return x?(x=2):0}f(2)<br>  Parent(HOOK): testcode:1:21<br>function f(x){return x?(x=2):0}f(2)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testNoInlineIfParametersModified4(InlineFunctionsTest.java:573)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testNoInlineIfParametersModified5"></a>testNoInlineIfParametersModified5</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name y$$inline_1 is not consistently annotated as constant.
+  Node(NAME y$$inline_1): testcode:1:26
+function f(x,y){return x?(y=2):0}f(2,undefined)
+  Parent(ASSIGN): testcode:1:26
+function f(x,y){return x?(y=2):0}f(2,undefined)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name y$$inline_1 is not consistently annotated as constant.<br>  Node(NAME y$$inline_1): testcode:1:26<br>function f(x,y){return x?(y=2):0}f(2,undefined)<br>  Parent(ASSIGN): testcode:1:26<br>function f(x,y){return x?(y=2):0}f(2,undefined)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testNoInlineIfParametersModified5(InlineFunctionsTest.java:581)<br>Caused by: java.lang.IllegalStateException: The name y$$inline_1 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testNoInlineIfParametersModified6"></a>testNoInlineIfParametersModified6</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name y$$inline_1 is not consistently annotated as constant.
+  Node(NAME y$$inline_1): testcode:1:26
+function f(x,y){return x?(y=2):0}f(2)
+  Parent(ASSIGN): testcode:1:26
+function f(x,y){return x?(y=2):0}f(2)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name y$$inline_1 is not consistently annotated as constant.<br>  Node(NAME y$$inline_1): testcode:1:26<br>function f(x,y){return x?(y=2):0}f(2)<br>  Parent(ASSIGN): testcode:1:26<br>function f(x,y){return x?(y=2):0}f(2)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testNoInlineIfParametersModified6(InlineFunctionsTest.java:587)<br>Caused by: java.lang.IllegalStateException: The name y$$inline_1 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testNoInlineIfParametersModified7"></a>testNoInlineIfParametersModified7</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name a$$inline_0 is not consistently annotated as constant.
+  Node(NAME a$$inline_0): testcode:1:22
+function f(a){return++a&lt;++a}f(1)
+  Parent(INC): testcode:1:20
+function f(a){return++a&lt;++a}f(1)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name a$$inline_0 is not consistently annotated as constant.<br>  Node(NAME a$$inline_0): testcode:1:22<br>function f(a){return++a&lt;++a}f(1)<br>  Parent(INC): testcode:1:20<br>function f(a){return++a&lt;++a}f(1)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testNoInlineIfParametersModified7(InlineFunctionsTest.java:594)<br>Caused by: java.lang.IllegalStateException: The name a$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineNeverMutateConstants"></a>testInlineNeverMutateConstants</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_0 is not consistently annotated as constant.
+  Node(NAME x$$inline_0): testcode:1:21
+function f(x){return x=1}f(undefined)
+  Parent(ASSIGN): testcode:1:21
+function f(x){return x=1}f(undefined)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_0 is not consistently annotated as constant.<br>  Node(NAME x$$inline_0): testcode:1:21<br>function f(x){return x=1}f(undefined)<br>  Parent(ASSIGN): testcode:1:21<br>function f(x){return x=1}f(undefined)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineNeverMutateConstants(InlineFunctionsTest.java:621)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineNeverOverrideNewValues"></a>testInlineNeverOverrideNewValues</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name a$$inline_0 is not consistently annotated as constant.
+  Node(NAME a$$inline_0): testcode:1:22
+function f(a){return++a&lt;++a}f(1)
+  Parent(INC): testcode:1:20
+function f(a){return++a&lt;++a}f(1)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name a$$inline_0 is not consistently annotated as constant.<br>  Node(NAME a$$inline_0): testcode:1:22<br>function f(a){return++a&lt;++a}f(1)<br>  Parent(INC): testcode:1:20<br>function f(a){return++a&lt;++a}f(1)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineNeverOverrideNewValues(InlineFunctionsTest.java:627)<br>Caused by: java.lang.IllegalStateException: The name a$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineMutableArgsReferencedOnce"></a>testInlineMutableArgsReferencedOnce</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_0 is not consistently annotated as constant.
+  Node(NAME x$$inline_0): testcode:1:23
+function foo(x){return x;}foo([])
+  Parent(EXPR_RESULT): testcode:1:23
+function foo(x){return x;}foo([])
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_0 is not consistently annotated as constant.<br>  Node(NAME x$$inline_0): testcode:1:23<br>function foo(x){return x;}foo([])<br>  Parent(EXPR_RESULT): testcode:1:23<br>function foo(x){return x;}foo([])<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineMutableArgsReferencedOnce(InlineFunctionsTest.java:633)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineMutableArgsReferencedOnce2"></a>testInlineMutableArgsReferencedOnce2</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineMutableArgsReferencedOnce2(InlineFunctionsTest.java:643)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineMutableArgsReferencedOnce3"></a>testInlineMutableArgsReferencedOnce3</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name a$$inline_0 is not consistently annotated as constant.
+  Node(NAME a$$inline_0): testcode:3:6
+    g(a);
+  Parent(CALL): testcode:3:4
+    g(a);
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name a$$inline_0 is not consistently annotated as constant.<br>  Node(NAME a$$inline_0): testcode:3:6<br>    g(a);<br>  Parent(CALL): testcode:3:4<br>    g(a);<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineMutableArgsReferencedOnce3(InlineFunctionsTest.java:656)<br>Caused by: java.lang.IllegalStateException: The name a$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineBlockMutableArgs1"></a>testInlineBlockMutableArgs1</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_0 is not consistently annotated as constant.
+  Node(NAME x$$inline_0): testcode:1:16
+function foo(x){x+x}foo([])
+  Parent(ADD): testcode:1:16
+function foo(x){x+x}foo([])
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_0 is not consistently annotated as constant.<br>  Node(NAME x$$inline_0): testcode:1:16<br>function foo(x){x+x}foo([])<br>  Parent(ADD): testcode:1:16<br>function foo(x){x+x}foo([])<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineBlockMutableArgs1(InlineFunctionsTest.java:693)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineBlockMutableArgs2"></a>testInlineBlockMutableArgs2</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_0 is not consistently annotated as constant.
+  Node(NAME x$$inline_0): testcode:1:16
+function foo(x){x+x}foo(new Date)
+  Parent(ADD): testcode:1:16
+function foo(x){x+x}foo(new Date)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_0 is not consistently annotated as constant.<br>  Node(NAME x$$inline_0): testcode:1:16<br>function foo(x){x+x}foo(new Date)<br>  Parent(ADD): testcode:1:16<br>function foo(x){x+x}foo(new Date)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineBlockMutableArgs2(InlineFunctionsTest.java:699)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineBlockMutableArgs3"></a>testInlineBlockMutableArgs3</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_0 is not consistently annotated as constant.
+  Node(NAME x$$inline_0): testcode:1:16
+function foo(x){x+x}foo(true&amp;&amp;new Date)
+  Parent(ADD): testcode:1:16
+function foo(x){x+x}foo(true&amp;&amp;new Date)
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_0 is not consistently annotated as constant.<br>  Node(NAME x$$inline_0): testcode:1:16<br>function foo(x){x+x}foo(true&amp;&amp;new Date)<br>  Parent(ADD): testcode:1:16<br>function foo(x){x+x}foo(true&amp;&amp;new Date)<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineBlockMutableArgs3(InlineFunctionsTest.java:705)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineBlockMutableArgs4"></a>testInlineBlockMutableArgs4</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_0 is not consistently annotated as constant.
+  Node(NAME x$$inline_0): testcode:1:16
+function foo(x){x+x}foo({})
+  Parent(ADD): testcode:1:16
+function foo(x){x+x}foo({})
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_0 is not consistently annotated as constant.<br>  Node(NAME x$$inline_0): testcode:1:16<br>function foo(x){x+x}foo({})<br>  Parent(ADD): testcode:1:16<br>function foo(x){x+x}foo({})<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineBlockMutableArgs4(InlineFunctionsTest.java:711)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testShadowVariables3"></a>testShadowVariables3</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testShadowVariables3(InlineFunctionsTest.java:746)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testShadowVariables6"></a>testShadowVariables6</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testShadowVariables6(InlineFunctionsTest.java:777)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testCostBasedInlining9"></a>testCostBasedInlining9</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name a$$inline_1 is not consistently annotated as constant.
+  Node(NAME a$$inline_1): testcode:1:29
+function f(a){return chg() + a + a;}var a = f(f(1));
+  Parent(ADD): testcode:1:21
+function f(a){return chg() + a + a;}var a = f(f(1));
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name a$$inline_1 is not consistently annotated as constant.<br>  Node(NAME a$$inline_1): testcode:1:29<br>function f(a){return chg() + a + a;}var a = f(f(1));<br>  Parent(ADD): testcode:1:21<br>function f(a){return chg() + a + a;}var a = f(f(1));<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testCostBasedInlining9(InlineFunctionsTest.java:1017)<br>Caused by: java.lang.IllegalStateException: The name a$$inline_1 is not consistently annotated as constant.<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testCostBasedInlining11"></a>testCostBasedInlining11</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name a$$inline_1 is not consistently annotated as constant.
+  Node(NAME a$$inline_1): testcode:1:29
+function f(a){return chg() + a + a;}var a = f(f(1))
+  Parent(ADD): testcode:1:21
+function f(a){return chg() + a + a;}var a = f(f(1))
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name a$$inline_1 is not consistently annotated as constant.<br>  Node(NAME a$$inline_1): testcode:1:29<br>function f(a){return chg() + a + a;}var a = f(f(1))<br>  Parent(ADD): testcode:1:21<br>function f(a){return chg() + a + a;}var a = f(f(1))<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testCostBasedInlining11(InlineFunctionsTest.java:1034)<br>Caused by: java.lang.IllegalStateException: The name a$$inline_1 is not consistently annotated as constant.<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testComplexInline1"></a>testComplexInline1</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testComplexInline1(InlineFunctionsTest.java:1271)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testComplexInline2"></a>testComplexInline2</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testComplexInline2(InlineFunctionsTest.java:1278)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testComplexInline3"></a>testComplexInline3</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testComplexInline3(InlineFunctionsTest.java:1285)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testComplexInline4"></a>testComplexInline4</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testComplexInline4(InlineFunctionsTest.java:1292)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testComplexInline5"></a>testComplexInline5</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testComplexInline5(InlineFunctionsTest.java:1297)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testComplexInline6"></a>testComplexInline6</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testComplexInline6(InlineFunctionsTest.java:1302)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testComplexInline7"></a>testComplexInline7</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testComplexInline7(InlineFunctionsTest.java:1307)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testComplexInlineInExpressionss2"></a>testComplexInlineInExpressionss2</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testComplexInlineInExpressionss2(InlineFunctionsTest.java:1397)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testComplexInlineInExpressionss3"></a>testComplexInlineInExpressionss3</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testComplexInlineInExpressionss3(InlineFunctionsTest.java:1404)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testComplexInlineInExpressionss4"></a>testComplexInlineInExpressionss4</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testComplexInlineInExpressionss4(InlineFunctionsTest.java:1411)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testComplexInlineInExpressionss5"></a>testComplexInlineInExpressionss5</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testComplexInlineInExpressionss5(InlineFunctionsTest.java:1418)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testComplexFunctionWithFunctionDefinition2"></a>testComplexFunctionWithFunctionDefinition2</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name a$$inline_0 is not consistently annotated as constant.
+  Node(NAME a$$inline_0): testcode:1:55
+(function(){var f = function(a){call(function(){return a})};f()})()
+  Parent(RETURN): testcode:1:48
+(function(){var f = function(a){call(function(){return a})};f()})()
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name a$$inline_0 is not consistently annotated as constant.<br>  Node(NAME a$$inline_0): testcode:1:55<br>(function(){var f = function(a){call(function(){return a})};f()})()<br>  Parent(RETURN): testcode:1:48<br>(function(){var f = function(a){call(function(){return a})};f()})()<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseFunction(NodeTraversal.java:610)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:562)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testComplexFunctionWithFunctionDefinition2(InlineFunctionsTest.java:1531)<br>Caused by: java.lang.IllegalStateException: The name a$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.007</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testComplexFunctionWithFunctionDefinition2a"></a>testComplexFunctionWithFunctionDefinition2a</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name a$$inline_0 is not consistently annotated as constant.
+  Node(NAME a$$inline_0): testcode:1:55
+(function(){var f = function(a){call(function(){return a})};f()})()
+  Parent(RETURN): testcode:1:48
+(function(){var f = function(a){call(function(){return a})};f()})()
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name a$$inline_0 is not consistently annotated as constant.<br>  Node(NAME a$$inline_0): testcode:1:55<br>(function(){var f = function(a){call(function(){return a})};f()})()<br>  Parent(RETURN): testcode:1:48<br>(function(){var f = function(a){call(function(){return a})};f()})()<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseFunction(NodeTraversal.java:610)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:562)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testComplexFunctionWithFunctionDefinition2a(InlineFunctionsTest.java:1545)<br>Caused by: java.lang.IllegalStateException: The name a$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.008</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testDecomposePlusEquals"></a>testDecomposePlusEquals</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testDecomposePlusEquals(InlineFunctionsTest.java:1564)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testDecomposeFunctionExpressionInCall"></a>testDecomposeFunctionExpressionInCall</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testDecomposeFunctionExpressionInCall(InlineFunctionsTest.java:1574)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testFunctionExpressionOmega"></a>testFunctionExpressionOmega</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name f$$inline_0 is not consistently annotated as constant.
+  Node(NAME f$$inline_0): testcode:1:14
+(function (f){f(f)})(function(f){f(f)})
+  Parent(CALL): testcode:1:14
+(function (f){f(f)})(function(f){f(f)})
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name f$$inline_0 is not consistently annotated as constant.<br>  Node(NAME f$$inline_0): testcode:1:14<br>(function (f){f(f)})(function(f){f(f)})<br>  Parent(CALL): testcode:1:14<br>(function (f){f(f)})(function(f){f(f)})<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testFunctionExpressionOmega(InlineFunctionsTest.java:1779)<br>Caused by: java.lang.IllegalStateException: The name f$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testInlineWithThis7"></a>testInlineWithThis7</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name a$$inline_0 is not consistently annotated as constant.
+  Node(NAME a$$inline_0): testcode:1:14
+function f(a){a=1;this} f.call();
+  Parent(ASSIGN): testcode:1:14
+function f(a){a=1;this} f.call();
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name a$$inline_0 is not consistently annotated as constant.<br>  Node(NAME a$$inline_0): testcode:1:14<br>function f(a){a=1;this} f.call();<br>  Parent(ASSIGN): testcode:1:14<br>function f(a){a=1;this} f.call();<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testInlineWithThis7(InlineFunctionsTest.java:1916)<br>Caused by: java.lang.IllegalStateException: The name a$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testFunctionExpressionYCombinator"></a>testFunctionExpressionYCombinator</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name M$$inline_4 is not consistently annotated as constant.
+  Node(NAME M$$inline_4): testcode:3:24
+                 return M(function(arg) {
+  Parent(CALL): testcode:3:24
+                 return M(function(arg) {
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name M$$inline_4 is not consistently annotated as constant.<br>  Node(NAME M$$inline_4): testcode:3:24<br>                 return M(function(arg) {<br>  Parent(CALL): testcode:3:24<br>                 return M(function(arg) {<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseFunction(NodeTraversal.java:610)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:562)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testFunctionExpressionYCombinator(InlineFunctionsTest.java:1950)<br>Caused by: java.lang.IllegalStateException: The name M$$inline_4 is not consistently annotated as constant.<br>
+</code></td><td>0.012</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testBug4944818"></a>testBug4944818</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testBug4944818(InlineFunctionsTest.java:2099)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testIssue423"></a>testIssue423</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name $$$inline_0 is not consistently annotated as constant.
+  Node(NAME $$$inline_0): testcode:7:25
+    options.checkboxes = $(this).siblings(':checkbox');
+  Parent(CALL): testcode:7:25
+    options.checkboxes = $(this).siblings(':checkbox');
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name $$$inline_0 is not consistently annotated as constant.<br>  Node(NAME $$$inline_0): testcode:7:25<br>    options.checkboxes = $(this).siblings(':checkbox');<br>  Parent(CALL): testcode:7:25<br>    options.checkboxes = $(this).siblings(':checkbox');<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseFunction(NodeTraversal.java:610)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:562)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testIssue423(InlineFunctionsTest.java:2164)<br>Caused by: java.lang.IllegalStateException: The name $$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.008</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testMethodWithFunctionWithFunction"></a>testMethodWithFunctionWithFunction</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name j$$inline_0 is not consistently annotated as constant.
+  Node(NAME j$$inline_0): testcode:6:42
+        setTimeout(function() { result += j; }, 5 * i);
+  Parent(ASSIGN_ADD): testcode:6:32
+        setTimeout(function() { result += j; }, 5 * i);
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name j$$inline_0 is not consistently annotated as constant.<br>  Node(NAME j$$inline_0): testcode:6:42<br>        setTimeout(function() { result += j; }, 5 * i);<br>  Parent(ASSIGN_ADD): testcode:6:32<br>        setTimeout(function() { result += j; }, 5 * i);<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseFunction(NodeTraversal.java:610)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:562)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseFunction(NodeTraversal.java:610)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:562)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.testMethodWithFunctionWithFunction(InlineFunctionsTest.java:2270)<br>Caused by: java.lang.IllegalStateException: The name j$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test6671158"></a>test6671158</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.test6671158(InlineFunctionsTest.java:2371)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test6671158b"></a>test6671158b</td><td>Error</td><td>Unexpected.<br>
+<br>
+<code>java.lang.IllegalStateException: Unexpected.<br>	at com.google.javascript.jscomp.ExpressionDecomposer.extractConditional(ExpressionDecomposer.java:379)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:236)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.exposeExpression(ExpressionDecomposer.java:103)<br>	at com.google.javascript.jscomp.ExpressionDecomposer.maybeExposeExpression(ExpressionDecomposer.java:85)<br>	at com.google.javascript.jscomp.FunctionInjector$CallSiteType$6.prepare(FunctionInjector.java:389)<br>	at com.google.javascript.jscomp.FunctionInjector.maybePrepareCall(FunctionInjector.java:467)<br>	at com.google.javascript.jscomp.InlineFunctions.decomposeExpressions(InlineFunctions.java:825)<br>	at com.google.javascript.jscomp.InlineFunctions.process(InlineFunctions.java:142)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1044)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.test6671158b(InlineFunctionsTest.java:2395)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test8609285a"></a>test8609285a</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_0 is not consistently annotated as constant.
+  Node(NAME x$$inline_0): testcode:1:19
+function f(x){ for(x in y){} } f()
+  Parent(FOR): testcode:1:15
+function f(x){ for(x in y){} } f()
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_0 is not consistently annotated as constant.<br>  Node(NAME x$$inline_0): testcode:1:19<br>function f(x){ for(x in y){} } f()<br>  Parent(FOR): testcode:1:15<br>function f(x){ for(x in y){} } f()<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.test8609285a(InlineFunctionsTest.java:2418)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test8609285b"></a>test8609285b</td><td>Error</td><td>INTERNAL COMPILER ERROR.
+Please report this problem.
+
+The name x$$inline_0 is not consistently annotated as constant.
+  Node(NAME x$$inline_0): testcode:1:23
+function f(x){ for(var x in y){} } f()
+  Parent(FOR): testcode:1:15
+function f(x){ for(var x in y){} } f()
+<br>
+<br>
+<code>java.lang.RuntimeException: INTERNAL COMPILER ERROR.<br>Please report this problem.<br>
+<br>The name x$$inline_0 is not consistently annotated as constant.<br>  Node(NAME x$$inline_0): testcode:1:23<br>function f(x){ for(var x in y){} } f()<br>  Parent(FOR): testcode:1:15<br>function f(x){ for(var x in y){} } f()<br>
+<br>	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.visit(Normalize.java:333)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:576)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:570)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:308)<br>	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:538)<br>	at com.google.javascript.jscomp.Normalize$VerifyConstants.process(Normalize.java:284)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1063)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.InlineFunctionsTest.test8609285b(InlineFunctionsTest.java:2424)<br>Caused by: java.lang.IllegalStateException: The name x$$inline_0 is not consistently annotated as constant.<br>
+</code></td><td>0.002</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('com.google.javascript.jscomp.InlineFunctionsTest');">
+                    Properties &raquo;
+                </a>
+</div>
+</body>
+</html>

@@ -75,7 +75,7 @@ public class GoogleCodingConvention extends CodingConventions.Proxy {
   @Override
   public boolean isConstant(String name) {
     if (name.length() <= 1) {
-      return false;
+      return true;
     }
 
     // In compiled code, '$' is often a namespace delimiter. To allow inlining
@@ -84,7 +84,7 @@ public class GoogleCodingConvention extends CodingConventions.Proxy {
     if (pos >= 0) {
       name = name.substring(pos + 1);
       if (name.isEmpty()) {
-        return false;
+        return true;
       }
     }
 

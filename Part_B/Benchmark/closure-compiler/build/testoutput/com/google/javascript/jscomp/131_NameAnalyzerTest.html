@@ -1,0 +1,2014 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: com.google.javascript.jscomp.NameAnalyzerTest</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['com.google.javascript.jscomp.NameAnalyzerTest'] = new Array();
+    
+        cur['ant.build.javac.source'] = '1.7';
+    
+        cur['ant.build.javac.target'] = '1.7';
+    
+        cur['ant.core.lib'] = '/Users/linmanna/ant/lib/ant.jar';
+    
+        cur['ant.file'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml';
+    
+        cur['ant.file.compiler'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml';
+    
+        cur['ant.file.type'] = 'file';
+    
+        cur['ant.file.type.compiler'] = 'file';
+    
+        cur['ant.home'] = '//Users/linmanna/ant';
+    
+        cur['ant.java.version'] = '1.7';
+    
+        cur['ant.library.dir'] = '//Users/linmanna/ant/lib';
+    
+        cur['ant.project.default-target'] = 'jar';
+    
+        cur['ant.project.invoked-targets'] = 'clean,compile,compile-tests,test';
+    
+        cur['ant.project.name'] = 'compiler';
+    
+        cur['ant.version'] = 'Apache Ant(TM) version 1.9.4 compiled on April 29 2014';
+    
+        cur['awt.toolkit'] = 'sun.lwawt.macosx.LWCToolkit';
+    
+        cur['basedir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler';
+    
+        cur['build.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build';
+    
+        cur['build.relVersion'] = '00e3533';
+    
+        cur['buildlib.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/lib';
+    
+        cur['classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes';
+    
+        cur['closure.build.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build';
+    
+        cur['compiler-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/compiler.jar';
+    
+        cur['externs.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/externs';
+    
+        cur['file.encoding'] = 'UTF-8';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '/';
+    
+        cur['ftp.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['gen.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/gen';
+    
+        cur['gopherProxySet'] = 'false';
+    
+        cur['http.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.CGraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.lwawt.macosx.CPrinterJob';
+    
+        cur['java.class.path'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant-launcher.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/args4j.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/gson.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/guava.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/jsr305.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/junit.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/protobuf-java.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/truth.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test:/Users/linmanna/ant/lib/ant-launcher.jar:/Users/linmanna/ant/lib/ant.jar:/Users/linmanna/ant/lib/ant-junit.jar:/Users/linmanna/ant/lib/ant-junit4.jar';
+    
+        cur['java.class.version'] = '51.0';
+    
+        cur['java.endorsed.dirs'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed';
+    
+        cur['java.ext.dirs'] = '/Users/linmanna/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java';
+    
+        cur['java.home'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre';
+    
+        cur['java.io.tmpdir'] = '/var/folders/_p/3swdt4h96dn79vyt21dtny9h0000gn/T/';
+    
+        cur['java.library.path'] = '/Users/linmanna/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.7.0_75-b13';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '1.7';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'http://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://bugreport.sun.com/bugreport/';
+    
+        cur['java.version'] = '1.7.0_75';
+    
+        cur['java.vm.info'] = 'mixed mode';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '1.7';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '24.75-b04';
+    
+        cur['javac.debug'] = 'on';
+    
+        cur['javadoc.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/javadoc';
+    
+        cur['lib.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib';
+    
+        cur['line.separator'] = '\n';
+    
+        cur['maven-repository-id'] = 'sonatype-nexus-staging';
+    
+        cur['maven-repository-url'] = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/';
+    
+        cur['os.arch'] = 'x86_64';
+    
+        cur['os.name'] = 'Mac OS X';
+    
+        cur['os.version'] = '10.9.5';
+    
+        cur['path.separator'] = ':';
+    
+        cur['protoc.executable'] = 'protoc';
+    
+        cur['refasterjs.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/refactoring';
+    
+        cur['refasterjs-classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs-classes';
+    
+        cur['refasterjs-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs.jar';
+    
+        cur['socksNonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['src.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.class.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes';
+    
+        cur['sun.boot.library.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = '';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeBig';
+    
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junittestcases4622356093930181862.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junitvmwatcher882389895192408063.properties propsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junit6374663990081372210.properties';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'UTF-8';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = 'unknown';
+    
+        cur['test.class'] = '*Test';
+    
+        cur['test.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/test';
+    
+        cur['test.fork'] = 'true';
+    
+        cur['test.method'] = '';
+    
+        cur['testClasses.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test';
+    
+        cur['tools.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/tools';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler';
+    
+        cur['user.home'] = '/Users/linmanna';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'linmanna';
+    
+        cur['user.timezone'] = '';
+    
+        cur['webservice.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/jscomp/webservice';
+    
+        cur['webservice-classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice-classes';
+    
+        cur['webservice-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice.jar';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class com.google.javascript.jscomp.NameAnalyzerTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Failure">
+<td><a title="Display all tests" href="131_NameAnalyzerTest.html">NameAnalyzerTest</a></td><td><a title="Display all tests" href="131_NameAnalyzerTest.html">336</a></td><td>0</td><td><a title="Display only failures" href="131_NameAnalyzerTest-fails.html">7</a></td><td>0</td><td>0.419</td><td>2015-03-09T03:17:28</td><td>cs-210-206.cs.ucla.edu</td>
+</tr>
+</table>
+<h2>Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFor"></a>testFor</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveDeclaration1"></a>testRemoveDeclaration1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveDeclaration2"></a>testRemoveDeclaration2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAnonymous1"></a>testAnonymous1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAnonymous2"></a>testAnonymous2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAnonymous3"></a>testAnonymous3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue284"></a>testIssue284</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSingletonGetter1"></a>testSingletonGetter1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveDeclaration6"></a>testRemoveDeclaration6</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveDeclaration7"></a>testRemoveDeclaration7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveFunction2"></a>testRemoveFunction2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveFunction3"></a>testRemoveFunction3</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveFunction4"></a>testRemoveFunction4</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testReferredToByWindow"></a>testReferredToByWindow</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExtern"></a>testExtern</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveNamedFunction"></a>testRemoveNamedFunction</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveRecursiveFunction1"></a>testRemoveRecursiveFunction1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveRecursiveFunction2"></a>testRemoveRecursiveFunction2</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveRecursiveFunction2a"></a>testRemoveRecursiveFunction2a</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveRecursiveFunction3"></a>testRemoveRecursiveFunction3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveRecursiveFunction4"></a>testRemoveRecursiveFunction4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveRecursiveFunction5"></a>testRemoveRecursiveFunction5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveRecursiveFunction6"></a>testRemoveRecursiveFunction6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveRecursiveFunction7"></a>testRemoveRecursiveFunction7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveFunction1"></a>testRemoveFunction1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveVarDeclaration1"></a>testRemoveVarDeclaration1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveVarDeclaration2"></a>testRemoveVarDeclaration2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveVarDeclaration3"></a>testRemoveVarDeclaration3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveVarDeclaration4"></a>testRemoveVarDeclaration4</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveVarDeclaration5"></a>testRemoveVarDeclaration5</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveVarDeclaration6"></a>testRemoveVarDeclaration6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveVarDeclaration7"></a>testRemoveVarDeclaration7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveVarDeclaration8"></a>testRemoveVarDeclaration8</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveDeclaration3"></a>testRemoveDeclaration3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveDeclaration4"></a>testRemoveDeclaration4</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveDeclaration5"></a>testRemoveDeclaration5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveRecursiveFunction8"></a>testRemoveRecursiveFunction8</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveRecursiveFunction9"></a>testRemoveRecursiveFunction9</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSideEffectClassification1"></a>testSideEffectClassification1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSideEffectClassification2"></a>testSideEffectClassification2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSideEffectClassification3"></a>testSideEffectClassification3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSideEffectClassification4"></a>testSideEffectClassification4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSideEffectClassification5"></a>testSideEffectClassification5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSideEffectClassification6"></a>testSideEffectClassification6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSideEffectClassification7"></a>testSideEffectClassification7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation1"></a>testNoSideEffectAnnotation1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation2"></a>testNoSideEffectAnnotation2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation3"></a>testNoSideEffectAnnotation3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation4"></a>testNoSideEffectAnnotation4</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation5"></a>testNoSideEffectAnnotation5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation6"></a>testNoSideEffectAnnotation6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation7"></a>testNoSideEffectAnnotation7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation8"></a>testNoSideEffectAnnotation8</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation9"></a>testNoSideEffectAnnotation9</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation10"></a>testNoSideEffectAnnotation10</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation11"></a>testNoSideEffectAnnotation11</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation12"></a>testNoSideEffectAnnotation12</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation13"></a>testNoSideEffectAnnotation13</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation14"></a>testNoSideEffectAnnotation14</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation15"></a>testNoSideEffectAnnotation15</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoSideEffectAnnotation16"></a>testNoSideEffectAnnotation16</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctionPrototype"></a>testFunctionPrototype</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTopLevelClass1"></a>testTopLevelClass1</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTopLevelClass2"></a>testTopLevelClass2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTopLevelClass3"></a>testTopLevelClass3</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTopLevelClass4"></a>testTopLevelClass4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTopLevelClass5"></a>testTopLevelClass5</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTopLevelClass6"></a>testTopLevelClass6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTopLevelClass7"></a>testTopLevelClass7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNamespacedClass1"></a>testNamespacedClass1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNamespacedClass2"></a>testNamespacedClass2</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNamespacedClass3"></a>testNamespacedClass3</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNamespacedClass4"></a>testNamespacedClass4</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNamespacedClass5"></a>testNamespacedClass5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignmentToThisPrototype"></a>testAssignmentToThisPrototype</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignmentToCallResultPrototype"></a>testAssignmentToCallResultPrototype</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignmentToExternPrototype"></a>testAssignmentToExternPrototype</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignmentToUnknownPrototype"></a>testAssignmentToUnknownPrototype</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBug2099540"></a>testBug2099540</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testOtherGlobal"></a>testOtherGlobal</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExternName1"></a>testExternName1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExternName2"></a>testExternName2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInherits1"></a>testInherits1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInherits2"></a>testInherits2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInherits3"></a>testInherits3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testInherits4"></a>testInherits4</td><td>Failure</td><td>
+Expected: var a={};this.b={};var goog={};goog.inherits(b,a)
+Result:   this.b={}
+Node tree inequality:
+Expected tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        VAR 1 [source_file: expected0]
+            NAME a 1 [is_constant_name: 1] [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    THIS 1 [source_file: expected0]
+                    STRING b 1 [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        VAR 1 [source_file: expected0]
+            NAME goog 1 [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            CALL 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME goog 1 [source_file: expected0]
+                    STRING inherits 1 [source_file: expected0]
+                NAME b 1 [is_constant_name: 1] [source_file: expected0]
+                NAME a 1 [is_constant_name: 1] [source_file: expected0]
+
+
+Actual tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        EXPR_RESULT 1 [source_file: testcode]
+            ASSIGN 1 [source_file: testcode]
+                GETPROP 1 [source_file: testcode]
+                    THIS 1 [source_file: testcode]
+                    STRING b 1 [source_file: testcode]
+                OBJECTLIT 1 [source_file: testcode]
+
+
+Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [is_constant_name: 1] [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                THIS 1 [source_file: expected0]
+                STRING b 1 [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME goog 1 [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME goog 1 [source_file: expected0]
+                STRING inherits 1 [source_file: expected0]
+            NAME b 1 [is_constant_name: 1] [source_file: expected0]
+            NAME a 1 [is_constant_name: 1] [source_file: expected0]
+
+
+Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            GETPROP 1 [source_file: testcode]
+                THIS 1 [source_file: testcode]
+                STRING b 1 [source_file: testcode]
+            OBJECTLIT 1 [source_file: testcode]
+<br>
+<br>
+<code>junit.framework.AssertionFailedError: <br>Expected: var a={};this.b={};var goog={};goog.inherits(b,a)<br>Result:   this.b={}<br>Node tree inequality:<br>Expected tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            ASSIGN 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    THIS 1 [source_file: expected0]<br>                    STRING b 1 [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME goog 1 [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            CALL 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME goog 1 [source_file: expected0]<br>                    STRING inherits 1 [source_file: expected0]<br>                NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>                NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>
+<br>
+<br>Actual tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>        EXPR_RESULT 1 [source_file: testcode]<br>            ASSIGN 1 [source_file: testcode]<br>                GETPROP 1 [source_file: testcode]<br>                    THIS 1 [source_file: testcode]<br>                    STRING b 1 [source_file: testcode]<br>                OBJECTLIT 1 [source_file: testcode]<br>
+<br>
+<br>Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        ASSIGN 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                THIS 1 [source_file: expected0]<br>                STRING b 1 [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME goog 1 [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        CALL 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME goog 1 [source_file: expected0]<br>                STRING inherits 1 [source_file: expected0]<br>            NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>            NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>
+<br>
+<br>Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>    EXPR_RESULT 1 [source_file: testcode]<br>        ASSIGN 1 [source_file: testcode]<br>            GETPROP 1 [source_file: testcode]<br>                THIS 1 [source_file: testcode]<br>                STRING b 1 [source_file: testcode]<br>            OBJECTLIT 1 [source_file: testcode]<br>
+<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1161)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.CompilerTestCase.testSame(CompilerTestCase.java:741)<br>	at com.google.javascript.jscomp.NameAnalyzerTest.testInherits4(NameAnalyzerTest.java:421)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInherits5"></a>testInherits5</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInherits6"></a>testInherits6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testInherits7"></a>testInherits7</td><td>Failure</td><td>
+Expected: var a={};this.b={};var goog={};goog.inherits=function(){};goog.inherits(b,a)
+Result:   this.b={}
+Node tree inequality:
+Expected tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        VAR 1 [source_file: expected0]
+            NAME a 1 [is_constant_name: 1] [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    THIS 1 [source_file: expected0]
+                    STRING b 1 [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        VAR 1 [source_file: expected0]
+            NAME goog 1 [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME goog 1 [source_file: expected0]
+                    STRING inherits 1 [source_file: expected0]
+                FUNCTION  1 [source_file: expected0]
+                    NAME  1 [is_constant_name: 1] [source_file: expected0]
+                    PARAM_LIST 1 [source_file: expected0]
+                    BLOCK 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            CALL 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME goog 1 [source_file: expected0]
+                    STRING inherits 1 [source_file: expected0]
+                NAME b 1 [is_constant_name: 1] [source_file: expected0]
+                NAME a 1 [is_constant_name: 1] [source_file: expected0]
+
+
+Actual tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        EXPR_RESULT 1 [source_file: testcode]
+            ASSIGN 1 [source_file: testcode]
+                GETPROP 1 [source_file: testcode]
+                    THIS 1 [source_file: testcode]
+                    STRING b 1 [source_file: testcode]
+                OBJECTLIT 1 [source_file: testcode]
+
+
+Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [is_constant_name: 1] [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                THIS 1 [source_file: expected0]
+                STRING b 1 [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME goog 1 [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME goog 1 [source_file: expected0]
+                STRING inherits 1 [source_file: expected0]
+            FUNCTION  1 [source_file: expected0]
+                NAME  1 [is_constant_name: 1] [source_file: expected0]
+                PARAM_LIST 1 [source_file: expected0]
+                BLOCK 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME goog 1 [source_file: expected0]
+                STRING inherits 1 [source_file: expected0]
+            NAME b 1 [is_constant_name: 1] [source_file: expected0]
+            NAME a 1 [is_constant_name: 1] [source_file: expected0]
+
+
+Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            GETPROP 1 [source_file: testcode]
+                THIS 1 [source_file: testcode]
+                STRING b 1 [source_file: testcode]
+            OBJECTLIT 1 [source_file: testcode]
+<br>
+<br>
+<code>junit.framework.AssertionFailedError: <br>Expected: var a={};this.b={};var goog={};goog.inherits=function(){};goog.inherits(b,a)<br>Result:   this.b={}<br>Node tree inequality:<br>Expected tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            ASSIGN 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    THIS 1 [source_file: expected0]<br>                    STRING b 1 [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME goog 1 [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            ASSIGN 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME goog 1 [source_file: expected0]<br>                    STRING inherits 1 [source_file: expected0]<br>                FUNCTION  1 [source_file: expected0]<br>                    NAME  1 [is_constant_name: 1] [source_file: expected0]<br>                    PARAM_LIST 1 [source_file: expected0]<br>                    BLOCK 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            CALL 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME goog 1 [source_file: expected0]<br>                    STRING inherits 1 [source_file: expected0]<br>                NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>                NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>
+<br>
+<br>Actual tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>        EXPR_RESULT 1 [source_file: testcode]<br>            ASSIGN 1 [source_file: testcode]<br>                GETPROP 1 [source_file: testcode]<br>                    THIS 1 [source_file: testcode]<br>                    STRING b 1 [source_file: testcode]<br>                OBJECTLIT 1 [source_file: testcode]<br>
+<br>
+<br>Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        ASSIGN 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                THIS 1 [source_file: expected0]<br>                STRING b 1 [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME goog 1 [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        ASSIGN 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME goog 1 [source_file: expected0]<br>                STRING inherits 1 [source_file: expected0]<br>            FUNCTION  1 [source_file: expected0]<br>                NAME  1 [is_constant_name: 1] [source_file: expected0]<br>                PARAM_LIST 1 [source_file: expected0]<br>                BLOCK 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        CALL 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME goog 1 [source_file: expected0]<br>                STRING inherits 1 [source_file: expected0]<br>            NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>            NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>
+<br>
+<br>Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>    EXPR_RESULT 1 [source_file: testcode]<br>        ASSIGN 1 [source_file: testcode]<br>            GETPROP 1 [source_file: testcode]<br>                THIS 1 [source_file: testcode]<br>                STRING b 1 [source_file: testcode]<br>            OBJECTLIT 1 [source_file: testcode]<br>
+<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1161)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.CompilerTestCase.testSame(CompilerTestCase.java:741)<br>	at com.google.javascript.jscomp.NameAnalyzerTest.testInherits7(NameAnalyzerTest.java:435)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInherits8"></a>testInherits8</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMixin1"></a>testMixin1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testMixin2"></a>testMixin2</td><td>Failure</td><td>
+Expected: var a={};this.b={};var goog={};goog.mixin=function(){};goog.mixin(b.prototype,a.prototype)
+Result:   this.b={}
+Node tree inequality:
+Expected tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        VAR 1 [source_file: expected0]
+            NAME a 1 [is_constant_name: 1] [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    THIS 1 [source_file: expected0]
+                    STRING b 1 [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        VAR 1 [source_file: expected0]
+            NAME goog 1 [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME goog 1 [source_file: expected0]
+                    STRING mixin 1 [source_file: expected0]
+                FUNCTION  1 [source_file: expected0]
+                    NAME  1 [is_constant_name: 1] [source_file: expected0]
+                    PARAM_LIST 1 [source_file: expected0]
+                    BLOCK 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            CALL 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME goog 1 [source_file: expected0]
+                    STRING mixin 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME b 1 [is_constant_name: 1] [source_file: expected0]
+                    STRING prototype 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME a 1 [is_constant_name: 1] [source_file: expected0]
+                    STRING prototype 1 [source_file: expected0]
+
+
+Actual tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        EXPR_RESULT 1 [source_file: testcode]
+            ASSIGN 1 [source_file: testcode]
+                GETPROP 1 [source_file: testcode]
+                    THIS 1 [source_file: testcode]
+                    STRING b 1 [source_file: testcode]
+                OBJECTLIT 1 [source_file: testcode]
+
+
+Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [is_constant_name: 1] [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                THIS 1 [source_file: expected0]
+                STRING b 1 [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME goog 1 [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME goog 1 [source_file: expected0]
+                STRING mixin 1 [source_file: expected0]
+            FUNCTION  1 [source_file: expected0]
+                NAME  1 [is_constant_name: 1] [source_file: expected0]
+                PARAM_LIST 1 [source_file: expected0]
+                BLOCK 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME goog 1 [source_file: expected0]
+                STRING mixin 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME b 1 [is_constant_name: 1] [source_file: expected0]
+                STRING prototype 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME a 1 [is_constant_name: 1] [source_file: expected0]
+                STRING prototype 1 [source_file: expected0]
+
+
+Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            GETPROP 1 [source_file: testcode]
+                THIS 1 [source_file: testcode]
+                STRING b 1 [source_file: testcode]
+            OBJECTLIT 1 [source_file: testcode]
+<br>
+<br>
+<code>junit.framework.AssertionFailedError: <br>Expected: var a={};this.b={};var goog={};goog.mixin=function(){};goog.mixin(b.prototype,a.prototype)<br>Result:   this.b={}<br>Node tree inequality:<br>Expected tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            ASSIGN 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    THIS 1 [source_file: expected0]<br>                    STRING b 1 [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME goog 1 [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            ASSIGN 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME goog 1 [source_file: expected0]<br>                    STRING mixin 1 [source_file: expected0]<br>                FUNCTION  1 [source_file: expected0]<br>                    NAME  1 [is_constant_name: 1] [source_file: expected0]<br>                    PARAM_LIST 1 [source_file: expected0]<br>                    BLOCK 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            CALL 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME goog 1 [source_file: expected0]<br>                    STRING mixin 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>                    STRING prototype 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>                    STRING prototype 1 [source_file: expected0]<br>
+<br>
+<br>Actual tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>        EXPR_RESULT 1 [source_file: testcode]<br>            ASSIGN 1 [source_file: testcode]<br>                GETPROP 1 [source_file: testcode]<br>                    THIS 1 [source_file: testcode]<br>                    STRING b 1 [source_file: testcode]<br>                OBJECTLIT 1 [source_file: testcode]<br>
+<br>
+<br>Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        ASSIGN 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                THIS 1 [source_file: expected0]<br>                STRING b 1 [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME goog 1 [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        ASSIGN 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME goog 1 [source_file: expected0]<br>                STRING mixin 1 [source_file: expected0]<br>            FUNCTION  1 [source_file: expected0]<br>                NAME  1 [is_constant_name: 1] [source_file: expected0]<br>                PARAM_LIST 1 [source_file: expected0]<br>                BLOCK 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        CALL 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME goog 1 [source_file: expected0]<br>                STRING mixin 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>                STRING prototype 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>                STRING prototype 1 [source_file: expected0]<br>
+<br>
+<br>Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>    EXPR_RESULT 1 [source_file: testcode]<br>        ASSIGN 1 [source_file: testcode]<br>            GETPROP 1 [source_file: testcode]<br>                THIS 1 [source_file: testcode]<br>                STRING b 1 [source_file: testcode]<br>            OBJECTLIT 1 [source_file: testcode]<br>
+<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1161)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.CompilerTestCase.testSame(CompilerTestCase.java:741)<br>	at com.google.javascript.jscomp.NameAnalyzerTest.testMixin2(NameAnalyzerTest.java:453)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMixin3"></a>testMixin3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testMixin4"></a>testMixin4</td><td>Failure</td><td>
+Expected: this.a={};var b={};var goog={};goog.mixin=function(){};goog.mixin(b.prototype,a.prototype);new b
+Result:   this.a={};var b={};new b
+Node tree inequality:
+Expected tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    THIS 1 [source_file: expected0]
+                    STRING a 1 [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        VAR 1 [source_file: expected0]
+            NAME b 1 [is_constant_name: 1] [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        VAR 1 [source_file: expected0]
+            NAME goog 1 [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME goog 1 [source_file: expected0]
+                    STRING mixin 1 [source_file: expected0]
+                FUNCTION  1 [source_file: expected0]
+                    NAME  1 [is_constant_name: 1] [source_file: expected0]
+                    PARAM_LIST 1 [source_file: expected0]
+                    BLOCK 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            CALL 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME goog 1 [source_file: expected0]
+                    STRING mixin 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME b 1 [is_constant_name: 1] [source_file: expected0]
+                    STRING prototype 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME a 1 [is_constant_name: 1] [source_file: expected0]
+                    STRING prototype 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            NEW 1 [source_file: expected0]
+                NAME b 1 [is_constant_name: 1] [source_file: expected0]
+
+
+Actual tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        EXPR_RESULT 1 [source_file: testcode]
+            ASSIGN 1 [source_file: testcode]
+                GETPROP 1 [source_file: testcode]
+                    THIS 1 [source_file: testcode]
+                    STRING a 1 [source_file: testcode]
+                OBJECTLIT 1 [source_file: testcode]
+        VAR 1 [source_file: testcode]
+            NAME b 1 [is_constant_name: 1] [source_file: testcode]
+                OBJECTLIT 1 [source_file: testcode]
+        EXPR_RESULT 1 [source_file: testcode]
+            NEW 1 [source_file: testcode]
+                NAME b 1 [is_constant_name: 1] [source_file: testcode]
+
+
+Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                THIS 1 [source_file: expected0]
+                STRING a 1 [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME b 1 [is_constant_name: 1] [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME goog 1 [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME goog 1 [source_file: expected0]
+                STRING mixin 1 [source_file: expected0]
+            FUNCTION  1 [source_file: expected0]
+                NAME  1 [is_constant_name: 1] [source_file: expected0]
+                PARAM_LIST 1 [source_file: expected0]
+                BLOCK 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME goog 1 [source_file: expected0]
+                STRING mixin 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME b 1 [is_constant_name: 1] [source_file: expected0]
+                STRING prototype 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME a 1 [is_constant_name: 1] [source_file: expected0]
+                STRING prototype 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        NEW 1 [source_file: expected0]
+            NAME b 1 [is_constant_name: 1] [source_file: expected0]
+
+
+Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            GETPROP 1 [source_file: testcode]
+                THIS 1 [source_file: testcode]
+                STRING a 1 [source_file: testcode]
+            OBJECTLIT 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME b 1 [is_constant_name: 1] [source_file: testcode]
+            OBJECTLIT 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        NEW 1 [source_file: testcode]
+            NAME b 1 [is_constant_name: 1] [source_file: testcode]
+<br>
+<br>
+<code>junit.framework.AssertionFailedError: <br>Expected: this.a={};var b={};var goog={};goog.mixin=function(){};goog.mixin(b.prototype,a.prototype);new b<br>Result:   this.a={};var b={};new b<br>Node tree inequality:<br>Expected tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            ASSIGN 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    THIS 1 [source_file: expected0]<br>                    STRING a 1 [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME goog 1 [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            ASSIGN 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME goog 1 [source_file: expected0]<br>                    STRING mixin 1 [source_file: expected0]<br>                FUNCTION  1 [source_file: expected0]<br>                    NAME  1 [is_constant_name: 1] [source_file: expected0]<br>                    PARAM_LIST 1 [source_file: expected0]<br>                    BLOCK 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            CALL 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME goog 1 [source_file: expected0]<br>                    STRING mixin 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>                    STRING prototype 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>                    STRING prototype 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            NEW 1 [source_file: expected0]<br>                NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>
+<br>
+<br>Actual tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>        EXPR_RESULT 1 [source_file: testcode]<br>            ASSIGN 1 [source_file: testcode]<br>                GETPROP 1 [source_file: testcode]<br>                    THIS 1 [source_file: testcode]<br>                    STRING a 1 [source_file: testcode]<br>                OBJECTLIT 1 [source_file: testcode]<br>        VAR 1 [source_file: testcode]<br>            NAME b 1 [is_constant_name: 1] [source_file: testcode]<br>                OBJECTLIT 1 [source_file: testcode]<br>        EXPR_RESULT 1 [source_file: testcode]<br>            NEW 1 [source_file: testcode]<br>                NAME b 1 [is_constant_name: 1] [source_file: testcode]<br>
+<br>
+<br>Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        ASSIGN 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                THIS 1 [source_file: expected0]<br>                STRING a 1 [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME goog 1 [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        ASSIGN 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME goog 1 [source_file: expected0]<br>                STRING mixin 1 [source_file: expected0]<br>            FUNCTION  1 [source_file: expected0]<br>                NAME  1 [is_constant_name: 1] [source_file: expected0]<br>                PARAM_LIST 1 [source_file: expected0]<br>                BLOCK 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        CALL 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME goog 1 [source_file: expected0]<br>                STRING mixin 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>                STRING prototype 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>                STRING prototype 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        NEW 1 [source_file: expected0]<br>            NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>
+<br>
+<br>Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>    EXPR_RESULT 1 [source_file: testcode]<br>        ASSIGN 1 [source_file: testcode]<br>            GETPROP 1 [source_file: testcode]<br>                THIS 1 [source_file: testcode]<br>                STRING a 1 [source_file: testcode]<br>            OBJECTLIT 1 [source_file: testcode]<br>    VAR 1 [source_file: testcode]<br>        NAME b 1 [is_constant_name: 1] [source_file: testcode]<br>            OBJECTLIT 1 [source_file: testcode]<br>    EXPR_RESULT 1 [source_file: testcode]<br>        NEW 1 [source_file: testcode]<br>            NAME b 1 [is_constant_name: 1] [source_file: testcode]<br>
+<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1161)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.CompilerTestCase.testSame(CompilerTestCase.java:741)<br>	at com.google.javascript.jscomp.NameAnalyzerTest.testMixin4(NameAnalyzerTest.java:464)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testMixin5"></a>testMixin5</td><td>Failure</td><td>
+Expected: this.a={};var b={};var goog={};goog.mixin=function(){};goog.mixin(b.prototype,a.prototype);new b
+Result:   this.a={};var b={};new b
+Node tree inequality:
+Expected tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    THIS 1 [source_file: expected0]
+                    STRING a 1 [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        VAR 1 [source_file: expected0]
+            NAME b 1 [is_constant_name: 1] [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        VAR 1 [source_file: expected0]
+            NAME goog 1 [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME goog 1 [source_file: expected0]
+                    STRING mixin 1 [source_file: expected0]
+                FUNCTION  1 [source_file: expected0]
+                    NAME  1 [is_constant_name: 1] [source_file: expected0]
+                    PARAM_LIST 1 [source_file: expected0]
+                    BLOCK 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            CALL 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME goog 1 [source_file: expected0]
+                    STRING mixin 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME b 1 [is_constant_name: 1] [source_file: expected0]
+                    STRING prototype 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME a 1 [is_constant_name: 1] [source_file: expected0]
+                    STRING prototype 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            NEW 1 [source_file: expected0]
+                NAME b 1 [is_constant_name: 1] [source_file: expected0]
+
+
+Actual tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        EXPR_RESULT 1 [source_file: testcode]
+            ASSIGN 1 [source_file: testcode]
+                GETPROP 1 [source_file: testcode]
+                    THIS 1 [source_file: testcode]
+                    STRING a 1 [source_file: testcode]
+                OBJECTLIT 1 [source_file: testcode]
+        VAR 1 [source_file: testcode]
+            NAME b 1 [is_constant_name: 1] [source_file: testcode]
+                OBJECTLIT 1 [source_file: testcode]
+        EXPR_RESULT 1 [source_file: testcode]
+            NEW 1 [source_file: testcode]
+                NAME b 1 [is_constant_name: 1] [source_file: testcode]
+
+
+Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                THIS 1 [source_file: expected0]
+                STRING a 1 [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME b 1 [is_constant_name: 1] [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME goog 1 [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME goog 1 [source_file: expected0]
+                STRING mixin 1 [source_file: expected0]
+            FUNCTION  1 [source_file: expected0]
+                NAME  1 [is_constant_name: 1] [source_file: expected0]
+                PARAM_LIST 1 [source_file: expected0]
+                BLOCK 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME goog 1 [source_file: expected0]
+                STRING mixin 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME b 1 [is_constant_name: 1] [source_file: expected0]
+                STRING prototype 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME a 1 [is_constant_name: 1] [source_file: expected0]
+                STRING prototype 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        NEW 1 [source_file: expected0]
+            NAME b 1 [is_constant_name: 1] [source_file: expected0]
+
+
+Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            GETPROP 1 [source_file: testcode]
+                THIS 1 [source_file: testcode]
+                STRING a 1 [source_file: testcode]
+            OBJECTLIT 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME b 1 [is_constant_name: 1] [source_file: testcode]
+            OBJECTLIT 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        NEW 1 [source_file: testcode]
+            NAME b 1 [is_constant_name: 1] [source_file: testcode]
+<br>
+<br>
+<code>junit.framework.AssertionFailedError: <br>Expected: this.a={};var b={};var goog={};goog.mixin=function(){};goog.mixin(b.prototype,a.prototype);new b<br>Result:   this.a={};var b={};new b<br>Node tree inequality:<br>Expected tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            ASSIGN 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    THIS 1 [source_file: expected0]<br>                    STRING a 1 [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME goog 1 [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            ASSIGN 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME goog 1 [source_file: expected0]<br>                    STRING mixin 1 [source_file: expected0]<br>                FUNCTION  1 [source_file: expected0]<br>                    NAME  1 [is_constant_name: 1] [source_file: expected0]<br>                    PARAM_LIST 1 [source_file: expected0]<br>                    BLOCK 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            CALL 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME goog 1 [source_file: expected0]<br>                    STRING mixin 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>                    STRING prototype 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>                    STRING prototype 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            NEW 1 [source_file: expected0]<br>                NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>
+<br>
+<br>Actual tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>        EXPR_RESULT 1 [source_file: testcode]<br>            ASSIGN 1 [source_file: testcode]<br>                GETPROP 1 [source_file: testcode]<br>                    THIS 1 [source_file: testcode]<br>                    STRING a 1 [source_file: testcode]<br>                OBJECTLIT 1 [source_file: testcode]<br>        VAR 1 [source_file: testcode]<br>            NAME b 1 [is_constant_name: 1] [source_file: testcode]<br>                OBJECTLIT 1 [source_file: testcode]<br>        EXPR_RESULT 1 [source_file: testcode]<br>            NEW 1 [source_file: testcode]<br>                NAME b 1 [is_constant_name: 1] [source_file: testcode]<br>
+<br>
+<br>Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        ASSIGN 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                THIS 1 [source_file: expected0]<br>                STRING a 1 [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME goog 1 [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        ASSIGN 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME goog 1 [source_file: expected0]<br>                STRING mixin 1 [source_file: expected0]<br>            FUNCTION  1 [source_file: expected0]<br>                NAME  1 [is_constant_name: 1] [source_file: expected0]<br>                PARAM_LIST 1 [source_file: expected0]<br>                BLOCK 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        CALL 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME goog 1 [source_file: expected0]<br>                STRING mixin 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>                STRING prototype 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>                STRING prototype 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        NEW 1 [source_file: expected0]<br>            NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>
+<br>
+<br>Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>    EXPR_RESULT 1 [source_file: testcode]<br>        ASSIGN 1 [source_file: testcode]<br>            GETPROP 1 [source_file: testcode]<br>                THIS 1 [source_file: testcode]<br>                STRING a 1 [source_file: testcode]<br>            OBJECTLIT 1 [source_file: testcode]<br>    VAR 1 [source_file: testcode]<br>        NAME b 1 [is_constant_name: 1] [source_file: testcode]<br>            OBJECTLIT 1 [source_file: testcode]<br>    EXPR_RESULT 1 [source_file: testcode]<br>        NEW 1 [source_file: testcode]<br>            NAME b 1 [is_constant_name: 1] [source_file: testcode]<br>
+<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1161)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.NameAnalyzerTest.testMixin5(NameAnalyzerTest.java:471)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testMixin6"></a>testMixin6</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testMixin7"></a>testMixin7</td><td>Failure</td><td>
+Expected: this.a={};var b={};var goog={};goog.mixin=function(){};goog.mixin(b.prototype,a.prototype);new b
+Result:   this.a={};var b={};new b
+Node tree inequality:
+Expected tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    THIS 1 [source_file: expected0]
+                    STRING a 1 [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        VAR 1 [source_file: expected0]
+            NAME b 1 [is_constant_name: 1] [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        VAR 1 [source_file: expected0]
+            NAME goog 1 [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME goog 1 [source_file: expected0]
+                    STRING mixin 1 [source_file: expected0]
+                FUNCTION  1 [source_file: expected0]
+                    NAME  1 [is_constant_name: 1] [source_file: expected0]
+                    PARAM_LIST 1 [source_file: expected0]
+                    BLOCK 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            CALL 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME goog 1 [source_file: expected0]
+                    STRING mixin 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME b 1 [is_constant_name: 1] [source_file: expected0]
+                    STRING prototype 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME a 1 [is_constant_name: 1] [source_file: expected0]
+                    STRING prototype 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            NEW 1 [source_file: expected0]
+                NAME b 1 [is_constant_name: 1] [source_file: expected0]
+
+
+Actual tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        EXPR_RESULT 1 [source_file: testcode]
+            ASSIGN 1 [source_file: testcode]
+                GETPROP 1 [source_file: testcode]
+                    THIS 1 [source_file: testcode]
+                    STRING a 1 [source_file: testcode]
+                OBJECTLIT 1 [source_file: testcode]
+        VAR 1 [source_file: testcode]
+            NAME b 1 [is_constant_name: 1] [source_file: testcode]
+                OBJECTLIT 1 [source_file: testcode]
+        EXPR_RESULT 1 [source_file: testcode]
+            NEW 1 [source_file: testcode]
+                NAME b 1 [is_constant_name: 1] [source_file: testcode]
+
+
+Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                THIS 1 [source_file: expected0]
+                STRING a 1 [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME b 1 [is_constant_name: 1] [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME goog 1 [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME goog 1 [source_file: expected0]
+                STRING mixin 1 [source_file: expected0]
+            FUNCTION  1 [source_file: expected0]
+                NAME  1 [is_constant_name: 1] [source_file: expected0]
+                PARAM_LIST 1 [source_file: expected0]
+                BLOCK 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME goog 1 [source_file: expected0]
+                STRING mixin 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME b 1 [is_constant_name: 1] [source_file: expected0]
+                STRING prototype 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME a 1 [is_constant_name: 1] [source_file: expected0]
+                STRING prototype 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        NEW 1 [source_file: expected0]
+            NAME b 1 [is_constant_name: 1] [source_file: expected0]
+
+
+Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            GETPROP 1 [source_file: testcode]
+                THIS 1 [source_file: testcode]
+                STRING a 1 [source_file: testcode]
+            OBJECTLIT 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME b 1 [is_constant_name: 1] [source_file: testcode]
+            OBJECTLIT 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        NEW 1 [source_file: testcode]
+            NAME b 1 [is_constant_name: 1] [source_file: testcode]
+<br>
+<br>
+<code>junit.framework.AssertionFailedError: <br>Expected: this.a={};var b={};var goog={};goog.mixin=function(){};goog.mixin(b.prototype,a.prototype);new b<br>Result:   this.a={};var b={};new b<br>Node tree inequality:<br>Expected tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            ASSIGN 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    THIS 1 [source_file: expected0]<br>                    STRING a 1 [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME goog 1 [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            ASSIGN 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME goog 1 [source_file: expected0]<br>                    STRING mixin 1 [source_file: expected0]<br>                FUNCTION  1 [source_file: expected0]<br>                    NAME  1 [is_constant_name: 1] [source_file: expected0]<br>                    PARAM_LIST 1 [source_file: expected0]<br>                    BLOCK 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            CALL 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME goog 1 [source_file: expected0]<br>                    STRING mixin 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>                    STRING prototype 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>                    STRING prototype 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            NEW 1 [source_file: expected0]<br>                NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>
+<br>
+<br>Actual tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>        EXPR_RESULT 1 [source_file: testcode]<br>            ASSIGN 1 [source_file: testcode]<br>                GETPROP 1 [source_file: testcode]<br>                    THIS 1 [source_file: testcode]<br>                    STRING a 1 [source_file: testcode]<br>                OBJECTLIT 1 [source_file: testcode]<br>        VAR 1 [source_file: testcode]<br>            NAME b 1 [is_constant_name: 1] [source_file: testcode]<br>                OBJECTLIT 1 [source_file: testcode]<br>        EXPR_RESULT 1 [source_file: testcode]<br>            NEW 1 [source_file: testcode]<br>                NAME b 1 [is_constant_name: 1] [source_file: testcode]<br>
+<br>
+<br>Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        ASSIGN 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                THIS 1 [source_file: expected0]<br>                STRING a 1 [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME goog 1 [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        ASSIGN 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME goog 1 [source_file: expected0]<br>                STRING mixin 1 [source_file: expected0]<br>            FUNCTION  1 [source_file: expected0]<br>                NAME  1 [is_constant_name: 1] [source_file: expected0]<br>                PARAM_LIST 1 [source_file: expected0]<br>                BLOCK 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        CALL 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME goog 1 [source_file: expected0]<br>                STRING mixin 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>                STRING prototype 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>                STRING prototype 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        NEW 1 [source_file: expected0]<br>            NAME b 1 [is_constant_name: 1] [source_file: expected0]<br>
+<br>
+<br>Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>    EXPR_RESULT 1 [source_file: testcode]<br>        ASSIGN 1 [source_file: testcode]<br>            GETPROP 1 [source_file: testcode]<br>                THIS 1 [source_file: testcode]<br>                STRING a 1 [source_file: testcode]<br>            OBJECTLIT 1 [source_file: testcode]<br>    VAR 1 [source_file: testcode]<br>        NAME b 1 [is_constant_name: 1] [source_file: testcode]<br>            OBJECTLIT 1 [source_file: testcode]<br>    EXPR_RESULT 1 [source_file: testcode]<br>        NEW 1 [source_file: testcode]<br>            NAME b 1 [is_constant_name: 1] [source_file: testcode]<br>
+<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1161)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.NameAnalyzerTest.testMixin7(NameAnalyzerTest.java:491)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstants1"></a>testConstants1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConstants2"></a>testConstants2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExpressions1"></a>testExpressions1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExpressions2"></a>testExpressions2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExpressions3"></a>testExpressions3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetCreatingReference"></a>testSetCreatingReference</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAnonymous4"></a>testAnonymous4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAnonymous5"></a>testAnonymous5</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAnonymous6"></a>testAnonymous6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAnonymous7"></a>testAnonymous7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAnonymous8"></a>testAnonymous8</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAnonymous9"></a>testAnonymous9</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctions1"></a>testFunctions1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFunctions2"></a>testFunctions2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetElem1"></a>testGetElem1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetElem2"></a>testGetElem2</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetElem3"></a>testGetElem3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIf1"></a>testIf1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIf2"></a>testIf2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIf3"></a>testIf3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIf4"></a>testIf4</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIf4a"></a>testIf4a</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIf4b"></a>testIf4b</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIf4c"></a>testIf4c</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIf5"></a>testIf5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIfElse"></a>testIfElse</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testWhile"></a>testWhile</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDo"></a>testDo</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct1"></a>testSetterInForStruct1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct2"></a>testSetterInForStruct2</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct3"></a>testSetterInForStruct3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct4"></a>testSetterInForStruct4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct5"></a>testSetterInForStruct5</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct6"></a>testSetterInForStruct6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct7"></a>testSetterInForStruct7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct8"></a>testSetterInForStruct8</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct9"></a>testSetterInForStruct9</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct10"></a>testSetterInForStruct10</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct11"></a>testSetterInForStruct11</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct12"></a>testSetterInForStruct12</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct13"></a>testSetterInForStruct13</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct14"></a>testSetterInForStruct14</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct15"></a>testSetterInForStruct15</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForStruct16"></a>testSetterInForStruct16</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForIn1"></a>testSetterInForIn1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForIn2"></a>testSetterInForIn2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForIn3"></a>testSetterInForIn3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForIn4"></a>testSetterInForIn4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForIn5"></a>testSetterInForIn5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInForIn6"></a>testSetterInForIn6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInIfPredicate"></a>testSetterInIfPredicate</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInWhilePredicate"></a>testSetterInWhilePredicate</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInDoWhilePredicate"></a>testSetterInDoWhilePredicate</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetterInSwitchInput"></a>testSetterInSwitchInput</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testComplexAssigns"></a>testComplexAssigns</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNestedAssigns1"></a>testNestedAssigns1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNestedAssigns2"></a>testNestedAssigns2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testComplexNestedAssigns1"></a>testComplexNestedAssigns1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testComplexNestedAssigns2"></a>testComplexNestedAssigns2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testComplexNestedAssigns3"></a>testComplexNestedAssigns3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testComplexNestedAssigns4"></a>testComplexNestedAssigns4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnintendedUseOfInheritsInLocalScope1"></a>testUnintendedUseOfInheritsInLocalScope1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnintendedUseOfInheritsInLocalScope2"></a>testUnintendedUseOfInheritsInLocalScope2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnintendedUseOfInheritsInLocalScope3"></a>testUnintendedUseOfInheritsInLocalScope3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnintendedUseOfInheritsInLocalScope4"></a>testUnintendedUseOfInheritsInLocalScope4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPrototypePropertySetInLocalScope1"></a>testPrototypePropertySetInLocalScope1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPrototypePropertySetInLocalScope2"></a>testPrototypePropertySetInLocalScope2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPrototypePropertySetInLocalScope3"></a>testPrototypePropertySetInLocalScope3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPrototypePropertySetInLocalScope4"></a>testPrototypePropertySetInLocalScope4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPrototypePropertySetInLocalScope5"></a>testPrototypePropertySetInLocalScope5</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPrototypePropertySetInLocalScope6"></a>testPrototypePropertySetInLocalScope6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPrototypePropertySetInLocalScope7"></a>testPrototypePropertySetInLocalScope7</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRValueReference1"></a>testRValueReference1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRValueReference2"></a>testRValueReference2</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRValueReference3"></a>testRValueReference3</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRValueReference4"></a>testRValueReference4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRValueReference5"></a>testRValueReference5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRValueReference6"></a>testRValueReference6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnhandledTopNode"></a>testUnhandledTopNode</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPropertyDefinedInGlobalScope"></a>testPropertyDefinedInGlobalScope</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConditionallyDefinedFunction1"></a>testConditionallyDefinedFunction1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConditionallyDefinedFunction2"></a>testConditionallyDefinedFunction2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testConditionallyDefinedFunction3"></a>testConditionallyDefinedFunction3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetElemOnThis"></a>testGetElemOnThis</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveInstanceOfOnly"></a>testRemoveInstanceOfOnly</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveLocalScopedInstanceOfOnly"></a>testRemoveLocalScopedInstanceOfOnly</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveInstanceOfWithReferencedMethod"></a>testRemoveInstanceOfWithReferencedMethod</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDoNotChangeReferencedInstanceOf"></a>testDoNotChangeReferencedInstanceOf</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDoNotChangeReferencedLocalScopedInstanceOf"></a>testDoNotChangeReferencedLocalScopedInstanceOf</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDoNotChangeLocalScopeReferencedInstanceOf"></a>testDoNotChangeLocalScopeReferencedInstanceOf</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDoNotChangeLocalScopeReferencedLocalScopedInstanceOf"></a>testDoNotChangeLocalScopeReferencedLocalScopedInstanceOf</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDoNotChangeLocalScopeReferencedLocalScopedInstanceOf2"></a>testDoNotChangeLocalScopeReferencedLocalScopedInstanceOf2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDoNotChangeInstanceOfGetElem"></a>testDoNotChangeInstanceOfGetElem</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testWeirdnessOnLeftSideOfPrototype"></a>testWeirdnessOnLeftSideOfPrototype</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDoNotChangeInstanceOfGetprop"></a>testDoNotChangeInstanceOfGetprop</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testShortCircuit1"></a>testShortCircuit1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testShortCircuit2"></a>testShortCircuit2</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testShortCircuit3"></a>testShortCircuit3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testShortCircuit4"></a>testShortCircuit4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testShortCircuit5"></a>testShortCircuit5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testShortCircuit6"></a>testShortCircuit6</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testShortCircuit7"></a>testShortCircuit7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testShortCircuit8"></a>testShortCircuit8</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsReference1"></a>testRhsReference1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsReference2"></a>testRhsReference2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsReference3"></a>testRhsReference3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsReference4"></a>testRhsReference4</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsReference5"></a>testRhsReference5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsAssign1"></a>testRhsAssign1</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsAssign2"></a>testRhsAssign2</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsAssign3"></a>testRhsAssign3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsAssign4"></a>testRhsAssign4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsAssign5"></a>testRhsAssign5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsAssign6"></a>testRhsAssign6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsAssign7"></a>testRhsAssign7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsAssign8"></a>testRhsAssign8</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRhsAssign9"></a>testRhsAssign9</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithOr1"></a>testAssignWithOr1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithOr2"></a>testAssignWithOr2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithAnd1"></a>testAssignWithAnd1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithAnd2"></a>testAssignWithAnd2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithHook1"></a>testAssignWithHook1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithHook2"></a>testAssignWithHook2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithHook2a"></a>testAssignWithHook2a</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithHook3"></a>testAssignWithHook3</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithHook4"></a>testAssignWithHook4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithHook5"></a>testAssignWithHook5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithHook6"></a>testAssignWithHook6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithHook7"></a>testAssignWithHook7</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithHook8"></a>testAssignWithHook8</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithHook9"></a>testAssignWithHook9</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssign1"></a>testAssign1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssign2"></a>testAssign2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssign3"></a>testAssign3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssign4"></a>testAssign4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssign5"></a>testAssign5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithCall"></a>testAssignWithCall</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignWithCall2"></a>testAssignWithCall2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNestedAssign1"></a>testNestedAssign1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNestedAssign2"></a>testNestedAssign2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNestedAssign3"></a>testNestedAssign3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNestedAssign4"></a>testNestedAssign4</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNestedAssign5"></a>testNestedAssign5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNestedAssign15"></a>testNestedAssign15</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNestedAssign6"></a>testNestedAssign6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNestedAssign7"></a>testNestedAssign7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNestedAssign8"></a>testNestedAssign8</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain1"></a>testRefChain1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain2"></a>testRefChain2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain3"></a>testRefChain3</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain4"></a>testRefChain4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain5"></a>testRefChain5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain6"></a>testRefChain6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain7"></a>testRefChain7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain8"></a>testRefChain8</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain9"></a>testRefChain9</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain10"></a>testRefChain10</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain11"></a>testRefChain11</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain12"></a>testRefChain12</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain13"></a>testRefChain13</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain14"></a>testRefChain14</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain15"></a>testRefChain15</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain16"></a>testRefChain16</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain17"></a>testRefChain17</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain18"></a>testRefChain18</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain19"></a>testRefChain19</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain20"></a>testRefChain20</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain21"></a>testRefChain21</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain22"></a>testRefChain22</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRefChain23"></a>testRefChain23</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignmentWithComplexLhs"></a>testAssignmentWithComplexLhs</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignmentWithComplexLhs2"></a>testAssignmentWithComplexLhs2</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignmentWithComplexLhs3"></a>testAssignmentWithComplexLhs3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignmentWithComplexLhs4"></a>testAssignmentWithComplexLhs4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemovePrototypeDefinitionsOutsideGlobalScope1"></a>testNoRemovePrototypeDefinitionsOutsideGlobalScope1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemovePrototypeDefinitionsOutsideGlobalScope2"></a>testNoRemovePrototypeDefinitionsOutsideGlobalScope2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemovePrototypeDefinitionsOutsideGlobalScope4"></a>testNoRemovePrototypeDefinitionsOutsideGlobalScope4</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemovePrototypeDefinitionsOutsideGlobalScope5"></a>testNoRemovePrototypeDefinitionsOutsideGlobalScope5</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemovePrototypeDefinitionsInGlobalScope1"></a>testRemovePrototypeDefinitionsInGlobalScope1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemovePrototypeDefinitionsInGlobalScope2"></a>testRemovePrototypeDefinitionsInGlobalScope2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveLabeledStatment"></a>testRemoveLabeledStatment</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveLabeledStatment2"></a>testRemoveLabeledStatment2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveLabeledStatment3"></a>testRemoveLabeledStatment3</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveLabeledStatment4"></a>testRemoveLabeledStatment4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPreservePropertyMutationsToAlias1"></a>testPreservePropertyMutationsToAlias1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPreservePropertyMutationsToAlias2"></a>testPreservePropertyMutationsToAlias2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPreservePropertyMutationsToAlias3"></a>testPreservePropertyMutationsToAlias3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPreservePropertyMutationsToAlias4"></a>testPreservePropertyMutationsToAlias4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPreservePropertyMutationsToAlias5"></a>testPreservePropertyMutationsToAlias5</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPreservePropertyMutationsToAlias6"></a>testPreservePropertyMutationsToAlias6</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPreservePropertyMutationsToAlias7"></a>testPreservePropertyMutationsToAlias7</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testPreservePropertyMutationsToAlias8"></a>testPreservePropertyMutationsToAlias8</td><td>Failure</td><td>
+Expected: var a={};var c={};c.y=0;var goog={};goog.inherits(c,a);c
+Result:   var c={};c.y=0;c
+Node tree inequality:
+Expected tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        VAR 1 [source_file: expected0]
+            NAME a 1 [is_constant_name: 1] [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        VAR 1 [source_file: expected0]
+            NAME c 1 [is_constant_name: 1] [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME c 1 [is_constant_name: 1] [source_file: expected0]
+                    STRING y 1 [source_file: expected0]
+                NUMBER 0.0 1 [source_file: expected0]
+        VAR 1 [source_file: expected0]
+            NAME goog 1 [source_file: expected0]
+                OBJECTLIT 1 [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            CALL 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME goog 1 [source_file: expected0]
+                    STRING inherits 1 [source_file: expected0]
+                NAME c 1 [is_constant_name: 1] [source_file: expected0]
+                NAME a 1 [is_constant_name: 1] [source_file: expected0]
+        EXPR_RESULT 1 [source_file: expected0]
+            NAME c 1 [is_constant_name: 1] [source_file: expected0]
+
+
+Actual tree:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        VAR 1 [source_file: testcode]
+            NAME c 1 [is_constant_name: 1] [source_file: testcode]
+                OBJECTLIT 1 [source_file: testcode]
+        EXPR_RESULT 1 [source_file: testcode]
+            ASSIGN 1 [source_file: testcode]
+                GETPROP 1 [source_file: testcode]
+                    NAME c 1 [is_constant_name: 1] [source_file: testcode]
+                    STRING y 1 [source_file: testcode]
+                NUMBER 0.0 1 [source_file: testcode]
+        EXPR_RESULT 1 [source_file: testcode]
+            NAME c 1 [is_constant_name: 1] [source_file: testcode]
+
+
+Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [is_constant_name: 1] [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME c 1 [is_constant_name: 1] [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME c 1 [is_constant_name: 1] [source_file: expected0]
+                STRING y 1 [source_file: expected0]
+            NUMBER 0.0 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME goog 1 [source_file: expected0]
+            OBJECTLIT 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [source_file: expected0]
+            GETPROP 1 [source_file: expected0]
+                NAME goog 1 [source_file: expected0]
+                STRING inherits 1 [source_file: expected0]
+            NAME c 1 [is_constant_name: 1] [source_file: expected0]
+            NAME a 1 [is_constant_name: 1] [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        NAME c 1 [is_constant_name: 1] [source_file: expected0]
+
+
+Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+    VAR 1 [source_file: testcode]
+        NAME c 1 [is_constant_name: 1] [source_file: testcode]
+            OBJECTLIT 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            GETPROP 1 [source_file: testcode]
+                NAME c 1 [is_constant_name: 1] [source_file: testcode]
+                STRING y 1 [source_file: testcode]
+            NUMBER 0.0 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        NAME c 1 [is_constant_name: 1] [source_file: testcode]
+<br>
+<br>
+<code>junit.framework.AssertionFailedError: <br>Expected: var a={};var c={};c.y=0;var goog={};goog.inherits(c,a);c<br>Result:   var c={};c.y=0;c<br>Node tree inequality:<br>Expected tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME c 1 [is_constant_name: 1] [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            ASSIGN 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME c 1 [is_constant_name: 1] [source_file: expected0]<br>                    STRING y 1 [source_file: expected0]<br>                NUMBER 0.0 1 [source_file: expected0]<br>        VAR 1 [source_file: expected0]<br>            NAME goog 1 [source_file: expected0]<br>                OBJECTLIT 1 [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            CALL 1 [source_file: expected0]<br>                GETPROP 1 [source_file: expected0]<br>                    NAME goog 1 [source_file: expected0]<br>                    STRING inherits 1 [source_file: expected0]<br>                NAME c 1 [is_constant_name: 1] [source_file: expected0]<br>                NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>        EXPR_RESULT 1 [source_file: expected0]<br>            NAME c 1 [is_constant_name: 1] [source_file: expected0]<br>
+<br>
+<br>Actual tree:<br>BLOCK [synthetic: 1]<br>    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>        VAR 1 [source_file: testcode]<br>            NAME c 1 [is_constant_name: 1] [source_file: testcode]<br>                OBJECTLIT 1 [source_file: testcode]<br>        EXPR_RESULT 1 [source_file: testcode]<br>            ASSIGN 1 [source_file: testcode]<br>                GETPROP 1 [source_file: testcode]<br>                    NAME c 1 [is_constant_name: 1] [source_file: testcode]<br>                    STRING y 1 [source_file: testcode]<br>                NUMBER 0.0 1 [source_file: testcode]<br>        EXPR_RESULT 1 [source_file: testcode]<br>            NAME c 1 [is_constant_name: 1] [source_file: testcode]<br>
+<br>
+<br>Expected subtree: SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME c 1 [is_constant_name: 1] [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        ASSIGN 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME c 1 [is_constant_name: 1] [source_file: expected0]<br>                STRING y 1 [source_file: expected0]<br>            NUMBER 0.0 1 [source_file: expected0]<br>    VAR 1 [source_file: expected0]<br>        NAME goog 1 [source_file: expected0]<br>            OBJECTLIT 1 [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        CALL 1 [source_file: expected0]<br>            GETPROP 1 [source_file: expected0]<br>                NAME goog 1 [source_file: expected0]<br>                STRING inherits 1 [source_file: expected0]<br>            NAME c 1 [is_constant_name: 1] [source_file: expected0]<br>            NAME a 1 [is_constant_name: 1] [source_file: expected0]<br>    EXPR_RESULT 1 [source_file: expected0]<br>        NAME c 1 [is_constant_name: 1] [source_file: expected0]<br>
+<br>
+<br>Actual subtree: SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]<br>    VAR 1 [source_file: testcode]<br>        NAME c 1 [is_constant_name: 1] [source_file: testcode]<br>            OBJECTLIT 1 [source_file: testcode]<br>    EXPR_RESULT 1 [source_file: testcode]<br>        ASSIGN 1 [source_file: testcode]<br>            GETPROP 1 [source_file: testcode]<br>                NAME c 1 [is_constant_name: 1] [source_file: testcode]<br>                STRING y 1 [source_file: testcode]<br>            NUMBER 0.0 1 [source_file: testcode]<br>    EXPR_RESULT 1 [source_file: testcode]<br>        NAME c 1 [is_constant_name: 1] [source_file: testcode]<br>
+<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:1161)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:935)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:543)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:509)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:450)<br>	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:408)<br>	at com.google.javascript.jscomp.NameAnalyzerTest.testPreservePropertyMutationsToAlias8(NameAnalyzerTest.java:1557)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPreservePropertyMutationsToAlias9"></a>testPreservePropertyMutationsToAlias9</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveAlias"></a>testRemoveAlias</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSingletonGetter2"></a>testSingletonGetter2</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSingletonGetter3"></a>testSingletonGetter3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveWindowPropertyAlias1"></a>testNoRemoveWindowPropertyAlias1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveWindowPropertyAlias2"></a>testNoRemoveWindowPropertyAlias2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveWindowPropertyAlias3"></a>testNoRemoveWindowPropertyAlias3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveWindowPropertyAlias4"></a>testNoRemoveWindowPropertyAlias4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveWindowPropertyAlias4a"></a>testNoRemoveWindowPropertyAlias4a</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveWindowPropertyAlias5"></a>testNoRemoveWindowPropertyAlias5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveWindowPropertyAlias5a"></a>testNoRemoveWindowPropertyAlias5a</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveWindowPropertyAlias6"></a>testNoRemoveWindowPropertyAlias6</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveWindowPropertyAlias6a"></a>testNoRemoveWindowPropertyAlias6a</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveWindowPropertyAlias7"></a>testNoRemoveWindowPropertyAlias7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveWindowPropertyAlias7a"></a>testNoRemoveWindowPropertyAlias7a</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveAlias0"></a>testNoRemoveAlias0</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveAlias1"></a>testNoRemoveAlias1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveAlias2"></a>testNoRemoveAlias2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveAlias3"></a>testNoRemoveAlias3</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveAliasOfExternal0"></a>testNoRemoveAliasOfExternal0</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveAliasOfExternal1"></a>testNoRemoveAliasOfExternal1</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveAliasOfExternal2"></a>testNoRemoveAliasOfExternal2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveThrowReference1"></a>testNoRemoveThrowReference1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoRemoveThrowReference2"></a>testNoRemoveThrowReference2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testClassDefinedInObjectLit1"></a>testClassDefinedInObjectLit1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testClassDefinedInObjectLit2"></a>testClassDefinedInObjectLit2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testClassDefinedInObjectLit3"></a>testClassDefinedInObjectLit3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testClassDefinedInObjectLit4"></a>testClassDefinedInObjectLit4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testVarReferencedInClassDefinedInObjectLit1"></a>testVarReferencedInClassDefinedInObjectLit1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testVarReferencedInClassDefinedInObjectLit2"></a>testVarReferencedInClassDefinedInObjectLit2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testArrayExt"></a>testArrayExt</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testArrayAliasExt"></a>testArrayAliasExt</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExternalAliasInstanceof1"></a>testExternalAliasInstanceof1</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExternalAliasInstanceof2"></a>testExternalAliasInstanceof2</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExternalAliasInstanceof3"></a>testExternalAliasInstanceof3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAliasInstanceof4"></a>testAliasInstanceof4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAliasInstanceof5"></a>testAliasInstanceof5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBrokenNamespaceWithPrototypeAssignment"></a>testBrokenNamespaceWithPrototypeAssignment</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemovePrototypeAliases"></a>testRemovePrototypeAliases</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue838a"></a>testIssue838a</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue838b"></a>testIssue838b</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue874a"></a>testIssue874a</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue874b"></a>testIssue874b</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue874c"></a>testIssue874c</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue874d"></a>testIssue874d</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue874e"></a>testIssue874e</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBug6575051"></a>testBug6575051</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('com.google.javascript.jscomp.NameAnalyzerTest');">
+                    Properties &raquo;
+                </a>
+</div>
+</body>
+</html>

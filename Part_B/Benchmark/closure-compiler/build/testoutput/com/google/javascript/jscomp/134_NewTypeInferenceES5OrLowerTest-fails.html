@@ -1,0 +1,1303 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest'] = new Array();
+    
+        cur['ant.build.javac.source'] = '1.7';
+    
+        cur['ant.build.javac.target'] = '1.7';
+    
+        cur['ant.core.lib'] = '/Users/linmanna/ant/lib/ant.jar';
+    
+        cur['ant.file'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml';
+    
+        cur['ant.file.compiler'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml';
+    
+        cur['ant.file.type'] = 'file';
+    
+        cur['ant.file.type.compiler'] = 'file';
+    
+        cur['ant.home'] = '//Users/linmanna/ant';
+    
+        cur['ant.java.version'] = '1.7';
+    
+        cur['ant.library.dir'] = '//Users/linmanna/ant/lib';
+    
+        cur['ant.project.default-target'] = 'jar';
+    
+        cur['ant.project.invoked-targets'] = 'clean,compile,compile-tests,test';
+    
+        cur['ant.project.name'] = 'compiler';
+    
+        cur['ant.version'] = 'Apache Ant(TM) version 1.9.4 compiled on April 29 2014';
+    
+        cur['awt.toolkit'] = 'sun.lwawt.macosx.LWCToolkit';
+    
+        cur['basedir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler';
+    
+        cur['build.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build';
+    
+        cur['build.relVersion'] = '00e3533';
+    
+        cur['buildlib.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/lib';
+    
+        cur['classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes';
+    
+        cur['closure.build.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build';
+    
+        cur['compiler-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/compiler.jar';
+    
+        cur['externs.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/externs';
+    
+        cur['file.encoding'] = 'UTF-8';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '/';
+    
+        cur['ftp.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['gen.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/gen';
+    
+        cur['gopherProxySet'] = 'false';
+    
+        cur['http.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.CGraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.lwawt.macosx.CPrinterJob';
+    
+        cur['java.class.path'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant-launcher.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/args4j.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/gson.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/guava.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/jsr305.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/junit.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/protobuf-java.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/truth.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test:/Users/linmanna/ant/lib/ant-launcher.jar:/Users/linmanna/ant/lib/ant.jar:/Users/linmanna/ant/lib/ant-junit.jar:/Users/linmanna/ant/lib/ant-junit4.jar';
+    
+        cur['java.class.version'] = '51.0';
+    
+        cur['java.endorsed.dirs'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed';
+    
+        cur['java.ext.dirs'] = '/Users/linmanna/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java';
+    
+        cur['java.home'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre';
+    
+        cur['java.io.tmpdir'] = '/var/folders/_p/3swdt4h96dn79vyt21dtny9h0000gn/T/';
+    
+        cur['java.library.path'] = '/Users/linmanna/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.7.0_75-b13';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '1.7';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'http://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://bugreport.sun.com/bugreport/';
+    
+        cur['java.version'] = '1.7.0_75';
+    
+        cur['java.vm.info'] = 'mixed mode';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '1.7';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '24.75-b04';
+    
+        cur['javac.debug'] = 'on';
+    
+        cur['javadoc.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/javadoc';
+    
+        cur['lib.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib';
+    
+        cur['line.separator'] = '\n';
+    
+        cur['maven-repository-id'] = 'sonatype-nexus-staging';
+    
+        cur['maven-repository-url'] = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/';
+    
+        cur['os.arch'] = 'x86_64';
+    
+        cur['os.name'] = 'Mac OS X';
+    
+        cur['os.version'] = '10.9.5';
+    
+        cur['path.separator'] = ':';
+    
+        cur['protoc.executable'] = 'protoc';
+    
+        cur['refasterjs.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/refactoring';
+    
+        cur['refasterjs-classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs-classes';
+    
+        cur['refasterjs-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs.jar';
+    
+        cur['socksNonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['src.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.class.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes';
+    
+        cur['sun.boot.library.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = '';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeBig';
+    
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junittestcases4622356093930181862.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junitvmwatcher882389895192408063.properties propsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junit6374663990081372210.properties';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'UTF-8';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = 'unknown';
+    
+        cur['test.class'] = '*Test';
+    
+        cur['test.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/test';
+    
+        cur['test.fork'] = 'true';
+    
+        cur['test.method'] = '';
+    
+        cur['testClasses.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test';
+    
+        cur['tools.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/tools';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler';
+    
+        cur['user.home'] = '/Users/linmanna';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'linmanna';
+    
+        cur['user.timezone'] = '';
+    
+        cur['webservice.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/jscomp/webservice';
+    
+        cur['webservice-classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice-classes';
+    
+        cur['webservice-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice.jar';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Error">
+<td><a title="Display all tests" href="134_NewTypeInferenceES5OrLowerTest.html">NewTypeInferenceES5OrLowerTest</a></td><td><a title="Display all tests" href="134_NewTypeInferenceES5OrLowerTest.html">261</a></td><td><a title="Display only errors" href="134_NewTypeInferenceES5OrLowerTest-errors.html">6</a></td><td><a title="Display only failures" href="134_NewTypeInferenceES5OrLowerTest-fails.html">67</a></td><td>0</td><td>3.444</td><td>2015-03-09T03:17:29</td><td>cs-210-206.cs.ucla.edu</td>
+</tr>
+</table>
+<h2>Failures</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testForIn"></a>testForIn</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 11, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 11, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testForIn(NewTypeInferenceES5OrLowerTest.java:4781)<br>
+</code></td><td>0.006</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testDontCallMethodAsFunction"></a>testDontCallMethodAsFunction</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 4 : 4]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 4 : 4]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testDontCallMethodAsFunction(NewTypeInferenceES5OrLowerTest.java:183)<br>
+</code></td><td>0.012</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testForLoopInference"></a>testForLoopInference</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.
+expected : {2}
+found    : {3}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 2, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.
+left side  : number
+right side : string
+ at [testcode] line 3 : 2, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function .
+expected : string
+found    : number
+ at [testcode] line 6 : 30]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.<br>expected : {2}<br>found    : {3}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 2, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.<br>left side  : number<br>right side : string<br> at [testcode] line 3 : 2, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function .<br>expected : string<br>found    : number<br> at [testcode] line 6 : 30]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testForLoopInference(NewTypeInferenceES5OrLowerTest.java:347)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testConditionalSpecialization"></a>testConditionalSpecialization</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 2, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 5 : 2, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 8 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;4&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 2, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 5 : 2, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 8 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;4&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testConditionalSpecialization(NewTypeInferenceES5OrLowerTest.java:381)<br>
+</code></td><td>0.006</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testAndOrConditionalSpecialization"></a>testAndOrConditionalSpecialization</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 2, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 5 : 2, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 8 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;4&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 2, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 5 : 2, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 8 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;4&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testAndOrConditionalSpecialization(NewTypeInferenceES5OrLowerTest.java:427)<br>
+</code></td><td>0.006</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testLoopConditionSpecialization"></a>testLoopConditionSpecialization</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 4]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 4]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testLoopConditionSpecialization(NewTypeInferenceES5OrLowerTest.java:521)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testVarDecls"></a>testVarDecls</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_MULTIPLE_VAR_DEF: declaration of multiple variables with shared type information]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_MULTIPLE_VAR_DEF. declaration of multiple variables with shared type information at [testcode] line 1 : 22, JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 26, JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 29]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_MULTIPLE_VAR_DEF: declaration of multiple variables with shared type information]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_MULTIPLE_VAR_DEF. declaration of multiple variables with shared type information at [testcode] line 1 : 22, JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 26, JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 29]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testVarDecls(NewTypeInferenceES5OrLowerTest.java:542)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testBadAssignment"></a>testBadAssignment</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.
+left side  : {0}
+right side : {1}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 26, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 1 : 29, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.
+left side  : string
+right side : number
+ at [testcode] line 1 : 29]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.<br>left side  : {0}<br>right side : {1}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 26, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 1 : 29, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.<br>left side  : string<br>right side : number<br> at [testcode] line 1 : 29]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testBadAssignment(NewTypeInferenceES5OrLowerTest.java:560)<br>
+</code></td><td>0.006</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testBadArithmetic"></a>testBadArithmetic</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_OPERAND_TYPE: Invalid type(s) for operator {0}.
+expected : {1}
+found    : {2}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 17, JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator SUB.
+expected : number
+found    : undefined
+ at [testcode] line 1 : 28]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_OPERAND_TYPE: Invalid type(s) for operator {0}.<br>expected : {1}<br>found    : {2}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 17, JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator SUB.<br>expected : number<br>found    : undefined<br> at [testcode] line 1 : 28]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testBadArithmetic(NewTypeInferenceES5OrLowerTest.java:578)<br>
+</code></td><td>0.035</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testTypeAfterIF"></a>testTypeAfterIF</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_OPERAND_TYPE: Invalid type(s) for operator {0}.
+expected : {1}
+found    : {2}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 4, JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator SUB.
+expected : number
+found    : number|string
+ at [testcode] line 1 : 26]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_OPERAND_TYPE: Invalid type(s) for operator {0}.<br>expected : {1}<br>found    : {2}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 4, JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator SUB.<br>expected : number<br>found    : number|string<br> at [testcode] line 1 : 26]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testTypeAfterIF(NewTypeInferenceES5OrLowerTest.java:590)<br>
+</code></td><td>0.005</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testSimpleBwdPropagation"></a>testSimpleBwdPropagation</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.
+expected : {2}
+found    : {3}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 20, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function f.
+expected : number
+found    : string
+ at [testcode] line 2 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.<br>expected : {2}<br>found    : {3}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 20, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function f.<br>expected : number<br>found    : string<br> at [testcode] line 2 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testSimpleBwdPropagation(NewTypeInferenceES5OrLowerTest.java:608)<br>
+</code></td><td>0.013</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testSimpleReturn"></a>testSimpleReturn</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.
+left side  : {0}
+right side : {1}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 20, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.
+left side  : undefined
+right side : number
+ at [testcode] line 1 : 70]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.<br>left side  : {0}<br>right side : {1}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 20, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.<br>left side  : undefined<br>right side : number<br> at [testcode] line 1 : 70]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testSimpleReturn(NewTypeInferenceES5OrLowerTest.java:653)<br>
+</code></td><td>0.033</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testComparisons"></a>testComparisons</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_OPERAND_TYPE: Invalid type(s) for operator {0}.
+expected : {1}
+found    : {2}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 15, JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator LT.
+expected : matching scalar types
+found    : number, number|string
+ at [testcode] line 1 : 37]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_OPERAND_TYPE: Invalid type(s) for operator {0}.<br>expected : {1}<br>found    : {2}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 15, JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator LT.<br>expected : matching scalar types<br>found    : number, number|string<br> at [testcode] line 1 : 37]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testComparisons(NewTypeInferenceES5OrLowerTest.java:669)<br>
+</code></td><td>0.027</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testFunctionJsdoc"></a>testFunctionJsdoc</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 4 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 7 : 4]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 4 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 7 : 4]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testFunctionJsdoc(NewTypeInferenceES5OrLowerTest.java:772)<br>
+</code></td><td>0.102</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testFunctionJoin"></a>testFunctionJoin</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 8 : 6]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 8 : 6]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testFunctionJoin(NewTypeInferenceES5OrLowerTest.java:834)<br>
+</code></td><td>0.005</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testTopInitialization"></a>testTopInitialization</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 20]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 20]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testTopInitialization(NewTypeInferenceES5OrLowerTest.java:903)<br>
+</code></td><td>0.006</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testFunctionsInsideFunctions"></a>testFunctionsInsideFunctions</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.
+left side  : {0}
+right side : {1}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 18, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 2 : 15, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.
+left side  : number
+right side : string
+ at [testcode] line 2 : 15]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.<br>left side  : {0}<br>right side : {1}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 18, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 2 : 15, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.<br>left side  : number<br>right side : string<br> at [testcode] line 2 : 15]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testFunctionsInsideFunctions(NewTypeInferenceES5OrLowerTest.java:1090)<br>
+</code></td><td>0.010</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testCrossScopeWarnings"></a>testCrossScopeWarnings</td><td>Failure</td><td>Wrong warning type
+Expected warning of type:
+================================================================
+[JSC_CROSS_SCOPE_GOTCHA: You thought we werent going to notice? Guess again.
+Variable '{'0} typed inconsistently across scopes.
+In outer scope : '{'1}
+In inner scope : '{'2}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator LT.
+expected : matching scalar types
+found    : number, string
+ at [testcode] line 2 : 2]
+----------------------------------------------------------------
+<br>
+<br>
+<code>junit.framework.AssertionFailedError: Wrong warning type<br>Expected warning of type:<br>================================================================<br>[JSC_CROSS_SCOPE_GOTCHA: You thought we werent going to notice? Guess again.<br>Variable '{'0} typed inconsistently across scopes.<br>In outer scope : '{'1}<br>In inner scope : '{'2}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator LT.<br>expected : matching scalar types<br>found    : number, string<br> at [testcode] line 2 : 2]<br>----------------------------------------------------------------<br>
+<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:175)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testCrossScopeWarnings(NewTypeInferenceES5OrLowerTest.java:1102)<br>
+</code></td><td>0.005</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testTrickyUnknownBehavior"></a>testTrickyUnknownBehavior</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testTrickyUnknownBehavior(NewTypeInferenceES5OrLowerTest.java:1141)<br>
+</code></td><td>0.005</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testDeclaredFunctionTypesInFormals"></a>testDeclaredFunctionTypesInFormals</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_OPERAND_TYPE: Invalid type(s) for operator {0}.
+expected : {1}
+found    : {2}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6, JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator LT.
+expected : matching scalar types
+found    : number, string
+ at [testcode] line 2 : 22]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_OPERAND_TYPE: Invalid type(s) for operator {0}.<br>expected : {1}<br>found    : {2}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6, JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator LT.<br>expected : matching scalar types<br>found    : number, string<br> at [testcode] line 2 : 22]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testDeclaredFunctionTypesInFormals(NewTypeInferenceES5OrLowerTest.java:1199)<br>
+</code></td><td>0.018</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testLooseFunctions"></a>testLooseFunctions</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.
+expected : {2}
+found    : {3}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 6 : 6, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function f.
+expected : function(number):number (loose)
+found    : function(number):string
+ at [testcode] line 8 : 3]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.<br>expected : {2}<br>found    : {3}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 6 : 6, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function f.<br>expected : function(number):number (loose)<br>found    : function(number):string<br> at [testcode] line 8 : 3]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testLooseFunctions(NewTypeInferenceES5OrLowerTest.java:1458)<br>
+</code></td><td>0.057</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testBackwardForwardPathologicalCase2"></a>testBackwardForwardPathologicalCase2</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_OPERAND_TYPE: Invalid type(s) for operator {0}.
+expected : {1}
+found    : {2}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6, JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator LT.
+expected : matching scalar types
+found    : number, string
+ at [testcode] line 3 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_OPERAND_TYPE: Invalid type(s) for operator {0}.<br>expected : {1}<br>found    : {2}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6, JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator LT.<br>expected : matching scalar types<br>found    : number, string<br> at [testcode] line 3 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testBackwardForwardPathologicalCase2(NewTypeInferenceES5OrLowerTest.java:1489)<br>
+</code></td><td>0.005</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGetpropOnNonObjects"></a>testGetpropOnNonObjects</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_PROPERTY_ACCESS_ON_NONOBJECT: Cannot access property {0} of non-object type {1}.]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 21, JSC_PROPERTY_ACCESS_ON_NONOBJECT. Cannot access property foo of non-object type undefined. at [testcode] line 2 : 0]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_PROPERTY_ACCESS_ON_NONOBJECT: Cannot access property {0} of non-object type {1}.]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 21, JSC_PROPERTY_ACCESS_ON_NONOBJECT. Cannot access property foo of non-object type undefined. at [testcode] line 2 : 0]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testGetpropOnNonObjects(NewTypeInferenceES5OrLowerTest.java:1552)<br>
+</code></td><td>0.007</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testNonexistentProperty"></a>testNonexistentProperty</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INEXISTENT_PROPERTY: Property {0} never defined on {1}]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 16, JSC_INEXISTENT_PROPERTY. Property a never defined on {} at [testcode] line 1 : 20]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INEXISTENT_PROPERTY: Property {0} never defined on {1}]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 16, JSC_INEXISTENT_PROPERTY. Property a never defined on {} at [testcode] line 1 : 20]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testNonexistentProperty(NewTypeInferenceES5OrLowerTest.java:1639)<br>
+</code></td><td>0.014</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testNullableDereference"></a>testNullableDereference</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_NULLABLE_DEREFERENCE: Attempt to use nullable type {0}.]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 4, JSC_NULLABLE_DEREFERENCE. Attempt to use nullable type function():undefined|null. at [testcode] line 1 : 34]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_NULLABLE_DEREFERENCE: Attempt to use nullable type {0}.]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 4, JSC_NULLABLE_DEREFERENCE. Attempt to use nullable type function():undefined|null. at [testcode] line 1 : 34]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testNullableDereference(NewTypeInferenceES5OrLowerTest.java:1667)<br>
+</code></td><td>0.018</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testDontInferBottom"></a>testDontInferBottom</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.
+left side  : {0}
+right side : {1}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 34, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 1 : 38, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.
+left side  : string
+right side : number
+ at [testcode] line 1 : 38]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.<br>left side  : {0}<br>right side : {1}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 34, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 1 : 38, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.<br>left side  : string<br>right side : number<br> at [testcode] line 1 : 38]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testDontInferBottom(NewTypeInferenceES5OrLowerTest.java:1771)<br>
+</code></td><td>0.005</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testAssignToInvalidObject"></a>testAssignToInvalidObject</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_PROPERTY_ACCESS_ON_NONOBJECT: Cannot access property {0} of non-object type {1}.]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_PROPERTY_ACCESS_ON_NONOBJECT. Cannot access property foo of non-object type undefined. at [testcode] line 1 : 0, JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 15]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_PROPERTY_ACCESS_ON_NONOBJECT: Cannot access property {0} of non-object type {1}.]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_PROPERTY_ACCESS_ON_NONOBJECT. Cannot access property foo of non-object type undefined. at [testcode] line 1 : 0, JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 15]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testAssignToInvalidObject(NewTypeInferenceES5OrLowerTest.java:1778)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testDeclaredRecordTypes"></a>testDeclaredRecordTypes</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 14, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 30]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 14, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 30]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testDeclaredRecordTypes(NewTypeInferenceES5OrLowerTest.java:1914)<br>
+</code></td><td>0.047</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testNestedLooseObjects"></a>testNestedLooseObjects</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.
+expected : {2}
+found    : {3}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 3, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function f.
+expected : struct{x:number} (loose)
+found    : {x:string}
+ at [testcode] line 6 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.<br>expected : {2}<br>found    : {3}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 3, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function f.<br>expected : struct{x:number} (loose)<br>found    : {x:string}<br> at [testcode] line 6 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testNestedLooseObjects(NewTypeInferenceES5OrLowerTest.java:2079)<br>
+</code></td><td>0.021</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testUnionOfFunctionAndNumber"></a>testUnionOfFunctionAndNumber</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_NOT_FUNCTION_TYPE: {0} expressions are not callable, JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.
+expected : {2}
+found    : {3}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 4, JSC_NOT_FUNCTION_TYPE. function(number):undefined|number expressions are not callable at [testcode] line 1 : 48, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function x.
+expected : number
+found    : string
+ at [testcode] line 1 : 50]
+----------------------------------------------------------------
+Warning count expected:&lt;2&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_NOT_FUNCTION_TYPE: {0} expressions are not callable, JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.<br>expected : {2}<br>found    : {3}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 4, JSC_NOT_FUNCTION_TYPE. function(number):undefined|number expressions are not callable at [testcode] line 1 : 48, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function x.<br>expected : number<br>found    : string<br> at [testcode] line 1 : 50]<br>----------------------------------------------------------------<br>Warning count expected:&lt;2&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testUnionOfFunctionAndNumber(NewTypeInferenceES5OrLowerTest.java:2210)<br>
+</code></td><td>0.009</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testAnonymousNominalType"></a>testAnonymousNominalType</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_ANONYMOUS_NOMINAL_TYPE: Must specify a name when defining a class or interface.]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_ANONYMOUS_NOMINAL_TYPE. Must specify a name when defining a class or interface. at [testcode] line 4 : 10, JSC_INEXISTENT_PROPERTY. Property Foo never defined on {} at [testcode] line 5 : 5]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_ANONYMOUS_NOMINAL_TYPE: Must specify a name when defining a class or interface.]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_ANONYMOUS_NOMINAL_TYPE. Must specify a name when defining a class or interface. at [testcode] line 4 : 10, JSC_INEXISTENT_PROPERTY. Property Foo never defined on {} at [testcode] line 5 : 5]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testAnonymousNominalType(NewTypeInferenceES5OrLowerTest.java:2223)<br>
+</code></td><td>0.007</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testComma"></a>testComma</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.
+left side  : {0}
+right side : {1}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 1 : 30, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.
+left side  : string
+right side : number
+ at [testcode] line 1 : 30]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.<br>left side  : {0}<br>right side : {1}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 1 : 30, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.<br>left side  : string<br>right side : number<br> at [testcode] line 1 : 30]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testComma(NewTypeInferenceES5OrLowerTest.java:2271)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testTypeof"></a>testTypeof</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.
+expected : {2}
+found    : {3}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function f.
+expected : string
+found    : number
+ at [testcode] line 5 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.<br>expected : {2}<br>found    : {3}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function f.<br>expected : string<br>found    : number<br> at [testcode] line 5 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testTypeof(NewTypeInferenceES5OrLowerTest.java:2287)<br>
+</code></td><td>0.007</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testAssignWithOp"></a>testAssignWithOp</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.
+expected : {2}
+found    : {3}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 7, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function f.
+expected : number
+found    : string
+ at [testcode] line 5 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.<br>expected : {2}<br>found    : {3}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 3 : 7, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function f.<br>expected : number<br>found    : string<br> at [testcode] line 5 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testAssignWithOp(NewTypeInferenceES5OrLowerTest.java:2458)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testTypeTighteningHeuristic"></a>testTypeTighteningHeuristic</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_OPERAND_TYPE: Invalid type(s) for operator {0}.
+expected : {1}
+found    : {2}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 4 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 6 : 4, JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator SUB.
+expected : number
+found    : number|string
+ at [testcode] line 8 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;4&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_OPERAND_TYPE: Invalid type(s) for operator {0}.<br>expected : {1}<br>found    : {2}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 4 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 6 : 4, JSC_INVALID_OPERAND_TYPE. Invalid type(s) for operator SUB.<br>expected : number<br>found    : number|string<br> at [testcode] line 8 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;4&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testTypeTighteningHeuristic(NewTypeInferenceES5OrLowerTest.java:2985)<br>
+</code></td><td>0.010</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testNonRequiredArguments"></a>testNonRequiredArguments</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 4 : 13, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 6 : 4]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 4 : 13, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 6 : 4]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testNonRequiredArguments(NewTypeInferenceES5OrLowerTest.java:3008)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testInvalidTypeReference"></a>testInvalidTypeReference</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_UNRECOGNIZED_TYPE_NAME: Type annotation references non-existent type {0}.]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_UNRECOGNIZED_TYPE_NAME. Type annotation references non-existent type gibberish. at [testcode] line 1 : 11, JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 29]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_UNRECOGNIZED_TYPE_NAME: Type annotation references non-existent type {0}.]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_UNRECOGNIZED_TYPE_NAME. Type annotation references non-existent type gibberish. at [testcode] line 1 : 11, JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 29]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testInvalidTypeReference(NewTypeInferenceES5OrLowerTest.java:3673)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testNot"></a>testNot</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testNot(NewTypeInferenceES5OrLowerTest.java:4045)<br>
+</code></td><td>0.006</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testDontLoosenNominalTypes"></a>testDontLoosenNominalTypes</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 44]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 44]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testDontLoosenNominalTypes(NewTypeInferenceES5OrLowerTest.java:4575)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testAssignAdd"></a>testAssignAdd</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.
+expected : {2}
+found    : {3}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 4 : 2, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function f.
+expected : number
+found    : string
+ at [testcode] line 6 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.<br>expected : {2}<br>found    : {3}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 4 : 2, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function f.<br>expected : number<br>found    : string<br> at [testcode] line 6 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testAssignAdd(NewTypeInferenceES5OrLowerTest.java:4614)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testQuestionableUnionJsDoc"></a>testQuestionableUnionJsDoc</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_BAD_JSDOC_ANNOTATION: Bad JSDoc annotation. {0}]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_BAD_JSDOC_ANNOTATION. Bad JSDoc annotation. This union type is equivalent to '?'. at [testcode] line 1 : 18, JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 28]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_BAD_JSDOC_ANNOTATION: Bad JSDoc annotation. {0}]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_BAD_JSDOC_ANNOTATION. Bad JSDoc annotation. This union type is equivalent to '?'. at [testcode] line 1 : 18, JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 28]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testQuestionableUnionJsDoc(NewTypeInferenceES5OrLowerTest.java:4954)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGenericsJsdocParsing"></a>testGenericsJsdocParsing</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 33]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 33]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testGenericsJsdocParsing(NewTypeInferenceES5OrLowerTest.java:4997)<br>
+</code></td><td>0.012</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testUnifyObjects"></a>testUnifyObjects</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.
+expected : {2}
+found    : {3}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 8 : 6, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function g.
+expected : number|string
+found    : {}
+ at [testcode] line 11 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.<br>expected : {2}<br>found    : {3}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 8 : 6, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function g.<br>expected : number|string<br>found    : {}<br> at [testcode] line 11 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testUnifyObjects(NewTypeInferenceES5OrLowerTest.java:5389)<br>
+</code></td><td>0.011</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testOpacityOfTypeParameters"></a>testOpacityOfTypeParameters</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 7 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 9 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 11 : 4]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 7 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 9 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 11 : 4]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testOpacityOfTypeParameters(NewTypeInferenceES5OrLowerTest.java:5697)<br>
+</code></td><td>0.016</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testCasts"></a>testCasts</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testCasts(NewTypeInferenceES5OrLowerTest.java:6808)<br>
+</code></td><td>0.006</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testUnannotatedFunctionSummaryDoesntCrash"></a>testUnannotatedFunctionSummaryDoesntCrash</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 20]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 20]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheckCustomExterns(NewTypeInferenceTestBase.java:152)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testUnannotatedFunctionSummaryDoesntCrash(NewTypeInferenceES5OrLowerTest.java:7066)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testInvalidEnumDoesntCrash"></a>testInvalidEnumDoesntCrash</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_BAD_JSDOC_ANNOTATION: Parse error. {0}]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_BAD_JSDOC_ANNOTATION. Bad JSDoc annotation. An enum type cannot be a union type. at [testcode] line 1 : 11, JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 7 : 8]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_BAD_JSDOC_ANNOTATION: Parse error. {0}]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_BAD_JSDOC_ANNOTATION. Bad JSDoc annotation. An enum type cannot be a union type. at [testcode] line 1 : 11, JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 7 : 8]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testInvalidEnumDoesntCrash(NewTypeInferenceES5OrLowerTest.java:7166)<br>
+</code></td><td>0.007</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testLooseFunctionSubtypeDoesntCrash"></a>testLooseFunctionSubtypeDoesntCrash</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 36, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 2 : 0]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 36, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 2 : 0]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testLooseFunctionSubtypeDoesntCrash(NewTypeInferenceES5OrLowerTest.java:7259)<br>
+</code></td><td>0.006</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testThisReferenceUsedGenerically"></a>testThisReferenceUsedGenerically</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 7 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 8 : 20]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 7 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 8 : 20]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testThisReferenceUsedGenerically(NewTypeInferenceES5OrLowerTest.java:7374)<br>
+</code></td><td>0.005</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testStructPropAccess"></a>testStructPropAccess</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_ILLEGAL_PROPERTY_ACCESS: Cannot do {0} access on a {1}]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 4 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 6 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 9 : 4, JSC_ILLEGAL_PROPERTY_ACCESS. Cannot do '[]' access on a struct at [testcode] line 11 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;4&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_ILLEGAL_PROPERTY_ACCESS: Cannot do {0} access on a {1}]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 4 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 6 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 9 : 4, JSC_ILLEGAL_PROPERTY_ACCESS. Cannot do '[]' access on a struct at [testcode] line 11 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;4&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testStructPropAccess(NewTypeInferenceES5OrLowerTest.java:7573)<br>
+</code></td><td>0.029</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testDictPropAccess"></a>testDictPropAccess</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_ILLEGAL_PROPERTY_ACCESS: Cannot do {0} access on a {1}]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 4 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 6 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 9 : 4, JSC_ILLEGAL_PROPERTY_ACCESS. Cannot do '.' access on a dict at [testcode] line 11 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;4&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_ILLEGAL_PROPERTY_ACCESS: Cannot do {0} access on a {1}]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 4 : 6, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 6 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 9 : 4, JSC_ILLEGAL_PROPERTY_ACCESS. Cannot do '.' access on a dict at [testcode] line 11 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;4&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testDictPropAccess(NewTypeInferenceES5OrLowerTest.java:7672)<br>
+</code></td><td>0.017</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testStructWithIn"></a>testStructWithIn</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_IN_USED_WITH_STRUCT: Cannot use the IN operator with structs]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 9, JSC_IN_USED_WITH_STRUCT. Cannot use the IN operator with structs at [testcode] line 1 : 29]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_IN_USED_WITH_STRUCT: Cannot use the IN operator with structs]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 9, JSC_IN_USED_WITH_STRUCT. Cannot use the IN operator with structs at [testcode] line 1 : 29]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testStructWithIn(NewTypeInferenceES5OrLowerTest.java:7700)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testStructPropCreation"></a>testStructPropCreation</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_ILLEGAL_PROPERTY_CREATION: Cannot add a property to a struct instance after it is constructed.]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 6 : 6, JSC_ILLEGAL_PROPERTY_CREATION. Cannot add a property to a struct instance after it is constructed. at [testcode] line 7 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_ILLEGAL_PROPERTY_CREATION: Cannot add a property to a struct instance after it is constructed.]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 6 : 6, JSC_ILLEGAL_PROPERTY_CREATION. Cannot add a property to a struct instance after it is constructed. at [testcode] line 7 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testStructPropCreation(NewTypeInferenceES5OrLowerTest.java:7837)<br>
+</code></td><td>0.025</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGetters"></a>testGetters</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_RETURN_NONDECLARED_TYPE: Returned type does not match declared return type.
+declared : {0}
+found    : {1}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 4, JSC_RETURN_NONDECLARED_TYPE. Returned type does not match declared return type.
+declared : string
+found    : number
+ at [testcode] line 1 : 44]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_RETURN_NONDECLARED_TYPE: Returned type does not match declared return type.<br>declared : {0}<br>found    : {1}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 4, JSC_RETURN_NONDECLARED_TYPE. Returned type does not match declared return type.<br>declared : string<br>found    : number<br> at [testcode] line 1 : 44]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testGetters(NewTypeInferenceES5OrLowerTest.java:7896)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testSetters"></a>testSetters</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_BAD_JSDOC_ANNOTATION: Parse error. {0}]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_BAD_JSDOC_ANNOTATION. Bad JSDoc annotation. Cannot declare a return type on a setter at (unknown source) line 1 : 43, JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 4]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_BAD_JSDOC_ANNOTATION: Parse error. {0}]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_BAD_JSDOC_ANNOTATION. Bad JSDoc annotation. Cannot declare a return type on a setter at (unknown source) line 1 : 43, JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 1 : 4]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testSetters(NewTypeInferenceES5OrLowerTest.java:7955)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testInferenceOfConstType"></a>testInferenceOfConstType</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INEXISTENT_PROPERTY: Property {0} never defined on {1}]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 2 : 22, JSC_INEXISTENT_PROPERTY. Property prop never defined on {} at [testcode] line 3 : 22]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INEXISTENT_PROPERTY: Property {0} never defined on {1}]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 2 : 22, JSC_INEXISTENT_PROPERTY. Property prop never defined on {} at [testcode] line 3 : 22]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testInferenceOfConstType(NewTypeInferenceES5OrLowerTest.java:8298)<br>
+</code></td><td>0.014</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testEnumJoinSpecializeMeet"></a>testEnumJoinSpecializeMeet</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.
+left side  : {0}
+right side : {1}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 4 : 6, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.
+left side  : E
+right side : number
+ at [testcode] line 6 : 19]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.<br>left side  : {0}<br>right side : {1}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 4 : 6, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.<br>left side  : E<br>right side : number<br> at [testcode] line 6 : 19]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testEnumJoinSpecializeMeet(NewTypeInferenceES5OrLowerTest.java:9043)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testEnumAliasing"></a>testEnumAliasing</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_MALFORMED_ENUM: An enum must be initialized to a non-empty object literal.]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 4, JSC_MALFORMED_ENUM. An enum must be initialized to a non-empty object literal. at [testcode] line 5 : 4]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_MALFORMED_ENUM: An enum must be initialized to a non-empty object literal.]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 1 : 4, JSC_MALFORMED_ENUM. An enum must be initialized to a non-empty object literal. at [testcode] line 5 : 4]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testEnumAliasing(NewTypeInferenceES5OrLowerTest.java:9170)<br>
+</code></td><td>0.005</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testRecordSpecializeNominalPreservesRequired"></a>testRecordSpecializeNominalPreservesRequired</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.
+expected : {2}
+found    : {3}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 3 : 4, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function .
+expected : {x:number}
+found    : {x:number=, y:string=}
+ at [testcode] line 7 : 35]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.<br>expected : {2}<br>found    : {3}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 3 : 4, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function .<br>expected : {x:number}<br>found    : {x:number=, y:string=}<br> at [testcode] line 7 : 35]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testRecordSpecializeNominalPreservesRequired(NewTypeInferenceES5OrLowerTest.java:9255)<br>
+</code></td><td>0.004</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGoogIsPredicatesTrue"></a>testGoogIsPredicatesTrue</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.
+left side  : {0}
+right side : {1}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 5 : 18, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 7 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 9 : 2, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.
+left side  : Foo
+right side : Foo|null|undefined
+ at [testcode] line 9 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;4&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.<br>left side  : {0}<br>right side : {1}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 5 : 18, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 7 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 9 : 2, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.<br>left side  : Foo<br>right side : Foo|null|undefined<br> at [testcode] line 9 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;4&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testGoogIsPredicatesTrue(NewTypeInferenceES5OrLowerTest.java:9294)<br>
+</code></td><td>0.007</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testGoogIsPredicatesFalse"></a>testGoogIsPredicatesFalse</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.
+left side  : {0}
+right side : {1}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 4 : 18, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 6 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 8 : 2, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.
+left side  : Foo
+right side : Foo|null
+ at [testcode] line 8 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;4&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_MISTYPED_ASSIGN_RHS: The right side in the assignment is not a subtype of the left side.<br>left side  : {0}<br>right side : {1}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 4 : 18, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 6 : 4, JSC_CONST_REASSIGNED. Cannot change the value of a constant. at [testcode] line 8 : 2, JSC_MISTYPED_ASSIGN_RHS. The right side in the assignment is not a subtype of the left side.<br>left side  : Foo<br>right side : Foo|null<br> at [testcode] line 8 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;4&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testGoogIsPredicatesFalse(NewTypeInferenceES5OrLowerTest.java:9362)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testSuperClassCtorProperty"></a>testSuperClassCtorProperty</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INEXISTENT_PROPERTY: Property {0} never defined on {1}]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 3 : 24, JSC_INEXISTENT_PROPERTY. Property superClass_ never defined on {x:string} at [testcode] line 3 : 28]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INEXISTENT_PROPERTY: Property {0} never defined on {1}]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 3 : 24, JSC_INEXISTENT_PROPERTY. Property superClass_ never defined on {x:string} at [testcode] line 3 : 28]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testSuperClassCtorProperty(NewTypeInferenceES5OrLowerTest.java:9523)<br>
+</code></td><td>0.019</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testNominalTypeAliasing"></a>testNominalTypeAliasing</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_EXPECTED_CONSTRUCTOR: Expected constructor name but found {0}., JSC_UNRECOGNIZED_TYPE_NAME: Type annotation references non-existent type {0}.]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_EXPECTED_CONSTRUCTOR. Expected constructor name but found Bar. at [testcode] line 5 : 10, JSC_UNRECOGNIZED_TYPE_NAME. Type annotation references non-existent type Foo. at [testcode] line 6 : 9, JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 6 : 16]
+----------------------------------------------------------------
+Warning count expected:&lt;2&gt; but was:&lt;3&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_EXPECTED_CONSTRUCTOR: Expected constructor name but found {0}., JSC_UNRECOGNIZED_TYPE_NAME: Type annotation references non-existent type {0}.]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_EXPECTED_CONSTRUCTOR. Expected constructor name but found Bar. at [testcode] line 5 : 10, JSC_UNRECOGNIZED_TYPE_NAME. Type annotation references non-existent type Foo. at [testcode] line 6 : 9, JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 6 : 16]<br>----------------------------------------------------------------<br>Warning count expected:&lt;2&gt; but was:&lt;3&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheckCustomExterns(NewTypeInferenceTestBase.java:152)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testNominalTypeAliasing(NewTypeInferenceES5OrLowerTest.java:9922)<br>
+</code></td><td>0.021</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testDontLookupInParentScopeForNamesWithoutDeclaredType"></a>testDontLookupInParentScopeForNamesWithoutDeclaredType</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 4]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 4]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testDontLookupInParentScopeForNamesWithoutDeclaredType(NewTypeInferenceES5OrLowerTest.java:10080)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testAutoconvertBoxedStringToString"></a>testAutoconvertBoxedStringToString</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 21]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_CONST_WITHOUT_INITIALIZER. Constants must be initialized when they are defined. at [testcode] line 2 : 21]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testAutoconvertBoxedStringToString(NewTypeInferenceES5OrLowerTest.java:10162)<br>
+</code></td><td>0.006</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testClosureStyleFunctionBind"></a>testClosureStyleFunctionBind</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.
+expected : {2}
+found    : {3}
+]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 4, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function g.
+expected : number
+found    : string
+ at [testcode] line 3 : 2]
+----------------------------------------------------------------
+Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[JSC_INVALID_ARGUMENT_TYPE: Invalid type for parameter {0} of function {1}.<br>expected : {2}<br>found    : {3}<br>]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 4, JSC_INVALID_ARGUMENT_TYPE. Invalid type for parameter 1 of function g.<br>expected : number<br>found    : string<br> at [testcode] line 3 : 2]<br>----------------------------------------------------------------<br>Warning count expected:&lt;1&gt; but was:&lt;2&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testClosureStyleFunctionBind(NewTypeInferenceES5OrLowerTest.java:10449)<br>
+</code></td><td>0.012</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testPlusBackwardInference"></a>testPlusBackwardInference</td><td>Failure</td><td>Expected warning of type:
+================================================================
+[]================================================================
+but found:
+----------------------------------------------------------------
+[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6]
+----------------------------------------------------------------
+Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected warning of type:<br>================================================================<br>[]================================================================<br>but found:<br>----------------------------------------------------------------<br>[JSC_COULD_NOT_INFER_CONST_TYPE. All constants must be typed. The compiler could not infer the type of this constant. Please use an explicit type annotation. at [testcode] line 2 : 6]<br>----------------------------------------------------------------<br>Warning count expected:&lt;0&gt; but was:&lt;1&gt;<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:172)<br>	at com.google.javascript.jscomp.NewTypeInferenceTestBase.typeCheck(NewTypeInferenceTestBase.java:147)<br>	at com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest.testPlusBackwardInference(NewTypeInferenceES5OrLowerTest.java:10474)<br>
+</code></td><td>0.004</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('com.google.javascript.jscomp.NewTypeInferenceES5OrLowerTest');">
+                    Properties &raquo;
+                </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,697 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: com.google.javascript.jscomp.TypeInferenceTest</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['com.google.javascript.jscomp.TypeInferenceTest'] = new Array();
+    
+        cur['ant.build.javac.source'] = '1.7';
+    
+        cur['ant.build.javac.target'] = '1.7';
+    
+        cur['ant.core.lib'] = '/Users/linmanna/ant/lib/ant.jar';
+    
+        cur['ant.file'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml';
+    
+        cur['ant.file.compiler'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build.xml';
+    
+        cur['ant.file.type'] = 'file';
+    
+        cur['ant.file.type.compiler'] = 'file';
+    
+        cur['ant.home'] = '//Users/linmanna/ant';
+    
+        cur['ant.java.version'] = '1.7';
+    
+        cur['ant.library.dir'] = '//Users/linmanna/ant/lib';
+    
+        cur['ant.project.default-target'] = 'jar';
+    
+        cur['ant.project.invoked-targets'] = 'clean,compile,compile-tests,test';
+    
+        cur['ant.project.name'] = 'compiler';
+    
+        cur['ant.version'] = 'Apache Ant(TM) version 1.9.4 compiled on April 29 2014';
+    
+        cur['awt.toolkit'] = 'sun.lwawt.macosx.LWCToolkit';
+    
+        cur['basedir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler';
+    
+        cur['build.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build';
+    
+        cur['build.relVersion'] = '00e3533';
+    
+        cur['buildlib.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/lib';
+    
+        cur['classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes';
+    
+        cur['closure.build.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build';
+    
+        cur['compiler-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/compiler.jar';
+    
+        cur['externs.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/externs';
+    
+        cur['file.encoding'] = 'UTF-8';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '/';
+    
+        cur['ftp.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['gen.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/gen';
+    
+        cur['gopherProxySet'] = 'false';
+    
+        cur['http.nonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.CGraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.lwawt.macosx.CPrinterJob';
+    
+        cur['java.class.path'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/classes:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant-launcher.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/ant.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/args4j.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/gson.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/guava.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/jsr305.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/junit.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/protobuf-java.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib/truth.jar:/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test:/Users/linmanna/ant/lib/ant-launcher.jar:/Users/linmanna/ant/lib/ant.jar:/Users/linmanna/ant/lib/ant-junit.jar:/Users/linmanna/ant/lib/ant-junit4.jar';
+    
+        cur['java.class.version'] = '51.0';
+    
+        cur['java.endorsed.dirs'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed';
+    
+        cur['java.ext.dirs'] = '/Users/linmanna/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java';
+    
+        cur['java.home'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre';
+    
+        cur['java.io.tmpdir'] = '/var/folders/_p/3swdt4h96dn79vyt21dtny9h0000gn/T/';
+    
+        cur['java.library.path'] = '/Users/linmanna/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.7.0_75-b13';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '1.7';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'http://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://bugreport.sun.com/bugreport/';
+    
+        cur['java.version'] = '1.7.0_75';
+    
+        cur['java.vm.info'] = 'mixed mode';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '1.7';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '24.75-b04';
+    
+        cur['javac.debug'] = 'on';
+    
+        cur['javadoc.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/javadoc';
+    
+        cur['lib.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/lib';
+    
+        cur['line.separator'] = '\n';
+    
+        cur['maven-repository-id'] = 'sonatype-nexus-staging';
+    
+        cur['maven-repository-url'] = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/';
+    
+        cur['os.arch'] = 'x86_64';
+    
+        cur['os.name'] = 'Mac OS X';
+    
+        cur['os.version'] = '10.9.5';
+    
+        cur['path.separator'] = ':';
+    
+        cur['protoc.executable'] = 'protoc';
+    
+        cur['refasterjs.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/refactoring';
+    
+        cur['refasterjs-classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs-classes';
+    
+        cur['refasterjs-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/refasterjs.jar';
+    
+        cur['socksNonProxyHosts'] = 'local|*.local|169.254/16|*.169.254/16';
+    
+        cur['src.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.class.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes';
+    
+        cur['sun.boot.library.path'] = '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = '';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeBig';
+    
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junittestcases4622356093930181862.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/testoutput/IGNORETHIS.xml crashfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junitvmwatcher882389895192408063.properties propsfile=/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/junit6374663990081372210.properties';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'UTF-8';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = 'unknown';
+    
+        cur['test.class'] = '*Test';
+    
+        cur['test.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/test';
+    
+        cur['test.fork'] = 'true';
+    
+        cur['test.method'] = '';
+    
+        cur['testClasses.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/test';
+    
+        cur['tools.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/tools';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler';
+    
+        cur['user.home'] = '/Users/linmanna';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'linmanna';
+    
+        cur['user.timezone'] = '';
+    
+        cur['webservice.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/src/com/google/javascript/jscomp/webservice';
+    
+        cur['webservice-classes.dir'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice-classes';
+    
+        cur['webservice-jarfile'] = '/Users/linmanna/Documents/proj/UCLA-CS-239-Winter-2015/Part_B/Benchmark/closure-compiler/build/webservice.jar';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class com.google.javascript.jscomp.TypeInferenceTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Error">
+<td><a title="Display all tests" href="200_TypeInferenceTest.html">TypeInferenceTest</a></td><td><a title="Display all tests" href="200_TypeInferenceTest.html">141</a></td><td><a title="Display only errors" href="200_TypeInferenceTest-errors.html">2</a></td><td>0</td><td>0</td><td>0.150</td><td>2015-03-09T03:17:43</td><td>cs-210-206.cs.ucla.edu</td>
+</tr>
+</table>
+<h2>Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testHook"></a>testHook</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testObjectLit"></a>testObjectLit</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetProp"></a>testGetProp</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignment"></a>testAssignment</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testVar"></a>testVar</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInnerFunction1"></a>testInnerFunction1</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInnerFunction2"></a>testInnerFunction2</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testJoin1"></a>testJoin1</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testJoin2"></a>testJoin2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testThrow"></a>testThrow</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetElem"></a>testGetElem</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignAdd"></a>testAssignAdd</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testArrayLit"></a>testArrayLit</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCall1"></a>testCall1</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIf1"></a>testIf1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIf2"></a>testIf2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIf3"></a>testIf3</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testDo"></a>testDo</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssumption"></a>testAssumption</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEmptyVar"></a>testEmptyVar</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testExprWithinCast"></a>testExprWithinCast</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetElemDereference"></a>testGetElemDereference</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIf1a"></a>testIf1a</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssert1"></a>testAssert1</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssert1a"></a>testAssert1a</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssert2"></a>testAssert2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssert3"></a>testAssert3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssert4"></a>testAssert4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssert5"></a>testAssert5</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssert6"></a>testAssert6</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssert7"></a>testAssert7</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssert8"></a>testAssert8</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssert9"></a>testAssert9</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssert10"></a>testAssert10</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssert11"></a>testAssert11</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertNumber"></a>testAssertNumber</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertNumber2"></a>testAssertNumber2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertNumber3"></a>testAssertNumber3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertString"></a>testAssertString</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertFunction"></a>testAssertFunction</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertObject"></a>testAssertObject</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertElement"></a>testAssertElement</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertObject2"></a>testAssertObject2</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertObject3"></a>testAssertObject3</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertObject4"></a>testAssertObject4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertObject5"></a>testAssertObject5</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertArray"></a>testAssertArray</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertInstanceof1"></a>testAssertInstanceof1</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertInstanceof2"></a>testAssertInstanceof2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertInstanceof3"></a>testAssertInstanceof3</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertInstanceof3a"></a>testAssertInstanceof3a</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertInstanceof4"></a>testAssertInstanceof4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertInstanceof5"></a>testAssertInstanceof5</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertInstanceof6"></a>testAssertInstanceof6</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertInstanceof7"></a>testAssertInstanceof7</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertWithIsDefAndNotNull"></a>testAssertWithIsDefAndNotNull</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testIsDefAndNoResolvedType"></a>testIsDefAndNoResolvedType</td><td>Error</td><td>Mismatch for out2a
+Expected: NoResolvedType
+Actual  : undefined<br>
+<br>
+<code>java.lang.AssertionError: Mismatch for out2a<br>Expected: NoResolvedType<br>Actual  : undefined<br>	at com.google.javascript.rhino.testing.Asserts.assertTypeEquals(Asserts.java:109)<br>	at com.google.javascript.jscomp.TypeInferenceTest.verify(TypeInferenceTest.java:142)<br>	at com.google.javascript.jscomp.TypeInferenceTest.verify(TypeInferenceTest.java:146)<br>	at com.google.javascript.jscomp.TypeInferenceTest.testIsDefAndNoResolvedType(TypeInferenceTest.java:575)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertWithNotIsNull"></a>testAssertWithNotIsNull</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testWhile1"></a>testWhile1</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testWhile2"></a>testWhile2</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFor1"></a>testFor1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFor2"></a>testFor2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPropertyInference1"></a>testPropertyInference1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPropertyInference2"></a>testPropertyInference2</td><td>Success</td><td></td><td>0.003</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testPropertyInference3"></a>testPropertyInference3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAdd1"></a>testAdd1</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAdd2"></a>testAdd2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAdd3"></a>testAdd3</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testReturn1"></a>testReturn1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testReturn2"></a>testReturn2</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNew3"></a>testNew3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="testCast2"></a>testCast2</td><td>Error</td><td>Mismatch for x
+Expected: function (this:Object): boolean
+Actual  : ?<br>
+<br>
+<code>java.lang.AssertionError: Mismatch for x<br>Expected: function (this:Object): boolean<br>Actual  : ?<br>	at com.google.javascript.rhino.testing.Asserts.assertTypeEquals(Asserts.java:109)<br>	at com.google.javascript.jscomp.TypeInferenceTest.verify(TypeInferenceTest.java:142)<br>	at com.google.javascript.jscomp.TypeInferenceTest.testCast2(TypeInferenceTest.java:1096)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFor3"></a>testFor3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFor4"></a>testFor4</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFor5"></a>testFor5</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFor6"></a>testFor6</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSwitch1"></a>testSwitch1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSwitch2"></a>testSwitch2</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSwitch3"></a>testSwitch3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSwitch4"></a>testSwitch4</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTry1"></a>testTry1</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTry2"></a>testTry2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTry3"></a>testTry3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCatch1"></a>testCatch1</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCatch2"></a>testCatch2</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnknownType1"></a>testUnknownType1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnknownType2"></a>testUnknownType2</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInfiniteLoop1"></a>testInfiniteLoop1</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInfiniteLoop2"></a>testInfiniteLoop2</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumRAI1"></a>testEnumRAI1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumRAI2"></a>testEnumRAI2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumRAI3"></a>testEnumRAI3</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testEnumRAI4"></a>testEnumRAI4</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testShortCircuitingAnd"></a>testShortCircuitingAnd</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testShortCircuitingAnd2"></a>testShortCircuitingAnd2</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testShortCircuitingOr"></a>testShortCircuitingOr</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testShortCircuitingOr2"></a>testShortCircuitingOr2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssignInCondition"></a>testAssignInCondition</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInstanceOf1"></a>testInstanceOf1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInstanceOf5"></a>testInstanceOf5</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInstanceOf6"></a>testInstanceOf6</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFlattening"></a>testFlattening</td><td>Success</td><td></td><td>0.010</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testUnary"></a>testUnary</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testComparison"></a>testComparison</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testThrownExpression"></a>testThrownExpression</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testCast1"></a>testCast1</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBackwardsInferenceCall"></a>testBackwardsInferenceCall</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testBackwardsInferenceNew"></a>testBackwardsInferenceNew</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNoThisInference"></a>testNoThisInference</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRecordInference"></a>testRecordInference</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testLotsOfBranchesGettingMerged"></a>testLotsOfBranchesGettingMerged</td><td>Success</td><td></td><td>0.005</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIssue785"></a>testIssue785</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTemplateForTypeTransformationTests"></a>testTemplateForTypeTransformationTests</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationTypePredicate"></a>testTypeTransformationTypePredicate</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationConditional"></a>testTypeTransformationConditional</td><td>Success</td><td></td><td>0.004</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationNoneType"></a>testTypeTransformationNoneType</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationUnionType"></a>testTypeTransformationUnionType</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationMapunion"></a>testTypeTransformationMapunion</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationObjectUseCase"></a>testTypeTransformationObjectUseCase</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationObjectUseCase2"></a>testTypeTransformationObjectUseCase2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationObjectUseCase3"></a>testTypeTransformationObjectUseCase3</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationTypeOfVarWithInstanceOfConstructor"></a>testTypeTransformationTypeOfVarWithInstanceOfConstructor</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationTypeOfVarWithConstructor"></a>testTypeTransformationTypeOfVarWithConstructor</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationTypeOfVarWithTypedef"></a>testTypeTransformationTypeOfVarWithTypedef</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationWithTypeFromConstructor"></a>testTypeTransformationWithTypeFromConstructor</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationWithTypeFromTypedef"></a>testTypeTransformationWithTypeFromTypedef</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationWithTypeFromNamespace"></a>testTypeTransformationWithTypeFromNamespace</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationWithNativeTypeExpressionFunction"></a>testTypeTransformationWithNativeTypeExpressionFunction</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationWithNativeTypeExpressionFunctionReturn"></a>testTypeTransformationWithNativeTypeExpressionFunctionReturn</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationWithNativeTypeExpressionFunctionThis"></a>testTypeTransformationWithNativeTypeExpressionFunctionThis</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationWithNativeTypeExpressionFunctionVarargs"></a>testTypeTransformationWithNativeTypeExpressionFunctionVarargs</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationWithNativeTypeExpressionFunctionOptional"></a>testTypeTransformationWithNativeTypeExpressionFunctionOptional</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationRecordFromObject"></a>testTypeTransformationRecordFromObject</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationRecordFromObjectNested"></a>testTypeTransformationRecordFromObjectNested</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testTypeTransformationRecordFromObjectWithTemplatizedType"></a>testTypeTransformationRecordFromObjectWithTemplatizedType</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAssertTypeofProp"></a>testAssertTypeofProp</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNew1"></a>testNew1</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNew2"></a>testNew2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInstanceOf2"></a>testInstanceOf2</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInstanceOf3"></a>testInstanceOf3</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testInstanceOf4"></a>testInstanceOf4</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('com.google.javascript.jscomp.TypeInferenceTest');">
+                    Properties &raquo;
+                </a>
+</div>
+</body>
+</html>
