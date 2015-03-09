@@ -1,0 +1,17 @@
+(dp0
+S'com/google/javascript/jscomp/InlineVariables$Mode.values()[Lcom/google/javascript/jscomp/InlineVariables$Mode;:[Lcom/google/javascript/jscomp/InlineVariables$Mode;.clone()Ljava/lang/Object;'
+p1
+I1
+sS'com/google/javascript/jscomp/InlineVariables$Mode.values()[Lcom/google/javascript/jscomp/InlineVariables$Mode;:com/google/javascript/jscomp/InlineVariables$Mode.<init>(Ljava/lang/String;I)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p2
+I3
+sS'com/google/javascript/jscomp/InlineVariables$Mode.values()[Lcom/google/javascript/jscomp/InlineVariables$Mode;:com/google/javascript/jscomp/InlineVariables$Mode.<init>(Ljava/lang/String;I)V'
+p3
+I3
+sS'com/google/javascript/jscomp/InlineVariables$Mode.ordinal()I'
+p4
+I3
+sS'com/google/javascript/jscomp/InlineVariables$Mode.values()[Lcom/google/javascript/jscomp/InlineVariables$Mode;'
+p5
+I1
+s.

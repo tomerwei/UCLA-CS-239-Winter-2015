@@ -1,0 +1,8 @@
+(dp0
+S'com/google/javascript/jscomp/InlineProperties$PropertyInfo.<init>(Lcom/google/javascript/rhino/jstype/JSType;Lcom/google/javascript/rhino/Node;)V'
+p1
+I1
+sS'com/google/javascript/jscomp/InlineProperties$PropertyInfo.<init>(Lcom/google/javascript/rhino/jstype/JSType;Lcom/google/javascript/rhino/Node;)V:java/lang/Object.<init>()V'
+p2
+I1
+s.

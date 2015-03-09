@@ -1,0 +1,8 @@
+.F
+Time: 0.002
+There was 1 failure:
+1) warning(junit.framework.TestSuite$1)junit.framework.AssertionFailedError: Class com.google.javascript.jscomp.FunctionInjector$CallSiteType$5 has no public constructor TestCase(String name) or TestCase()
+
+FAILURES!!!
+Tests run: 1,  Failures: 1,  Errors: 0
+

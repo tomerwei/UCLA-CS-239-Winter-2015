@@ -1,0 +1,150 @@
+.E.E.E.E.E.E.E.E.E.E.E.E.E
+Time: 0.013
+There were 13 errors:
+1) testUnion(com.google.javascript.jscomp.graph.StandardUnionFindTest)java.lang.NoClassDefFoundError: com/google/common/base/Predicate
+	at com.google.javascript.jscomp.graph.StandardUnionFindTest.setUp(StandardUnionFindTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+2) testSetSize(com.google.javascript.jscomp.graph.StandardUnionFindTest)java.lang.NoClassDefFoundError: com/google/common/base/Predicate
+	at com.google.javascript.jscomp.graph.StandardUnionFindTest.setUp(StandardUnionFindTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+3) testFind(com.google.javascript.jscomp.graph.StandardUnionFindTest)java.lang.NoClassDefFoundError: com/google/common/base/Predicate
+	at com.google.javascript.jscomp.graph.StandardUnionFindTest.setUp(StandardUnionFindTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+4) testAllEquivalenceClasses(com.google.javascript.jscomp.graph.StandardUnionFindTest)java.lang.NoClassDefFoundError: com/google/common/base/Predicate
+	at com.google.javascript.jscomp.graph.StandardUnionFindTest.setUp(StandardUnionFindTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+5) testFindAll(com.google.javascript.jscomp.graph.StandardUnionFindTest)java.lang.NoClassDefFoundError: com/google/common/base/Predicate
+	at com.google.javascript.jscomp.graph.StandardUnionFindTest.setUp(StandardUnionFindTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+6) testFindAllIterator(com.google.javascript.jscomp.graph.StandardUnionFindTest)java.lang.NoClassDefFoundError: com/google/common/base/Predicate
+	at com.google.javascript.jscomp.graph.StandardUnionFindTest.setUp(StandardUnionFindTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+7) testAdd(com.google.javascript.jscomp.graph.StandardUnionFindTest)java.lang.NoClassDefFoundError: com/google/common/base/Predicate
+	at com.google.javascript.jscomp.graph.StandardUnionFindTest.setUp(StandardUnionFindTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+8) testEmpty(com.google.javascript.jscomp.graph.StandardUnionFindTest)java.lang.NoClassDefFoundError: com/google/common/base/Predicate
+	at com.google.javascript.jscomp.graph.StandardUnionFindTest.setUp(StandardUnionFindTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+9) testFindAllSize(com.google.javascript.jscomp.graph.StandardUnionFindTest)java.lang.NoClassDefFoundError: com/google/common/base/Predicate
+	at com.google.javascript.jscomp.graph.StandardUnionFindTest.setUp(StandardUnionFindTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+10) testElements(com.google.javascript.jscomp.graph.StandardUnionFindTest)java.lang.NoClassDefFoundError: com/google/common/base/Predicate
+	at com.google.javascript.jscomp.graph.StandardUnionFindTest.setUp(StandardUnionFindTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+11) testCopy(com.google.javascript.jscomp.graph.StandardUnionFindTest)java.lang.NoClassDefFoundError: com/google/common/base/Predicate
+	at com.google.javascript.jscomp.graph.StandardUnionFindTest.setUp(StandardUnionFindTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+12) testChangesToCopyDontAffectOriginal(com.google.javascript.jscomp.graph.StandardUnionFindTest)java.lang.NoClassDefFoundError: com/google/common/base/Predicate
+	at com.google.javascript.jscomp.graph.StandardUnionFindTest.setUp(StandardUnionFindTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+13) testCheckEquivalent(com.google.javascript.jscomp.graph.StandardUnionFindTest)java.lang.NoClassDefFoundError: com/google/common/base/Predicate
+	at com.google.javascript.jscomp.graph.StandardUnionFindTest.setUp(StandardUnionFindTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+
+FAILURES!!!
+Tests run: 13,  Failures: 0,  Errors: 13
+

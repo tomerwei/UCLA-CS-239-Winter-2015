@@ -1,0 +1,22 @@
+.E
+Time: 0.004
+There was 1 error:
+1) test(com.google.javascript.jscomp.XtbMessageBundleTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.jscomp.XtbMessageBundle.<init>(XtbMessageBundle.java:68)
+	at com.google.javascript.jscomp.XtbMessageBundleTest.test(XtbMessageBundleTest.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Preconditions
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 17 more
+
+FAILURES!!!
+Tests run: 1,  Failures: 0,  Errors: 1
+

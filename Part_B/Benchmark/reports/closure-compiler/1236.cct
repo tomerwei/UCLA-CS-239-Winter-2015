@@ -1,0 +1,14 @@
+(dp0
+S'com/google/javascript/jscomp/newtypes/MaskType.<init>(I)V:com/google/javascript/jscomp/newtypes/JSType.<init>()V'
+p1
+I8
+sS'com/google/javascript/jscomp/newtypes/JSType.<init>()V'
+p2
+I8
+sS'com/google/javascript/jscomp/newtypes/MaskType.<init>(I)V'
+p3
+I8
+sS'java/lang/Object.<init>()V'
+p4
+I1
+s.

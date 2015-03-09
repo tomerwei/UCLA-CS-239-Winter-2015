@@ -1,0 +1,14 @@
+(dp0
+S'com/google/javascript/jscomp/parsing/TypeTransformationParser$OperationKind.<init>(Ljava/lang/String;I)V'
+p1
+I5
+sS'com/google/javascript/jscomp/parsing/TypeTransformationParser$OperationKind.<init>(Ljava/lang/String;I)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p2
+I5
+sS'com/google/javascript/jscomp/parsing/TypeTransformationParser$Keywords.<init>(Ljava/lang/String;ILjava/lang/String;IILcom/google/javascript/jscomp/parsing/TypeTransformationParser$OperationKind;)V'
+p3
+I24
+sS'com/google/javascript/jscomp/parsing/TypeTransformationParser$Keywords.<init>(Ljava/lang/String;ILjava/lang/String;IILcom/google/javascript/jscomp/parsing/TypeTransformationParser$OperationKind;)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p4
+I24
+s.

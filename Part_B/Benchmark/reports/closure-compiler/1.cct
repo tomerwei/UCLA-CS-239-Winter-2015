@@ -1,0 +1,14 @@
+(dp0
+S'java/lang/Class.desiredAssertionStatus()Z'
+p1
+I1
+sS'java/lang/String.charAt(I)C'
+p2
+I64
+sS'java/lang/String.length()I'
+p3
+I65
+sS'java/util/Arrays.fill([II)V'
+p4
+I1
+s.

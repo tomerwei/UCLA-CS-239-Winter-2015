@@ -1,0 +1,17 @@
+(dp0
+S'com/google/debugging/sourcemap/SourceMapFormat.values()[Lcom/google/debugging/sourcemap/SourceMapFormat;:com/google/debugging/sourcemap/SourceMapFormat.<init>(Ljava/lang/String;I)V'
+p1
+I2
+sS'com/google/debugging/sourcemap/SourceMapFormat.ordinal()I'
+p2
+I2
+sS'com/google/debugging/sourcemap/SourceMapFormat.values()[Lcom/google/debugging/sourcemap/SourceMapFormat;:[Lcom/google/debugging/sourcemap/SourceMapFormat;.clone()Ljava/lang/Object;'
+p3
+I1
+sS'com/google/debugging/sourcemap/SourceMapFormat.values()[Lcom/google/debugging/sourcemap/SourceMapFormat;'
+p4
+I1
+sS'com/google/debugging/sourcemap/SourceMapFormat.values()[Lcom/google/debugging/sourcemap/SourceMapFormat;:com/google/debugging/sourcemap/SourceMapFormat.<init>(Ljava/lang/String;I)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p5
+I2
+s.

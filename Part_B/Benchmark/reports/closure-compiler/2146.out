@@ -1,0 +1,169 @@
+....E.E.E.E.......E..E.E.....E.E.F.E..E.E.E...E.E.E.E..E
+Time: 0.06
+There were 18 errors:
+1) testCheckTreeEqualsImplSame(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.Node.<init>(Node.java:435)
+	at com.google.javascript.rhino.NodeTest.testCheckTreeEqualsImplSame(NodeTest.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Preconditions
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 17 more
+2) testCheckTreeEqualsImplDifferentType(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.Node.<init>(Node.java:435)
+	at com.google.javascript.rhino.NodeTest.testCheckTreeEqualsImplDifferentType(NodeTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+3) testCheckTreeEqualsImplDifferentChildCount(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.Node.<init>(Node.java:435)
+	at com.google.javascript.rhino.NodeTest.testCheckTreeEqualsImplDifferentChildCount(NodeTest.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+4) testCheckTreeEqualsImplDifferentChild(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.Node.<init>(Node.java:435)
+	at com.google.javascript.rhino.NodeTest.testCheckTreeEqualsImplDifferentChild(NodeTest.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5) testCheckTreeTypeAwareEqualsSame(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/collect/Multimap
+	at com.google.javascript.rhino.NodeTest.testCheckTreeTypeAwareEqualsSame(NodeTest.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Multimap
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 16 more
+6) testCheckTreeTypeAwareEqualsDifferent(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/collect/Multimap
+	at com.google.javascript.rhino.NodeTest.testCheckTreeTypeAwareEqualsDifferent(NodeTest.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Multimap
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 16 more
+7) testCheckTreeTypeAwareEqualsDifferentNull(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/collect/Multimap
+	at com.google.javascript.rhino.NodeTest.testCheckTreeTypeAwareEqualsDifferentNull(NodeTest.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Multimap
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 16 more
+8) testIsQualifiedName(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.getprop(IR.java:353)
+	at com.google.javascript.rhino.NodeTest.testIsQualifiedName(NodeTest.java:202)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Preconditions
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 17 more
+9) testMatchesQualifiedNameX(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.getprop(IR.java:353)
+	at com.google.javascript.rhino.NodeTest.qname(NodeTest.java:366)
+	at com.google.javascript.rhino.NodeTest.testMatchesQualifiedNameX(NodeTest.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+10) testMatchesQualifiedName2(com.google.javascript.rhino.NodeTest)java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1911)
+	at com.google.javascript.rhino.NodeTest.qname(NodeTest.java:352)
+	at com.google.javascript.rhino.NodeTest.testMatchesQualifiedName2(NodeTest.java:297)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11) testSharedProps1(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.Node.clonePropsFrom(Node.java:851)
+	at com.google.javascript.rhino.NodeTest.testSharedProps1(NodeTest.java:386)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12) testSharedProps2(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.Node.clonePropsFrom(Node.java:851)
+	at com.google.javascript.rhino.NodeTest.testSharedProps2(NodeTest.java:396)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+13) testSharedProps3(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.Node.clonePropsFrom(Node.java:851)
+	at com.google.javascript.rhino.NodeTest.testSharedProps3(NodeTest.java:414)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+14) testGetIndexOfChild(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.Node.<init>(Node.java:449)
+	at com.google.javascript.rhino.NodeTest.getAssignExpr(NodeTest.java:544)
+	at com.google.javascript.rhino.NodeTest.testGetIndexOfChild(NodeTest.java:455)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+15) testCopyInformationFrom(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.Node.<init>(Node.java:449)
+	at com.google.javascript.rhino.NodeTest.getAssignExpr(NodeTest.java:544)
+	at com.google.javascript.rhino.NodeTest.testCopyInformationFrom(NodeTest.java:468)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+16) testUseSourceInfoIfMissingFrom(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.Node.<init>(Node.java:449)
+	at com.google.javascript.rhino.NodeTest.getAssignExpr(NodeTest.java:544)
+	at com.google.javascript.rhino.NodeTest.testUseSourceInfoIfMissingFrom(NodeTest.java:485)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+17) testUseSourceInfoFrom(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.Node.<init>(Node.java:449)
+	at com.google.javascript.rhino.NodeTest.getAssignExpr(NodeTest.java:544)
+	at com.google.javascript.rhino.NodeTest.testUseSourceInfoFrom(NodeTest.java:502)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+18) testQualifiedName(com.google.javascript.rhino.NodeTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.getprop(IR.java:353)
+	at com.google.javascript.rhino.NodeTest.testQualifiedName(NodeTest.java:531)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+There was 1 failure:
+1) testMatchesQualifiedName1(com.google.javascript.rhino.NodeTest)junit.framework.AssertionFailedError
+	at com.google.javascript.rhino.NodeTest.testMatchesQualifiedName1(NodeTest.java:247)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+FAILURES!!!
+Tests run: 37,  Failures: 1,  Errors: 18
+

@@ -1,0 +1,121 @@
+.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E
+Time: 0.006
+There were 21 errors:
+1) testJsDocTokenization2(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization2(JsDocTokenStreamTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableList
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 16 more
+2) testJsDocTokenization1(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization1(JsDocTokenStreamTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+3) testJsDocTokenization3(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization3(JsDocTokenStreamTest.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+4) testJsDocTokenization4(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization4(JsDocTokenStreamTest.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5) testJsDocTokenization5(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization5(JsDocTokenStreamTest.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+6) testJsDocTokenization6(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization6(JsDocTokenStreamTest.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+7) testJsDocTokenization7(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization7(JsDocTokenStreamTest.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+8) testJsDocTokenization8(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization8(JsDocTokenStreamTest.java:152)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+9) testJsDocTokenization9(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization9(JsDocTokenStreamTest.java:166)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+10) testJsDocTokenization10(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization10(JsDocTokenStreamTest.java:178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11) testJsDocTokenization11(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization11(JsDocTokenStreamTest.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12) testJsDocTokenization12(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization12(JsDocTokenStreamTest.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+13) testJsDocTokenization13(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization13(JsDocTokenStreamTest.java:204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+14) testJsDocTokenization14(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization14(JsDocTokenStreamTest.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+15) testJsDocTokenization15(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization15(JsDocTokenStreamTest.java:222)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+16) testJsDocTokenization16(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization16(JsDocTokenStreamTest.java:234)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+17) testJsDocTokenization17(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization17(JsDocTokenStreamTest.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+18) testJsDocTokenization18(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization18(JsDocTokenStreamTest.java:249)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+19) testJsDocTokenization19(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization19(JsDocTokenStreamTest.java:256)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+20) testJsDocTokenization20(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization20(JsDocTokenStreamTest.java:263)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+21) testJsDocTokenization21(com.google.javascript.jscomp.parsing.JsDocTokenStreamTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.jscomp.parsing.JsDocTokenStreamTest.testJsDocTokenization21(JsDocTokenStreamTest.java:276)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+FAILURES!!!
+Tests run: 21,  Failures: 0,  Errors: 21
+

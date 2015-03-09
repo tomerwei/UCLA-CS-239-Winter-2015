@@ -1,0 +1,14 @@
+(dp0
+S'com/google/javascript/rhino/jstype/BooleanLiteralSet.<init>(Ljava/lang/String;I)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p1
+I4
+sS'com/google/javascript/rhino/jstype/BooleanLiteralSet.ordinal()I'
+p2
+I72
+sS'com/google/javascript/rhino/jstype/BooleanLiteralSet.fromOrdinal(I)Lcom/google/javascript/rhino/jstype/BooleanLiteralSet;'
+p3
+I32
+sS'com/google/javascript/rhino/jstype/BooleanLiteralSet.<init>(Ljava/lang/String;I)V'
+p4
+I4
+s.

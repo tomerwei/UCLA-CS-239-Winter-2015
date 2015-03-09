@@ -1,0 +1,17 @@
+(dp0
+S'com/google/javascript/rhino/JSDocInfo$Visibility.values()[Lcom/google/javascript/rhino/JSDocInfo$Visibility;:com/google/javascript/rhino/JSDocInfo$Visibility.<init>(Ljava/lang/String;I)V'
+p1
+I5
+sS'com/google/javascript/rhino/JSDocInfo$Visibility.values()[Lcom/google/javascript/rhino/JSDocInfo$Visibility;:com/google/javascript/rhino/JSDocInfo$Visibility.<init>(Ljava/lang/String;I)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p2
+I5
+sS'com/google/javascript/rhino/JSDocInfo$Visibility.values()[Lcom/google/javascript/rhino/JSDocInfo$Visibility;'
+p3
+I1
+sS'com/google/javascript/rhino/JSDocInfo$Visibility.values()[Lcom/google/javascript/rhino/JSDocInfo$Visibility;:[Lcom/google/javascript/rhino/JSDocInfo$Visibility;.clone()Ljava/lang/Object;'
+p4
+I1
+sS'com/google/javascript/rhino/JSDocInfo$Visibility.ordinal()I'
+p5
+I3
+s.

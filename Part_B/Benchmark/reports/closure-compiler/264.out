@@ -1,0 +1,167 @@
+.E.E.E.E.E.E.E.E.E.E
+Time: 0.012
+There were 10 errors:
+1) testVariableDeclaration(com.google.javascript.jscomp.CodePrinterEs6TypedTest)java.lang.NoClassDefFoundError: com/google/common/collect/Multimap
+	at com.google.javascript.jscomp.CodePrinterTestBase.newCompilerOptions(CodePrinterTestBase.java:105)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.assertPrettyPrintSame(CodePrinterEs6TypedTest.java:36)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.testVariableDeclaration(CodePrinterEs6TypedTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Multimap
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+2) testFunctionParamDeclaration(com.google.javascript.jscomp.CodePrinterEs6TypedTest)java.lang.NoClassDefFoundError: com/google/common/collect/Multimap
+	at com.google.javascript.jscomp.CodePrinterTestBase.newCompilerOptions(CodePrinterTestBase.java:105)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.assertPrettyPrintSame(CodePrinterEs6TypedTest.java:36)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.testFunctionParamDeclaration(CodePrinterEs6TypedTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Multimap
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+3) testFunctionParamDeclaration_defaultValue(com.google.javascript.jscomp.CodePrinterEs6TypedTest)java.lang.NoClassDefFoundError: com/google/common/collect/Multimap
+	at com.google.javascript.jscomp.CodePrinterTestBase.newCompilerOptions(CodePrinterTestBase.java:105)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.assertPrettyPrintSame(CodePrinterEs6TypedTest.java:36)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.testFunctionParamDeclaration_defaultValue(CodePrinterEs6TypedTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Multimap
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+4) testFunctionParamDeclaration_arrow(com.google.javascript.jscomp.CodePrinterEs6TypedTest)java.lang.NoClassDefFoundError: com/google/common/collect/Multimap
+	at com.google.javascript.jscomp.CodePrinterTestBase.newCompilerOptions(CodePrinterTestBase.java:105)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.assertPrettyPrintSame(CodePrinterEs6TypedTest.java:36)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.testFunctionParamDeclaration_arrow(CodePrinterEs6TypedTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Multimap
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+5) testFunctionReturn(com.google.javascript.jscomp.CodePrinterEs6TypedTest)java.lang.NoClassDefFoundError: com/google/common/collect/Multimap
+	at com.google.javascript.jscomp.CodePrinterTestBase.newCompilerOptions(CodePrinterTestBase.java:105)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.assertPrettyPrintSame(CodePrinterEs6TypedTest.java:36)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.testFunctionReturn(CodePrinterEs6TypedTest.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Multimap
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+6) testCompositeType(com.google.javascript.jscomp.CodePrinterEs6TypedTest)java.lang.NoClassDefFoundError: com/google/common/collect/Multimap
+	at com.google.javascript.jscomp.CodePrinterTestBase.newCompilerOptions(CodePrinterTestBase.java:105)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.assertPrettyPrintSame(CodePrinterEs6TypedTest.java:36)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.testCompositeType(CodePrinterEs6TypedTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Multimap
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+7) testFunctionReturn_arrow(com.google.javascript.jscomp.CodePrinterEs6TypedTest)java.lang.NoClassDefFoundError: com/google/common/collect/Multimap
+	at com.google.javascript.jscomp.CodePrinterTestBase.newCompilerOptions(CodePrinterTestBase.java:105)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.assertPrettyPrintSame(CodePrinterEs6TypedTest.java:36)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.testFunctionReturn_arrow(CodePrinterEs6TypedTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Multimap
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+8) testArrayType(com.google.javascript.jscomp.CodePrinterEs6TypedTest)java.lang.NoClassDefFoundError: com/google/common/collect/Multimap
+	at com.google.javascript.jscomp.CodePrinterTestBase.newCompilerOptions(CodePrinterTestBase.java:105)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.assertPrettyPrintSame(CodePrinterEs6TypedTest.java:36)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.testArrayType(CodePrinterEs6TypedTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Multimap
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+9) testArrayType_qualifiedType(com.google.javascript.jscomp.CodePrinterEs6TypedTest)java.lang.NoClassDefFoundError: com/google/common/collect/Multimap
+	at com.google.javascript.jscomp.CodePrinterTestBase.newCompilerOptions(CodePrinterTestBase.java:105)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.assertPrettyPrintSame(CodePrinterEs6TypedTest.java:36)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.testArrayType_qualifiedType(CodePrinterEs6TypedTest.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Multimap
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+10) testParameterizedType(com.google.javascript.jscomp.CodePrinterEs6TypedTest)java.lang.NoClassDefFoundError: com/google/common/collect/Multimap
+	at com.google.javascript.jscomp.CodePrinterTestBase.newCompilerOptions(CodePrinterTestBase.java:105)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.assertPrettyPrintSame(CodePrinterEs6TypedTest.java:36)
+	at com.google.javascript.jscomp.CodePrinterEs6TypedTest.testParameterizedType(CodePrinterEs6TypedTest.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Multimap
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+
+FAILURES!!!
+Tests run: 10,  Failures: 0,  Errors: 10
+

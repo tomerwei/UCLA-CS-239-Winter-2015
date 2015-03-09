@@ -1,0 +1,50 @@
+.E.E.E.E
+Time: 0.018
+There were 4 errors:
+1) testBasic(com.google.javascript.jscomp.JSDocInfoPrinterTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.rhino.JSDocInfo.getTemplateTypeNames(JSDocInfo.java:1790)
+	at com.google.javascript.jscomp.JSDocInfoPrinter.print(JSDocInfoPrinter.java:73)
+	at com.google.javascript.jscomp.JSDocInfoPrinterTest.testBasic(JSDocInfoPrinterTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableList
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+2) testTemplate(com.google.javascript.jscomp.JSDocInfoPrinterTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableList
+	at com.google.javascript.rhino.JSDocInfo.getTemplateTypeNames(JSDocInfo.java:1792)
+	at com.google.javascript.jscomp.JSDocInfoPrinter.print(JSDocInfoPrinter.java:73)
+	at com.google.javascript.jscomp.JSDocInfoPrinterTest.testTemplate(JSDocInfoPrinterTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+3) testParam(com.google.javascript.jscomp.JSDocInfoPrinterTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableSet
+	at com.google.javascript.jscomp.parsing.JsDocInfoParser.<clinit>(JsDocInfoParser.java:97)
+	at com.google.javascript.jscomp.JSDocInfoPrinterTest.testParam(JSDocInfoPrinterTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableSet
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 17 more
+4) testTypes(com.google.javascript.jscomp.JSDocInfoPrinterTest)java.lang.NoClassDefFoundError: Could not initialize class com.google.javascript.jscomp.parsing.JsDocInfoParser
+	at com.google.javascript.jscomp.JSDocInfoPrinterTest.testTypes(JSDocInfoPrinterTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+FAILURES!!!
+Tests run: 4,  Failures: 0,  Errors: 4
+

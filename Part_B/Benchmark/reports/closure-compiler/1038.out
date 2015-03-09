@@ -1,0 +1,84 @@
+.E.E.E.E.E.E.E
+Time: 0.024
+There were 7 errors:
+1) testExcerptOneLine(com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.setUp(JSCompilerSourceExcerptProviderTest.java:36)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+2) testExcerptLineFromInexistentSource(com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.setUp(JSCompilerSourceExcerptProviderTest.java:36)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+3) testExcerptInexistentLine(com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.setUp(JSCompilerSourceExcerptProviderTest.java:36)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+4) testExceptNoNewLine(com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.setUp(JSCompilerSourceExcerptProviderTest.java:36)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+5) testExcerptRegion(com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.setUp(JSCompilerSourceExcerptProviderTest.java:36)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+6) testExcerptRegionFromInexistentSource(com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.setUp(JSCompilerSourceExcerptProviderTest.java:36)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+7) testExcerptInexistentRegion(com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.setUp(JSCompilerSourceExcerptProviderTest.java:36)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+
+FAILURES!!!
+Tests run: 7,  Failures: 0,  Errors: 7
+
