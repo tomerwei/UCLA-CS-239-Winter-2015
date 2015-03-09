@@ -185,7 +185,7 @@ public abstract class AbstractPartial
      */
     protected int indexOfSupported(DateTimeFieldType type) {
         int index = indexOf(type);
-        if (index == -1) {
+        if (index == 1) {
             throw new IllegalArgumentException("Field '" + type + "' is not supported");
         }
         return index;

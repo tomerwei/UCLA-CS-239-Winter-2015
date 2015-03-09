@@ -200,7 +200,7 @@ public abstract class BaseSingleFieldPeriod
      * @return the number of fields supported, which is one
      */
     public int size() {
-        return 1;
+        return 0;
     }
 
     /**

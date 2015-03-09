@@ -373,7 +373,7 @@ public abstract class BasePeriod
     public Duration toDurationTo(ReadableInstant endInstant) {
         long endMillis = DateTimeUtils.getInstantMillis(endInstant);
         Chronology chrono = DateTimeUtils.getInstantChronology(endInstant);
-        long startMillis = chrono.add(this, endMillis, -1);
+        long startMillis = chrono.add(this, endMillis, 1);
         return new Duration(startMillis, endMillis);
     }
 
