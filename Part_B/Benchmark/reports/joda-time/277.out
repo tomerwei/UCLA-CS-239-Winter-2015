@@ -1,0 +1,33 @@
+....E.E.E.E..Writing zoneinfo files
+Writing ZoneInfoMap
+
+Time: 46.636
+There were 4 errors:
+1) test_Amman_2003(org.joda.time.tz.TestCompiler)java.lang.IllegalArgumentException: The datetime zone id 'Asia/Amman' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.tz.TestCompiler.test_Amman_2003(TestCompiler.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2) test_Amman_2004(org.joda.time.tz.TestCompiler)java.lang.IllegalArgumentException: The datetime zone id 'Asia/Amman' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.tz.TestCompiler.test_Amman_2004(TestCompiler.java:214)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+3) test_Amman_2005(org.joda.time.tz.TestCompiler)java.lang.IllegalArgumentException: The datetime zone id 'Asia/Amman' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.tz.TestCompiler.test_Amman_2005(TestCompiler.java:221)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+4) test_Amman_2006(org.joda.time.tz.TestCompiler)java.lang.IllegalArgumentException: The datetime zone id 'Asia/Amman' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.tz.TestCompiler.test_Amman_2006(TestCompiler.java:228)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+FAILURES!!!
+Tests run: 9,  Failures: 0,  Errors: 4
+

@@ -1,0 +1,171 @@
+.....F.F.F.F...E.E.E.E.E.E.E.E.F.F.F..E..F.F.F.F.F.F.F.F.F...F.F.F.F.
+Time: 1.361
+There were 9 errors:
+1) testForFields_time_HMSm(org.joda.time.format.TestISODateTimeFormat_Fields)java.lang.IllegalArgumentException: No valid ISO8601 format for fields because Date was reduced precision: []
+	at org.joda.time.format.ISODateTimeFormat.time(ISODateTimeFormat.java:405)
+	at org.joda.time.format.ISODateTimeFormat.forFields(ISODateTimeFormat.java:184)
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_HMSm(TestISODateTimeFormat_Fields.java:607)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2) testForFields_time_HMS(org.joda.time.format.TestISODateTimeFormat_Fields)java.lang.IllegalArgumentException: No valid ISO8601 format for fields because Date was reduced precision: []
+	at org.joda.time.format.ISODateTimeFormat.time(ISODateTimeFormat.java:405)
+	at org.joda.time.format.ISODateTimeFormat.forFields(ISODateTimeFormat.java:184)
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_HMS(TestISODateTimeFormat_Fields.java:636)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+3) testForFields_time_HM(org.joda.time.format.TestISODateTimeFormat_Fields)java.lang.IllegalArgumentException: No valid ISO8601 format for fields because Date was reduced precision: []
+	at org.joda.time.format.ISODateTimeFormat.time(ISODateTimeFormat.java:405)
+	at org.joda.time.format.ISODateTimeFormat.forFields(ISODateTimeFormat.java:184)
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_HM(TestISODateTimeFormat_Fields.java:664)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+4) testForFields_time_H(org.joda.time.format.TestISODateTimeFormat_Fields)java.lang.IllegalArgumentException: No valid ISO8601 format for fields because Date was reduced precision: []
+	at org.joda.time.format.ISODateTimeFormat.time(ISODateTimeFormat.java:405)
+	at org.joda.time.format.ISODateTimeFormat.forFields(ISODateTimeFormat.java:184)
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_H(TestISODateTimeFormat_Fields.java:691)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5) testForFields_time_MSm(org.joda.time.format.TestISODateTimeFormat_Fields)java.lang.IllegalArgumentException: No valid ISO8601 format for fields because Date was reduced precision: []
+	at org.joda.time.format.ISODateTimeFormat.time(ISODateTimeFormat.java:405)
+	at org.joda.time.format.ISODateTimeFormat.forFields(ISODateTimeFormat.java:184)
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_MSm(TestISODateTimeFormat_Fields.java:720)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+6) testForFields_time_MS(org.joda.time.format.TestISODateTimeFormat_Fields)java.lang.IllegalArgumentException: No valid ISO8601 format for fields because Date was reduced precision: []
+	at org.joda.time.format.ISODateTimeFormat.time(ISODateTimeFormat.java:405)
+	at org.joda.time.format.ISODateTimeFormat.forFields(ISODateTimeFormat.java:184)
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_MS(TestISODateTimeFormat_Fields.java:748)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+7) testForFields_time_M(org.joda.time.format.TestISODateTimeFormat_Fields)java.lang.IllegalArgumentException: No valid ISO8601 format for fields because Date was reduced precision: []
+	at org.joda.time.format.ISODateTimeFormat.time(ISODateTimeFormat.java:405)
+	at org.joda.time.format.ISODateTimeFormat.forFields(ISODateTimeFormat.java:184)
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_M(TestISODateTimeFormat_Fields.java:775)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+8) testForFields_time_Sm(org.joda.time.format.TestISODateTimeFormat_Fields)java.lang.IllegalArgumentException: No valid ISO8601 format for fields because Date was reduced precision: []
+	at org.joda.time.format.ISODateTimeFormat.time(ISODateTimeFormat.java:405)
+	at org.joda.time.format.ISODateTimeFormat.forFields(ISODateTimeFormat.java:184)
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_Sm(TestISODateTimeFormat_Fields.java:803)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+9) testForFields_time_S(org.joda.time.format.TestISODateTimeFormat_Fields)java.lang.IllegalArgumentException: No valid ISO8601 format for fields because Date was reduced precision: []
+	at org.joda.time.format.ISODateTimeFormat.time(ISODateTimeFormat.java:405)
+	at org.joda.time.format.ISODateTimeFormat.forFields(ISODateTimeFormat.java:184)
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_S(TestISODateTimeFormat_Fields.java:830)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+There were 20 failures:
+1) testForFields_weekBased_YW(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<2005-W[08]> but was:<2005-W[��]>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_weekBased_YW(TestISODateTimeFormat_Fields.java:434)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2) testForFields_weekBased_WD(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<-W08-[5]> but was:<-W08-[�]>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_weekBased_WD(TestISODateTimeFormat_Fields.java:462)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+3) testForFields_weekBased_YD(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<2005-W-[5]> but was:<2005-W-[�]>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_weekBased_YD(TestISODateTimeFormat_Fields.java:490)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+4) testForFields_ordinalBased_YD(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<2005-[177]> but was:<2005-[���]>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_ordinalBased_YD(TestISODateTimeFormat_Fields.java:522)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5) testForFields_calBased_YMD(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<2005-[06]-25> but was:<2005-[��]-25>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_calBased_YMD(TestISODateTimeFormat_Fields.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+6) testForFields_calBased_YMD_unmodifiable(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<2005-[06]-25> but was:<2005-[��]-25>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_calBased_YMD_unmodifiable(TestISODateTimeFormat_Fields.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+7) testForFields_calBased_YMD_duplicates(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<2005-[06]-25> but was:<2005-[��]-25>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_calBased_YMD_duplicates(TestISODateTimeFormat_Fields.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+8) testForFields_time_Hm(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<10--.[040]> but was:<10--.[���]>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_Hm(TestISODateTimeFormat_Fields.java:888)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+9) testForFields_time_HS(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<10-[30]> but was:<10-[��]>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_HS(TestISODateTimeFormat_Fields.java:918)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+10) testForFields_time_Mm(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<-20-.[040]> but was:<-20-.[���]>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_Mm(TestISODateTimeFormat_Fields.java:948)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11) testForFields_time_HSm(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<10-[30].040> but was:<10-[��].040>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_HSm(TestISODateTimeFormat_Fields.java:979)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12) testForFields_time_HMm(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<10:[20]-.040> but was:<10:[��]-.040>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_time_HMm(TestISODateTimeFormat_Fields.java:1010)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+13) testForFields_datetime_YMDH(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<2005-[06]-25T12> but was:<2005-[��]-25T12>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_datetime_YMDH(TestISODateTimeFormat_Fields.java:1044)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+14) testForFields_datetime_DH(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<---25T[12]> but was:<---25T[��]>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_datetime_DH(TestISODateTimeFormat_Fields.java:1072)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+15) testForFields_datetime_YH(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<2005T[12]> but was:<2005T[��]>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_datetime_YH(TestISODateTimeFormat_Fields.java:1100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+16) testForFields_datetime_DM(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<---25T-[20]> but was:<---25T-[��]>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_datetime_DM(TestISODateTimeFormat_Fields.java:1130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+17) testForFields_calBased_YM(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<2005-[06]> but was:<2005-[��]>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_calBased_YM(TestISODateTimeFormat_Fields.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+18) testForFields_calBased_MD(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<--06-[25]> but was:<--06-[��]>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_calBased_MD(TestISODateTimeFormat_Fields.java:264)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+19) testForFields_calBased_YD(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<2005--[25]> but was:<2005--[��]>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_calBased_YD(TestISODateTimeFormat_Fields.java:292)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+20) testForFields_weekBased_YWD(org.joda.time.format.TestISODateTimeFormat_Fields)junit.framework.ComparisonFailure: expected:<2005-W[08]-5> but was:<2005-W[��]-5>
+	at org.joda.time.format.TestISODateTimeFormat_Fields.testForFields_weekBased_YWD(TestISODateTimeFormat_Fields.java:325)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+FAILURES!!!
+Tests run: 40,  Failures: 20,  Errors: 9
+

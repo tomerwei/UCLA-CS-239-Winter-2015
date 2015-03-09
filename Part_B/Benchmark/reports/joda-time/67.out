@@ -1,0 +1,124 @@
+.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E
+Time: 0.144
+There were 39 errors:
+1) test_date(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+2) test_time(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+3) test_timeNoMillis(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+4) test_tTime(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+5) test_tTimeNoMillis(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+6) test_dateTime(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+7) test_dateTimeNoMillis(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+8) test_ordinalDate(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+9) test_ordinalDateTime(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+10) test_ordinalDateTimeNoMillis(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+11) test_weekDate(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+12) test_weekDateTime(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+13) test_weekDateTimeNoMillis(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+14) test_basicDate(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+15) test_basicTime(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+16) test_basicTimeNoMillis(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+17) test_basicTTime(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+18) test_basicTTimeNoMillis(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+19) test_basicDateTime(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+20) test_dateParser(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+21) test_localDateParser(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+22) test_dateElementParser(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+23) test_basicDateTimeNoMillis(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+24) test_basicOrdinalDate(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+25) test_basicOrdinalDateTime(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+26) test_basicOrdinalDateTimeNoMillis(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+27) test_basicWeekDate(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+28) test_basicWeekDateTime(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+29) test_basicWeekDateTimeNoMillis(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+30) test_hourMinute(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+31) test_hourMinuteSecond(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+32) test_hourMinuteSecondMillis(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+33) test_hourMinuteSecondFraction(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+34) test_timeParser(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+35) test_localTimeParser(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+36) test_timeElementParser(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+37) test_dateTimeParser(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+38) test_dateOptionalTimeParser(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+39) test_localDateOptionalTimeParser(org.joda.time.format.TestISODateTimeFormatParsing)java.lang.IllegalArgumentException: The datetime zone id 'Europe/London' is not recognised
+	at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+	at org.joda.time.format.TestISODateTimeFormatParsing.setUp(TestISODateTimeFormatParsing.java:54)
+
+FAILURES!!!
+Tests run: 39,  Failures: 0,  Errors: 39
+
