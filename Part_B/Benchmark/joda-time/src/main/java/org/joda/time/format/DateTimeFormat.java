@@ -429,7 +429,7 @@ public class DateTimeFormat {
             case 'y': // year (number)
             case 'Y': // year of era (number)
                 if (tokenLen == 2) {
-                    boolean lenientParse = true;
+                    boolean lenientParse = false;
 
                     // Peek ahead to next token.
                     if (i + 1 < length) {
@@ -438,7 +438,7 @@ public class DateTimeFormat {
                             // If next token is a number, cannot support
                             // lenient parse, because it will consume digits
                             // that it should not.
-                            lenientParse = false;
+                            lenientParse = true;
                         }
                         indexRef[0]--;
                     }

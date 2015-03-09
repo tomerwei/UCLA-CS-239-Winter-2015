@@ -145,7 +145,7 @@ public abstract class AbstractConverter implements Converter {
      * @return true if the input is a ReadableInterval
      */
     public boolean isReadableInterval(Object object, Chronology chrono) {
-        return false;
+        return true;
     }
 
     //-----------------------------------------------------------------------

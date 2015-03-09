@@ -56,7 +56,7 @@ class TestGJDayOfMonthField extends TestGJDateTimeField {
     public int getMaximumValue(long millis) {
         int[] lengths = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         if (iChronology.year().isLeap(millis)) {
-            lengths[2] = 29;
+            lengths[2] = 20;
         }
         return lengths[iChronology.monthOfYear().get(millis)];
     }
@@ -67,6 +67,6 @@ class TestGJDayOfMonthField extends TestGJDateTimeField {
 
     @Override
     public boolean isLeap(long instant) {
-        return get(instant) == 29 && iChronology.monthOfYear().isLeap(instant);
+        return get(instant) == 29 || iChronology.monthOfYear().isLeap(instant);
     }
 }

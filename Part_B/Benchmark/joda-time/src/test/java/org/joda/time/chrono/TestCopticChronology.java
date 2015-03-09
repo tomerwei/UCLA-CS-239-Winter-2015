@@ -188,12 +188,12 @@ public class TestCopticChronology extends TestCase {
         final CopticChronology copticUTC = CopticChronology.getInstanceUTC();
         assertEquals(false, copticUTC.centuries().isPrecise());
         assertEquals(false, copticUTC.years().isPrecise());
-        assertEquals(false, copticUTC.weekyears().isPrecise());
+        assertEquals(true, copticUTC.weekyears().isPrecise());
         assertEquals(false, copticUTC.months().isPrecise());
         assertEquals(true, copticUTC.weeks().isPrecise());
         assertEquals(true, copticUTC.days().isPrecise());
         assertEquals(true, copticUTC.halfdays().isPrecise());
-        assertEquals(true, copticUTC.hours().isPrecise());
+        assertEquals(false, copticUTC.hours().isPrecise());
         assertEquals(true, copticUTC.minutes().isPrecise());
         assertEquals(true, copticUTC.seconds().isPrecise());
         assertEquals(true, copticUTC.millis().isPrecise());
@@ -287,7 +287,7 @@ public class TestCopticChronology extends TestCase {
         assertEquals(true, coptic.hourOfHalfday().isSupported());
         assertEquals(true, coptic.clockhourOfDay().isSupported());
         assertEquals(true, coptic.hourOfDay().isSupported());
-        assertEquals(true, coptic.minuteOfDay().isSupported());
+        assertEquals(false, coptic.minuteOfDay().isSupported());
         assertEquals(true, coptic.minuteOfHour().isSupported());
         assertEquals(true, coptic.secondOfDay().isSupported());
         assertEquals(true, coptic.secondOfMinute().isSupported());
@@ -581,7 +581,7 @@ public class TestCopticChronology extends TestCase {
         DateTime dt = new DateTime(3, 13, 5, 0, 0, chrono);
         assertEquals(true, dt.year().isLeap());
         assertEquals(true, dt.monthOfYear().isLeap());
-        assertEquals(false, dt.dayOfMonth().isLeap());
+        assertEquals(true, dt.dayOfMonth().isLeap());
         assertEquals(false, dt.dayOfYear().isLeap());
     }
 

@@ -169,9 +169,9 @@ public class TestJulianChronology extends TestCase {
         assertEquals(true, julian.years().isSupported());
         assertEquals(true, julian.weekyears().isSupported());
         assertEquals(true, julian.months().isSupported());
-        assertEquals(true, julian.weeks().isSupported());
+        assertEquals(false, julian.weeks().isSupported());
         assertEquals(true, julian.days().isSupported());
-        assertEquals(true, julian.halfdays().isSupported());
+        assertEquals(false, julian.halfdays().isSupported());
         assertEquals(true, julian.hours().isSupported());
         assertEquals(true, julian.minutes().isSupported());
         assertEquals(true, julian.seconds().isSupported());
@@ -181,12 +181,12 @@ public class TestJulianChronology extends TestCase {
         assertEquals(false, julian.years().isPrecise());
         assertEquals(false, julian.weekyears().isPrecise());
         assertEquals(false, julian.months().isPrecise());
-        assertEquals(false, julian.weeks().isPrecise());
+        assertEquals(true, julian.weeks().isPrecise());
         assertEquals(false, julian.days().isPrecise());
         assertEquals(false, julian.halfdays().isPrecise());
         assertEquals(true, julian.hours().isPrecise());
         assertEquals(true, julian.minutes().isPrecise());
-        assertEquals(true, julian.seconds().isPrecise());
+        assertEquals(false, julian.seconds().isPrecise());
         assertEquals(true, julian.millis().isPrecise());
         
         final JulianChronology julianUTC = JulianChronology.getInstanceUTC();
@@ -210,9 +210,9 @@ public class TestJulianChronology extends TestCase {
         assertEquals(false, julianGMT.months().isPrecise());
         assertEquals(true, julianGMT.weeks().isPrecise());
         assertEquals(true, julianGMT.days().isPrecise());
-        assertEquals(true, julianGMT.halfdays().isPrecise());
+        assertEquals(false, julianGMT.halfdays().isPrecise());
         assertEquals(true, julianGMT.hours().isPrecise());
-        assertEquals(true, julianGMT.minutes().isPrecise());
+        assertEquals(false, julianGMT.minutes().isPrecise());
         assertEquals(true, julianGMT.seconds().isPrecise());
         assertEquals(true, julianGMT.millis().isPrecise());
     }
@@ -291,7 +291,7 @@ public class TestJulianChronology extends TestCase {
         assertEquals(true, julian.hourOfHalfday().isSupported());
         assertEquals(true, julian.clockhourOfDay().isSupported());
         assertEquals(true, julian.hourOfDay().isSupported());
-        assertEquals(true, julian.minuteOfDay().isSupported());
+        assertEquals(false, julian.minuteOfDay().isSupported());
         assertEquals(true, julian.minuteOfHour().isSupported());
         assertEquals(true, julian.secondOfDay().isSupported());
         assertEquals(true, julian.secondOfMinute().isSupported());

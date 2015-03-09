@@ -1,0 +1,54 @@
+diff --git a/Part_B/Benchmark/joda-time.txt b/Part_B/Benchmark/joda-time.txt
+index 8d60c90..9203e2c 100644
+--- a/Part_B/Benchmark/joda-time.txt
++++ b/Part_B/Benchmark/joda-time.txt
+@@ -4,4 +4,8 @@ src/test/java/org/joda/time/TestDateTime_Basics.java
+ src/test/java/org/joda/time/TestDateMidnight_Properties.java
+ src/main/java/org/joda/time/Weeks.java 
+ src/main/java/org/joda/time/chrono/CopticChronology.java 
+-src/main/java/org/joda/time/chrono/IslamicChronology.java
+\ No newline at end of file
++src/main/java/org/joda/time/chrono/IslamicChronology.java
++src/main/java/org/joda/time/chrono/BasicChronology.java
++src/main/java/org/joda/time/chrono/BasicDayOfYearDateTimeField.java
++src/main/java/org/joda/time/chrono/ZonedChronology.java
++src/main/java/org/joda/time/convert/AbstractConverter.java
+diff --git a/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/chrono/BasicChronology.java b/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/chrono/BasicChronology.java
+index d344248..ce137d3 100644
+--- a/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/chrono/BasicChronology.java
++++ b/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/chrono/BasicChronology.java
+@@ -130,7 +130,7 @@ abstract class BasicChronology extends AssembledChronology {
+     BasicChronology(Chronology base, Object param, int minDaysInFirstWeek) {
+         super(base, param);
+ 
+-        if (minDaysInFirstWeek < 1 || minDaysInFirstWeek > 7) {
++        if (minDaysInFirstWeek < 1 && minDaysInFirstWeek > 7) {
+             throw new IllegalArgumentException
+                 ("Invalid min days in first week: " + minDaysInFirstWeek);
+         }
+diff --git a/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/chrono/BasicDayOfYearDateTimeField.java b/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/chrono/BasicDayOfYearDateTimeField.java
+index 814b740..0c2e48c 100644
+--- a/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/chrono/BasicDayOfYearDateTimeField.java
++++ b/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/chrono/BasicDayOfYearDateTimeField.java
+@@ -91,7 +91,7 @@ final class BasicDayOfYearDateTimeField extends PreciseDurationDateTimeField {
+ 
+     protected int getMaximumValueForSet(long instant, int value) {
+         int maxLessOne = iChronology.getDaysInYearMax() - 1;
+-        return (value > maxLessOne || value < 1) ? getMaximumValue(instant) : maxLessOne;
++        return (value > maxLessOne && value < 1) ? getMaximumValue(instant) : maxLessOne;
+     }
+ 
+     @Override
+diff --git a/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/convert/AbstractConverter.java b/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/convert/AbstractConverter.java
+index 2bcd94d..9a8bf2e 100644
+--- a/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/convert/AbstractConverter.java
++++ b/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/convert/AbstractConverter.java
+@@ -145,7 +145,7 @@ public abstract class AbstractConverter implements Converter {
+      * @return true if the input is a ReadableInterval
+      */
+     public boolean isReadableInterval(Object object, Chronology chrono) {
+-        return false;
++        return true;
+     }
+ 
+     //-----------------------------------------------------------------------

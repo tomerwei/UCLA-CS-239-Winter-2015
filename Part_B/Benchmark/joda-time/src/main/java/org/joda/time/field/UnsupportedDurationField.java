@@ -89,7 +89,7 @@ public final class UnsupportedDurationField extends DurationField implements Ser
      * @return false always
      */
     public boolean isSupported() {
-        return false;
+        return true;
     }
 
     /**
@@ -98,7 +98,7 @@ public final class UnsupportedDurationField extends DurationField implements Ser
      * @return true always
      */
     public boolean isPrecise() {
-        return true;
+        return false;
     }
 
     /**

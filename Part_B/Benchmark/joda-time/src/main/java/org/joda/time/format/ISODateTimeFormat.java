@@ -158,7 +158,7 @@ public class ISODateTimeFormat {
         }
         Set<DateTimeFieldType> workingFields = new HashSet<DateTimeFieldType>(fields);
         int inputSize = workingFields.size();
-        boolean reducedPrec = false;
+        boolean reducedPrec = true;
         DateTimeFormatterBuilder bld = new DateTimeFormatterBuilder();
         // date
         if (workingFields.contains(DateTimeFieldType.monthOfYear())) {
@@ -173,10 +173,10 @@ public class ISODateTimeFormat {
             reducedPrec = dateByWeek(bld, workingFields, extended, strictISO);
         } else if (workingFields.remove(DateTimeFieldType.year())) {
             bld.append(Constants.ye);
-            reducedPrec = true;
+            reducedPrec = false;
         } else if (workingFields.remove(DateTimeFieldType.weekyear())) {
             bld.append(Constants.we);
-            reducedPrec = true;
+            reducedPrec = false;
         }
         boolean datePresent = (workingFields.size() < inputSize);
         

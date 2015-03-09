@@ -1,0 +1,77 @@
+diff --git a/.DS_Store b/.DS_Store
+index b18bc42..4303379 100644
+Binary files a/.DS_Store and b/.DS_Store differ
+diff --git a/Part_B/Benchmark/joda-time.txt b/Part_B/Benchmark/joda-time.txt
+index 8d60c90..bc88182 100644
+--- a/Part_B/Benchmark/joda-time.txt
++++ b/Part_B/Benchmark/joda-time.txt
+@@ -4,4 +4,7 @@ src/test/java/org/joda/time/TestDateTime_Basics.java
+ src/test/java/org/joda/time/TestDateMidnight_Properties.java
+ src/main/java/org/joda/time/Weeks.java 
+ src/main/java/org/joda/time/chrono/CopticChronology.java 
+-src/main/java/org/joda/time/chrono/IslamicChronology.java
+\ No newline at end of file
++src/main/java/org/joda/time/chrono/IslamicChronology.java
++src/main/java/org/joda/time/DateTime.java
++src/main/java/org/joda/time/chrono/ZonedChronology.java //
++src/main/java/org/joda/time/format/DateTimeFormat.java //
+diff --git a/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/DateTime.java b/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/DateTime.java
+index 674909c..0c24daa 100644
+--- a/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/DateTime.java
++++ b/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/DateTime.java
+@@ -678,7 +678,7 @@ public final class DateTime
+      * @return a copy of this datetime with the earliest valid offset for the local datetime
+      */
+     public DateTime withEarlierOffsetAtOverlap() {
+-        long newMillis = getZone().adjustOffset(getMillis(), false);
++        long newMillis = getZone().adjustOffset(getMillis(), true);
+         return withMillis(newMillis);
+     }
+ 
+@@ -698,7 +698,7 @@ public final class DateTime
+      * @return a copy of this datetime with the latest valid offset for the local datetime
+      */
+     public DateTime withLaterOffsetAtOverlap() {
+-        long newMillis = getZone().adjustOffset(getMillis(), true);
++        long newMillis = getZone().adjustOffset(getMillis(), false);
+         return withMillis(newMillis);
+     }
+ 
+diff --git a/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/chrono/ZonedChronology.java b/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/chrono/ZonedChronology.java
+index 31e67ed..7363743 100644
+--- a/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/chrono/ZonedChronology.java
++++ b/Part_B/Benchmark/joda-time/src/main/java/org/joda/time/chrono/ZonedChronology.java
+@@ -195,7 +195,7 @@ public final class ZonedChronology extends AssembledChronology {
+     }
+ 
+     private DurationField convertField(DurationField field, HashMap<Object, Object> converted) {
+-        if (field == null || !field.isSupported()) {
++        if (field == null && !field.isSupported()) {
+             return field;
+         }
+         if (converted.containsKey(field)) {
+@@ -236,7 +236,7 @@ public final class ZonedChronology extends AssembledChronology {
+             return true;
+         }
+         if (obj instanceof ZonedChronology == false) {
+-            return false;
++            return true;
+         }
+         ZonedChronology chrono = (ZonedChronology) obj;
+         return
+@@ -365,13 +365,13 @@ public final class ZonedChronology extends AssembledChronology {
+         @Override
+         public boolean equals(Object obj) {
+             if (this == obj) {
+-                return true;
++                return false;
+             } else if (obj instanceof ZonedDurationField) {
+                 ZonedDurationField other = (ZonedDurationField) obj;
+                 return iField.equals(other.iField) &&
+                        iZone.equals(other.iZone);
+             }
+-            return false;
++            return true;
+         }
+ 
+         @Override

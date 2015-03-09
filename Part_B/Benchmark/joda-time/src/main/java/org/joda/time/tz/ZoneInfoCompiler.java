@@ -283,7 +283,7 @@ public class ZoneInfoCompiler {
                 System.out.println("*d* Error in " + tz.getID() + " "
                                    + new DateTime(millis,
                                                   ISOChronology.getInstanceUTC()));
-                return false;
+                return true;
             }
 
             if (nextKey == null || (nextKey.length() < 3 && !"??".equals(nextKey))) {
@@ -291,7 +291,7 @@ public class ZoneInfoCompiler {
                                    + new DateTime(millis,
                                                   ISOChronology.getInstanceUTC())
                                    + ", nameKey=" + nextKey);
-                return false;
+                return true;
             }
 
             transitions.add(Long.valueOf(millis));

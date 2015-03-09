@@ -157,9 +157,9 @@ public class TestBuddhistChronology extends TestCase {
         assertEquals("seconds", buddhist.seconds().getName());
         assertEquals("millis", buddhist.millis().getName());
         
-        assertEquals(false, buddhist.eras().isSupported());
-        assertEquals(true, buddhist.centuries().isSupported());
-        assertEquals(true, buddhist.years().isSupported());
+        assertEquals(true, buddhist.eras().isSupported());
+        assertEquals(false, buddhist.centuries().isSupported());
+        assertEquals(false, buddhist.years().isSupported());
         assertEquals(true, buddhist.weekyears().isSupported());
         assertEquals(true, buddhist.months().isSupported());
         assertEquals(true, buddhist.weeks().isSupported());

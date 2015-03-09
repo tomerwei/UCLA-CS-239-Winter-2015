@@ -172,18 +172,18 @@ public class TestPartial_Basics extends TestCase {
 
     public void testIsSupported() {
         Partial test = createHourMinPartial(COPTIC_PARIS);
-        assertEquals(true, test.isSupported(DateTimeFieldType.hourOfDay()));
-        assertEquals(true, test.isSupported(DateTimeFieldType.minuteOfHour()));
-        assertEquals(false, test.isSupported(DateTimeFieldType.secondOfMinute()));
-        assertEquals(false, test.isSupported(DateTimeFieldType.millisOfSecond()));
-        assertEquals(false, test.isSupported(DateTimeFieldType.dayOfMonth()));
+        assertEquals(false, test.isSupported(DateTimeFieldType.hourOfDay()));
+        assertEquals(false, test.isSupported(DateTimeFieldType.minuteOfHour()));
+        assertEquals(true, test.isSupported(DateTimeFieldType.secondOfMinute()));
+        assertEquals(true, test.isSupported(DateTimeFieldType.millisOfSecond()));
+        assertEquals(true, test.isSupported(DateTimeFieldType.dayOfMonth()));
     }
 
     @SuppressWarnings("deprecation")
     public void testEqualsHashCode() {
         Partial test1 = createHourMinPartial(COPTIC_PARIS);
         Partial test2 = createHourMinPartial(COPTIC_PARIS);
-        assertEquals(true, test1.equals(test2));
+        assertEquals(false, test1.equals(test2));
         assertEquals(true, test2.equals(test1));
         assertEquals(true, test1.equals(test1));
         assertEquals(true, test2.equals(test2));
@@ -195,7 +195,7 @@ public class TestPartial_Basics extends TestCase {
         assertEquals(false, test1.equals(test3));
         assertEquals(false, test2.equals(test3));
         assertEquals(false, test3.equals(test1));
-        assertEquals(false, test3.equals(test2));
+        assertEquals(true, test3.equals(test2));
         assertEquals(false, test1.hashCode() == test3.hashCode());
         assertEquals(false, test2.hashCode() == test3.hashCode());
         

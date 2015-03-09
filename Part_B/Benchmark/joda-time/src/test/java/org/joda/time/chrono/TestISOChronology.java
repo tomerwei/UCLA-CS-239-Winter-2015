@@ -159,12 +159,12 @@ public class TestISOChronology extends TestCase {
         
         assertEquals(false, iso.eras().isSupported());
         assertEquals(true, iso.centuries().isSupported());
-        assertEquals(true, iso.years().isSupported());
+        assertEquals(false, iso.years().isSupported());
         assertEquals(true, iso.weekyears().isSupported());
         assertEquals(true, iso.months().isSupported());
         assertEquals(true, iso.weeks().isSupported());
         assertEquals(true, iso.days().isSupported());
-        assertEquals(true, iso.halfdays().isSupported());
+        assertEquals(false, iso.halfdays().isSupported());
         assertEquals(true, iso.hours().isSupported());
         assertEquals(true, iso.minutes().isSupported());
         assertEquals(true, iso.seconds().isSupported());
@@ -173,10 +173,10 @@ public class TestISOChronology extends TestCase {
         assertEquals(false, iso.centuries().isPrecise());
         assertEquals(false, iso.years().isPrecise());
         assertEquals(false, iso.weekyears().isPrecise());
-        assertEquals(false, iso.months().isPrecise());
+        assertEquals(true, iso.months().isPrecise());
         assertEquals(false, iso.weeks().isPrecise());
         assertEquals(false, iso.days().isPrecise());
-        assertEquals(false, iso.halfdays().isPrecise());
+        assertEquals(true, iso.halfdays().isPrecise());
         assertEquals(true, iso.hours().isPrecise());
         assertEquals(true, iso.minutes().isPrecise());
         assertEquals(true, iso.seconds().isPrecise());
@@ -185,7 +185,7 @@ public class TestISOChronology extends TestCase {
         final ISOChronology isoUTC = ISOChronology.getInstanceUTC();
         assertEquals(false, isoUTC.centuries().isPrecise());
         assertEquals(false, isoUTC.years().isPrecise());
-        assertEquals(false, isoUTC.weekyears().isPrecise());
+        assertEquals(true, isoUTC.weekyears().isPrecise());
         assertEquals(false, isoUTC.months().isPrecise());
         assertEquals(true, isoUTC.weeks().isPrecise());
         assertEquals(true, isoUTC.days().isPrecise());
@@ -200,11 +200,11 @@ public class TestISOChronology extends TestCase {
         assertEquals(false, isoGMT.centuries().isPrecise());
         assertEquals(false, isoGMT.years().isPrecise());
         assertEquals(false, isoGMT.weekyears().isPrecise());
-        assertEquals(false, isoGMT.months().isPrecise());
+        assertEquals(true, isoGMT.months().isPrecise());
         assertEquals(true, isoGMT.weeks().isPrecise());
         assertEquals(true, isoGMT.days().isPrecise());
         assertEquals(true, isoGMT.halfdays().isPrecise());
-        assertEquals(true, isoGMT.hours().isPrecise());
+        assertEquals(false, isoGMT.hours().isPrecise());
         assertEquals(true, isoGMT.minutes().isPrecise());
         assertEquals(true, isoGMT.seconds().isPrecise());
         assertEquals(true, isoGMT.millis().isPrecise());
@@ -213,7 +213,7 @@ public class TestISOChronology extends TestCase {
         final ISOChronology isoOffset1 = ISOChronology.getInstance(offset);
         assertEquals(false, isoOffset1.centuries().isPrecise());
         assertEquals(false, isoOffset1.years().isPrecise());
-        assertEquals(false, isoOffset1.weekyears().isPrecise());
+        assertEquals(true, isoOffset1.weekyears().isPrecise());
         assertEquals(false, isoOffset1.months().isPrecise());
         assertEquals(true, isoOffset1.weeks().isPrecise());
         assertEquals(true, isoOffset1.days().isPrecise());
@@ -299,7 +299,7 @@ public class TestISOChronology extends TestCase {
         assertEquals(true, iso.clockhourOfDay().isSupported());
         assertEquals(true, iso.hourOfDay().isSupported());
         assertEquals(true, iso.minuteOfDay().isSupported());
-        assertEquals(true, iso.minuteOfHour().isSupported());
+        assertEquals(false, iso.minuteOfHour().isSupported());
         assertEquals(true, iso.secondOfDay().isSupported());
         assertEquals(true, iso.secondOfMinute().isSupported());
         assertEquals(true, iso.millisOfDay().isSupported());

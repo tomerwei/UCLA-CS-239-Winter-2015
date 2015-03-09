@@ -368,10 +368,10 @@ public class DateTimeParserBucket {
         if (savedState instanceof SavedState) {
             if (((SavedState) savedState).restoreState(this)) {
                 iSavedState = savedState;
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
     
     /**

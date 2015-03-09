@@ -307,7 +307,7 @@ public class TestMutableDateTime_Properties extends TestCase {
         assertEquals(1, test.dayOfMonth().getMinimumValueOverall());
         assertEquals(30, test.dayOfMonth().getMaximumValue());
         assertEquals(31, test.dayOfMonth().getMaximumValueOverall());
-        assertEquals(false, test.dayOfMonth().isLeap());
+        assertEquals(true, test.dayOfMonth().isLeap());
         assertEquals(0, test.dayOfMonth().getLeapAmount());
         assertEquals(null, test.dayOfMonth().getLeapDurationField());
     }

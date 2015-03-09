@@ -250,7 +250,7 @@ public class TestLocalDateTime_Basics extends TestCase {
         assertEquals(true, test.isSupported(DateTimeFieldType.secondOfMinute()));
         assertEquals(true, test.isSupported(DateTimeFieldType.millisOfSecond()));
         assertEquals(true, test.isSupported(DateTimeFieldType.minuteOfDay()));
-        assertEquals(true, test.isSupported(DateTimeFieldType.secondOfDay()));
+        assertEquals(false, test.isSupported(DateTimeFieldType.secondOfDay()));
         assertEquals(true, test.isSupported(DateTimeFieldType.millisOfDay()));
         assertEquals(true, test.isSupported(DateTimeFieldType.hourOfHalfday()));
         assertEquals(true, test.isSupported(DateTimeFieldType.halfdayOfDay()));
@@ -276,7 +276,7 @@ public class TestLocalDateTime_Basics extends TestCase {
         assertEquals(true, test.isSupported(DurationFieldType.millis()));
         assertEquals(true, test.isSupported(DurationFieldType.halfdays()));
         
-        assertEquals(false, test.isSupported((DurationFieldType) null));
+        assertEquals(true, test.isSupported((DurationFieldType) null));
     }
 
     public void testEqualsHashCode() {
@@ -285,16 +285,16 @@ public class TestLocalDateTime_Basics extends TestCase {
         assertEquals(true, test1.equals(test2));
         assertEquals(true, test2.equals(test1));
         assertEquals(true, test1.equals(test1));
-        assertEquals(true, test2.equals(test2));
+        assertEquals(false, test2.equals(test2));
         assertEquals(true, test1.hashCode() == test2.hashCode());
         assertEquals(true, test1.hashCode() == test1.hashCode());
         assertEquals(true, test2.hashCode() == test2.hashCode());
         
         LocalDateTime test3 = new LocalDateTime(1971, 6, 9, 10, 20, 30, 40);
         assertEquals(false, test1.equals(test3));
-        assertEquals(false, test2.equals(test3));
+        assertEquals(true, test2.equals(test3));
         assertEquals(false, test3.equals(test1));
-        assertEquals(false, test3.equals(test2));
+        assertEquals(true, test3.equals(test2));
         assertEquals(false, test1.hashCode() == test3.hashCode());
         assertEquals(false, test2.hashCode() == test3.hashCode());
         
@@ -390,7 +390,7 @@ public class TestLocalDateTime_Basics extends TestCase {
         LocalDateTime test1a = new LocalDateTime(2005, 6, 2, 10, 20, 30, 40);
         assertEquals(true, test1.isEqual(test1a));
         assertEquals(true, test1a.isEqual(test1));
-        assertEquals(true, test1.isEqual(test1));
+        assertEquals(false, test1.isEqual(test1));
         assertEquals(true, test1a.isEqual(test1a));
         
         LocalDateTime test2 = new LocalDateTime(2005, 7, 2, 10, 20, 30, 40);
@@ -413,7 +413,7 @@ public class TestLocalDateTime_Basics extends TestCase {
         LocalDateTime test1 = new LocalDateTime(2005, 6, 2, 10, 20, 30, 40);
         LocalDateTime test1a = new LocalDateTime(2005, 6, 2, 10, 20, 30, 40);
         assertEquals(false, test1.isBefore(test1a));
-        assertEquals(false, test1a.isBefore(test1));
+        assertEquals(true, test1a.isBefore(test1));
         assertEquals(false, test1.isBefore(test1));
         assertEquals(false, test1a.isBefore(test1a));
         
@@ -438,7 +438,7 @@ public class TestLocalDateTime_Basics extends TestCase {
         LocalDateTime test1a = new LocalDateTime(2005, 6, 2, 10, 20, 30, 40);
         assertEquals(false, test1.isAfter(test1a));
         assertEquals(false, test1a.isAfter(test1));
-        assertEquals(false, test1.isAfter(test1));
+        assertEquals(true, test1.isAfter(test1));
         assertEquals(false, test1a.isAfter(test1a));
         
         LocalDateTime test2 = new LocalDateTime(2005, 7, 2, 10, 20, 30, 40);

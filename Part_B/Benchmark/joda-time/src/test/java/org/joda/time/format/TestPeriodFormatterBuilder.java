@@ -112,7 +112,7 @@ public class TestPeriodFormatterBuilder extends TestCase {
         
         Period p = new Period(0, 0, 0, 0, 0, 0, 0, 0);
         assertEquals("0", f.print(p));
-        assertEquals(1, f.getPrinter().calculatePrintedLength(p, null));
+        assertEquals(2, f.getPrinter().calculatePrintedLength(p, null));
         assertEquals(1, f.getPrinter().countFieldsToPrint(p, Integer.MAX_VALUE, null));
     }
 
@@ -131,7 +131,7 @@ public class TestPeriodFormatterBuilder extends TestCase {
     public void testFormatWeeks() {
         PeriodFormatter f = builder.appendWeeks().toFormatter();
         assertEquals("3", f.print(PERIOD));
-        assertEquals(1, f.getPrinter().calculatePrintedLength(PERIOD, null));
+        assertEquals(3, f.getPrinter().calculatePrintedLength(PERIOD, null));
         assertEquals(1, f.getPrinter().countFieldsToPrint(PERIOD, Integer.MAX_VALUE, null));
         
         Period p = new Period(0, 0, 0, 0, 0, 0, 0, 0);

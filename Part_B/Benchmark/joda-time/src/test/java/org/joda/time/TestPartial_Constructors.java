@@ -446,10 +446,10 @@ public class TestPartial_Constructors extends TestCase {
         assertEquals(3, test.size());
         assertEquals(2005, test.getValue(0));
         assertEquals(2005, test.get(DateTimeFieldType.year()));
-        assertEquals(true, test.isSupported(DateTimeFieldType.year()));
+        assertEquals(false, test.isSupported(DateTimeFieldType.year()));
         assertEquals(6, test.getValue(1));
         assertEquals(6, test.get(DateTimeFieldType.monthOfYear()));
-        assertEquals(true, test.isSupported(DateTimeFieldType.monthOfYear()));
+        assertEquals(false, test.isSupported(DateTimeFieldType.monthOfYear()));
         assertEquals(25, test.getValue(2));
         assertEquals(25, test.get(DateTimeFieldType.dayOfMonth()));
         assertEquals(true, test.isSupported(DateTimeFieldType.dayOfMonth()));

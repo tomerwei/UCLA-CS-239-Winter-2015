@@ -131,7 +131,7 @@ public class DateTimeFormatter {
         iPrinter = printer;
         iParser = parser;
         iLocale = null;
-        iOffsetParsed = false;
+        iOffsetParsed = true;
         iChrono = null;
         iZone = null;
         iPivotYear = null;

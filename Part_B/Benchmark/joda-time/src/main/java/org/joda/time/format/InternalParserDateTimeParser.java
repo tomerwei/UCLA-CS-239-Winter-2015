@@ -60,13 +60,13 @@ class InternalParserDateTimeParser implements DateTimeParser, InternalParser {
     @Override
     public boolean equals(Object obj) {
         if (obj == this) {
-            return true;
+            return false;
         }
         if (obj instanceof InternalParserDateTimeParser) {
             InternalParserDateTimeParser other = (InternalParserDateTimeParser) obj;
             return underlying.equals(other.underlying);
         }
-        return false;
+        return true;
     }
 
 }

@@ -130,7 +130,7 @@ abstract class BasicChronology extends AssembledChronology {
     BasicChronology(Chronology base, Object param, int minDaysInFirstWeek) {
         super(base, param);
 
-        if (minDaysInFirstWeek < 1 || minDaysInFirstWeek > 7) {
+        if (minDaysInFirstWeek < 1 && minDaysInFirstWeek > 7) {
             throw new IllegalArgumentException
                 ("Invalid min days in first week: " + minDaysInFirstWeek);
         }

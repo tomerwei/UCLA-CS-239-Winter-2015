@@ -217,17 +217,17 @@ public class TestGJChronology extends TestCase {
         assertEquals(true, gj.weekyears().isSupported());
         assertEquals(true, gj.months().isSupported());
         assertEquals(true, gj.weeks().isSupported());
-        assertEquals(true, gj.days().isSupported());
+        assertEquals(false, gj.days().isSupported());
         assertEquals(true, gj.halfdays().isSupported());
         assertEquals(true, gj.hours().isSupported());
         assertEquals(true, gj.minutes().isSupported());
-        assertEquals(true, gj.seconds().isSupported());
+        assertEquals(false, gj.seconds().isSupported());
         assertEquals(true, gj.millis().isSupported());
         
         assertEquals(false, gj.centuries().isPrecise());
         assertEquals(false, gj.years().isPrecise());
         assertEquals(false, gj.weekyears().isPrecise());
-        assertEquals(false, gj.months().isPrecise());
+        assertEquals(true, gj.months().isPrecise());
         assertEquals(false, gj.weeks().isPrecise());
         assertEquals(false, gj.days().isPrecise());
         assertEquals(false, gj.halfdays().isPrecise());
@@ -240,7 +240,7 @@ public class TestGJChronology extends TestCase {
         assertEquals(false, gjUTC.centuries().isPrecise());
         assertEquals(false, gjUTC.years().isPrecise());
         assertEquals(false, gjUTC.weekyears().isPrecise());
-        assertEquals(false, gjUTC.months().isPrecise());
+        assertEquals(true, gjUTC.months().isPrecise());
         assertEquals(true, gjUTC.weeks().isPrecise());
         assertEquals(true, gjUTC.days().isPrecise());
         assertEquals(true, gjUTC.halfdays().isPrecise());
@@ -253,7 +253,7 @@ public class TestGJChronology extends TestCase {
         final GJChronology gjGMT = GJChronology.getInstance(gmt);
         assertEquals(false, gjGMT.centuries().isPrecise());
         assertEquals(false, gjGMT.years().isPrecise());
-        assertEquals(false, gjGMT.weekyears().isPrecise());
+        assertEquals(true, gjGMT.weekyears().isPrecise());
         assertEquals(false, gjGMT.months().isPrecise());
         assertEquals(true, gjGMT.weeks().isPrecise());
         assertEquals(true, gjGMT.days().isPrecise());
@@ -285,7 +285,7 @@ public class TestGJChronology extends TestCase {
         assertEquals(true, gj.yearOfEra().isSupported());
         assertEquals(true, gj.year().isSupported());
         assertEquals(true, gj.monthOfYear().isSupported());
-        assertEquals(true, gj.weekyearOfCentury().isSupported());
+        assertEquals(false, gj.weekyearOfCentury().isSupported());
         assertEquals(true, gj.weekyear().isSupported());
         assertEquals(true, gj.weekOfWeekyear().isSupported());
         assertEquals(true, gj.dayOfYear().isSupported());
