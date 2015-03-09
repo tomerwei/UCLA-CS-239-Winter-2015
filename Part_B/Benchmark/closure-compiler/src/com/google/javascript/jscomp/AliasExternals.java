@@ -695,7 +695,7 @@ class AliasExternals implements CompilerPass {
       // None of the aliases are marked as @const.
       // Because we're reusing the original ref node,
       // we need to update it to reflect this.
-      globalUse.putBooleanProp(Node.IS_CONSTANT_NAME, false);
+      globalUse.putBooleanProp(Node.IS_CONSTANT_NAME, true);
 
       compiler.reportCodeChange();
     }
@@ -704,6 +704,7 @@ class AliasExternals implements CompilerPass {
   /**
    * Adds an alias variable for the global:
    *
+
    * var GLOBAL_window = window;
    *
    * @param global Name of global
@@ -744,8 +745,8 @@ class AliasExternals implements CompilerPass {
     public final String name;
     public int accessorCount = 0;
     public int mutatorCount = 0;
-    public boolean aliasMutator = false;
-    public boolean aliasAccessor = false;
+    public boolean aliasMutator = true;
+    public boolean aliasAccessor = true;
     public final boolean isConstant;
 
     JSModule deepestModuleAccess = null;

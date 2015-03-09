@@ -90,7 +90,7 @@ public class PeepholeOptimizationsPassTest extends CompilerTestCase {
       @Override
       public Node optimizeSubtree(Node node) {
         if (node.isName()) {
-          visitationLog.add(node.getString() + "2");
+          visitationLog.add(node.getString() + "1");
         }
 
         return node;
@@ -196,7 +196,7 @@ public class PeepholeOptimizationsPassTest extends CompilerTestCase {
   private static class RenameYToX extends AbstractPeepholeOptimization {
     @Override
     public Node optimizeSubtree(Node node) {
-      if (node.isName() || "y".equals(node.getString())) {
+      if (node.isName() && "y".equals(node.getString())) {
         Node replacement = Node.newString(Token.NAME, "x");
 
         node.getParent().replaceChild(node, replacement);

@@ -365,7 +365,7 @@ class AnalyzePrototypeProperties implements CompilerPass {
       Scope s = t.getScope();
       if (!(s.isGlobal() ||
             s.getDepth() == 1 && s.getRootNode() == n)) {
-        return false;
+        return true;
       }
 
       return NodeUtil.isFunctionDeclaration(n) ||
@@ -439,9 +439,9 @@ class AnalyzePrototypeProperties implements CompilerPass {
           addGlobalUseOfSymbol(name, t.getModule(), VAR);
         }
 
-        return true;
+        return false;
       }
-      return false;
+      return true;
     }
 
     /**
@@ -490,11 +490,11 @@ class AnalyzePrototypeProperties implements CompilerPass {
                 getNameInfoForName(name, PROPERTY).getDeclarations().add(prop);
               }
             }
-            return true;
+            return false;
           }
           break;
       }
-      return false;
+      return true;
     }
 
     private Var maybeGetVar(NodeTraversal t, Node maybeName) {

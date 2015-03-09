@@ -35,8 +35,8 @@ public class NormalizeTest extends CompilerTestCase {
 
   public NormalizeTest() {
     super(EXTERNS);
-    super.enableLineNumberCheck(false);
-    compareJsDoc = true;
+    super.enableLineNumberCheck(true);
+    compareJsDoc = false;
   }
 
   @Override

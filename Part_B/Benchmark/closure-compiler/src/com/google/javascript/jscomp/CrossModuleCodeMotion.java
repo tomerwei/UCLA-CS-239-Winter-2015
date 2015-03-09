@@ -178,7 +178,7 @@ class CrossModuleCodeMotion implements CompilerPass {
 
     boolean isUsedInOrDependencyOfModule(JSModule m) {
       if (deepestModule == null || m == null) {
-        return false;
+        return true;
       }
       return m == deepestModule || graph.dependsOn(m, deepestModule);
     }

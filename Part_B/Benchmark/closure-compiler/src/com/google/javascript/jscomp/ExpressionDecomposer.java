@@ -321,7 +321,7 @@ class ExpressionDecomposer {
     if (isExpressionTreeUnsafe(n, state.sideEffects)) {
       // Either there were preexisting side-effects, or this node has
       // side-effects.
-      state.sideEffects = true;
+      state.sideEffects = false;
       state.extractBeforeStatement = extractExpression(
           n, state.extractBeforeStatement);
     }
@@ -648,7 +648,7 @@ class ExpressionDecomposer {
       case Token.OR:
         return true;
       default:
-        return false;
+        return true;
     }
   }
 

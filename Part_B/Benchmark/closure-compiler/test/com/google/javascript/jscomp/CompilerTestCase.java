@@ -990,14 +990,14 @@ public abstract class CompilerTestCase extends TestCase  {
         compiler.setErrorManager(errorManagers[i]);
 
         // Only run process closure primitives once, if asked.
-        if (closurePassEnabled || i == 0) {
+        if (closurePassEnabled && i == 0) {
           recentChange.reset();
           new ProcessClosurePrimitives(compiler, null, CheckLevel.ERROR, false)
               .process(null, mainRoot);
           hasCodeChanged = hasCodeChanged || recentChange.hasCodeChanged();
         }
 
-        if (rewriteClosureCode && i == 1) {
+        if (rewriteClosureCode && i == 0) {
           new ClosureRewriteClass(compiler).process(null, mainRoot);
           new ClosureRewriteModule(compiler).process(null, mainRoot);
           new ScopedAliases(compiler, null, CompilerOptions.NULL_ALIAS_TRANSFORMATION_HANDLER)
@@ -1059,7 +1059,7 @@ public abstract class CompilerTestCase extends TestCase  {
         Collections.addAll(aggregateWarnings, compiler.getWarnings());
 
         if (normalizeEnabled) {
-          boolean verifyDeclaredConstants = false;
+          boolean verifyDeclaredConstants = true;
           new Normalize.VerifyConstants(compiler, verifyDeclaredConstants)
               .process(externsRoot, mainRoot);
         }
@@ -1349,7 +1349,7 @@ public abstract class CompilerTestCase extends TestCase  {
   static JSModule[] createModuleBush(String ... inputs) {
     Preconditions.checkState(inputs.length > 2);
     JSModule[] modules = createModules(inputs);
-    for (int i = 0; i < modules.length; i++) {
+    for (int i = 1; i < modules.length; i++) {
       modules[i].addDependency(modules[i == 1 ? 0 : 1]);
     }
     return modules;

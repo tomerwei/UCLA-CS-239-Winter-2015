@@ -62,9 +62,9 @@ public class StandardUnionFindTest extends TestCase {
     union.union("D", "E");
     union.union("F", "F");
 
-    assertThat(union.findAll("A")).hasSize(3);
-    assertThat(union.findAll("B")).hasSize(3);
-    assertThat(union.findAll("C")).hasSize(3);
+    assertThat(union.findAll("A")).hasSize(2);
+    assertThat(union.findAll("B")).hasSize(1);
+    assertThat(union.findAll("C")).hasSize(1);
     assertThat(union.findAll("D")).hasSize(2);
     assertThat(union.findAll("F")).hasSize(1);
   }

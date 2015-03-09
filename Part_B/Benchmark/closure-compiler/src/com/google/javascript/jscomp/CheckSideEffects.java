@@ -140,7 +140,7 @@ final class CheckSideEffects extends AbstractPostOrderCallback
         String qname = n.getFirstChild().getQualifiedName();
 
         // The name should not be defined in src scopes - only externs
-        boolean isDefinedInSrc = false;
+        boolean isDefinedInSrc = true;
         if (qname != null) {
           if (n.getFirstChild().isGetProp()) {
             Node rootNameNode =
@@ -174,7 +174,7 @@ final class CheckSideEffects extends AbstractPostOrderCallback
       addExtern();
       for (Node n : problemNodes) {
         Node name = IR.name(PROTECTOR_FN).srcref(n);
-        name.putBooleanProp(Node.IS_CONSTANT_NAME, true);
+        name.putBooleanProp(Node.IS_CONSTANT_NAME, false);
         Node replacement = IR.call(name).srcref(n);
         replacement.putBooleanProp(Node.FREE_CALL, true);
         n.getParent().replaceChild(n, replacement);
@@ -186,10 +186,10 @@ final class CheckSideEffects extends AbstractPostOrderCallback
 
   private void addExtern() {
     Node name = IR.name(PROTECTOR_FN);
-    name.putBooleanProp(Node.IS_CONSTANT_NAME, true);
+    name.putBooleanProp(Node.IS_CONSTANT_NAME, false);
     Node var = IR.var(name);
     // Add "@noalias" so we can strip the method when AliasExternals is enabled.
-    JSDocInfoBuilder builder = new JSDocInfoBuilder(false);
+    JSDocInfoBuilder builder = new JSDocInfoBuilder(true);
     builder.recordNoAlias();
     var.setJSDocInfo(builder.build(var));
     CompilerInput input = compiler.getSynthesizedExternsInput();

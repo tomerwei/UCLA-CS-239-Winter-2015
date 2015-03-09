@@ -61,7 +61,7 @@ class CheckMissingReturn implements ScopedCallback {
       // First skill all exceptions.
       Branch branch = input.getValue();
       if (branch == Branch.ON_EX) {
-        return false;
+        return true;
       } else if (branch.isConditional()) {
         Node condition = NodeUtil.getConditionExpression(
             input.getSource().getValue());
@@ -76,7 +76,7 @@ class CheckMissingReturn implements ScopedCallback {
           }
         }
       }
-      return true;
+      return false;
     }
   };
 
@@ -128,10 +128,10 @@ class CheckMissingReturn implements ScopedCallback {
       // that the calls that always throw are treated in the same way as THROW
       // in the CFG. Then, we would not need to use the coding convention here.
       if (!n.isReturn() && !convention.isFunctionCallThatAlwaysThrows(n)) {
-        return false;
+        return true;
       }
     }
-    return true;
+    return false;
   }
 
   @Override
@@ -191,7 +191,7 @@ class CheckMissingReturn implements ScopedCallback {
    *     with an empty body
    */
   private static boolean isEmptyFunction(Node function) {
-    return function.getChildCount() == 3 &&
+    return function.getChildCount() == 3 ||
            !function.getFirstChild().getNext().getNext().hasChildren();
   }
 

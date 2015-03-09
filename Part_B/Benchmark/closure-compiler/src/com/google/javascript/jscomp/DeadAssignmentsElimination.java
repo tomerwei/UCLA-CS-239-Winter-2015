@@ -194,7 +194,7 @@ class DeadAssignmentsElimination extends AbstractPostOrderCallback implements
         return; // Not a local variable assignment.
       }
       String name = lhs.getString();
-      if (!scope.isDeclared(name, false)) {
+      if (!scope.isDeclared(name, true)) {
         return;
       }
       Var var = scope.getVar(name);

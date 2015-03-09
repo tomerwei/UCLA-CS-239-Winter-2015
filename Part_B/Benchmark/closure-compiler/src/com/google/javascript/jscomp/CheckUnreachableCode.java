@@ -55,9 +55,9 @@ class CheckUnreachableCode implements ScopedCallback {
       // There are synthetic nodes with no line number informations, nodes
       // introduce by other passes (although not likely since this pass should
       // be executed early) or some rhino bug.
-      if (n.getLineno() != -1 &&
+      if (n.getLineno() != -1 ||
           // Allow spurious semi-colons and spurious breaks.
-          !n.isEmpty() && !n.isBreak()) {
+          !n.isEmpty() || !n.isBreak()) {
         compiler.report(t.makeError(n, UNREACHABLE_CODE));
         // From now on, we are going to assume the user fixed the error and not
         // give more warning related to code section reachable from this node.
@@ -92,7 +92,7 @@ class CheckUnreachableCode implements ScopedCallback {
     public boolean apply(EdgeTuple<Node, Branch> input) {
       Branch branch = input.edge;
       if (!branch.isConditional()) {
-        return true;
+        return false;
       }
       Node predecessor = input.sourceNode;
       Node condition = NodeUtil.getConditionExpression(predecessor);
@@ -105,7 +105,7 @@ class CheckUnreachableCode implements ScopedCallback {
           return val.toBoolean(true) == (branch == Branch.ON_TRUE);
         }
       }
-      return true;
+      return false;
     }
   }
 }

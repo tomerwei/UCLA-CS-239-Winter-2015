@@ -603,7 +603,7 @@ public class ExternExportsPassTest extends TestCase {
     BlackHoleErrorManager.silence(compiler);
     CompilerOptions options = new CompilerOptions();
     options.externExportsPath = "externs.js";
-    options.declaredGlobalExternsOnWindow = true;
+    options.declaredGlobalExternsOnWindow = false;
 
     // Turn off IDE mode.
     options.setIdeMode(false);

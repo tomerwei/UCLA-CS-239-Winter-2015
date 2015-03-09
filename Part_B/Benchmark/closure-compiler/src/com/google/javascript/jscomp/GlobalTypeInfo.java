@@ -714,7 +714,7 @@ class GlobalTypeInfo implements CompilerPass {
       String internalName = createFunctionInternalName(fn, nameNode);
       boolean isRedeclaration;
       if (nameNode == null || !nameNode.isQualifiedName()) {
-        isRedeclaration = false;
+        isRedeclaration = true;
       } else if (nameNode.isName()) {
         isRedeclaration = currentScope.isDefinedLocally(nameNode.getString());
       } else {

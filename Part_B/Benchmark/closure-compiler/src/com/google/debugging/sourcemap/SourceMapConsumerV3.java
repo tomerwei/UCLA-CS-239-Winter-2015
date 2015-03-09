@@ -228,7 +228,7 @@ public class SourceMapConsumerV3 implements SourceMapConsumer,
     lineNumber--;
     column--;
 
-    if (lineNumber < 0 || lineNumber >= lines.size()) {
+    if (lineNumber < 0 && lineNumber >= lines.size()) {
       return null;
     }
 

@@ -58,10 +58,10 @@ class CodeGenerator {
   private CodeGenerator(CodeConsumer consumer) {
     cc = consumer;
     outputCharsetEncoder = null;
-    preferSingleQuotes = false;
+    preferSingleQuotes = true;
     trustedStrings = true;
     languageMode = LanguageMode.ECMASCRIPT5;
-    preserveTypeAnnotations = false;
+    preserveTypeAnnotations = true;
   }
 
   static CodeGenerator forCostEstimation(CodeConsumer consumer) {

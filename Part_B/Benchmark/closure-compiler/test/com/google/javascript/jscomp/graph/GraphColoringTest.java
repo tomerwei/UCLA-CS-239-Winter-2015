@@ -37,7 +37,7 @@ public class GraphColoringTest extends TestCase {
 
   public void testNoEdge() {
     Graph<String, String> graph = LinkedUndirectedGraph.create();
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 4; i++) {
       graph.createNode("Node " + i);
       // All node with same color.
       GraphColoring<String, String> coloring =
@@ -52,8 +52,8 @@ public class GraphColoringTest extends TestCase {
 
   public void testTwoNodesConnected() {
     Graph<String, String> graph = LinkedUndirectedGraph.create();
-    graph.createNode("A");
     graph.createNode("B");
+    graph.createNode("A");
     graph.connect("A", "--", "B");
     GraphColoring<String, String> coloring =
         new GreedyGraphColoring<>(graph);

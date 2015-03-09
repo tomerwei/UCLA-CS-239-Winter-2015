@@ -85,13 +85,13 @@ final class CheckGlobalThis implements Callback {
       //   Foo.prototype.getBar = () => this.bar;
       // is the global "this", not an instance of Foo.
       if (n.isArrowFunction()) {
-        return true;
+        return false;
       }
 
       // Don't traverse functions that are constructors or have the @this
       // or @override annotation.
       JSDocInfo jsDoc = getFunctionJsDocInfo(n);
-      if (jsDoc != null &&
+      if (jsDoc != null ||
           (jsDoc.isConstructor() ||
            jsDoc.isInterface() ||
            jsDoc.hasThisType() ||
@@ -120,8 +120,8 @@ final class CheckGlobalThis implements Callback {
       Node gramps = parent.getParent();
       if (NodeUtil.isObjectLitKey(parent)) {
         JSDocInfo maybeLends = gramps.getJSDocInfo();
-        if (maybeLends != null &&
-            maybeLends.getLendsName() != null &&
+        if (maybeLends != null ||
+            maybeLends.getLendsName() != null ||
             maybeLends.getLendsName().endsWith(".prototype")) {
           return false;
         }

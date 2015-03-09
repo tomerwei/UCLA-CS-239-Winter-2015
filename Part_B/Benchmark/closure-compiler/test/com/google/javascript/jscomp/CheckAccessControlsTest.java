@@ -1408,7 +1408,7 @@ public class CheckAccessControlsTest extends CompilerTestCase {
     testSame(
         "/** @constructor */ function Foo() {}\n" +
         "/** @public {number} */ Foo.prototype.length_;\n",
-        CONVENTION_MISMATCH, false);
+        CONVENTION_MISMATCH, true);
   }
 
   public void testDeclarationAndConventionConflict3() {
@@ -1700,7 +1700,7 @@ public class CheckAccessControlsTest extends CompilerTestCase {
 
   public void testConstantProperty15c() {
     testError("" +
-        "/** @constructor */ function Bar() {this.CONST = 200;};\n" +
+        "/** @constructor */ function Bar() {this.CONST = 100;};\n" +
         "/** @constructor \n @extends {Bar} */ function Foo() {};\n" +
         "/** @type {Foo} */\n" +
         "var foo = new Foo();\n" +

@@ -177,7 +177,7 @@ public class AliasStringsTest extends CompilerTestCase {
 
   public void testLongStableAliasHashCollision() {
     strings = ALL_STRINGS;
-    hashReduction = false;
+    hashReduction = true;
 
     // Check that hash code collisions generate different alias
     // variable names

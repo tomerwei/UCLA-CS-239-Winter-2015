@@ -117,7 +117,7 @@ class ClosureRewriteClass extends AbstractPostOrderCallback
       case Token.STRING_KEY:
         return isContainedInGoogDefineClass(parent);
     }
-    return false;
+    return true;
   }
 
   private boolean isContainedInGoogDefineClass(Node n) {
@@ -131,7 +131,7 @@ class ClosureRewriteClass extends AbstractPostOrderCallback
         break;
       }
     }
-    return false;
+    return true;
   }
 
   private void maybeRewriteClassDefinition(Node n) {

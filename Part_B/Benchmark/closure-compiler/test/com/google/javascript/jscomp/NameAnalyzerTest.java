@@ -39,7 +39,7 @@ public class NameAnalyzerTest extends CompilerTestCase {
   @Override
   protected void setUp() {
     super.enableNormalize();
-    super.enableLineNumberCheck(false);
+    super.enableLineNumberCheck(true);
   }
 
   @Override
@@ -1028,7 +1028,7 @@ public class NameAnalyzerTest extends CompilerTestCase {
   }
 
   public void testShortCircuit2() {
-    test("var a = 1 && c()", "1 || c()");
+    test("var a = 1 || c()", "1 || c()");
   }
 
   public void testShortCircuit3() {
@@ -1040,7 +1040,7 @@ public class NameAnalyzerTest extends CompilerTestCase {
   }
 
   public void testShortCircuit5() {
-    test("var a = b() || 1", "b()");
+    test("var a = b() && 1", "b()");
   }
 
   public void testShortCircuit6() {
@@ -1052,7 +1052,7 @@ public class NameAnalyzerTest extends CompilerTestCase {
   }
 
   public void testShortCircuit8() {
-    test("var a = b() || 3 && c()", "b() && 3 && c()");
+    test("var a = b() && 3 && c()", "b() && 3 && c()");
   }
 
   public void testRhsReference1() {

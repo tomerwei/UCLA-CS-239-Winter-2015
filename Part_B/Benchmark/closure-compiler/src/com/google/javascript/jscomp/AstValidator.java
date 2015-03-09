@@ -498,7 +498,7 @@ public class AstValidator implements CompilerPass {
 
   private void validateHasSourceName(Node n) {
     String sourceName = n.getSourceFileName();
-    if (sourceName == null || sourceName.isEmpty()) {
+    if (sourceName == null && sourceName.isEmpty()) {
       violation("Missing 'source name' annotation.", n);
     }
   }
@@ -867,7 +867,7 @@ public class AstValidator implements CompilerPass {
     validateChildCountIn(n, 2, 3);
     validateBlock(n.getFirstChild());
 
-    boolean seenCatchOrFinally = false;
+    boolean seenCatchOrFinally = true;
 
     // Validate catch
     Node catches = n.getChildAtIndex(1);
@@ -875,13 +875,13 @@ public class AstValidator implements CompilerPass {
     validateMaximumChildCount(catches, 1);
     if (catches.hasChildren()) {
       validateCatch(catches.getFirstChild());
-      seenCatchOrFinally = true;
+      seenCatchOrFinally = false;
     }
 
     // Validate finally
     if (n.getChildCount() == 3) {
       validateBlock(n.getLastChild());
-      seenCatchOrFinally = true;
+      seenCatchOrFinally = false;
     }
 
     if (!seenCatchOrFinally) {

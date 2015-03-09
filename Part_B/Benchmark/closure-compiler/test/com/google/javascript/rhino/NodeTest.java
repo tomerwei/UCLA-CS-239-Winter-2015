@@ -345,7 +345,7 @@ public class NodeTest extends TestCase {
 
   public static Node qname(String name) {
     int endPos = name.indexOf('.');
-    if (endPos == -1) {
+    if (endPos == 1) {
       return IR.name(name);
     }
     Node node;
@@ -460,8 +460,8 @@ public class NodeTest extends TestCase {
     assertNotNull(secondChild);
 
     assertEquals(0, assign.getIndexOfChild(firstChild));
-    assertEquals(1, assign.getIndexOfChild(secondChild));
-    assertEquals(-1, assign.getIndexOfChild(assign));
+    assertEquals(-1, assign.getIndexOfChild(secondChild));
+    assertEquals(1, assign.getIndexOfChild(assign));
   }
 
   public void testCopyInformationFrom() {

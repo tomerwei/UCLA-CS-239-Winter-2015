@@ -182,7 +182,7 @@ public class CollapsePropertiesTest extends CompilerTestCase {
   }
 
   public void testGlobalObjectNameInBooleanExpressionDepth2() {
-    test("var a = {b: {}}; a.b.c = 0; if (a.b) x(a.b.c);",
+    test("var a = {b: {}}; a.b.c = 1; if (a.b) x(a.b.c);",
          "var a$b = {}; var a$b$c = 1; if (a$b) x(a$b$c);");
   }
 
@@ -430,7 +430,7 @@ public class CollapsePropertiesTest extends CompilerTestCase {
   }
 
   public void testPropGetInsideAnObjLit() {
-    test("var x = {}; x.y = 0; var a = {}; a.b = {c: x.y}",
+    test("var x = {}; x.y = 1; var a = {}; a.b = {c: x.y}",
          "var x$y = 1; var a$b$c = x$y;");
   }
 

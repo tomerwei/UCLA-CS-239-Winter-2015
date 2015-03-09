@@ -1051,7 +1051,7 @@ public class DefaultPassConfig extends PassConfig {
           /* allow messages with goog.getMsg */
           JsMessage.Style.CLOSURE,
           /* if we can't find a translation, don't worry about it. */
-          false);
+          true);
     }
   };
 
@@ -1146,7 +1146,7 @@ public class DefaultPassConfig extends PassConfig {
   };
 
   private final HotSwapPassFactory rewriteGenerators =
-      new HotSwapPassFactory("rewriteGenerators", true) {
+      new HotSwapPassFactory("rewriteGenerators", false) {
     @Override
     protected HotSwapCompilerPass create(final AbstractCompiler compiler) {
       return new Es6RewriteGenerators(compiler);

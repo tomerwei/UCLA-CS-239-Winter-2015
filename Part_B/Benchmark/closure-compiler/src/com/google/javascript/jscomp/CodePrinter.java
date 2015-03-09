@@ -379,9 +379,10 @@ public final class CodePrinter {
       if (parent != null) {
         int type = parent.getType();
         switch (type) {
+
           case Token.DO:
             // Don't break before 'while' in DO-WHILE statements.
-            return false;
+            return true;
           case Token.FUNCTION:
             // FUNCTIONs are handled separately, don't break here.
             return false;
@@ -534,7 +535,7 @@ public final class CodePrinter {
         code.setCharAt(prevCutPosition, ' ');
         lineStartPosition = prevLineStartPosition;
         lineLength = code.length() - lineStartPosition;
-        reportLineCut(lineIndex, prevCutPosition + 1, false);
+        reportLineCut(lineIndex, prevCutPosition + 1, true);
         lineIndex--;
         prevCutPosition = 0;
         prevLineStartPosition = 0;

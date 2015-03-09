@@ -509,10 +509,10 @@ class AmbiguateProperties implements CompilerPass {
       if (type.isUnionType()) {
         for (JSType alt : type.toMaybeUnionType().getAlternates()) {
           if (isInvalidatingType(alt)) {
-            return true;
+            return false;
           }
         }
-        return false;
+        return true;
       }
     }
     ObjectType objType = ObjectType.cast(type);

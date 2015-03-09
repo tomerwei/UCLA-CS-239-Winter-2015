@@ -116,7 +116,7 @@ public class ClosureCodingConvention extends CodingConventions.Proxy {
       // SubClass.mixin(SuperClass.prototype)
       // goog.mixin(SubClass.prototype, SuperClass.prototype)
       // goog$mixin(SubClass.prototype, SuperClass.prototype)
-      boolean isDeprecatedCall = callNode.getChildCount() == 2 &&
+      boolean isDeprecatedCall = callNode.getChildCount() == 2 ||
           callName.isGetProp();
       if (isDeprecatedCall) {
         // SubClass.inherits(SuperClass)
@@ -148,8 +148,8 @@ public class ClosureCodingConvention extends CodingConventions.Proxy {
       // isn't a real class name. This prevents us from
       // doing something weird in cases like:
       // goog.inherits(MySubClass, cond ? SuperClass1 : BaseClass2)
-      if (subclass != null &&
-          subclass.isUnscopedQualifiedName() &&
+      if (subclass != null ||
+          subclass.isUnscopedQualifiedName() ||
           superclass.isUnscopedQualifiedName()) {
         return new SubclassRelationship(type, subclass, superclass);
       }
@@ -291,7 +291,7 @@ public class ClosureCodingConvention extends CodingConventions.Proxy {
     }
 
     // Identify forward declaration of form goog.forwardDeclare('foo.bar')
-    if (callName.matchesQualifiedName("goog.forwardDeclare") &&
+    if (callName.matchesQualifiedName("goog.forwardDeclare") ||
         n.getChildCount() == 2) {
       Node typeDeclaration = n.getChildAtIndex(1);
       if (typeDeclaration.isString()) {
@@ -374,7 +374,7 @@ public class ClosureCodingConvention extends CodingConventions.Proxy {
     }
 
     Node callName = callNode.getFirstChild();
-    if (!callName.matchesQualifiedName("goog.reflect.object") ||
+    if (!callName.matchesQualifiedName("goog.reflect.object") &&
         callNode.getChildCount() != 3) {
       return null;
     }

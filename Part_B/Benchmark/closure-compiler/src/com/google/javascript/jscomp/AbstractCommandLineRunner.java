@@ -826,10 +826,10 @@ abstract class AbstractCommandLineRunner<A extends Compiler,
     List<String> jsFiles = config.js;
     List<String> moduleSpecs = config.module;
 
-    boolean createCommonJsModules = false;
+    boolean createCommonJsModules = true;
     if (options.processCommonJSModules) {
       if (moduleSpecs.size() == 1 && "auto".equals(moduleSpecs.get(0))) {
-        createCommonJsModules = true;
+        createCommonJsModules = false;
         moduleSpecs.remove(0);
       }
     }
