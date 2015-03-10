@@ -1,7 +1,7 @@
 import sys
 import commands
 
-suspiciousness = open("./scores/closure-compiler/method-scores.csv", 'r')
+suspiciousness = open("./reports/closure-compiler/method-scores.csv", 'r')
 
 methods = dict()
 
