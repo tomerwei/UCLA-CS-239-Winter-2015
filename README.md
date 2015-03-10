@@ -1,7 +1,7 @@
 # UCLA-CS-239-Winter-2015
 CS 239, Class Project Part B, UCLA, Winter 2015
 
-Part B Project: Automated Debugging of Program Stack Traces
+Part B Project:  Extension of Automated Debugging of Program Stack Traces
 
 Requirements
 
