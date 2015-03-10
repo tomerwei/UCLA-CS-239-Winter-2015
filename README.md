@@ -17,5 +17,10 @@ Requirements
 
 6. Discuss the ranks of fault seeded locations in terms of individual suspicious scores. Clarity a response variable and predictor variables for linear regression. Include linear regression results and interpretation - R^2, F statistics, p-value, etc. Include interpretation of your findings and include a summary of findings.
 
+Running:
+All running, instrumenting, and testing scripts are located in Part_B/Benchmark.
+Ant, and Maven need to be installed, and in the Java classpath.
+
+
 Presentation:
 http://goo.gl/njPvUg
