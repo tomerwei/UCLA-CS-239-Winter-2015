@@ -56,17 +56,14 @@ for fileKey in javaFiles:
     for i in range(8):
         javaFiles[fileKey][i] = javaFiles[fileKey][i] / javaFileCounts[fileKey]
 
-    file.write(fileKey)
-        
-    for i in range(8):
-        file.write("," + str(javaFiles[fileKey][i]))
-
     if fileKey in fileMetrics:
+        file.write(fileKey)
+            
+        for i in range(8):
+            file.write("," + str(javaFiles[fileKey][i]))
+
         for i in range(6):
             file.write("," + fileMetrics[fileKey][i])
-    else:
-        file.write(",NA,NA,NA,NA,NA,NA")
-        file.write("\n")
 
 file.close()
 
@@ -128,16 +125,13 @@ for fileKey in javaFiles:
     for i in range(8):
         javaFiles[fileKey][i] = javaFiles[fileKey][i] / javaFileCounts[fileKey]
 
-    file.write(fileKey)
-        
-    for i in range(8):
-        file.write("," + str(javaFiles[fileKey][i]))
-
     if fileKey in fileMetrics:
+        file.write(fileKey)
+            
+        for i in range(8):
+            file.write("," + str(javaFiles[fileKey][i]))
+
         for i in range(6):
             file.write("," + fileMetrics[fileKey][i])
-    else:
-        file.write(",NA,NA,NA,NA,NA,NA")
-        file.write("\n")
 
 file.close()
