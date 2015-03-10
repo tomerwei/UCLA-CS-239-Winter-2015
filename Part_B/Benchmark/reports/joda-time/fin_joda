@@ -1,4 +1,3 @@
-file_name total_loc churned_loc, deleted_loc, committer, comment, function_calls
 src/example/org/joda/example/time/AgeCalculator.java 284 0 0 1 7.800000 150
 src/example/org/joda/example/time/DateTimeBrowser.java 662 0 0 1 47.400000 336
 src/example/org/joda/example/time/DateTimePerformance.java 718 0 0 1 11.800000 337
