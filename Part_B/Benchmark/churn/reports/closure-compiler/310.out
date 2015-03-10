@@ -1,0 +1,40 @@
+.E.E.E
+Time: 0.003
+There were 3 errors:
+1) testIndividualPasses(com.google.javascript.jscomp.CombinedCompilerPassTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.CombinedCompilerPassTest.setUp(CombinedCompilerPassTest.java:88)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+2) testCombinedPasses(com.google.javascript.jscomp.CombinedCompilerPassTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.CombinedCompilerPassTest.setUp(CombinedCompilerPassTest.java:88)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+3) testScopes(com.google.javascript.jscomp.CombinedCompilerPassTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.CombinedCompilerPassTest.setUp(CombinedCompilerPassTest.java:88)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+
+FAILURES!!!
+Tests run: 3,  Failures: 0,  Errors: 3
+

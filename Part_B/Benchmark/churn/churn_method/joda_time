@@ -1,0 +1,1 @@
+./cloc --diff ../joda-time/src/ ../joda-time-pre/src --by-file --ignore-whitespace

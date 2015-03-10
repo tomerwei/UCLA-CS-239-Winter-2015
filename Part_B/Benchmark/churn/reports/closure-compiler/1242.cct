@@ -1,0 +1,17 @@
+(dp0
+S'com/google/javascript/jscomp/newtypes/Property$Attribute.ordinal()I'
+p1
+I3
+sS'com/google/javascript/jscomp/newtypes/Property$Attribute.values()[Lcom/google/javascript/jscomp/newtypes/Property$Attribute;:[Lcom/google/javascript/jscomp/newtypes/Property$Attribute;.clone()Ljava/lang/Object;'
+p2
+I1
+sS'com/google/javascript/jscomp/newtypes/Property$Attribute.values()[Lcom/google/javascript/jscomp/newtypes/Property$Attribute;'
+p3
+I1
+sS'com/google/javascript/jscomp/newtypes/Property$Attribute.values()[Lcom/google/javascript/jscomp/newtypes/Property$Attribute;:com/google/javascript/jscomp/newtypes/Property$Attribute.<init>(Ljava/lang/String;I)V'
+p4
+I3
+sS'com/google/javascript/jscomp/newtypes/Property$Attribute.values()[Lcom/google/javascript/jscomp/newtypes/Property$Attribute;:com/google/javascript/jscomp/newtypes/Property$Attribute.<init>(Ljava/lang/String;I)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p5
+I3
+s.

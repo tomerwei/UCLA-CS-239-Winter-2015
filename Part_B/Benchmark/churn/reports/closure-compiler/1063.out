@@ -1,0 +1,107 @@
+.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.
+E.E.E.E.E
+Time: 0.004
+There were 45 errors:
+1) testJsMessageOnVar(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Lists
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+2) testJsMessagesWithSrcMap(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+3) testJsMessageOnProperty(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+4) testJsMessageOnObjLit(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+5) testOrphanedJsMessage(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+6) testMessageWithoutDescription(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+7) testIncorrectMessageReporting(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+8) testEmptyMessage(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+9) testConcatOfStrings(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+10) testLegacyFormatDescription(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+11) testLegacyFormatParametizedFunction(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+12) testLegacyMessageWithDescAnnotation(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+13) testLegacyMessageWithDescAnnotationAndHelpVar(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+14) testClosureMessageWithHelpPostfix(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+15) testClosureMessageWithoutGoogGetmsg(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+16) testClosureFormatParametizedFunction(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+17) testHugeMessage(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+18) testUnnamedGoogleMessage(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+19) testEmptyTextMessage(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+20) testEmptyTextComplexMessage(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+21) testMessageIsNoUnnamed(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+22) testMsgVarWithoutAssignment(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+23) testRegularVarWithoutAssignment(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+24) testMsgVarWithIncorrectRightSide(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+25) testIncorrectMessage(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+26) testUnrecognizedFunction(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+27) testExtractPropertyMessage(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+28) testAlmostButNotExternalMessage(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+29) testExternalMessage(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+30) testIsValidMessageNameStrict(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+31) testIsValidMessageNameRelax(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+32) testIsValidMessageNameLegacy(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+33) testUnexistedPlaceholders(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+34) testUnusedReferenesAreNotOK(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+35) testDuplicatePlaceHoldersAreBad(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+36) testDuplicatePlaceholderReferencesAreOk(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+37) testCamelcasePlaceholderNamesAreOk(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+38) testWithNonCamelcasePlaceholderNamesAreNotOk(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+39) testUnquotedPlaceholdersAreOk(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+40) testIsLowerCamelCaseWithNumericSuffixes(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+41) testToLowerCamelCaseWithNumericSuffixes(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+42) testDuplicateMessageError(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+43) testNoDuplicateErrorOnExternMessage(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+44) testUsingMsgPrefixWithFallback(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+45) testErrorWhenUsingMsgPrefixWithFallback(com.google.javascript.jscomp.JsMessageVisitorTest)java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at com.google.javascript.jscomp.JsMessageVisitorTest.setUp(JsMessageVisitorTest.java:52)
+
+FAILURES!!!
+Tests run: 45,  Failures: 0,  Errors: 45
+

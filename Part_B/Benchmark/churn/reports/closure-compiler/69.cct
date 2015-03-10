@@ -1,0 +1,14 @@
+(dp0
+S'com/google/javascript/jscomp/AliasExternals.getArrayNotationNameFor(Ljava/lang/String;)Ljava/lang/String;'
+p1
+I1
+sS'com/google/javascript/jscomp/AliasExternals.getArrayNotationNameFor(Ljava/lang/String;)Ljava/lang/String;:java/lang/StringBuilder.<init>()V'
+p2
+I1
+sS'com/google/javascript/jscomp/AliasExternals.getArrayNotationNameFor(Ljava/lang/String;)Ljava/lang/String;:java/lang/StringBuilder.toString()Ljava/lang/String;'
+p3
+I1
+sS'com/google/javascript/jscomp/AliasExternals.getArrayNotationNameFor(Ljava/lang/String;)Ljava/lang/String;:java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;'
+p4
+I2
+s.

@@ -1,0 +1,11 @@
+(dp0
+S'com/google/common/collect/ImmutableSet.of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet;'
+p1
+I1
+sS'com/google/javascript/jscomp/AnalyzePrototypeProperties$SymbolType.<init>(Ljava/lang/String;I)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p2
+I2
+sS'com/google/javascript/jscomp/AnalyzePrototypeProperties$SymbolType.<init>(Ljava/lang/String;I)V'
+p3
+I2
+s.

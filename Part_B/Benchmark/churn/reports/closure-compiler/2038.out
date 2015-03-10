@@ -1,0 +1,102 @@
+..E.E.E.E.E.E.E.E.E.E.E.E.E.E
+Time: 0.026
+There were 14 errors:
+1) testFunction(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.function(IR.java:58)
+	at com.google.javascript.rhino.IRTest.testFunction(IRTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Preconditions
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 17 more
+2) testParamList(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.paramList(IR.java:76)
+	at com.google.javascript.rhino.IRTest.testParamList(IRTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+3) testBlock(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.block(IR.java:105)
+	at com.google.javascript.rhino.IRTest.testBlock(IRTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+4) testScript(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.script(IR.java:133)
+	at com.google.javascript.rhino.IRTest.testScript(IRTest.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5) testScriptThrows(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.script(IR.java:133)
+	at com.google.javascript.rhino.IRTest.testScriptThrows(IRTest.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+6) testVar(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.declaration(IR.java:157)
+	at com.google.javascript.rhino.IR.var(IR.java:153)
+	at com.google.javascript.rhino.IRTest.testVar(IRTest.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+7) testReturn(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.returnNode(IR.java:180)
+	at com.google.javascript.rhino.IRTest.testReturn(IRTest.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+8) testThrow(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.throwNode(IR.java:194)
+	at com.google.javascript.rhino.IRTest.testThrow(IRTest.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+9) testExprResult(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.exprResult(IR.java:199)
+	at com.google.javascript.rhino.IRTest.testExprResult(IRTest.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+10) testIf(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.ifNode(IR.java:204)
+	at com.google.javascript.rhino.IRTest.testIf(IRTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11) testIssue727_1(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.tryFinally(IR.java:280)
+	at com.google.javascript.rhino.IRTest.testIssue727_1(IRTest.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12) testIssue727_2(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.catchNode(IR.java:302)
+	at com.google.javascript.rhino.IRTest.testIssue727_2(IRTest.java:174)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+13) testIssue727_3(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.catchNode(IR.java:302)
+	at com.google.javascript.rhino.IRTest.testIssue727_3(IRTest.java:189)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+14) testAdd(com.google.javascript.rhino.IRTest)java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at com.google.javascript.rhino.IR.unaryOp(IR.java:577)
+	at com.google.javascript.rhino.IR.cast(IR.java:445)
+	at com.google.javascript.rhino.IRTest.testAdd(IRTest.java:204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+FAILURES!!!
+Tests run: 15,  Failures: 0,  Errors: 14
+

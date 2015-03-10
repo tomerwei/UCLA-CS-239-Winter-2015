@@ -1,0 +1,57 @@
+.E.E.E.E.E.E.E.E.E.E
+Time: 0.01
+There were 10 errors:
+1) testSingleLine1(com.google.javascript.jscomp.deps.JsFileLineParserTest)java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableSet
+	at com.google.javascript.jscomp.AbstractMessageFormatter.<clinit>(AbstractMessageFormatter.java:46)
+	at com.google.javascript.jscomp.ErrorFormat$4.toFormatter(ErrorFormat.java:58)
+	at com.google.javascript.jscomp.PrintStreamErrorManager.<init>(PrintStreamErrorManager.java:51)
+	at com.google.javascript.jscomp.deps.JsFileLineParserTest.setUp(JsFileLineParserTest.java:40)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableSet
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 14 more
+2) testSingleLine2(com.google.javascript.jscomp.deps.JsFileLineParserTest)java.lang.NoClassDefFoundError: Could not initialize class com.google.javascript.jscomp.LightweightMessageFormatter
+	at com.google.javascript.jscomp.ErrorFormat$4.toFormatter(ErrorFormat.java:58)
+	at com.google.javascript.jscomp.PrintStreamErrorManager.<init>(PrintStreamErrorManager.java:51)
+	at com.google.javascript.jscomp.deps.JsFileLineParserTest.setUp(JsFileLineParserTest.java:40)
+3) testMultiLine1(com.google.javascript.jscomp.deps.JsFileLineParserTest)java.lang.NoClassDefFoundError: Could not initialize class com.google.javascript.jscomp.LightweightMessageFormatter
+	at com.google.javascript.jscomp.ErrorFormat$4.toFormatter(ErrorFormat.java:58)
+	at com.google.javascript.jscomp.PrintStreamErrorManager.<init>(PrintStreamErrorManager.java:51)
+	at com.google.javascript.jscomp.deps.JsFileLineParserTest.setUp(JsFileLineParserTest.java:40)
+4) testMultiLine2(com.google.javascript.jscomp.deps.JsFileLineParserTest)java.lang.NoClassDefFoundError: Could not initialize class com.google.javascript.jscomp.LightweightMessageFormatter
+	at com.google.javascript.jscomp.ErrorFormat$4.toFormatter(ErrorFormat.java:58)
+	at com.google.javascript.jscomp.PrintStreamErrorManager.<init>(PrintStreamErrorManager.java:51)
+	at com.google.javascript.jscomp.deps.JsFileLineParserTest.setUp(JsFileLineParserTest.java:40)
+5) testMultiLine3(com.google.javascript.jscomp.deps.JsFileLineParserTest)java.lang.NoClassDefFoundError: Could not initialize class com.google.javascript.jscomp.LightweightMessageFormatter
+	at com.google.javascript.jscomp.ErrorFormat$4.toFormatter(ErrorFormat.java:58)
+	at com.google.javascript.jscomp.PrintStreamErrorManager.<init>(PrintStreamErrorManager.java:51)
+	at com.google.javascript.jscomp.deps.JsFileLineParserTest.setUp(JsFileLineParserTest.java:40)
+6) testMultiLine4(com.google.javascript.jscomp.deps.JsFileLineParserTest)java.lang.NoClassDefFoundError: Could not initialize class com.google.javascript.jscomp.LightweightMessageFormatter
+	at com.google.javascript.jscomp.ErrorFormat$4.toFormatter(ErrorFormat.java:58)
+	at com.google.javascript.jscomp.PrintStreamErrorManager.<init>(PrintStreamErrorManager.java:51)
+	at com.google.javascript.jscomp.deps.JsFileLineParserTest.setUp(JsFileLineParserTest.java:40)
+7) testMultiLine5(com.google.javascript.jscomp.deps.JsFileLineParserTest)java.lang.NoClassDefFoundError: Could not initialize class com.google.javascript.jscomp.LightweightMessageFormatter
+	at com.google.javascript.jscomp.ErrorFormat$4.toFormatter(ErrorFormat.java:58)
+	at com.google.javascript.jscomp.PrintStreamErrorManager.<init>(PrintStreamErrorManager.java:51)
+	at com.google.javascript.jscomp.deps.JsFileLineParserTest.setUp(JsFileLineParserTest.java:40)
+8) testMultiLine6(com.google.javascript.jscomp.deps.JsFileLineParserTest)java.lang.NoClassDefFoundError: Could not initialize class com.google.javascript.jscomp.LightweightMessageFormatter
+	at com.google.javascript.jscomp.ErrorFormat$4.toFormatter(ErrorFormat.java:58)
+	at com.google.javascript.jscomp.PrintStreamErrorManager.<init>(PrintStreamErrorManager.java:51)
+	at com.google.javascript.jscomp.deps.JsFileLineParserTest.setUp(JsFileLineParserTest.java:40)
+9) testMixedLine1(com.google.javascript.jscomp.deps.JsFileLineParserTest)java.lang.NoClassDefFoundError: Could not initialize class com.google.javascript.jscomp.LightweightMessageFormatter
+	at com.google.javascript.jscomp.ErrorFormat$4.toFormatter(ErrorFormat.java:58)
+	at com.google.javascript.jscomp.PrintStreamErrorManager.<init>(PrintStreamErrorManager.java:51)
+	at com.google.javascript.jscomp.deps.JsFileLineParserTest.setUp(JsFileLineParserTest.java:40)
+10) testMixedLine2(com.google.javascript.jscomp.deps.JsFileLineParserTest)java.lang.NoClassDefFoundError: Could not initialize class com.google.javascript.jscomp.LightweightMessageFormatter
+	at com.google.javascript.jscomp.ErrorFormat$4.toFormatter(ErrorFormat.java:58)
+	at com.google.javascript.jscomp.PrintStreamErrorManager.<init>(PrintStreamErrorManager.java:51)
+	at com.google.javascript.jscomp.deps.JsFileLineParserTest.setUp(JsFileLineParserTest.java:40)
+
+FAILURES!!!
+Tests run: 10,  Failures: 0,  Errors: 10
+

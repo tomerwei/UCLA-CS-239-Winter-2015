@@ -1,0 +1,9 @@
+#!/bin/bash
+
+d1=../closure-compiler/
+d2=../closure-compiler-pre/
+
+for f in $(cd $d1; find src -name '*\.java')
+do
+  java -cp locc-4.2.jar csdl.locc.sys.LOCDiff -difftype javaline -old $d2/$f -new $d1/$f
+done

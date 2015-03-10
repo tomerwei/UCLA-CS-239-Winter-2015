@@ -1,0 +1,1763 @@
+commit b9fe534c7f5876eced6494a6d6c1deaf2528a579
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Mar 2 20:10:49 2015 +0000
+
+    Format Etc/* time-zone without using Etc prefix
+    
+    Fixes #244
+
+ RELEASE-NOTES.txt                                       |    3 +++
+ src/main/java/org/joda/time/tz/DefaultNameProvider.java |    3 +++
+ 2 files changed, 6 insertions(+), 0 deletions(-)
+
+commit 02922734c59f07b8ccc8e531bd231464dcc3b43c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Mar 2 19:41:17 2015 +0000
+
+    Separate logging from time-zone compilation
+    
+    Fixes #246
+
+ RELEASE-NOTES.txt                                       |    3 +++
+ src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java |    4 ++--
+ src/main/java/org/joda/time/tz/ZoneInfoCompiler.java    |   22 ++++------------------
+ src/main/java/org/joda/time/tz/ZoneInfoLogger.java      |   41 +++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 50 insertions(+), 20 deletions(-)
+
+commit 4222b61dcefc4e621f6d016e0928da0280663f87
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 12 15:09:10 2015 +0000
+
+    Revive zones destroyed by the IANA tzdb maintainer
+    
+    Links in the main tzdb data files are now treated as zones
+    with the exception of a few special cases
+    Links in the 'backward' file are still treated as aliases
+
+ RELEASE-NOTES.txt                                    |   91 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/org/joda/time/tz/ZoneInfoCompiler.java |  122 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------
+ 2 files changed, 176 insertions(+), 37 deletions(-)
+
+commit eb1b99814287682e3f185a3b2ef7e2c858e2728a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 12 13:11:04 2015 +0000
+
+    Update to time-zone data 2015a
+    
+    Fixes #243
+
+ RELEASE-NOTES.txt                               |    2 +-
+ pom.xml                                         |    2 +-
+ src/main/java/org/joda/time/tz/src/Readme.txt   |    2 +-
+ src/main/java/org/joda/time/tz/src/antarctica   |    9 +++++----
+ src/main/java/org/joda/time/tz/src/asia         |   28 ++++++++--------------------
+ src/main/java/org/joda/time/tz/src/backward     |    2 +-
+ src/main/java/org/joda/time/tz/src/europe       |   29 +++++++++++++----------------
+ src/main/java/org/joda/time/tz/src/northamerica |   27 +++++++++++++++++++++++----
+ src/main/java/org/joda/time/tz/src/southamerica |   17 ++++++++++++-----
+ 9 files changed, 65 insertions(+), 53 deletions(-)
+
+commit 558c9282cedc6b0d8a4dcbb7e7157077872b1cda
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 10 15:27:36 2015 +0000
+
+    Fix Parsing of negative periods less than a second
+    
+    Fixes #238
+
+ RELEASE-NOTES.txt                                               |    3 +++
+ src/main/java/org/joda/time/format/PeriodFormatterBuilder.java  |    5 +++--
+ src/test/java/org/joda/time/format/TestPeriodFormatParsing.java |   16 ++++++++++++++++
+ 3 files changed, 22 insertions(+), 2 deletions(-)
+
+commit fd323b4a8fa05348c67bdace8dde380ffa7b7435
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 10 15:12:48 2015 +0000
+
+    Fix Javadoc
+    
+    Fixes #241
+
+ src/main/java/org/joda/time/base/AbstractInstant.java |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 48b6ae85b02f41bec0fac7110ee47239c53eee9d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Feb 1 10:55:35 2015 +0000
+
+    Fix DateTime.withDate() DateTime.withTime()
+    
+    Algorithm incorrectly changed hour of day
+    Happened mid-change when DST dates were hit
+    New algorithm avoids an IllegalInstantException when moving to DST gap
+    Fixes #233
+
+ RELEASE-NOTES.txt                                    |    4 ++++
+ src/main/java/org/joda/time/DateTime.java            |   24 +++++++++++++-----------
+ src/test/java/org/joda/time/TestDateTime_Basics.java |   33 +++++++++++++++++++++++++++++++++
+ 3 files changed, 50 insertions(+), 11 deletions(-)
+
+commit 470a545bb065df2467b4f2e7dc5bda853e580708
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Feb 1 10:08:46 2015 +0000
+
+    Clarify definition of ISO chronology
+    
+    Fixes #231
+
+ src/main/java/org/joda/time/Chronology.java |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 0daee1292837cfea36dd452259d086f3e39cec3f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 26 21:05:25 2015 +0000
+
+    Encode properties files using unicode escapes
+    
+    Re-encode files using unicode escapes to avoid encoding issues
+    Fixes #228
+
+ RELEASE-NOTES.txt                                         |    3 +++
+ src/main/java/org/joda/time/format/messages_da.properties |    8 ++++----
+ src/main/java/org/joda/time/format/messages_es.properties |    8 ++++----
+ src/main/java/org/joda/time/format/messages_fr.properties |    4 ++--
+ src/main/java/org/joda/time/format/messages_pt.properties |    2 +-
+ 5 files changed, 14 insertions(+), 11 deletions(-)
+
+commit b95ebe240aa65d2d28deb84b76d8a7edacf922f8
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 26 20:50:05 2015 +0000
+
+    Fix MonthDay.plusDays()
+    
+    Algorithm incorrect when adding caused month to change twice
+    Used incorrect way of getting current value of partial
+    Fixes #227
+
+ RELEASE-NOTES.txt                                                     |   37 +++++++------------------------------
+ src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java |    2 +-
+ src/test/java/org/joda/time/TestMonthDay_Basics.java                  |   31 +++++++++++++++++++------------
+ 3 files changed, 27 insertions(+), 43 deletions(-)
+
+commit bef3d7c9871fd85373e8753dffb5132d8458d373
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 26 20:27:04 2015 +0000
+
+    Adding test case for MonthDay.plus/minusDays February behavior
+    
+    Since MonthDay.plus/minusDays is documented to assume February has 29
+    days, these test cases verifies that.
+
+ src/test/java/org/joda/time/TestMonthDay_Basics.java |   14 ++++++++++++++
+ 1 files changed, 14 insertions(+), 0 deletions(-)
+
+commit 29956ccdc75365646441de647e85fe6589081b16
+Author: Dan Cavallaro <dancaval@amazon.com>
+Date:   Thu Jan 22 09:04:09 2015 -0800
+
+    Adding test cases for MonthDays plus/minusDays wrapping behavior
+
+ src/test/java/org/joda/time/TestMonthDay_Basics.java |   56 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 56 insertions(+), 0 deletions(-)
+
+commit 4558a0cd1d53bd740e9177e9bb5446f76936afb8
+Merge: b7074b2 1f0ca1e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 26 20:24:01 2015 +0000
+
+    Merge remote-tracking branch 'danc/travis-typo'
+
+commit b7074b2a18894774f7d2f9ad1c3d714f5d762e92
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Jan 23 12:16:13 2015 +0000
+
+    Bump version
+    
+    Update pom.xml to latest versions
+    Add contributor
+
+ pom.xml |   56 ++++++++++++++++++++++++++++++--------------------------
+ 1 files changed, 30 insertions(+), 26 deletions(-)
+
+commit 1f0ca1e4aa7a1669a50ca69cd977707b5ebb6287
+Author: Dan Cavallaro <dancaval@amazon.com>
+Date:   Thu Jan 22 08:24:54 2015 -0800
+
+    Tiny copy-paste typo fix
+
+ .travis.yml |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 9a4bc93a706b81dfd301cbaeb489354f900324d7
+Merge: 780f962 c10fb6d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Jan 22 15:04:55 2015 +0000
+
+    Merge pull request #229 from dancavallaro/doc-update
+    
+    Update MonthDay.plusDays docs
+
+commit c10fb6d3a411a38921faa7b364a8023cf524586a
+Author: Dan Cavallaro <dtc008@bucknell.edu>
+Date:   Wed Jan 21 07:07:37 2015 -0800
+
+    Update MonthDay.plusDays docs
+    
+    Updated MonthDay.plusDays Javadoc comment to mention that February is
+    assumed to have 29 days for calculations that require wrapping past the
+    end of February. Note that the Javadoc for MonthDay in the new Java 8
+    date API calls out this limitation as well, and explicitly chose not to
+    support arithmetic on MonthDays for this reason:
+    http://docs.oracle.com/javase/8/docs/api/java/time/MonthDay.html
+
+ src/main/java/org/joda/time/MonthDay.java |    3 +++
+ 1 files changed, 3 insertions(+), 0 deletions(-)
+
+commit 780f9626fd473e20ea6bcf65a917fcbcb92cff29
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 12 00:20:35 2015 +0000
+
+    Release v2.7
+
+ README.md                      |    4 ++--
+ pom.xml                        |    2 +-
+ src/conf/MANIFEST.MF           |   20 ++++++++++----------
+ src/site/markdown/index.md     |    8 ++++----
+ src/site/xdoc/installation.xml |    1 +
+ src/site/xdoc/upgradeto270.xml |   96 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 114 insertions(+), 17 deletions(-)
+
+commit 8f11578a01f3d87510d58052fe7097dcfa0dae8a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 12 00:16:34 2015 +0000
+
+    Fix release notes
+
+ RELEASE-NOTES.txt |   29 +++++++----------------------
+ 1 files changed, 7 insertions(+), 22 deletions(-)
+
+commit e0958a6e0e98d656c0da5d523f4d7fca58e116d1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jan 11 23:24:55 2015 +0000
+
+    Ensure period formatting locale used
+    
+    PeriodFormatter.withLocale() now uses the locale to change the pattern
+    PeriodFormat.wordBased() now pushes the locale into the formatter
+    Fixes #187
+    Fixes #191
+
+ RELEASE-NOTES.txt                                        |    6 ++++++
+ src/main/java/org/joda/time/format/PeriodFormat.java     |   86 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----------
+ src/main/java/org/joda/time/format/PeriodFormatter.java  |    6 +++++-
+ src/test/java/org/joda/time/format/TestPeriodFormat.java |   41 +++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 128 insertions(+), 11 deletions(-)
+
+commit 488a500c510d84c5c355cbe61ba0deb096e0f3be
+Merge: 8727848 3f84a37
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jan 11 23:03:36 2015 +0000
+
+    Merge remote-tracking branch 'origin/topic/220'
+
+commit 87278482070aa5ba3b64f2a8e1406c69e4381657
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 5 00:00:49 2015 +0000
+
+    Fix Asia/Dhaka time-zone
+    
+    Problem caused by time-zone ending at 24:00 on December 31st
+    Model change as being as 23:59:59.999
+    Fixes #208
+
+ RELEASE-NOTES.txt                                    |    4 ++++
+ src/main/java/org/joda/time/tz/ZoneInfoCompiler.java |   21 +++++++++++++--------
+ 2 files changed, 17 insertions(+), 8 deletions(-)
+
+commit c6a92aebb9ba03440e4225dd3db205d46a49995e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jan 4 23:17:41 2015 +0000
+
+    Add DateTime.withDate and DateTime.withTime
+    
+    Fixes #213
+
+ RELEASE-NOTES.txt                                    |    3 +++
+ src/main/java/org/joda/time/DateTime.java            |   30 ++++++++++++++++++++++++++++++
+ src/test/java/org/joda/time/TestDateTime_Basics.java |   28 +++++++++++++++++++++++++++-
+ 3 files changed, 60 insertions(+), 1 deletions(-)
+
+commit 3f84a37f67d1f1ad72ad10f253f91d4a929f9dfa
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jan 4 22:44:06 2015 +0000
+
+    Add no-tzdb jar file
+    
+    A second project output
+    Same files, just no tzdb data (or ZoneInfoCompiler)
+    Fixes #220
+
+ RELEASE-NOTES.txt |    8 ++++++++
+ pom.xml           |   37 +++++++++++++++++++++++++++++++++----
+ 2 files changed, 41 insertions(+), 4 deletions(-)
+
+commit ca8f807b99b16ce5cc51444ce17ca12abdc7ff80
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jan 4 22:11:17 2015 +0000
+
+    Added new system property for time-zone loading
+    
+    New system property "org.joda.time.DateTimeZone.Folder"
+    If set, then it is treated as a file system folder
+    to load time-zone data from using ZoneInfoProvider
+    Fixes #37
+
+ RELEASE-NOTES.txt                                 |    5 +++++
+ pom.xml                                           |    1 +
+ src/main/java/org/joda/time/DateTimeZone.java     |   71 ++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------
+ src/test/java/org/joda/time/TestDateTimeZone.java |   15 +++++++++++++++
+ src/test/resources/tzdata/CET                     |  Bin 0 -> 337 bytes
+ src/test/resources/tzdata/ZoneInfoMap             |  Bin 0 -> 13 bytes
+ 6 files changed, 73 insertions(+), 19 deletions(-)
+
+commit 156b53ef9b085f4104726c9a9fc902e97b97b8a8
+Merge: b5f4333 d209bca
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Jan 2 15:59:46 2015 +0000
+
+    Merge pull request #223 from twillouer/master
+    
+    javadoc
+
+commit d209bca3fc3bc17b4a53c7844974411ccd7f271e
+Author: William Delanoue <william.delanoue@deveryware.net>
+Date:   Fri Jan 2 16:54:50 2015 +0100
+
+    javadoc
+
+ src/main/java/org/joda/time/DateTimeUtils.java |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit b5f433357184e6090507e41c8c66ab683d621e52
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Dec 29 11:13:42 2014 +0000
+
+    Update related projects page
+
+ src/site/markdown/related.md |   22 ++++++++++++++++++++++
+ src/site/xdoc/related.xml    |   46 ----------------------------------------------
+ 2 files changed, 22 insertions(+), 46 deletions(-)
+
+commit e26b8246bb2d2826c5c357e59e47e252e2eba755
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Dec 18 13:03:55 2014 +0000
+
+    Update website
+
+ src/site/markdown/index.md       |    9 ++++++---
+ src/site/markdown/quickstart.md  |  147 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/site/xdoc/cal.xml            |    2 +-
+ src/site/xdoc/key_chronology.xml |    4 ++++
+ src/site/xdoc/key_instant.xml    |    6 +++---
+ src/site/xdoc/quickstart.xml     |  155 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+ src/site/xdoc/userguide.xml      |    2 +-
+ 7 files changed, 162 insertions(+), 163 deletions(-)
+
+commit 5ee3b78500f67b464bc647d5834c62d05086b52c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Dec 5 18:11:20 2014 +0000
+
+    Fix maven co-ordinates
+    
+    Fixes #214
+
+ src/site/markdown/index.md |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 76425421522a32aecb8d5ccb0b4098f0544ed96d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Dec 5 08:58:21 2014 +0000
+
+    Update pom.xml following pull request
+
+ pom.xml |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+
+commit dcb48997946b242b37e1edc218a798e2e666b213
+Merge: 60d3a2e d923b95
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Dec 5 08:57:21 2014 +0000
+
+    Merge pull request #212 from edwag/master
+    
+    Update documentation on Chronology to include IslamicChronology
+
+commit d923b950c58a65eb542fa2b197f889236476d2fc
+Author: Ed Wagstaff <edwardwagstaff@gmail.com>
+Date:   Thu Dec 4 22:09:25 2014 +0000
+
+    Update documentation on Chronology to include IslamicChronology in the list of included chronologies.
+
+ src/main/java/org/joda/time/Chronology.java |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+
+commit 60d3a2e263a75c525a8197dcc592d99a84e39037
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Dec 2 13:50:43 2014 +0000
+
+    Update website
+
+ pom.xml                         |   36 ++++++++++++++++++++++++------------
+ src/site/markdown/index.md      |  169 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/site/resources/css/site.css |  158 ++++++++++++++++++++++++++++++++++++++++++--------------------------------------------------------------------------------------------------------------------
+ src/site/site.xml               |  177 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----------------------------------------------------
+ src/site/xdoc/cal.xml           |   30 ++++++++++++++++++++++++++++++
+ src/site/xdoc/field.xml         |   16 ++++++----------
+ src/site/xdoc/index.xml         |  192 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ src/site/xdoc/key.xml           |   30 ++++++++++++++++++++++++++++++
+ src/site/xdoc/privacy.xml       |   49 -------------------------------------------------
+ 9 files changed, 426 insertions(+), 431 deletions(-)
+
+commit 350ad252473d93eab2fc2d05433248de4e55a7a0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Dec 1 14:48:17 2014 +0000
+
+    Remove reference to Apache Ant build tool
+
+ src/site/xdoc/installation.xml |    3 +--
+ 1 files changed, 1 insertions(+), 2 deletions(-)
+
+commit 8a64e3ece8613f75e535c15aa3a08d85cfff6de1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Dec 1 14:47:26 2014 +0000
+
+    Bump version
+
+ pom.xml |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 60fd89df9d362047035484217b4c161a360e58a5
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Dec 1 14:26:40 2014 +0000
+
+    Release v2.6
+
+ README.md                      |    4 ++--
+ pom.xml                        |    2 +-
+ src/conf/MANIFEST.MF           |   20 ++++++++++----------
+ src/site/xdoc/index.xml        |   20 +++++---------------
+ src/site/xdoc/installation.xml |    1 +
+ src/site/xdoc/upgradeto260.xml |   85 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 104 insertions(+), 28 deletions(-)
+
+commit 56e660f275e12cce6ebfb0911bef21204fd0f1e8
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Dec 1 14:24:26 2014 +0000
+
+    Adjust travis versions to test on
+
+ .travis.yml |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 70b440b9bbf31035a3ffbb5835ec7a5639a9e8e0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Dec 1 14:19:55 2014 +0000
+
+    Fix name provider
+    
+    Name provider relied on tzdb short names matching JDK data names
+    This has ceased to be true due to recent changes in tzdb
+    Add improved matching based on summer/winter
+    Data returned still depends on the JDK data, not the tzdb
+    Fixes #175
+
+ RELEASE-NOTES.txt                                       |    8 ++++++++
+ src/main/java/org/joda/time/DateTimeZone.java           |   16 ++++++++++++++--
+ src/main/java/org/joda/time/tz/DefaultNameProvider.java |   57 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 79 insertions(+), 2 deletions(-)
+
+commit 0a7eed9c47188e104079587966094770b80a4047
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Nov 21 01:26:30 2014 +0000
+
+    Refactor time-zone locking to use atomics
+    
+    Reduce use of locks overall
+    Simplify logic to have less interactions
+    See #196
+
+ src/main/java/org/joda/time/DateTimeUtils.java       |   68 ++++++++++++++++++++++++++++++++++++++++----------------------------
+ src/main/java/org/joda/time/DateTimeZone.java        |  338 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ src/main/java/org/joda/time/tz/UTCProvider.java      |    7 ++++++-
+ src/main/java/org/joda/time/tz/ZoneInfoProvider.java |   10 ++++++----
+ src/test/java/org/joda/time/TestDateTimeZone.java    |    2 +-
+ 5 files changed, 211 insertions(+), 214 deletions(-)
+
+commit f1bbc28a1da528d06cc0b0c18ec26053e5d6cbe3
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 20 20:45:35 2014 +0000
+
+    Attempt to tackle an Android deadlock
+    
+    Use dedicated lock objects instead of locking on the class object
+    See #196
+
+ RELEASE-NOTES.txt                             |    3 +++
+ src/main/java/org/joda/time/DateTimeZone.java |  140 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--------------------------------------------------------------
+ 2 files changed, 81 insertions(+), 62 deletions(-)
+
+commit 3ee33d28c378e5ecf05a5c8bd20b8fed7876ee5a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 20 20:25:36 2014 +0000
+
+    Update to time-zone data 2014j
+
+ RELEASE-NOTES.txt                               |    2 +-
+ pom.xml                                         |    2 +-
+ src/main/java/org/joda/time/tz/src/Readme.txt   |    2 +-
+ src/main/java/org/joda/time/tz/src/africa       |   79 ++++++++++++++++++++++---------------------------------------------------------
+ src/main/java/org/joda/time/tz/src/asia         |  167 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----------------------------------------------------
+ src/main/java/org/joda/time/tz/src/australasia  |   56 ++++++++++++++++++++++++++++++++++++++++++++------------
+ src/main/java/org/joda/time/tz/src/europe       |   30 +++++++++++++++++++++++++-----
+ src/main/java/org/joda/time/tz/src/northamerica |   42 ++++++++++++++++++++++--------------------
+ src/main/java/org/joda/time/tz/src/southamerica |   18 +++++++++---------
+ 9 files changed, 240 insertions(+), 158 deletions(-)
+
+commit f8f04177791256fc7397614167975d966617b4c1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 20 20:25:36 2014 +0000
+
+    Fix tests to allow old/new tz data to compile
+    
+    Still not happy with the activities of the TZDB maintainer
+
+ src/test/java/org/joda/time/TestDateTimeZone.java |    9 +++------
+ 1 files changed, 3 insertions(+), 6 deletions(-)
+
+commit dbda260e5c2bfac5c20813c1a7645e8f15f89a6d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 20 20:07:01 2014 +0000
+
+    Handle complex prefix/suffix combinations
+    
+    For example, 'M' for months and 'm' for minutes.
+    Parser is generally case insensitive, but handle this specific case
+    Fixes #194
+    Fixes #203
+
+ RELEASE-NOTES.txt                                                  |    3 +++
+ pom.xml                                                            |    4 ++++
+ src/main/java/org/joda/time/format/PeriodFormatterBuilder.java     |   23 +++++++++++++----------
+ src/test/java/org/joda/time/format/TestPeriodFormatterBuilder.java |   38 +++++++++++++++++++++++++++++++++-----
+ 4 files changed, 53 insertions(+), 15 deletions(-)
+
+commit 81cec147d0fe5d6ced2bf59283e557a0cc60baea
+Author: Jim Gough <jpgough@gmail.com>
+Date:   Mon Nov 10 20:44:16 2014 +0530
+
+    Formatter previously ignored case sensitivity when working with M and m, for months and minutes leading to an incorrect result. Aims to resolve issue #194
+
+ src/main/java/org/joda/time/format/PeriodFormatterBuilder.java     |    2 +-
+ src/test/java/org/joda/time/format/TestPeriodFormatterBuilder.java |   20 ++++++++++++++++++++
+ 2 files changed, 21 insertions(+), 1 deletions(-)
+
+commit 5ba208f505bfba9155fcb28a6ae3f54b962438a4
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 20 20:00:22 2014 +0000
+
+    Bump version
+
+ RELEASE-NOTES.txt |   51 +++++++--------------------------------------------
+ pom.xml           |    2 +-
+ 2 files changed, 8 insertions(+), 45 deletions(-)
+
+commit bac4b2e69a0613ee7f0ae434072d4744fe7f2c6d
+Merge: 6526e7d 0e0cefa
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Nov 16 11:45:09 2014 +0000
+
+    Merge pull request #205 from kwangbkim/master
+    
+    Fixed typo convertor -> converter
+
+commit 0e0cefa8a4209ae79563b953db515f3046594a57
+Author: Kwang Kim <kwangbkim@outlook.com>
+Date:   Sat Nov 15 16:45:32 2014 -0500
+
+    Fixed typo convertor -> converter
+
+ src/main/java/org/joda/time/convert/AbstractConverter.java         |    6 +++---
+ src/main/java/org/joda/time/convert/ConverterManager.java          |    2 +-
+ src/main/java/org/joda/time/convert/DurationConverter.java         |    2 +-
+ src/main/java/org/joda/time/convert/ReadableDurationConverter.java |    2 +-
+ src/main/java/org/joda/time/convert/ReadableInstantConverter.java  |    2 +-
+ 5 files changed, 7 insertions(+), 7 deletions(-)
+
+commit 6526e7da38834a316ba1dca88df4ab165bd15f84
+Merge: 562c878 99b73f9
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Oct 23 22:26:53 2014 +0100
+
+    Merge pull request #198 from valentin-nasta/master
+    
+    Corrected Java doc for AbstractDuration#isLongerThan and AbstractDuratio...
+
+commit 99b73f9e56b251f853b2c5a6c89d9b27241c7797
+Author: Valentin Nastasache <vnastasache@voipfuture.com>
+Date:   Thu Oct 23 13:09:33 2014 +0200
+
+    Corrected Java doc for AbstractDuration#isLongerThan and AbstractDuration#isShorterThan.
+
+ src/main/java/org/joda/time/base/AbstractDuration.java |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 562c8783667b48dadd32f994e9793eb5c66c3dfd
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Oct 3 16:09:45 2014 +0100
+
+    Update github site plugin
+    
+    Also need egit repo in settings.xml
+
+ pom.xml |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 8ddb3fb57078d57cfea00b1f588c9ffa8ffbec03
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Oct 3 01:35:27 2014 +0100
+
+    Release v2.5
+
+ README.md                      |    4 ++--
+ pom.xml                        |    2 +-
+ src/conf/MANIFEST.MF           |   20 ++++++++++----------
+ src/site/xdoc/index.xml        |   10 +++++-----
+ src/site/xdoc/installation.xml |    1 +
+ src/site/xdoc/upgradeto250.xml |  108 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 127 insertions(+), 18 deletions(-)
+
+commit bb7ca2c20fb655ae529fb7dfa341d81562714add
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Oct 3 00:21:11 2014 +0100
+
+    Fix tests to allow old and new time-zone data to compile
+    
+    Not happy with the activities of the TZDB maintainer
+
+ src/test/java/org/joda/time/TestDateTimeZone.java |    6 +++++-
+ 1 files changed, 5 insertions(+), 1 deletions(-)
+
+commit a9e6638fec89b6c01386cdf55646a8997ce4940d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Oct 3 00:12:03 2014 +0100
+
+    Update to time-zone data 2014h
+
+ RELEASE-NOTES.txt                               |    2 +-
+ pom.xml                                         |    2 +-
+ src/main/java/org/joda/time/tz/src/Readme.txt   |    2 +-
+ src/main/java/org/joda/time/tz/src/africa       |  522 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------------------------------------------------------------------
+ src/main/java/org/joda/time/tz/src/antarctica   |  134 +++++++++++++++++++++++---------------------
+ src/main/java/org/joda/time/tz/src/asia         |  924 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--------------------------------------------------------------------------------------------------------------------------------------------------
+ src/main/java/org/joda/time/tz/src/australasia  |  938 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ src/main/java/org/joda/time/tz/src/backward     |    9 ++-
+ src/main/java/org/joda/time/tz/src/etcetera     |    3 +-
+ src/main/java/org/joda/time/tz/src/europe       | 1358 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ src/main/java/org/joda/time/tz/src/northamerica |  708 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------------------------------------------------------------------------------------
+ src/main/java/org/joda/time/tz/src/pacificnew   |    1 -
+ src/main/java/org/joda/time/tz/src/southamerica |  484 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--------------------------------------------------------------------------------------------
+ src/main/java/org/joda/time/tz/src/systemv      |    1 -
+ 14 files changed, 2545 insertions(+), 2543 deletions(-)
+
+commit e53f6a384033767a22256401c9f44b1f515fb735
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Oct 2 23:39:19 2014 +0100
+
+    Add time-zone databse version to manifest
+    
+    Key = Time-Zone-Database-Version
+    Based on pull request by @longhua
+    Fixes #176
+    Fixes #183
+
+ RELEASE-NOTES.txt |    3 +++
+ pom.xml           |    4 ++++
+ 2 files changed, 7 insertions(+), 0 deletions(-)
+
+commit 404b6e6bf5050db51c5827f856cca2953b7294a4
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Oct 2 23:32:55 2014 +0100
+
+    Update following pull request
+    
+    Fixes #173
+    Fixes #182
+
+ RELEASE-NOTES.txt |    4 ++++
+ pom.xml           |    4 ++++
+ 2 files changed, 8 insertions(+), 0 deletions(-)
+
+commit 504acaef364e4626161b372744441bb44866abd4
+Merge: 986d905 8769b77
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Oct 2 23:28:28 2014 +0100
+
+    Merge pull request #182 from longhua/fix_#173
+    
+    Don't advance to dayOfWeek if it is 0
+    
+    See #182
+
+commit 8769b776d5f28650e1cb50878f8266c3d7e4a9e1
+Author: LongHua Huang <longhua1984@gmail.com>
+Date:   Sat Sep 20 08:01:50 2014 +0800
+
+    Don't advance to dayOfWeek if it is 0
+    
+    If 24:00 is used with a specific day, it will advance to next Monday, since advance is set to true and dayOfWeek is updated to 1.
+    
+    To fix #173:
+    1, don't set advance to true if dayOfWeek is 0.
+    2, don't update dayOfWeek if it is 0.
+
+ src/main/java/org/joda/time/tz/ZoneInfoCompiler.java |    6 ++++--
+ src/test/java/org/joda/time/tz/TestCompiler.java     |   10 ++++++++++
+ 2 files changed, 14 insertions(+), 2 deletions(-)
+
+commit 986d905f76176322356df6ef520dc33256827f0a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Sep 16 13:38:40 2014 +0100
+
+    Alter LocalDate.toDateTime to be more consistent
+    
+    Additional release notes
+    Fixes #177
+
+ RELEASE-NOTES.txt |    7 +++++++
+ 1 files changed, 7 insertions(+), 0 deletions(-)
+
+commit 19546b6960c41dcd053bd06e7345bd015946809c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Sep 16 13:31:10 2014 +0100
+
+    Alter LocalDate.toDateTime to be more consistent
+    
+    Alter LocalDate.toDateTime(LocalTime)
+    Alter LocalDate.toDateTime(LocalTime, DateTimeZone)
+    Document/test equivalent in LocalDateTime
+    
+    A null LocalTime is delegated to ensure no change in behaviour
+    Otherwise daylight saving gap and overlap has changed
+    During DST gap changed from IllegalFieldValueEx to IllegalInstantEx
+    During DST overlap it now selected the earlier offset
+    
+    Change avoids use of currentTimeMillis() and avoids issue #177
+    Fixes #177
+
+ RELEASE-NOTES.txt                                         |    8 +++++++-
+ src/main/java/org/joda/time/LocalDate.java                |   43 ++++++++++++++++++++++++++++---------------
+ src/main/java/org/joda/time/LocalDateTime.java            |   16 ++++++++++++----
+ src/test/java/org/joda/time/TestLocalDateTime_Basics.java |   24 ++++++++++++++++++++++++
+ src/test/java/org/joda/time/TestLocalDate_Basics.java     |   27 +++++++++++++++++++++++++++
+ 5 files changed, 98 insertions(+), 20 deletions(-)
+
+commit 1ecf8abe9a0a044b1a4da9eed855c49aac73c7d7
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Sep 8 17:22:32 2014 +0100
+
+    Fix deadlock due to DateTimeZone.UTC
+    
+    Referencing DateTimeZone and FixedDateTimeZone from two
+    threads at startup could deadlock
+    Add package scoped UTCDateTimeZone class to avoid this
+    
+    DateTimeZone.UTC has changed implementation type
+    It used to be a FixedDateTimeZone
+    Now it is a UTCDateTimeZone
+    This avoids a potential deadlock scenario
+    Serialization is unaffected
+    This change will only be observable if you cast the
+    UTC constant to FixedDateTimeZone
+    Fixes #171
+
+ RELEASE-NOTES.txt                                |   11 ++++++++++-
+ src/main/java/org/joda/time/DateTimeZone.java    |    2 +-
+ src/main/java/org/joda/time/UTCDateTimeZone.java |   83 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 94 insertions(+), 2 deletions(-)
+
+commit 47c194065d46f3b84fc3642b5613e64b9403c78f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Sep 8 15:18:37 2014 +0100
+
+    Handle suffixes/affixes that clash
+    
+    For example, m for minutes and ms for milliseconds
+    Improve on patch by adjusting memory model issues
+    Fixes #154, fixes #169
+
+ RELEASE-NOTES.txt                                                  |    4 ++++
+ src/main/java/org/joda/time/format/PeriodFormatterBuilder.java     |   58 ++++++++++++++++++++++++++--------------------------------
+ src/test/java/org/joda/time/format/TestPeriodFormatterBuilder.java |    9 +++++++++
+ 3 files changed, 39 insertions(+), 32 deletions(-)
+
+commit 7eb5f6043f21431cfc714200e53a738adceb6ecd
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Sep 8 15:16:46 2014 +0100
+
+    Handle suffixes/affixes that clash
+    
+    For example, m for minutes and ms for milliseconds
+    Fixes #154, fixes #169
+
+ src/main/java/org/joda/time/format/PeriodFormatterBuilder.java     |   30 ++++++++++++++++--------------
+ src/test/java/org/joda/time/format/TestPeriodFormatterBuilder.java |    5 ++---
+ 2 files changed, 18 insertions(+), 17 deletions(-)
+
+commit 6dcf36d38137a1c71522879c7af84bf7b26bfbed
+Merge: 079e11a 226b043
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Sep 8 14:47:38 2014 +0100
+
+    Merge branch 'gswierczynski-master2'
+
+commit 226b0439bbe1eb2ed144a163827167635b492b69
+Author: Grzegorz ?wierczy¨½ski <gswierczynski@gswierczynski.pl>
+Date:   Sun Aug 24 20:18:07 2014 +0200
+
+    Create base class for affixes that will solve #154.
+
+ src/main/java/org/joda/time/format/PeriodFormatterBuilder.java     |  194 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------
+ src/test/java/org/joda/time/format/TestPeriodFormatterBuilder.java |  110 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--------
+ 2 files changed, 275 insertions(+), 29 deletions(-)
+
+commit 312f39db344bb8a37ed4e50ce00099fff3c830aa
+Author: Grzegorz ?wierczy¨½ski <gswierczynski@gswierczynski.pl>
+Date:   Sun Aug 24 18:31:55 2014 +0200
+
+    Fix parsing with PeriodFormatter containing composite affix.
+
+ src/main/java/org/joda/time/format/PeriodFormatterBuilder.java     |   11 ++++++++---
+ src/test/java/org/joda/time/format/TestPeriodFormatterBuilder.java |   24 ++++++++++++++++++++++++
+ 2 files changed, 32 insertions(+), 3 deletions(-)
+
+commit faa4fad4e2afe6e9949d6d0b676e733800132704
+Author: Grzegorz ?wierczy¨½ski <gswierczynski@gswierczynski.pl>
+Date:   Sat Aug 23 12:38:11 2014 +0200
+
+    Assure correct order of regex affixes during parsing.
+
+ src/main/java/org/joda/time/format/PeriodFormatterBuilder.java     |   19 ++++++++++++++++---
+ src/test/java/org/joda/time/format/TestPeriodFormatterBuilder.java |   13 +++++++++++++
+ 2 files changed, 29 insertions(+), 3 deletions(-)
+
+commit 079e11afd32f5ee00588f0d64a158c4f66e00ebd
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Aug 22 08:26:00 2014 +0100
+
+    Bump version to snapshot
+
+ pom.xml |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit a794eaa2da281c411cfa41b9b66f831942a0577c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Aug 22 08:26:00 2014 +0100
+
+    Add regex based period formats
+    
+    Fixes #166
+
+ RELEASE-NOTES.txt                                                  |    8 +++++---
+ pom.xml                                                            |    4 ++++
+ src/main/java/org/joda/time/format/PeriodFormat.java               |  111 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------
+ src/main/java/org/joda/time/format/PeriodFormatterBuilder.java     |   49 +++++++++++++++++++++++--------------------------
+ src/test/java/org/joda/time/format/TestPeriodFormat.java           |    2 +-
+ src/test/java/org/joda/time/format/TestPeriodFormatterBuilder.java |    2 +-
+ 6 files changed, 100 insertions(+), 76 deletions(-)
+
+commit 08b9ea2dba478a6669b6a6025e531d585db02db2
+Merge: 0843aff a5d9d7e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Aug 22 07:53:21 2014 +0100
+
+    Merge branch 'gswierczynski-master'
+
+commit a5d9d7e5d169587db3523417b7760f4080388826
+Author: Grzegorz ?wierczy¨½ski <gswierczynski@gswierczynski.pl>
+Date:   Thu Aug 14 21:22:24 2014 +0200
+
+    Assure immutability of RegExAffix. Fix formatting.
+
+ src/main/java/org/joda/time/format/PeriodFormatterBuilder.java |    2 +-
+ src/main/java/org/joda/time/format/messages_pl.properties      |    2 +-
+ src/test/java/org/joda/time/format/TestPeriodFormat.java       |   20 +++++++-------------
+ 3 files changed, 9 insertions(+), 15 deletions(-)
+
+commit a9186877b2383132d4f69636dbb703e3118840fe
+Author: Grzegorz ?wierczy¨½ski <gswierczynski@gswierczynski.pl>
+Date:   Thu Aug 14 02:26:23 2014 +0200
+
+    Remove vicious tabs. Fix order of the supported languages in
+    PeriodFormat#wordBased(Locale) method's javadoc.
+
+ src/main/java/org/joda/time/format/PeriodFormat.java               |  441 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ src/main/java/org/joda/time/format/PeriodFormatterBuilder.java     |  300 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------------------------------------------------------------------------------------------------
+ src/test/java/org/joda/time/format/TestPeriodFormat.java           |  480 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ src/test/java/org/joda/time/format/TestPeriodFormatterBuilder.java |  246 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------------------------------------------------------------------------
+ 4 files changed, 734 insertions(+), 733 deletions(-)
+
+commit 6762d7919e99c741c66f0a22f0d1175d3e631c86
+Author: Grzegorz ?wierczy¨½ski <gswierczynski@gswierczynski.pl>
+Date:   Tue Aug 12 02:19:50 2014 +0200
+
+    Add regular expression based localization to PeriodFormatterBuilder and
+    PeriodFormat. Add Polish locale to PeriodFormat. Add tests.
+
+ src/main/java/org/joda/time/format/PeriodFormat.java               |  272 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------
+ src/main/java/org/joda/time/format/PeriodFormatterBuilder.java     |  158 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/org/joda/time/format/messages_pl.properties          |   26 ++++++++++++++++++++++++++
+ src/test/java/org/joda/time/format/TestPeriodFormat.java           |  265 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------
+ src/test/java/org/joda/time/format/TestPeriodFormatterBuilder.java |  131 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 5 files changed, 784 insertions(+), 68 deletions(-)
+
+commit 0843affdfae354c7799db55d45c28d89f30b0ae2
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 2 22:42:46 2014 +0100
+
+    Update following pull request
+
+ pom.xml |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+
+commit fc68b68aed050b2ab43c2df097140ead8b75d387
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 2 22:41:36 2014 +0100
+
+    Update following pull request
+
+ RELEASE-NOTES.txt |  112 +++++-----------------------------------------------------------------------------------------------------------
+ 1 files changed, 5 insertions(+), 107 deletions(-)
+
+commit 3f3b446595502127f6905be8bcf6b1b5b4171c84
+Merge: 8626507 fc231dc
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 2 22:38:56 2014 +0100
+
+    Merge pull request #159 from chungyeol/master
+    
+    Add additional overflow check for Duration constructor.
+
+commit fc231dc3ed22d75bdcb1f386136baa4c4d93131d
+Author: Chung-yeol Lee <chungyeol@google.com>
+Date:   Fri Aug 1 15:45:00 2014 -0700
+
+    Add additional overflow check for Duration constructor.
+
+ src/main/java/org/joda/time/base/BaseDuration.java         |    4 ++--
+ src/test/java/org/joda/time/TestDuration_Constructors.java |   41 +++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 43 insertions(+), 2 deletions(-)
+
+commit 8626507f5df4133fb0c341a85e22fc87f25250db
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jul 27 23:01:57 2014 +0100
+
+    Fix page title
+
+ src/site/xdoc/upgradeto240.xml |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 680f94d0565075e98e3c947d359e7e29451e1b96
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jul 27 17:31:50 2014 +0100
+
+    Release v2.4
+
+ README.md                      |    4 ++--
+ pom.xml                        |    2 +-
+ src/conf/MANIFEST.MF           |   20 ++++++++++----------
+ src/site/xdoc/index.xml        |   10 +++++-----
+ src/site/xdoc/installation.xml |    1 +
+ src/site/xdoc/upgradeto240.xml |  175 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 194 insertions(+), 18 deletions(-)
+
+commit ab9166ef7612ff3ad28537e7e52100f685a53e9c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jul 27 17:31:34 2014 +0100
+
+    Switch to GitHub for downloads
+
+ src/site/resources/download.html |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 894cad68e3e2ed2697e60244e11bb7089d5978e8
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jul 27 13:49:51 2014 +0100
+
+    Update to time-zone data 2014e
+
+ RELEASE-NOTES.txt                               |    2 +-
+ src/main/java/org/joda/time/tz/src/Readme.txt   |    2 +-
+ src/main/java/org/joda/time/tz/src/africa       |  259 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------------------------------
+ src/main/java/org/joda/time/tz/src/antarctica   |   66 ++++++++++++++++++++++++++++++++++++++----------------------------
+ src/main/java/org/joda/time/tz/src/asia         |  126 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------------
+ src/main/java/org/joda/time/tz/src/australasia  |   81 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------
+ src/main/java/org/joda/time/tz/src/backward     |   12 +++++++-----
+ src/main/java/org/joda/time/tz/src/etcetera     |    4 ++--
+ src/main/java/org/joda/time/tz/src/europe       |  223 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------------------------------------
+ src/main/java/org/joda/time/tz/src/northamerica |  161 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----------------------------------------------------------------------------------------------
+ src/main/java/org/joda/time/tz/src/southamerica |   83 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------
+ 11 files changed, 659 insertions(+), 360 deletions(-)
+
+commit b9a9b5737163f5b60643a37aa57893fc248c5439
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Jul 26 23:33:10 2014 +0100
+
+    Fixed conversion from Local to UTC
+    
+    DateTimeZone.getOffsetFromLocal() method
+    Fixed to handle the last cutover in DST history correctly
+    Rewrite docs and tests
+    Fixes #76
+
+ RELEASE-NOTES.txt                                        |    4 ++++
+ src/main/java/org/joda/time/DateTimeZone.java            |   33 +++++++++++++++++++++------------
+ src/main/java/org/joda/time/chrono/ZonedChronology.java  |    7 ++++---
+ src/test/java/org/joda/time/TestDateTimeZoneCutover.java |  218 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--------------------------------------------------------------------------------------------
+ 4 files changed, 155 insertions(+), 107 deletions(-)
+
+commit a1b12631a26324acab5348e2b9d51773f382e657
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Jul 26 21:13:36 2014 +0100
+
+    Fix Period construction during DST overlap
+    
+    If one end was within a DST overlap and the other end
+    beyond the overlap then the calculated period was incorrect
+    Fixes #156
+
+ RELEASE-NOTES.txt                                        |    5 +++++
+ src/main/java/org/joda/time/chrono/BaseChronology.java   |    4 +++-
+ src/test/java/org/joda/time/TestPeriod_Constructors.java |   33 +++++++++++++++++++++++++++++++++
+ 3 files changed, 41 insertions(+), 1 deletions(-)
+
+commit 70ee94062e12002575a2d1d398d315915b646221
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Jul 26 20:07:31 2014 +0100
+
+    Add link to external user guide
+
+ src/site/xdoc/related.xml |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 1379098f681f0d4d6f0a3403ab6727dc3437b6df
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Jul 4 12:29:56 2014 +0100
+
+    Better Javadoc for formatters
+    
+    Fixes #97
+
+ src/main/java/org/joda/time/format/ISODateTimeFormat.java |   78 +++++++++++++++++++++++++++++++++++++++---------------------------------------
+ 1 files changed, 39 insertions(+), 39 deletions(-)
+
+commit 04909bda4b942b4ad90fef5afc4e7cd484ee5f11
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jul 2 08:12:58 2014 +0100
+
+    Better Javadoc for formatters
+    
+    See #97
+
+ src/main/java/org/joda/time/format/ISODateTimeFormat.java |   85 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 85 insertions(+), 0 deletions(-)
+
+commit 7161f9c03d40dbe6325906931a7b3d3a310bfb12
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jul 2 07:18:08 2014 +0100
+
+    Better Javadoc for formatters that only parse
+    
+    See #97
+
+ RELEASE-NOTES.txt                                                    |    8 +++++---
+ src/main/java/org/joda/time/format/ISODateTimeFormat.java            |   37 +++++++++++++++++++++++++++++++------
+ src/test/java/org/joda/time/format/TestISODateTimeFormatParsing.java |   26 ++++++++++++++++++++++++++
+ 3 files changed, 62 insertions(+), 9 deletions(-)
+
+commit 967c03394560f12db48d0806c0df3a0a79e13e87
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu May 29 22:54:45 2014 +0100
+
+    Parse based on CharSequence internally
+    
+    Only access to CharSequence is via DateTimeParserBucket
+    Fixes #111
+
+ RELEASE-NOTES.txt                                                    |    7 +++++++
+ src/main/java/org/joda/time/format/DateTimeFormat.java               |    6 +++---
+ src/main/java/org/joda/time/format/DateTimeFormatter.java            |   26 +++++++++++++++-----------
+ src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java     |  142 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------------
+ src/main/java/org/joda/time/format/DateTimeParserBucket.java         |    6 +++---
+ src/main/java/org/joda/time/format/DateTimeParserInternalParser.java |   55 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/org/joda/time/format/FormatUtils.java                  |    2 +-
+ src/main/java/org/joda/time/format/InternalParser.java               |   56 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/org/joda/time/format/InternalParserDateTimeParser.java |   72 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/test/java/org/joda/time/format/TestDateTimeFormatter.java        |    2 +-
+ 10 files changed, 300 insertions(+), 74 deletions(-)
+
+commit 20f6e455e8a37977c2b7209cf3833e049ca2abed
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu May 8 00:40:17 2014 +0100
+
+    Allow DateTimeParserBucket to be reused
+    
+    See #111
+
+ RELEASE-NOTES.txt                                                |    5 +++++
+ src/main/java/org/joda/time/format/DateTimeFormatter.java        |   13 ++-----------
+ src/main/java/org/joda/time/format/DateTimeParserBucket.java     |  114 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----------------
+ src/test/java/org/joda/time/format/TestDateTimeParserBucket.java |   50 +++++++++++++++++++++++++++++++++++++++++++++++++-
+ 4 files changed, 154 insertions(+), 28 deletions(-)
+
+commit 002c7b49fcfddbd305b55ca77306eda37ec76ebe
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed May 7 23:28:52 2014 +0100
+
+    Test DateTimeParserBucket
+    
+    See #111
+
+ src/main/java/org/joda/time/format/DateTimeParserBucket.java     |   15 +++++++++------
+ src/test/java/org/joda/time/format/TestAll.java                  |    3 ++-
+ src/test/java/org/joda/time/format/TestDateTimeParserBucket.java |  246 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 257 insertions(+), 7 deletions(-)
+
+commit 1f8287f7f87bd6522a9bf13909a669b6fbbdad64
+Merge: ec4c7b5 3a2fe0a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu May 29 16:30:15 2014 +0100
+
+    Merge pull request #149 from vrozkovec/master
+    
+    Fixed incorrect javadoc
+
+commit 3a2fe0a8f85e96efc9543306786bdb372d4c4be2
+Author: vrozkovec <vit.rozkovec@gmail.com>
+Date:   Thu May 29 17:16:55 2014 +0200
+
+    fixed javadoc
+
+ src/main/java/org/joda/time/Interval.java |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit c38ff0f986664b7d195d62391ff23f3f4e6139bd
+Author: vrozkovec <vit.rozkovec@gmail.com>
+Date:   Thu May 29 17:15:42 2014 +0200
+
+    fixed javadoc description
+
+ src/main/java/org/joda/time/Interval.java |    8 ++++----
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+
+commit ec4c7b5fe0d7e52ccd43090bf2f8eb651f74b5db
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue May 6 23:26:40 2014 +0100
+
+    Avoid creating Partials with order weekyear-year
+    
+    Define year as greater than weekyear
+    Fixes #96
+    Fixes #98
+
+ RELEASE-NOTES.txt                                         |    3 +++
+ src/main/java/org/joda/time/Partial.java                  |   50 ++++++++++++++++++++++++++++++++------------------
+ src/test/java/org/joda/time/TestPartial_Constructors.java |   46 +++++++++++++++++++++++++++++++++++++++++++---
+ 3 files changed, 78 insertions(+), 21 deletions(-)
+
+commit 6f157ae0dd7d524cf8eeae2a5da0f62080b686a0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat May 3 11:02:27 2014 +0100
+
+    Enhance Javadoc for parse and toString
+    
+    Fixes #142
+
+ RELEASE-NOTES.txt                                          |    2 ++
+ src/main/java/org/joda/time/DateTime.java                  |   20 ++++++++++++++++++--
+ src/main/java/org/joda/time/MutableDateTime.java           |   13 +------------
+ src/main/java/org/joda/time/base/AbstractDateTime.java     |   20 +++++++++++++++++++-
+ src/main/java/org/joda/time/base/AbstractInstant.java      |    6 +++---
+ src/test/java/org/joda/time/TestDateTime_Constructors.java |   15 +++++++++++++++
+ 6 files changed, 58 insertions(+), 18 deletions(-)
+
+commit ece149201b73df13b3a40e46f2ab4c26aa81c633
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat May 3 09:57:58 2014 +0100
+
+    Use appropriate variable names
+    
+    These fields are not constants
+
+ src/main/java/org/joda/time/format/DateTimeFormat.java |   18 +++++++++---------
+ 1 files changed, 9 insertions(+), 9 deletions(-)
+
+commit 17b9af5a4455dbac76cf21e2cc7261c678361ae5
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat May 3 09:56:32 2014 +0100
+
+    Increased performance of symbols lookup
+    
+    Cache was never used
+    Weak map seems like overkill
+    Fixes #143
+
+ RELEASE-NOTES.txt                                        |    3 +++
+ src/main/java/org/joda/time/chrono/GJLocaleSymbols.java  |   40 +++++++++++++++++-----------------------
+ src/test/java/org/joda/time/chrono/ThreadContention.java |   72 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 92 insertions(+), 23 deletions(-)
+
+commit 634066471f2941eddfcca3ed2a62c9d254cabccb
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat May 3 09:33:09 2014 +0100
+
+    Remove ISOChronology fast cache
+    
+    My testing suggests it has no or negative benefit at this point
+    Synchronized block it defended was recently removed in #126
+    See #105
+
+ RELEASE-NOTES.txt                                        |    2 +-
+ src/main/java/org/joda/time/chrono/ISOChronology.java    |   16 ++--------------
+ src/test/java/org/joda/time/MockZone.java                |   25 +++++++++++++++++++++++--
+ src/test/java/org/joda/time/chrono/ThreadContention.java |   94 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 120 insertions(+), 17 deletions(-)
+
+commit fcf264d737af5a37d45c6c5c9802487ce53c8de8
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Apr 2 11:11:44 2014 +0100
+
+    Fix Javadoc for ReadableDuration
+    
+    See #137
+
+ RELEASE-NOTES.txt |    2 ++
+ pom.xml           |    4 ++++
+ 2 files changed, 6 insertions(+), 0 deletions(-)
+
+commit e847bbcb04f110349ab19d455e016c65a7dddda0
+Merge: 1ba2af6 4e6229f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Apr 2 11:09:04 2014 +0100
+
+    Merge pull request #137 from Strilanc/patch-1
+    
+    Added missing words in ReadableDuration's javadoc
+
+commit 4e6229f498ab47eb577173642cada45e1cc6daee
+Author: Craig Gidney <craig.gidney@gmail.com>
+Date:   Mon Mar 31 21:22:30 2014 -0400
+
+    Removing incorrect 'equal to'
+
+ src/main/java/org/joda/time/ReadableDuration.java |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit cadc571096b653109913af6fef1e6a59f2983036
+Author: Craig Gidney <craig.gidney@gmail.com>
+Date:   Mon Mar 31 11:16:26 2014 -0400
+
+    Added missing words in ReadableDuration's javadoc
+
+ src/main/java/org/joda/time/ReadableDuration.java |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 1ba2af6d66813b45008db6bb9b0a039afdcf6774
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Mar 20 16:00:42 2014 +0000
+
+    Handle weird TimeZone implementations with null ID
+    
+    Calling DateTimeZone.forTimeZone() would break if the ID was null
+    Fixes #133
+
+ RELEASE-NOTES.txt                                 |    3 +++
+ src/main/java/org/joda/time/DateTimeZone.java     |    7 +++++--
+ src/test/java/org/joda/time/TestDateTimeZone.java |   38 +++++++++++++++++++++++++++++++++++++-
+ 3 files changed, 45 insertions(+), 3 deletions(-)
+
+commit 38794869c3f3efc568ee37f7ba02639337f755be
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Mar 20 15:51:36 2014 +0000
+
+    Update headers
+
+ src/main/java/org/joda/time/chrono/BuddhistChronology.java  |    2 +-
+ src/main/java/org/joda/time/chrono/GJCacheKey.java          |   15 +++++++++++++++
+ src/main/java/org/joda/time/chrono/GJChronology.java        |    2 +-
+ src/main/java/org/joda/time/chrono/GregorianChronology.java |    2 +-
+ src/main/java/org/joda/time/chrono/ISOChronology.java       |    2 +-
+ src/main/java/org/joda/time/chrono/IslamicChronology.java   |    2 +-
+ src/main/java/org/joda/time/chrono/JulianChronology.java    |    2 +-
+ 7 files changed, 21 insertions(+), 6 deletions(-)
+
+commit b7ddebdf7a76ba1bc86a456152dddb7d893d0bb6
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Mar 20 15:41:22 2014 +0000
+
+    Adjust pull request to use AtomicReferenceArray
+    
+    Fixes #129, #127
+
+ RELEASE-NOTES.txt                                      |    5 ++++-
+ src/main/java/org/joda/time/format/DateTimeFormat.java |   23 ++++++++++-------------
+ 2 files changed, 14 insertions(+), 14 deletions(-)
+
+commit acfec45d0324e41b8159cf2e63071390893e2037
+Merge: 7385f32 45877a6
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Mar 20 15:04:51 2014 +0000
+
+    Merge branch 'avoid_lock_contention_formatter_cache' of https://github.com/CodingFabian/joda-time into CodingFabian-avoid_lock_contention_formatter_cache
+
+commit 7385f322966dac2b1e1c843d0192085df648c497
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Mar 20 14:57:38 2014 +0000
+
+    Increased performance of chrnology lookup
+    
+    Fixes #126
+
+ RELEASE-NOTES.txt |    3 +++
+ pom.xml           |    4 ++++
+ 2 files changed, 7 insertions(+), 0 deletions(-)
+
+commit 37ce3704787a4967a6238e3f3f56894f7554daef
+Merge: 5806938 e04ba6a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Mar 20 14:48:56 2014 +0000
+
+    Merge branch 'avoid_lock_contention_chonology_cache' of https://github.com/CodingFabian/joda-time into CodingFabian-avoid_lock_contention_chonology_cache
+
+commit 5806938f132cd805f14996a0b8d048f02b3d56eb
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Mar 4 15:32:38 2014 +0000
+
+    Update website and pom
+
+ pom.xml                         |   65 ++++++++++++++++++++++++++++++++---------------------------------
+ src/site/resources/css/site.css |    2 --
+ src/site/site.xml               |    2 +-
+ 3 files changed, 33 insertions(+), 36 deletions(-)
+
+commit 45877a6f25b25b307b390f120b67b9dcd68295e5
+Author: Fabian Lange <lange.fabian@gmail.com>
+Date:   Tue Feb 18 14:09:57 2014 +0100
+
+    using custom key for looking up from the StyleFormatter cache.
+    
+    Previously a String was created from the ints, and a locale.toString was
+    invoked (which is a pretty heavy operation).
+    Now we use a custom key which is based on the same ints and locale, but
+    does not need to calculate a string out of it.
+
+ src/main/java/org/joda/time/format/DateTimeFormat.java |   62 +++++++++++++++++++++++++++++++++++++++++++++++++++++---------
+ 1 files changed, 53 insertions(+), 9 deletions(-)
+
+commit 3b8cdbbdb9b006c1ec42e72216651655147730bd
+Author: Fabian Lange <lange.fabian@gmail.com>
+Date:   Tue Feb 18 14:08:06 2014 +0100
+
+    Using ConcurrentHashMaps rather than synchronized Maps.
+
+ src/main/java/org/joda/time/format/DateTimeFormat.java |   37 ++++++++++++++++---------------------
+ 1 files changed, 16 insertions(+), 21 deletions(-)
+
+commit 199980566f918317cf7819adb4084e5a8d157114
+Author: Fabian Lange <lange.fabian@gmail.com>
+Date:   Tue Feb 18 14:04:20 2014 +0100
+
+    only synchronize the write to STLYE_CACHE as the update will be atomic.
+
+ src/main/java/org/joda/time/format/DateTimeFormat.java |   14 ++++++++------
+ 1 files changed, 8 insertions(+), 6 deletions(-)
+
+commit e04ba6a833a3ce388f41b5d34d4a110e6d8d3383
+Author: Fabian Lange <lange.fabian@gmail.com>
+Date:   Mon Feb 17 18:02:42 2014 +0100
+
+    Simplified Cache Lookup of GJChronologies.
+    
+    This commit replaces the cache lookup using only the zone and then
+    iterating over the ArrayList donating possible candidates with a single
+    cache access. For this purpose a temporary cache key is instantiated.
+    
+    In the cache hit case this code will produce a temporary GJCacheKey
+    object and then return the GJChronology, as compared to previous, where
+    the code was forced synchronised, an ArrayList iteration was performed
+    and an Instant was checked for equality.
+
+ src/main/java/org/joda/time/chrono/GJCacheKey.java   |   62 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/org/joda/time/chrono/GJChronology.java |   32 ++++++++++----------------------
+ 2 files changed, 72 insertions(+), 22 deletions(-)
+
+commit 0ddd67dd5c03bc6957e819ea1e72be1bc60b69f3
+Author: Fabian Lange <lange.fabian@gmail.com>
+Date:   Mon Feb 17 09:44:59 2014 +0100
+
+    Avoid locking as much as possible related to Chronology caching.
+    
+    All Chronology classes used synchronising on the chronology cache, which
+    leads to degraded performance once the cache has a high hit ratio.
+    This patch narrows the synchronised path onto the updating part by using
+    ConcurrentHashMap. The remaining synchronisation ensures identity and
+    prevents lost updates, which might be acceptable but are not strictly
+    backwards compatible.
+
+ src/main/java/org/joda/time/chrono/BuddhistChronology.java  |   27 +++++++++++++--------------
+ src/main/java/org/joda/time/chrono/CopticChronology.java    |   59 ++++++++++++++++++++++++++++++++---------------------------
+ src/main/java/org/joda/time/chrono/EthiopicChronology.java  |   60 +++++++++++++++++++++++++++++++++---------------------------
+ src/main/java/org/joda/time/chrono/GregorianChronology.java |   47 ++++++++++++++++++++++++++---------------------
+ src/main/java/org/joda/time/chrono/ISOChronology.java       |   16 ++++++++--------
+ src/main/java/org/joda/time/chrono/IslamicChronology.java   |   51 ++++++++++++++++++++++++++++-----------------------
+ src/main/java/org/joda/time/chrono/JulianChronology.java    |   47 ++++++++++++++++++++++++++---------------------
+ 7 files changed, 166 insertions(+), 141 deletions(-)
+
+commit f17223a4974f3e55097456441d7386735c97ffd6
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 13 12:30:29 2014 +0000
+
+    Bump clirr comparison version
+
+ pom.xml |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit f36072e1168bf0ad648678402a7a8366d1d420fc
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 13 12:25:08 2014 +0000
+
+    Support Appendable throughout printing
+    
+    Ensure that Appendable can be used efficiently in printing
+    Fixes #120
+    Fixes #121
+    Fixes #122
+
+ RELEASE-NOTES.txt                                                      |    4 +++
+ src/main/java/org/joda/time/format/DateTimeFormat.java                 |   36 ++++-----------------------
+ src/main/java/org/joda/time/format/DateTimeFormatter.java              |  110 +++++++++++++++++++++++++++++++++++++++++---------------------------------------------
+ src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java       |  533 ++++++++++++++++++++++++++++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ src/main/java/org/joda/time/format/DateTimePrinter.java                |   27 +--------------------
+ src/main/java/org/joda/time/format/DateTimePrinterInternalPrinter.java |   89 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/org/joda/time/format/FormatUtils.java                    |    4 +-
+ src/main/java/org/joda/time/format/InternalPrinter.java                |   68 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/org/joda/time/format/InternalPrinterDateTimePrinter.java |  106 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/test/java/org/joda/time/format/TestDateTimeFormatStyle.java        |    7 ++++-
+ src/test/java/org/joda/time/format/TestDateTimeFormatter.java          |    4 +-
+ 11 files changed, 373 insertions(+), 615 deletions(-)
+
+commit d0514b4c01ee19885a0579f2891dee057091a934
+Merge: 1929527 a402cb2
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 13 11:01:49 2014 +0000
+
+    Merge branch 'add_appendable_string_builder_support' of https://github.com/CodingFabian/joda-time into CodingFabian-add_appendable_string_builder_support
+
+commit 1929527baf0463a29ec594a2095079421caa54ef
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 13 10:56:51 2014 +0000
+
+    Ensure time-zone offset print methods have same code
+    
+    Testing revealed no difference in behaviour
+    Fixes #122
+
+ src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java     |    6 +++---
+ src/test/java/org/joda/time/format/TestDateTimeFormatterBuilder.java |   90 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 93 insertions(+), 3 deletions(-)
+
+commit a402cb2f7a00eeef07e0070ecdf27fe81793d701
+Author: Fabian Lange <lange.fabian@gmail.com>
+Date:   Wed Feb 12 19:55:17 2014 +0100
+
+    Adds Appendable support, uses StringBuilder instead of StringBuffer #120
+
+ src/main/java/org/joda/time/format/DateTimeFormat.java           |   11 +++++++++++
+ src/main/java/org/joda/time/format/DateTimeFormatter.java        |   58 ++++++++++++++++++++++++++++++++++++++++++----------------
+ src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java |  313 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----------------------------------------------------------------
+ src/main/java/org/joda/time/format/DateTimePrinter.java          |   27 ++++++++++++++++++++++++++-
+ src/main/java/org/joda/time/format/FormatUtils.java              |  131 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------------
+ 5 files changed, 429 insertions(+), 111 deletions(-)
+
+commit c3ef36272bddbb08854a4a5939a611668ea68450
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 27 18:53:42 2014 +0000
+
+    Upgrade to site-maven-plugin v0.9
+
+ pom.xml |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit d6e89413dd1f67986c6257178359442123881485
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 20 18:29:35 2014 +0000
+
+    Fixup pull request - make it work on JDK 5
+
+ RELEASE-NOTES.txt                                                |    2 ++
+ pom.xml                                                          |    4 ++++
+ src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java |   37 +++++++++++++++++--------------------
+ 3 files changed, 23 insertions(+), 20 deletions(-)
+
+commit 77a406263448839e89afd856233ae73b9c4e2e15
+Merge: 34c0780 8754b71
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 20 18:12:32 2014 +0000
+
+    Merge branch '20131218-cParseCache-contention' of https://github.com/AmlingPalantir/joda-time into AmlingPalantir-20131218-cParseCache-contention
+
+commit 34c0780202dde5d65e346ffe9f02d890352a9c37
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 20 17:55:53 2014 +0000
+
+    Ensure isLeap() returns correct result for day fields
+    
+    day-of-month and day-of-year should report leap days
+    Fixes #110
+
+ RELEASE-NOTES.txt                                                    |    3 +++
+ src/main/java/org/joda/time/chrono/BasicChronology.java              |   12 +++++++++++-
+ src/main/java/org/joda/time/chrono/BasicDayOfMonthDateTimeField.java |    7 ++++++-
+ src/main/java/org/joda/time/chrono/BasicDayOfYearDateTimeField.java  |    7 ++++++-
+ src/main/java/org/joda/time/chrono/BasicGJChronology.java            |    7 ++++++-
+ src/main/java/org/joda/time/chrono/CopticChronology.java             |    8 +++++++-
+ src/main/java/org/joda/time/chrono/EthiopicChronology.java           |    8 +++++++-
+ src/test/java/org/joda/time/chrono/TestCopticChronology.java         |   22 ++++++++++++++++++++--
+ src/test/java/org/joda/time/chrono/TestEthiopicChronology.java       |   20 +++++++++++++++++++-
+ src/test/java/org/joda/time/chrono/TestGJChronology.java             |   21 ++++++++++++++++++++-
+ src/test/java/org/joda/time/chrono/TestGregorianChronology.java      |   21 ++++++++++++++++++++-
+ src/test/java/org/joda/time/chrono/TestISOChronology.java            |   21 ++++++++++++++++++++-
+ src/test/java/org/joda/time/chrono/TestJulianChronology.java         |   22 +++++++++++++++++++++-
+ src/test/java/org/joda/time/chrono/gj/TestGJDayOfMonthField.java     |    7 ++++++-
+ src/test/java/org/joda/time/chrono/gj/TestGJDayOfYearField.java      |    7 ++++++-
+ 15 files changed, 178 insertions(+), 15 deletions(-)
+
+commit 5a7bd39f3044bf1c1678d85744c12315e3441967
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 20 17:24:06 2014 +0000
+
+    Fixup pull request
+
+ RELEASE-NOTES.txt |    4 ++++
+ pom.xml           |    4 ++++
+ 2 files changed, 8 insertions(+), 0 deletions(-)
+
+commit 51ca3165cde8f914dc8c0e038a514698bfe8dbbc
+Merge: e46064e a25bf14
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 20 17:19:12 2014 +0000
+
+    Merge branch 'classcastexception' of https://github.com/jperezalv/joda-time into jperezalv-classcastexception
+
+commit e46064ee90fca28a92c0f51f10c94b40bc8af2d2
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jan 19 15:06:37 2014 +0000
+
+    DateTime/MutableDateTime constructors taking millis now validate
+    
+    Previously, new DateTime(Long.MAX_VALUE) would be accepted, now it will be rejected
+    This ensures that the maximum/minimum year are respected
+    Fixes #100
+
+ RELEASE-NOTES.txt                                          |    4 ++++
+ src/main/java/org/joda/time/base/BaseDateTime.java         |    4 ++++
+ src/test/java/org/joda/time/TestDateTime_Constructors.java |   30 ++++++++++++++++++++++++++++++
+ 3 files changed, 38 insertions(+), 0 deletions(-)
+
+commit bd8522f7976a256ffe0f85203fb1e6fe60c22b6b
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jan 19 14:28:54 2014 +0000
+
+    Fix DataNuclues related link
+    
+    Fixes JodaOrg/jodaorg.github.io#1
+
+ src/site/xdoc/related.xml |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 2789373df58beac42b26425ace5f4728df842f20
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jan 19 14:28:54 2014 +0000
+
+    Fixup pull request
+
+ pom.xml |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+
+commit a25bf149a001e4b2d69e01f03376e698c760fc02
+Author: Jorge Perez Alvarez <jperezalv@gmail.com>
+Date:   Tue Dec 31 13:34:49 2013 +0100
+
+    ZoneInfoProvider.getZone(String) throws a ClassCastException in some Android implementations of the String class.
+    
+    String.equals(SoftReference<?>) throws a ClassCastException. Reordering the code checks first the instanceof case and only then calls the .equals() method with an object of a different type.
+
+ src/main/java/org/joda/time/tz/ZoneInfoProvider.java |    8 +++-----
+ 1 files changed, 3 insertions(+), 5 deletions(-)
+
+commit 35a9f97a047c9f7fe8499f1d45247c158d8c99b7
+Merge: 4058d72 39fff6f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Dec 19 16:43:15 2013 -0800
+
+    Merge pull request #99 from rowanhill/tiny-tidy-up
+    
+    Tiny typo fixes
+
+commit 8754b711247cf0dee21281f7c64306118cf70d61
+Author: Keith Amling <amling@palantir.com>
+Date:   Wed Dec 18 16:32:32 2013 -0800
+
+    Avoid contention in/on cParseCache.
+
+ src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java |   78 +++++++++++++++++++++++++++++++++++++++---------------------------------------
+ 1 files changed, 39 insertions(+), 39 deletions(-)
+
+commit 39fff6f157f9ed92cdae32680129ceb74288eb0f
+Author: Rowan Hill <rowan.hill@softwire.com>
+Date:   Tue Dec 10 00:27:15 2013 +0000
+
+    Tiny typo fixes
+
+ src/main/java/org/joda/time/Partial.java               |    2 +-
+ src/main/java/org/joda/time/format/DateTimeFormat.java |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 4058d725e2b886e429233aa02bc45c3acf374471
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Dec 4 14:11:39 2013 +0000
+
+    Avoid another NPE in Partial.with
+    
+    Fixes #95
+
+ RELEASE-NOTES.txt                        |    2 +-
+ src/main/java/org/joda/time/Partial.java |    3 +++
+ 2 files changed, 4 insertions(+), 1 deletions(-)
+
+commit 9a62b06be5d0df8e833ff8583398cca386608cac
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Dec 2 21:11:47 2013 +0000
+
+    Fix NPE in Partial.with()
+    
+    Also ensure unsupported duration fields are compared properly
+    Fixes #93
+
+ src/main/java/org/joda/time/Partial.java                        |   11 ++++++++++-
+ src/main/java/org/joda/time/field/UnsupportedDurationField.java |    3 ---
+ 2 files changed, 10 insertions(+), 4 deletions(-)
+
+commit 8612f9e5b88c1bea933ef9ab1e431f5db3006b48
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Dec 2 19:14:41 2013 +0000
+
+    Fix NPE in Partial.with()
+    
+    Also ensure unsupported duration fields are compared properly
+    Fixes #93
+
+ RELEASE-NOTES.txt                                               |    2 +-
+ src/main/java/org/joda/time/Partial.java                        |   11 ++++++++---
+ src/main/java/org/joda/time/field/UnsupportedDurationField.java |    3 +++
+ src/test/java/org/joda/time/TestPartial_Basics.java             |   24 ++++++++++++++++++++++++
+ 4 files changed, 36 insertions(+), 4 deletions(-)
+
+commit 8d109fe1a999a11b4557536dd96f9210460a5936
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 27 12:35:00 2013 +0000
+
+    Adding zero no longer changes the offset during DST overlap
+    
+    Fixes #77
+
+ RELEASE-NOTES.txt                                         |    6 ++++++
+ src/main/java/org/joda/time/MutableDateTime.java          |   43 +++++++++++++++++++++++++++++++------------
+ src/test/java/org/joda/time/TestMutableDateTime_Adds.java |  138 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ src/test/java/org/joda/time/TestMutableDateTime_Sets.java |   47 ++++++++++++++++++++++++++++++++++++++++++++++-
+ 4 files changed, 219 insertions(+), 15 deletions(-)
+
+commit 3ba9ba799b3261b7332a467a88be142c83b298fd
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 27 12:23:24 2013 +0000
+
+    Prevent creation of invalid partials via Partial.with(DateTimeFieldType,int)
+    
+    Validation in this method was not as thorough as that in the constructor
+    This allowed invalid partials to be created
+    Fixes #88
+
+ RELEASE-NOTES.txt                                         |    4 ++++
+ src/main/java/org/joda/time/Partial.java                  |    7 ++++---
+ src/test/java/org/joda/time/TestPartial_Basics.java       |    9 +++++++++
+ src/test/java/org/joda/time/TestPartial_Constructors.java |    9 +++++++++
+ 4 files changed, 26 insertions(+), 3 deletions(-)
+
+commit bcb044669b4d1f8d334861ccbd169924d6ef3b54
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 27 12:22:25 2013 +0000
+
+    Fix NPE in DateTimeUtils.isContiguous with weird partials [#89]
+    
+    Fixes #89
+
+ RELEASE-NOTES.txt                              |    3 +++
+ src/main/java/org/joda/time/DateTimeUtils.java |    4 ++--
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+commit 81a818471a9ef5f0e884ae2d319668eff5002738
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 27 12:21:54 2013 +0000
+
+    DurationField is incorrect in complex DateTimeField instances
+    
+    Fixes #92
+
+ RELEASE-NOTES.txt                                                 |   11 ++++++++++-
+ src/main/java/org/joda/time/chrono/BasicChronology.java           |    5 ++---
+ src/main/java/org/joda/time/chrono/BuddhistChronology.java        |   12 +++++++++---
+ src/main/java/org/joda/time/chrono/GJChronology.java              |   76 +++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------
+ src/main/java/org/joda/time/chrono/GJYearOfEraDateTimeField.java  |    6 ++++++
+ src/main/java/org/joda/time/chrono/ISOChronology.java             |    6 +++---
+ src/main/java/org/joda/time/chrono/ISOYearOfEraDateTimeField.java |    6 ++++++
+ src/main/java/org/joda/time/chrono/ZonedChronology.java           |   36 ++++++++++++++++++++++++++++++++++++
+ src/main/java/org/joda/time/field/DelegatedDateTimeField.java     |   23 ++++++++++++++++++++---
+ src/main/java/org/joda/time/field/DividedDateTimeField.java       |   46 +++++++++++++++++++++++++++++++++++++---------
+ src/main/java/org/joda/time/field/RemainderDateTimeField.java     |   40 ++++++++++++++++++++++++++++++++++++++++
+ src/test/java/org/joda/time/TestDateMidnight_Properties.java      |    4 ++--
+ src/test/java/org/joda/time/TestDateTime_Properties.java          |    4 ++--
+ src/test/java/org/joda/time/TestMutableDateTime_Properties.java   |    6 +++---
+ src/test/java/org/joda/time/chrono/TestBuddhistChronology.java    |   26 ++++++++++++++++++++++++++
+ src/test/java/org/joda/time/chrono/TestCopticChronology.java      |   26 ++++++++++++++++++++++++++
+ src/test/java/org/joda/time/chrono/TestEthiopicChronology.java    |   26 ++++++++++++++++++++++++++
+ src/test/java/org/joda/time/chrono/TestGJChronology.java          |   26 ++++++++++++++++++++++++++
+ src/test/java/org/joda/time/chrono/TestGregorianChronology.java   |   26 ++++++++++++++++++++++++++
+ src/test/java/org/joda/time/chrono/TestISOChronology.java         |   26 ++++++++++++++++++++++++++
+ src/test/java/org/joda/time/chrono/TestIslamicChronology.java     |   26 ++++++++++++++++++++++++++
+ src/test/java/org/joda/time/chrono/TestJulianChronology.java      |   26 ++++++++++++++++++++++++++
+ 22 files changed, 435 insertions(+), 54 deletions(-)
+
+commit a61b3ff22820c70d36958ac9090f241f99a0dd0b
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 27 12:21:54 2013 +0000
+
+    Simplify tests
+
+ src/test/java/org/joda/time/chrono/TestBuddhistChronology.java  |  216 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----------------------------------------------------------------------------------------------------------
+ src/test/java/org/joda/time/chrono/TestCopticChronology.java    |  215 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------------------------------------------------------------
+ src/test/java/org/joda/time/chrono/TestEthiopicChronology.java  |  215 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------------------------------------------------------------
+ src/test/java/org/joda/time/chrono/TestGJChronology.java        |  216 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------------------------------------------------------------
+ src/test/java/org/joda/time/chrono/TestGregorianChronology.java |  216 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------------------------------------------------------------
+ src/test/java/org/joda/time/chrono/TestISOChronology.java       |  241 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------------------------------------------------------------------------
+ src/test/java/org/joda/time/chrono/TestIslamicChronology.java   |  215 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------------------------------------------------------------
+ src/test/java/org/joda/time/chrono/TestJulianChronology.java    |  215 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------------------------------------------------------------
+ 8 files changed, 895 insertions(+), 854 deletions(-)

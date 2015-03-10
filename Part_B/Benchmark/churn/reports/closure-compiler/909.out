@@ -1,0 +1,71 @@
+.F.F.F.F.F
+Time: 0.002
+There were 5 failures:
+1) warning(junit.framework.TestSuite$1)junit.framework.AssertionFailedError: Exception in constructor: testUpdateGlobalVarReferences_ResetReferences (java.lang.NoClassDefFoundError: com/google/common/collect/Sets
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:54)
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:67)
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:90)
+	at com.google.javascript.jscomp.GlobalVarReferenceMapTest.<init>(GlobalVarReferenceMapTest.java:40)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at junit.runner.BaseTestRunner.getTest(BaseTestRunner.java:117)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Sets
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 15 more
+)
+2) warning(junit.framework.TestSuite$1)junit.framework.AssertionFailedError: Exception in constructor: testUpdateGlobalVarReferences_UpdateScriptNoRef (java.lang.NoClassDefFoundError: com/google/common/collect/Sets
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:54)
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:67)
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:90)
+	at com.google.javascript.jscomp.GlobalVarReferenceMapTest.<init>(GlobalVarReferenceMapTest.java:40)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at junit.runner.BaseTestRunner.getTest(BaseTestRunner.java:117)
+)
+3) warning(junit.framework.TestSuite$1)junit.framework.AssertionFailedError: Exception in constructor: testUpdateGlobalVarReferences_UpdateScriptNewRefs (java.lang.NoClassDefFoundError: com/google/common/collect/Sets
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:54)
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:67)
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:90)
+	at com.google.javascript.jscomp.GlobalVarReferenceMapTest.<init>(GlobalVarReferenceMapTest.java:40)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at junit.runner.BaseTestRunner.getTest(BaseTestRunner.java:117)
+)
+4) warning(junit.framework.TestSuite$1)junit.framework.AssertionFailedError: Exception in constructor: testUpdateGlobalVarReferences_UpdateScriptNewVar (java.lang.NoClassDefFoundError: com/google/common/collect/Sets
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:54)
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:67)
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:90)
+	at com.google.javascript.jscomp.GlobalVarReferenceMapTest.<init>(GlobalVarReferenceMapTest.java:40)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at junit.runner.BaseTestRunner.getTest(BaseTestRunner.java:117)
+)
+5) warning(junit.framework.TestSuite$1)junit.framework.AssertionFailedError: Exception in constructor: testUpdateReferencesWithGlobalScope (java.lang.NoClassDefFoundError: com/google/common/collect/Sets
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:54)
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:67)
+	at com.google.javascript.jscomp.CompilerInput.<init>(CompilerInput.java:90)
+	at com.google.javascript.jscomp.GlobalVarReferenceMapTest.<init>(GlobalVarReferenceMapTest.java:40)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at junit.runner.BaseTestRunner.getTest(BaseTestRunner.java:117)
+)
+
+FAILURES!!!
+Tests run: 5,  Failures: 5,  Errors: 0
+

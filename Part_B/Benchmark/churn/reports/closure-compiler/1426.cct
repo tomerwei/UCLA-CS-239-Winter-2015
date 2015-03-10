@@ -1,0 +1,17 @@
+(dp0
+S'com/google/javascript/jscomp/parsing/parser/trees/ParseTreeType.values()[Lcom/google/javascript/jscomp/parsing/parser/trees/ParseTreeType;:com/google/javascript/jscomp/parsing/parser/trees/ParseTreeType.<init>(Ljava/lang/String;I)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p1
+I79
+sS'com/google/javascript/jscomp/parsing/parser/trees/ParseTreeType.values()[Lcom/google/javascript/jscomp/parsing/parser/trees/ParseTreeType;:[Lcom/google/javascript/jscomp/parsing/parser/trees/ParseTreeType;.clone()Ljava/lang/Object;'
+p2
+I1
+sS'com/google/javascript/jscomp/parsing/parser/trees/ParseTreeType.ordinal()I'
+p3
+I41
+sS'com/google/javascript/jscomp/parsing/parser/trees/ParseTreeType.values()[Lcom/google/javascript/jscomp/parsing/parser/trees/ParseTreeType;'
+p4
+I1
+sS'com/google/javascript/jscomp/parsing/parser/trees/ParseTreeType.values()[Lcom/google/javascript/jscomp/parsing/parser/trees/ParseTreeType;:com/google/javascript/jscomp/parsing/parser/trees/ParseTreeType.<init>(Ljava/lang/String;I)V'
+p5
+I79
+s.

@@ -1,0 +1,73 @@
+.E.E.E.E.E.E
+Time: 0.005
+There were 6 errors:
+1) testVar(com.google.javascript.jscomp.ConvertToTypedES6Test)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ConvertToTypedES6Test.setUp(ConvertToTypedES6Test.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+2) testPropertyDeclaration(com.google.javascript.jscomp.ConvertToTypedES6Test)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ConvertToTypedES6Test.setUp(ConvertToTypedES6Test.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+3) testPropertyDeclarationByAssignment(com.google.javascript.jscomp.ConvertToTypedES6Test)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ConvertToTypedES6Test.setUp(ConvertToTypedES6Test.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+4) testFunction(com.google.javascript.jscomp.ConvertToTypedES6Test)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ConvertToTypedES6Test.setUp(ConvertToTypedES6Test.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+5) testFunctionParameters(com.google.javascript.jscomp.ConvertToTypedES6Test)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ConvertToTypedES6Test.setUp(ConvertToTypedES6Test.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+6) testNoEmptyTypeAnnotationsAttached(com.google.javascript.jscomp.ConvertToTypedES6Test)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ConvertToTypedES6Test.setUp(ConvertToTypedES6Test.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 11 more
+
+FAILURES!!!
+Tests run: 6,  Failures: 0,  Errors: 6
+

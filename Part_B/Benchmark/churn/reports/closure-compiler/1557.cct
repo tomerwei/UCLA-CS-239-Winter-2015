@@ -1,0 +1,17 @@
+(dp0
+S'com/google/javascript/jscomp/GlobalNamespace$Ref$Type.values()[Lcom/google/javascript/jscomp/GlobalNamespace$Ref$Type;'
+p1
+I1
+sS'com/google/javascript/jscomp/GlobalNamespace$Ref$Type.values()[Lcom/google/javascript/jscomp/GlobalNamespace$Ref$Type;:[Lcom/google/javascript/jscomp/GlobalNamespace$Ref$Type;.clone()Ljava/lang/Object;'
+p2
+I1
+sS'com/google/javascript/jscomp/GlobalNamespace$Ref$Type.values()[Lcom/google/javascript/jscomp/GlobalNamespace$Ref$Type;:com/google/javascript/jscomp/GlobalNamespace$Ref$Type.<init>(Ljava/lang/String;I)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p3
+I7
+sS'com/google/javascript/jscomp/GlobalNamespace$Ref$Type.values()[Lcom/google/javascript/jscomp/GlobalNamespace$Ref$Type;:com/google/javascript/jscomp/GlobalNamespace$Ref$Type.<init>(Ljava/lang/String;I)V'
+p4
+I7
+sS'com/google/javascript/jscomp/GlobalNamespace$Ref$Type.ordinal()I'
+p5
+I2
+s.

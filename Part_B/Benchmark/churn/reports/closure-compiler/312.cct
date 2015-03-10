@@ -1,0 +1,17 @@
+(dp0
+S'com/google/javascript/jscomp/CommandLineRunner$FormattingOption.values()[Lcom/google/javascript/jscomp/CommandLineRunner$FormattingOption;:com/google/javascript/jscomp/CommandLineRunner$FormattingOption.<init>(Ljava/lang/String;I)V'
+p1
+I3
+sS'com/google/javascript/jscomp/CommandLineRunner$FormattingOption.values()[Lcom/google/javascript/jscomp/CommandLineRunner$FormattingOption;:[Lcom/google/javascript/jscomp/CommandLineRunner$FormattingOption;.clone()Ljava/lang/Object;'
+p2
+I1
+sS'com/google/javascript/jscomp/CommandLineRunner$FormattingOption.values()[Lcom/google/javascript/jscomp/CommandLineRunner$FormattingOption;:com/google/javascript/jscomp/CommandLineRunner$FormattingOption.<init>(Ljava/lang/String;I)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p3
+I3
+sS'com/google/javascript/jscomp/CommandLineRunner$FormattingOption.values()[Lcom/google/javascript/jscomp/CommandLineRunner$FormattingOption;'
+p4
+I1
+sS'com/google/javascript/jscomp/CommandLineRunner$FormattingOption.ordinal()I'
+p5
+I3
+s.

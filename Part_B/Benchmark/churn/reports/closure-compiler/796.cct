@@ -1,0 +1,11 @@
+(dp0
+S'com/google/javascript/jscomp/ExtractPrototypeMemberDeclarations$Pattern.<init>(Ljava/lang/String;IIII)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p1
+I2
+sS'java/lang/String.length()I'
+p2
+I7
+sS'com/google/javascript/jscomp/ExtractPrototypeMemberDeclarations$Pattern.<init>(Ljava/lang/String;IIII)V'
+p3
+I2
+s.

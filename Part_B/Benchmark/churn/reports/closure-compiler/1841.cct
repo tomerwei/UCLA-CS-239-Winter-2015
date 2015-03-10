@@ -1,0 +1,11 @@
+(dp0
+S'com/google/javascript/jscomp/CheckLevel.<init>(Ljava/lang/String;I)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p1
+I3
+sS'[Lcom/google/javascript/jscomp/CheckLevel;.clone()Ljava/lang/Object;'
+p2
+I1
+sS'com/google/javascript/jscomp/CheckLevel.<init>(Ljava/lang/String;I)V'
+p3
+I3
+s.

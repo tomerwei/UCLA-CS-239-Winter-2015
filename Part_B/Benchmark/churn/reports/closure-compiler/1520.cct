@@ -1,0 +1,14 @@
+(dp0
+S'com/google/javascript/jscomp/CodeGenerator.forCostEstimation(Lcom/google/javascript/jscomp/CodeConsumer;)Lcom/google/javascript/jscomp/CodeGenerator;:com/google/javascript/jscomp/CodeGenerator.<init>(Lcom/google/javascript/jscomp/CodeConsumer;)V'
+p1
+I1
+sS'com/google/javascript/jscomp/CodeGenerator.forCostEstimation(Lcom/google/javascript/jscomp/CodeConsumer;)Lcom/google/javascript/jscomp/CodeGenerator;:com/google/javascript/jscomp/CodeGenerator.<init>(Lcom/google/javascript/jscomp/CodeConsumer;)V:com/google/common/collect/Maps.newHashMap()Ljava/util/HashMap;'
+p2
+I1
+sS'com/google/javascript/jscomp/CodeGenerator.forCostEstimation(Lcom/google/javascript/jscomp/CodeConsumer;)Lcom/google/javascript/jscomp/CodeGenerator;:com/google/javascript/jscomp/CodeGenerator.<init>(Lcom/google/javascript/jscomp/CodeConsumer;)V:java/lang/Object.<init>()V'
+p3
+I1
+sS'com/google/javascript/jscomp/CodeGenerator.forCostEstimation(Lcom/google/javascript/jscomp/CodeConsumer;)Lcom/google/javascript/jscomp/CodeGenerator;'
+p4
+I1
+s.

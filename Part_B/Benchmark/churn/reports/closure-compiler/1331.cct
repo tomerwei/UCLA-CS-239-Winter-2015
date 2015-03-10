@@ -1,0 +1,11 @@
+(dp0
+S'com/google/javascript/jscomp/parsing/Annotation.values()[Lcom/google/javascript/jscomp/parsing/Annotation;:com/google/javascript/jscomp/parsing/Annotation.<init>(Ljava/lang/String;I)V'
+p1
+I55
+sS'com/google/javascript/jscomp/parsing/Annotation.values()[Lcom/google/javascript/jscomp/parsing/Annotation;'
+p2
+I1
+sS'com/google/javascript/jscomp/parsing/Annotation.values()[Lcom/google/javascript/jscomp/parsing/Annotation;:com/google/javascript/jscomp/parsing/Annotation.<init>(Ljava/lang/String;I)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p3
+I55
+s.

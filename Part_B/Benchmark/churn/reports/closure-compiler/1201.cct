@@ -1,0 +1,17 @@
+(dp0
+S'com/google/javascript/jscomp/ControlFlowGraph$Branch.values()[Lcom/google/javascript/jscomp/ControlFlowGraph$Branch;:[Lcom/google/javascript/jscomp/ControlFlowGraph$Branch;.clone()Ljava/lang/Object;'
+p1
+I1
+sS'com/google/javascript/jscomp/ControlFlowGraph$Branch.ordinal()I'
+p2
+I3
+sS'com/google/javascript/jscomp/ControlFlowGraph$Branch.values()[Lcom/google/javascript/jscomp/ControlFlowGraph$Branch;'
+p3
+I1
+sS'com/google/javascript/jscomp/ControlFlowGraph$Branch.values()[Lcom/google/javascript/jscomp/ControlFlowGraph$Branch;:com/google/javascript/jscomp/ControlFlowGraph$Branch.<init>(Ljava/lang/String;I)V'
+p4
+I5
+sS'com/google/javascript/jscomp/ControlFlowGraph$Branch.values()[Lcom/google/javascript/jscomp/ControlFlowGraph$Branch;:com/google/javascript/jscomp/ControlFlowGraph$Branch.<init>(Ljava/lang/String;I)V:java/lang/Enum.<init>(Ljava/lang/String;I)V'
+p5
+I5
+s.

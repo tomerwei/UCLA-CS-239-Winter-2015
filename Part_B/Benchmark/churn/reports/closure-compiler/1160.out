@@ -1,0 +1,323 @@
+.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E
+Time: 0.009
+There were 20 errors:
+1) testStraightLine(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertMatch(MustBeReachingVariableDefTest.java:154)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testStraightLine(MustBeReachingVariableDefTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+2) testIf(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertNotMatch(MustBeReachingVariableDefTest.java:162)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testIf(MustBeReachingVariableDefTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+3) testLoops(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertNotMatch(MustBeReachingVariableDefTest.java:162)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testLoops(MustBeReachingVariableDefTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+4) testConditional(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertMatch(MustBeReachingVariableDefTest.java:154)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testConditional(MustBeReachingVariableDefTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+5) testUseAndDefInSameInstruction(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertMatch(MustBeReachingVariableDefTest.java:154)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testUseAndDefInSameInstruction(MustBeReachingVariableDefTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+6) testAssignmentInExpressions(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertMatch(MustBeReachingVariableDefTest.java:154)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testAssignmentInExpressions(MustBeReachingVariableDefTest.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+7) testHook(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertNotMatch(MustBeReachingVariableDefTest.java:162)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testHook(MustBeReachingVariableDefTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+8) testExpressionVariableReassignment(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertMatch(MustBeReachingVariableDefTest.java:154)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testExpressionVariableReassignment(MustBeReachingVariableDefTest.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+9) testMergeDefinitions(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertNotMatch(MustBeReachingVariableDefTest.java:162)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testMergeDefinitions(MustBeReachingVariableDefTest.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+10) testMergesWithOneDefinition(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertNotMatch(MustBeReachingVariableDefTest.java:162)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testMergesWithOneDefinition(MustBeReachingVariableDefTest.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+11) testRedefinitionUsingItself(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertMatch(MustBeReachingVariableDefTest.java:154)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testRedefinitionUsingItself(MustBeReachingVariableDefTest.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+12) testMultipleDefinitionsWithDependence(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertMatch(MustBeReachingVariableDefTest.java:154)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testMultipleDefinitionsWithDependence(MustBeReachingVariableDefTest.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+13) testExterns(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertNotMatch(MustBeReachingVariableDefTest.java:162)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testExterns(MustBeReachingVariableDefTest.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+14) testAssignmentOp(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertMatch(MustBeReachingVariableDefTest.java:154)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testAssignmentOp(MustBeReachingVariableDefTest.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+15) testIncAndDec(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertMatch(MustBeReachingVariableDefTest.java:154)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testIncAndDec(MustBeReachingVariableDefTest.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+16) testFunctionParams1(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testFunctionParams1(MustBeReachingVariableDefTest.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 17 more
+17) testFunctionParams2(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testFunctionParams2(MustBeReachingVariableDefTest.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 17 more
+18) testArgumentsObjectModifications(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testArgumentsObjectModifications(MustBeReachingVariableDefTest.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 17 more
+19) testArgumentsObjectEscaped(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testArgumentsObjectEscaped(MustBeReachingVariableDefTest.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 17 more
+20) testArgumentsObjectEscapedDependents(com.google.javascript.jscomp.MustBeReachingVariableDefTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.computeDefUse(MustBeReachingVariableDefTest.java:170)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.assertNotMatch(MustBeReachingVariableDefTest.java:162)
+	at com.google.javascript.jscomp.MustBeReachingVariableDefTest.testArgumentsObjectEscapedDependents(MustBeReachingVariableDefTest.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+
+FAILURES!!!
+Tests run: 20,  Failures: 0,  Errors: 20
+

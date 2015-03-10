@@ -1,0 +1,8 @@
+(dp0
+S'java/util/logging/Logger.getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;'
+p1
+I1
+sS'java/lang/Class.getName()Ljava/lang/String;'
+p2
+I1
+s.

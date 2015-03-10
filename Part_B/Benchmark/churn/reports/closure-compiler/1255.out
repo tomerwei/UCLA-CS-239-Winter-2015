@@ -1,0 +1,118 @@
+.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E
+Time: 0.004
+There were 17 errors:
+1) testBasic(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testBasic(NodeIteratorsTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.primitives.Ints
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 17 more
+2) testNamedFunction(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testNamedFunction(NodeIteratorsTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+3) testNamedFunction2(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testNamedFunction2(NodeIteratorsTest.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+4) testFunctionExpression(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testFunctionExpression(NodeIteratorsTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5) testFunctionExpression2(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testFunctionExpression2(NodeIteratorsTest.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+6) testHaltAtVarRef(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testHaltAtVarRef(NodeIteratorsTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+7) testHaltAtVarRef2(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testHaltAtVarRef2(NodeIteratorsTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+8) testHaltAtVarRef3(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testHaltAtVarRef3(NodeIteratorsTest.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+9) testHaltAtSideEffects(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testHaltAtSideEffects(NodeIteratorsTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+10) testHaltAtSideEffects2(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testHaltAtSideEffects2(NodeIteratorsTest.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11) testHaltAtSideEffects3(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testHaltAtSideEffects3(NodeIteratorsTest.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12) testHaltAtSideEffects4(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testHaltAtSideEffects4(NodeIteratorsTest.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+13) testHaltAtSideEffects5(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testHaltAtSideEffects5(NodeIteratorsTest.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+14) testNoHaltReadWhenValueIsImmutable(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testNoHaltReadWhenValueIsImmutable(NodeIteratorsTest.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+15) testHaltReadWhenValueHasSideEffects(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testHaltReadWhenValueHasSideEffects(NodeIteratorsTest.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+16) testCatchBlock(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testCatchBlock(NodeIteratorsTest.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+17) testIfBranch(com.google.javascript.jscomp.NodeIteratorsTest)java.lang.NoClassDefFoundError: com/google/common/primitives/Ints
+	at com.google.javascript.jscomp.NodeIteratorsTest.testVarMotionWithCode(NodeIteratorsTest.java:131)
+	at com.google.javascript.jscomp.NodeIteratorsTest.testIfBranch(NodeIteratorsTest.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+FAILURES!!!
+Tests run: 17,  Failures: 0,  Errors: 17
+

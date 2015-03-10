@@ -1,0 +1,676 @@
+.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.
+E.E
+Time: 0.018
+There were 42 errors:
+1) testSimpleStatements(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSimpleStatements(ControlFlowAnalysisTest.java:270)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+2) testSimpleIf(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSimpleIf(ControlFlowAnalysisTest.java:279)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+3) testBreakingBlock(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testBreakingBlock(ControlFlowAnalysisTest.java:292)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+4) testThrowInCatchBlock(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testThrowInCatchBlock(ControlFlowAnalysisTest.java:333)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+5) testBreakingTryBlock(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testBreakingTryBlock(ControlFlowAnalysisTest.java:338)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+6) testWithStatement(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testWithStatement(ControlFlowAnalysisTest.java:352)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+7) testSimpleWhile(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSimpleWhile(ControlFlowAnalysisTest.java:363)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+8) testSimpleSwitch(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSimpleSwitch(ControlFlowAnalysisTest.java:373)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+9) testSimpleNoDefault(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSimpleNoDefault(ControlFlowAnalysisTest.java:389)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+10) testSwitchDefaultFirst(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSwitchDefaultFirst(ControlFlowAnalysisTest.java:396)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+11) testSwitchDefaultInMiddle(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSwitchDefaultInMiddle(ControlFlowAnalysisTest.java:405)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+12) testSwitchEmpty(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSwitchEmpty(ControlFlowAnalysisTest.java:414)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+13) testReturnThrowingException(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testReturnThrowingException(ControlFlowAnalysisTest.java:421)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+14) testSimpleFor(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSimpleFor(ControlFlowAnalysisTest.java:479)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+15) testSimpleForWithContinue(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSimpleForWithContinue(ControlFlowAnalysisTest.java:546)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+16) testNestedFor(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testNestedFor(ControlFlowAnalysisTest.java:647)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+17) testNestedDoWithBreak(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testNestedDoWithBreak(ControlFlowAnalysisTest.java:713)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+18) testForIn(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testForIn(ControlFlowAnalysisTest.java:752)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+19) testThrow(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testThrow(ControlFlowAnalysisTest.java:787)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+20) testSimpleFunction(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSimpleFunction(ControlFlowAnalysisTest.java:827)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+21) testSimpleCatch(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSimpleCatch(ControlFlowAnalysisTest.java:914)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+22) testFunctionWithinTry(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testFunctionWithinTry(ControlFlowAnalysisTest.java:964)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+23) testNestedCatch(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testNestedCatch(ControlFlowAnalysisTest.java:1032)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+24) testSimpleFinally(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSimpleFinally(ControlFlowAnalysisTest.java:1037)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+25) testSimpleCatchFinally(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSimpleCatchFinally(ControlFlowAnalysisTest.java:1121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+26) testComplicatedFinally2(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testComplicatedFinally2(ControlFlowAnalysisTest.java:1130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+27) testDeepNestedBreakwithFinally(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testDeepNestedBreakwithFinally(ControlFlowAnalysisTest.java:1140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+28) testDeepNestedFinally(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testDeepNestedFinally(ControlFlowAnalysisTest.java:1155)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+29) testReturn(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testReturn(ControlFlowAnalysisTest.java:1163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+30) testReturnInFinally(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testReturnInFinally(ControlFlowAnalysisTest.java:1169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+31) testReturnInFinally2(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testReturnInFinally2(ControlFlowAnalysisTest.java:1176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+32) testReturnInTry(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testReturnInTry(ControlFlowAnalysisTest.java:1185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+33) testOptionNotToTraverseFunctions(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testOptionNotToTraverseFunctions(ControlFlowAnalysisTest.java:1262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+34) testInstanceOf(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testInstanceOf(ControlFlowAnalysisTest.java:1268)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 17 more
+35) testSynBlock(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testSynBlock(ControlFlowAnalysisTest.java:1274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 17 more
+36) testPartialTraversalOfScope(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testPartialTraversalOfScope(ControlFlowAnalysisTest.java:1279)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 16 more
+37) testForLoopOrder(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testForLoopOrder(ControlFlowAnalysisTest.java:1295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+38) testLabelledForInLoopOrder(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testLabelledForInLoopOrder(ControlFlowAnalysisTest.java:1304)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+39) testLocalFunctionOrder(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testLocalFunctionOrder(ControlFlowAnalysisTest.java:1316)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+40) testDoWhileOrder(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testDoWhileOrder(ControlFlowAnalysisTest.java:1328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+41) testBreakInFinally1(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:254)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testCfg(ControlFlowAnalysisTest.java:50)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testBreakInFinally1(ControlFlowAnalysisTest.java:1426)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+42) testBreakInFinally2(com.google.javascript.jscomp.ControlFlowAnalysisTest)java.lang.NoClassDefFoundError: com/google/common/base/Function
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:224)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.createCfg(ControlFlowAnalysisTest.java:238)
+	at com.google.javascript.jscomp.ControlFlowAnalysisTest.testBreakInFinally2(ControlFlowAnalysisTest.java:1443)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 18 more
+
+FAILURES!!!
+Tests run: 42,  Failures: 0,  Errors: 42
+
