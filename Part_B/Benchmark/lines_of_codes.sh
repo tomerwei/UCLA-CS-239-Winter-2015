@@ -1,8 +1,8 @@
 #!/bin/bash
 
-d=closure-compiler/src
+d=$1/src
 
 for f in $(find $d -name '*\.java')
 do
-  java -cp locc-4.2.jar csdl.locc.sys.LOCTotal -sizetype javaline -infiles $f
+  java -Djava.awt.headless=true -cp locc-4.2.jar csdl.locc.sys.LOCTotal -sizetype javaline -infiles $f
 done
